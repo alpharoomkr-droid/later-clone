@@ -40,8 +40,8 @@ export default function LatestContent() {
                 <div className="sm:w-1/2 flex flex-col justify-center">
                   <span className="font-bold text-gridglow uppercase tracking-wider mb-2" style={{ fontSize: 12 }}>{article.tag}</span>
                   <h3
-                    className="text-charcoal leading-snug group-hover:text-gridglow transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700 }}
+                    className="text-charcoal group-hover:text-gridglow transition-colors"
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 700, lineHeight: '37.5px' }}
                   >
                     {article.title}
                   </h3>
@@ -57,8 +57,8 @@ export default function LatestContent() {
                 </div>
                 <span className="font-bold text-gridglow uppercase tracking-wider mb-2 block" style={{ fontSize: 12 }}>{article.tag}</span>
                 <h3
-                  className="text-charcoal leading-snug group-hover:text-gridglow transition-colors"
-                  style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700 }}
+                  className="text-charcoal group-hover:text-gridglow transition-colors"
+                  style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 700, lineHeight: '37.5px' }}
                 >
                   {article.title}
                 </h3>

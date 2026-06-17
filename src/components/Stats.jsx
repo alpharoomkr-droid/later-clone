@@ -48,7 +48,7 @@ export default function Stats() {
     >
       <div
         className="absolute inset-0"
-        style={{ background: 'linear-gradient(0deg, rgb(254, 63, 0) 0%, rgb(203, 138, 255) 100%)', opacity: 0.15 }}
+        style={{ background: 'linear-gradient(0deg, rgb(254, 63, 0) 0%, rgb(203, 138, 255) 100%)', opacity: 0.06 }}
       />
       <div className="relative z-10 max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
         <h2

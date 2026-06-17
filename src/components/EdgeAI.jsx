@@ -13,8 +13,8 @@ export default function EdgeAI() {
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
           <div className="lg:col-span-6">
             <h2
-              className="text-charcoal mb-6"
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+              className="text-charcoal"
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px', marginBottom: 16 }}
             >
               Other brands are guessing. You don't have to.
             </h2>

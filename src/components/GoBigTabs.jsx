@@ -90,7 +90,7 @@ export default function GoBigTabs() {
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <h3
-                className="text-white mb-3"
+                className="text-white mb-2"
                 style={{ fontFamily: 'var(--font-heading)', fontSize: 38, fontWeight: 700, lineHeight: '47.5px', letterSpacing: '0.19px' }}
               >
                 {tabs[activeTab].heading}

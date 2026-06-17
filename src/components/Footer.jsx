@@ -18,37 +18,37 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="bg-inverse text-white">
+    <footer className="bg-inverse text-offline">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-10 pt-16 pb-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-y-6 gap-x-4 mb-14">
           <div>
-            <a href="#" className="text-sm text-white/70 hover:text-white transition-colors block">Mavely for Creators</a>
-            <a href="#" className="text-sm text-white/70 hover:text-white transition-colors block mt-2">AI creator matching</a>
+            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block">Mavely for Creators</a>
+            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block mt-2">AI creator matching</a>
           </div>
           <div>
-            <a href="/case-studies/" className="text-sm text-white/70 hover:text-white transition-colors block">Our work</a>
+            <a href="/case-studies/" className="text-sm text-offline/80 hover:text-white transition-colors block">Our work</a>
           </div>
           <div className="flex justify-center">
-            <a href="#" className="text-lg font-bold text-white hover:text-gridglow transition-colors flex items-center gap-2">
+            <a href="#" className="text-lg font-bold text-offline hover:text-gridglow transition-colors flex items-center gap-2">
               Start free trial <ArrowIcon />
             </a>
           </div>
           <div>
-            <a href="#" className="text-sm text-white/70 hover:text-white transition-colors block">Guides + templates</a>
-            <a href="#" className="text-sm text-white/70 hover:text-white transition-colors block mt-2">Expert Sessions</a>
+            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block">Guides + templates</a>
+            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block mt-2">Expert Sessions</a>
           </div>
           <div>
-            <a href="#" className="text-sm text-white/70 hover:text-white transition-colors block">Partners</a>
-            <a href="#" className="text-sm text-white/70 hover:text-white transition-colors block mt-2">Help Center</a>
+            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block">Partners</a>
+            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block mt-2">Help Center</a>
           </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           <div>
-            <p className="text-sm font-semibold text-white mb-4">Follow us</p>
+            <p className="text-offline mb-4" style={{ fontSize: 16, fontWeight: 700 }}>Follow us</p>
             <div className="flex items-center gap-4">
               {socialIcons.map((icon, i) => (
-                <a key={i} href="#" className="text-white hover:text-gridglow transition-colors" aria-label={icon.name}>
+                <a key={i} href="#" className="text-offline hover:text-gridglow transition-colors" aria-label={icon.name}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d={icon.path} />
                   </svg>
@@ -57,8 +57,8 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <p className="text-lg font-semibold text-white mb-2">Join Our Newsletter</p>
-            <p className="text-sm text-white/60 mb-4">Email Address <span className="text-gridglow">*</span></p>
+            <p className="text-offline mb-2" style={{ fontSize: 16, fontWeight: 700 }}>Join Our Newsletter</p>
+            <p className="text-sm text-offline/60 mb-4">Email Address <span className="text-gridglow">*</span></p>
             <div className="flex gap-0">
               <input
                 type="email"
@@ -73,10 +73,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4">
-          <p className="text-xs text-white/40">© 2026 Later. All rights reserved.</p>
+          <p className="text-xs text-offline/40">© 2026 Later. All rights reserved.</p>
           <div className="flex flex-wrap gap-6">
             {['Sitemap', 'Terms', 'Privacy Policy', 'Cookie Settings'].map((link, i) => (
-              <a key={i} href="#" className="text-xs text-white/40 hover:text-white/60 transition-colors">{link}</a>
+              <a key={i} href="#" className="text-xs text-offline/40 hover:text-offline/60 transition-colors">{link}</a>
             ))}
           </div>
         </div>
@@ -89,7 +89,7 @@ export default function Footer() {
             style={{
               fontFamily: 'var(--font-heading)',
               color: 'transparent',
-              WebkitTextStroke: '3px rgba(255,255,255,0.25)',
+              WebkitTextStroke: '3px rgba(248,242,234,0.25)',
             }}
           >
             Later

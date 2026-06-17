@@ -63,16 +63,16 @@ export default function CaseStudies() {
     <section className="text-white" style={{ backgroundColor: 'rgb(0,0,0)', padding: '140px 0 70px' }}>
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-10" style={{ padding: '0 40px' }}>
         <div className="xl:col-span-4">
-          <p className="text-white/60 mb-6" style={{ fontSize: 18, fontWeight: 500 }}>Our Work</p>
+          <p className="text-offline/60 mb-6" style={{ fontSize: 15, fontWeight: 700 }}>Our Work</p>
           <div className="flex flex-row xl:flex-col flex-wrap gap-2 mb-8">
             {cases.map((c, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
                 className={`text-left transition-all py-2 ${
-                  active === i ? 'text-white' : 'text-white/30 hover:text-white/60'
+                  active === i ? 'text-offline' : 'text-offline/30 hover:text-offline/60'
                 }`}
-                style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 800, lineHeight: '55px' }}
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 800, lineHeight: '55px', letterSpacing: '0.22px' }}
               >
                 {c.name}
               </button>
@@ -102,13 +102,13 @@ export default function CaseStudies() {
                 <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mb-4">
                   <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3"/>
                 </svg>
-                <p className="text-offline/90 leading-relaxed mb-6" style={{ fontSize: 24, lineHeight: '36px' }}>
+                <p className="text-offline/90 mb-6" style={{ fontSize: 24, lineHeight: '36px' }}>
                   {cases[active].quote}
                 </p>
-                <p className="font-bold text-white">{cases[active].person}</p>
-                <p className="text-white/60" style={{ fontSize: 14 }}>{cases[active].role}</p>
+                <p className="font-bold text-offline">{cases[active].person}</p>
+                <p className="text-offline/60" style={{ fontSize: 14 }}>{cases[active].role}</p>
               </div>
-              <div className="grid grid-cols-2 gap-6 mt-8 pt-8 border-t border-white/10">
+              <div className="grid grid-cols-2 gap-6 mt-8 pt-8 border-t border-offline/10">
                 <div>
                   <div
                     className="text-gridglow"
@@ -116,7 +116,7 @@ export default function CaseStudies() {
                   >
                     {cases[active].stat1.value}
                   </div>
-                  <p className="text-white/60 mt-1" style={{ fontSize: 14 }}>{cases[active].stat1.label}</p>
+                  <p className="text-offline/60 mt-1" style={{ fontSize: 14 }}>{cases[active].stat1.label}</p>
                 </div>
                 <div>
                   <div
@@ -125,7 +125,7 @@ export default function CaseStudies() {
                   >
                     {cases[active].stat2.value}
                   </div>
-                  <p className="text-white/60 mt-1" style={{ fontSize: 14 }}>{cases[active].stat2.label}</p>
+                  <p className="text-offline/60 mt-1" style={{ fontSize: 14 }}>{cases[active].stat2.label}</p>
                 </div>
               </div>
             </div>

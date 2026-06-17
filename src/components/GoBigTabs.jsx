@@ -55,11 +55,11 @@ export default function GoBigTabs() {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
-      <div className="max-w-[1440px] mx-auto">
+    <section className="purple-wood-bg" style={{ padding: '80px 0 56px' }}>
+      <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
         <h2
           className="text-offline mb-2"
-          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
         >
           Go big. We've got you.
         </h2>
@@ -74,12 +74,12 @@ export default function GoBigTabs() {
               role="tab"
               aria-selected={activeTab === i}
               onClick={() => setActiveTab(i)}
-              className={`px-5 py-2.5 font-bold transition-all ${
+              className={`font-bold transition-all ${
                 activeTab === i
                   ? 'bg-secondary text-white'
                   : 'bg-white/20 text-offline hover:bg-white/30'
               }`}
-              style={{ fontSize: 14 }}
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, lineHeight: '36px', letterSpacing: '0.12px', padding: '12px 24px' }}
             >
               {tab.label}
             </button>
@@ -91,7 +91,7 @@ export default function GoBigTabs() {
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <h3
                 className="text-white mb-3"
-                style={{ fontFamily: 'var(--font-heading)', fontSize: 32, fontWeight: 900, lineHeight: '36px' }}
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 38, fontWeight: 700, lineHeight: '47.5px', letterSpacing: '0.19px' }}
               >
                 {tabs[activeTab].heading}
               </h3>

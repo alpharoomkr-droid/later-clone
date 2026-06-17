@@ -60,8 +60,8 @@ export default function CaseStudies() {
   const [active, setActive] = useState(0)
 
   return (
-    <section className="text-white" style={{ backgroundColor: 'rgb(0,0,0)', padding: '140px 40px 70px' }}>
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-10">
+    <section className="text-white" style={{ backgroundColor: 'rgb(0,0,0)', padding: '140px 0 70px' }}>
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-10" style={{ padding: '0 40px' }}>
         <div className="xl:col-span-4">
           <p className="text-white/60 mb-6" style={{ fontSize: 18, fontWeight: 500 }}>Our Work</p>
           <div className="flex flex-row xl:flex-col flex-wrap gap-2 mb-8">

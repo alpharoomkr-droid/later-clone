@@ -9,16 +9,16 @@ function ArrowIcon() {
 export default function EdgeAI() {
   return (
     <>
-      <section className="wood-bg min-h-screen flex items-center relative overflow-hidden">
-        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg min-h-screen flex items-center relative overflow-hidden" style={{ padding: '56px 0' }}>
+        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
           <div className="lg:col-span-6">
             <h2
               className="text-charcoal mb-6"
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
             >
               Other brands are guessing. You don't have to.
             </h2>
-            <p className="text-charcoal/60 mb-6 max-w-[480px]" style={{ fontSize: 20, lineHeight: '32px' }}>
+            <p className="text-charcoal mb-6 max-w-[480px]" style={{ fontSize: 20, lineHeight: '32px', opacity: 0.6 }}>
               Later EdgeAI looks at creator behavior, what's trending, and what people actually buy, so campaigns are built with confidence.
             </p>
             <a href="/influencer-marketing-platform/" className="inline-flex items-center gap-2 text-gridglow font-bold border-b border-gridglow/50 pb-1 hover:border-gridglow transition-colors">
@@ -39,11 +39,11 @@ export default function EdgeAI() {
         </div>
       </section>
 
-      <section className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '80px 24px' }}>
-        <div className="max-w-[1000px] mx-auto text-center mb-12">
+      <section className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '56px 0' }}>
+        <div className="max-w-[1000px] mx-auto text-center mb-12" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal mb-8"
-            style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+            style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
           >
             You don't need more creators. You need{' '}
             <span className="text-gridglow">the right ones.</span>
@@ -64,7 +64,7 @@ export default function EdgeAI() {
             </div>
           ))}
         </div>
-        <p className="text-charcoal/60 max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px' }}>
+        <p className="text-charcoal max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px', opacity: 0.6, padding: '0 40px' }}>
           We handpick creators proven to drive sales and brand lift, with brand fit, safety, and past performance checked upfront.
         </p>
       </section>

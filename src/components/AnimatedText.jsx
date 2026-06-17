@@ -19,7 +19,6 @@ export default function AnimatedText() {
         backgroundImage: 'url(https://later.com/static/screenmap-no-bg-82fc23e6d0e5c9920baa6b69c483d76b.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        padding: '96px 24px',
       }}
     >
       {decorations.map((d, i) => (
@@ -37,7 +36,9 @@ export default function AnimatedText() {
           fontFamily: 'var(--font-heading)',
           fontSize: 96,
           fontWeight: 800,
-          lineHeight: '96px',
+          lineHeight: '110.4px',
+          letterSpacing: '0.48px',
+          padding: '0 40px',
         }}
       >
         The only influencer marketing platform powered by real{' '}

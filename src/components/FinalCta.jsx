@@ -23,8 +23,8 @@ export default function FinalCta() {
       <div className="absolute inset-0 bg-charcoal/50" />
       <div className="relative z-10 max-w-[700px] mx-auto px-6 py-20 text-center">
         <h2
-          className="text-offline leading-snug mb-8"
-          style={{ fontFamily: 'var(--font-heading)', fontSize: 70, fontWeight: 900, lineHeight: '70px' }}
+          className="mb-8"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 70, fontWeight: 900, lineHeight: '87.5px', letterSpacing: '0.35px', color: 'rgb(254, 252, 251)' }}
         >
           When you get it right, it's impossible to ignore.
         </h2>

@@ -15,18 +15,18 @@ export default function Hero() {
             className="text-charcoal"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: '80.414px',
+              fontSize: 86,
               fontWeight: 900,
-              lineHeight: '80.414px',
-              letterSpacing: '0.40207px',
+              lineHeight: '86px',
+              letterSpacing: '0.43px',
               marginBottom: 16,
             }}
           >
             Unforgettable campaigns start with insight.
           </h1>
           <p
-            className="text-charcoal/60 mb-8 max-w-[480px]"
-            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px' }}
+            className="text-charcoal mb-8 max-w-[480px]"
+            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', opacity: 0.6 }}
           >
             Influencer marketing built for creators, trusted by brands, and designed for results.
           </p>

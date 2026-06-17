@@ -46,13 +46,12 @@ export default function Stats() {
       className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #7A63E8 0%, #C06CB0 35%, #E8707A 60%, #FE3F00 100%)',
-        padding: '80px 40px',
       }}
     >
-      <div className="relative z-10 max-w-[1200px] mx-auto w-full">
+      <div className="relative z-10 max-w-[1200px] mx-auto w-full" style={{ padding: '0 40px' }}>
         <h2
           className="text-charcoal text-center mb-16"
-          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
         >
           The hype is real.
         </h2>
@@ -71,7 +70,7 @@ export default function Stats() {
               <img src={stat.icon} alt="" className="w-12 h-12 mb-4 brightness-0" loading="lazy" />
               <div
                 className="text-charcoal mb-2"
-                style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: '48px' }}
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: '60px' }}
               >
                 {stat.value}
               </div>

@@ -28,7 +28,7 @@ function useInView(ref) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setVisible(true) },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     )
     if (ref.current) observer.observe(ref.current)
     return () => observer.disconnect()
@@ -41,26 +41,32 @@ export default function Stats() {
   const visible = useInView(ref)
 
   return (
-    <section ref={ref} className="bg-secondary min-h-screen flex flex-col items-center justify-center py-20 px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 to-secondary" />
+    <section
+      ref={ref}
+      className="min-h-screen flex flex-col items-center justify-center py-20 px-6 relative overflow-hidden"
+      style={{ background: 'linear-gradient(180deg, #7A63E8 0%, #C06CB0 35%, #E8707A 60%, #FE3F00 100%)' }}
+    >
       <div className="relative z-10 max-w-[1200px] mx-auto w-full">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center mb-16" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2 className="text-4xl md:text-5xl lg:text-[80px] font-extrabold text-charcoal text-center mb-16 leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
           The hype is real.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`bg-secondary/60 backdrop-blur-sm border border-white/10 p-6 lg:p-8 transition-all duration-700 ${
+              className={`bg-white p-6 lg:p-8 transition-all duration-700 ${
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
-              style={{ transitionDelay: `${i * 150}ms` }}
+              style={{
+                transitionDelay: `${i * 150}ms`,
+                transform: visible ? `rotate(${i % 2 === 0 ? '-2' : '2'}deg)` : 'translateY(32px)',
+              }}
             >
-              <img src={stat.icon} alt="" className="w-12 h-12 mb-4" loading="lazy" />
-              <div className="text-4xl lg:text-5xl font-extrabold text-white mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+              <img src={stat.icon} alt="" className="w-12 h-12 mb-4 brightness-0" loading="lazy" />
+              <div className="text-4xl lg:text-5xl font-extrabold text-charcoal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                 {stat.value}
               </div>
-              <p className="text-offline/80 text-lg leading-snug">
+              <p className="text-charcoal/60 text-base leading-snug">
                 {stat.desc}
               </p>
             </div>

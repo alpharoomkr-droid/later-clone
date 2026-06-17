@@ -11,8 +11,7 @@ function ArrowIcon() {
 function CheckIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0 mt-0.5">
-      <circle cx="10" cy="10" r="10" fill="#7A63E8"/>
-      <path d="M6 10l3 3 5-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M4 10l4 4 8-8" stroke="#FE3F00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -58,14 +57,14 @@ export default function GoBigTabs() {
   return (
     <section className="py-20 lg:py-32 px-6 lg:px-10">
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gridglow mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-charcoal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
           Go big. We've got you.
         </h2>
-        <p className="text-xl lg:text-2xl text-gridglow mb-10">
+        <p className="text-xl lg:text-2xl text-charcoal/60 mb-10">
           How brands and creators grow with Later.
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-8" role="tablist">
+        <div className="flex flex-wrap gap-2 mb-0" role="tablist">
           {tabs.map((tab, i) => (
             <button
               key={i}
@@ -74,7 +73,7 @@ export default function GoBigTabs() {
               onClick={() => setActiveTab(i)}
               className={`px-5 py-2.5 text-sm font-bold transition-all ${
                 activeTab === i
-                  ? 'bg-gridglow text-offline'
+                  ? 'bg-secondary text-white'
                   : 'bg-gray-100 text-charcoal hover:bg-gray-200'
               }`}
             >
@@ -83,24 +82,24 @@ export default function GoBigTabs() {
           ))}
         </div>
 
-        <div className="bg-gridglow overflow-hidden">
+        <div className="bg-secondary overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
             <div className="p-8 lg:p-12 flex flex-col justify-center">
-              <h3 className="text-2xl lg:text-3xl font-extrabold text-offline mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
+              <h3 className="text-2xl lg:text-3xl font-extrabold text-white mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
                 {tabs[activeTab].heading}
               </h3>
-              <p className="text-lg text-offline/80 mb-6">
+              <p className="text-lg text-white/70 mb-6">
                 {tabs[activeTab].description}
               </p>
-              <ul className="space-y-3 mb-8">
+              <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8">
                 {tabs[activeTab].checks.map((check, i) => (
-                  <li key={i} className="flex items-start gap-3 text-offline font-medium">
+                  <div key={i} className="flex items-start gap-2 text-white font-medium text-sm">
                     <CheckIcon />
                     {check}
-                  </li>
+                  </div>
                 ))}
-              </ul>
-              <a href={tabs[activeTab].link} className="inline-flex items-center gap-2 text-offline font-bold border-b border-offline/50 pb-1 hover:border-offline transition-colors w-fit">
+              </div>
+              <a href={tabs[activeTab].link} className="inline-flex items-center gap-2 text-gridglow font-bold border-b border-gridglow/50 pb-1 hover:border-gridglow transition-colors w-fit">
                 Learn more <ArrowIcon />
               </a>
             </div>

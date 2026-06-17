@@ -30,8 +30,8 @@ export default function Navbar() {
             {navItems.map((item, i) => (
               <button
                 key={i}
-                className="font-medium text-charcoal hover:text-gridglow transition-colors flex items-center gap-1 px-4 py-2 rounded-full hover:bg-gray-50"
-                style={{ fontSize: 14 }}
+                className="text-charcoal hover:text-gridglow transition-colors flex items-center gap-1 px-2 py-2 rounded-full hover:bg-gray-50"
+                style={{ fontSize: 16, fontWeight: 400 }}
               >
                 {item.label}
                 {item.hasDropdown && (
@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="/login" className="font-medium text-charcoal hover:text-gridglow transition-colors" style={{ fontSize: 14 }}>
+          <a href="/login" className="text-charcoal hover:text-gridglow transition-colors" style={{ fontSize: 14, fontWeight: 600 }}>
             Sign in
           </a>
           <a href="#" className="inline-flex items-center gap-2 bg-charcoal text-white font-bold px-5 py-2.5 rounded-full hover:bg-black transition-colors" style={{ fontSize: 14 }}>

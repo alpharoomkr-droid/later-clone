@@ -80,6 +80,10 @@ body {
 
 .wood-bg {
   background-color: #F8F2EA;
+}
+
+.purple-wood-bg {
+  background-color: #7A63E8;
   background-image: url("https://later.com/static/purple-wood-pattern-2eafae6fa555e6e4ccd5110fd7112d41.png");
   background-size: cover;
   background-position: center;

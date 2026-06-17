@@ -55,7 +55,7 @@ export default function GoBigTabs() {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <section className="wood-bg" style={{ padding: '80px 40px' }}>
+    <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
       <div className="max-w-[1440px] mx-auto">
         <h2
           className="text-offline mb-2"

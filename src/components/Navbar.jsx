@@ -19,7 +19,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-page-bg/80 backdrop-blur-md" style={{ zIndex: 999, height: 70 }}>
+    <nav className="fixed top-0 left-0 right-0 bg-page-bg/95 backdrop-blur-md" style={{ zIndex: 999, height: 70 }}>
       <div className="max-w-[1440px] mx-auto flex items-center justify-between h-full" style={{ padding: '0 40px' }}>
         <a href="/" className="flex items-center flex-shrink-0">
           <span className="font-black tracking-tight text-charcoal italic" style={{ fontFamily: 'var(--font-heading)', fontSize: 28 }}>

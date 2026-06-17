@@ -25,8 +25,8 @@ export default function LatestContent() {
     <section style={{ backgroundColor: '#F8F2EA', padding: '88px 0' }}>
       <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
         <h2
-          className="text-charcoal text-center mb-16"
-          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+          className="text-charcoal text-center"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px', marginBottom: 50 }}
         >
           The latest from Later.
         </h2>

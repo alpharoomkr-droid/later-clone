@@ -19,14 +19,14 @@ export default function Hero() {
               fontWeight: 900,
               lineHeight: '86px',
               letterSpacing: '0.43px',
-              marginBottom: 16,
+              marginBottom: 32,
             }}
           >
             Unforgettable campaigns start with insight.
           </h1>
           <p
-            className="text-charcoal mb-8 max-w-[480px]"
-            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', opacity: 0.6 }}
+            className="text-charcoal mb-8"
+            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', maxWidth: 590 }}
           >
             Influencer marketing built for creators, trusted by brands, and designed for results.
           </p>

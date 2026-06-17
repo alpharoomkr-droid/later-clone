@@ -63,7 +63,7 @@ export default function GoBigTabs() {
         >
           Go big. We've got you.
         </h2>
-        <p className="text-offline/60 mb-10" style={{ fontSize: 24, lineHeight: '36px' }}>
+        <p className="text-offline mb-10" style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px' }}>
           How brands and creators grow with Later.
         </p>
 
@@ -79,7 +79,7 @@ export default function GoBigTabs() {
                   ? 'bg-secondary text-white'
                   : 'bg-white/20 text-offline hover:bg-white/30'
               }`}
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, lineHeight: '36px', letterSpacing: '0.12px', padding: '12px 24px' }}
+              style={{ fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 700, padding: '16px 24px' }}
             >
               {tab.label}
             </button>

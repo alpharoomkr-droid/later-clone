@@ -46,10 +46,7 @@ export default function Stats() {
       className="relative overflow-hidden"
       style={{ backgroundColor: '#FEFCFB', padding: '56px 0' }}
     >
-      <div
-        className="absolute inset-0"
-        style={{ background: 'linear-gradient(0deg, rgb(254, 63, 0) 0%, rgb(203, 138, 255) 100%)', opacity: 0.06 }}
-      />
+      {/* gradient layer is behind scroll-pinned sections in original; not needed here */}
       <div className="relative z-10 max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
         <h2
           className="text-charcoal text-center"

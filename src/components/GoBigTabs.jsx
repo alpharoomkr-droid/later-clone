@@ -95,7 +95,7 @@ export default function GoBigTabs() {
               >
                 {tabs[activeTab].heading}
               </h3>
-              <p className="text-white/70 mb-6" style={{ fontSize: 18, lineHeight: '28px' }}>
+              <p className="text-white/70 mb-6" style={{ fontSize: 18, lineHeight: '27px' }}>
                 {tabs[activeTab].description}
               </p>
               <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8">
@@ -106,7 +106,7 @@ export default function GoBigTabs() {
                   </div>
                 ))}
               </div>
-              <a href={tabs[activeTab].link} className="inline-flex items-center gap-2 text-gridglow font-bold border-b border-gridglow/50 pb-1 hover:border-gridglow transition-colors w-fit">
+              <a href={tabs[activeTab].link} className="inline-flex items-center gap-2 text-gridglow border-b-2 border-gridglow pb-1 hover:opacity-80 transition-opacity w-fit" style={{ fontSize: 16, fontWeight: 400 }}>
                 Learn more <ArrowIcon />
               </a>
             </div>

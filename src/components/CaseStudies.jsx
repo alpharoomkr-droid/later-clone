@@ -78,7 +78,7 @@ export default function CaseStudies() {
               </button>
             ))}
           </div>
-          <a href="/case-studies/" className="inline-flex items-center gap-2 text-gridglow font-bold border-b border-gridglow/50 pb-1 hover:border-gridglow transition-colors">
+          <a href="/case-studies/" className="inline-flex items-center gap-2 text-gridglow border-b-2 border-gridglow pb-1 hover:opacity-80 transition-opacity" style={{ fontSize: 16, fontWeight: 400 }}>
             View all case studies <ArrowIcon />
           </a>
         </div>

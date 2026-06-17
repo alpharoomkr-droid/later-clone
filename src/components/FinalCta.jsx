@@ -21,7 +21,7 @@ export default function FinalCta() {
         />
       </picture>
       <div className="absolute inset-0 bg-charcoal/50" />
-      <div className="relative z-10 max-w-[700px] mx-auto px-6 py-20 text-center">
+      <div className="relative z-10 max-w-[700px] mx-auto px-6 py-20 text-center reveal">
         <h2
           className="mb-6"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 70, fontWeight: 900, lineHeight: '87.5px', letterSpacing: '0.35px', color: 'rgb(254, 252, 251)' }}

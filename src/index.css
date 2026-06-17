@@ -108,7 +108,21 @@ body {
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal.from-left { transform: translateX(-40px); }
+.reveal.from-right { transform: translateX(40px); }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-d1 { transition-delay: 150ms; }
+.reveal-d2 { transition-delay: 300ms; }
+.reveal-d3 { transition-delay: 450ms; }
+
+@keyframes hero-enter {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+.hero-enter { animation: hero-enter 0.7s ease both; }
+.hero-enter-d1 { animation: hero-enter 0.7s ease 0.15s both; }
+.hero-enter-d2 { animation: hero-enter 0.7s ease 0.3s both; }
+.hero-enter-d3 { animation: hero-enter 0.7s ease 0.5s both; }
 
 .btn-primary {
   display: inline-flex;

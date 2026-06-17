@@ -25,12 +25,12 @@ export default function LatestContent() {
     <section style={{ backgroundColor: '#F8F2EA', padding: '88px 0' }}>
       <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
         <h2
-          className="text-charcoal text-center"
+          className="text-charcoal text-center reveal"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px', marginBottom: 50 }}
         >
           The latest from Later.
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 reveal reveal-d1">
           <div className="lg:col-span-7 flex flex-col gap-6">
             {articles.filter(a => !a.large).map((article, i) => (
               <a key={i} href={article.href} className="group flex flex-col sm:flex-row gap-4 hover:opacity-80 transition-opacity">

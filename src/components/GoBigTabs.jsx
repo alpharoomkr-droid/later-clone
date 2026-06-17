@@ -58,12 +58,12 @@ export default function GoBigTabs() {
     <section className="purple-wood-bg" style={{ padding: '80px 0 56px' }}>
       <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
         <h2
-          className="text-offline mb-2"
+          className="text-offline mb-2 reveal"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
         >
           Go big. We've got you.
         </h2>
-        <p className="text-offline mb-10" style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px' }}>
+        <p className="text-offline mb-10 reveal reveal-d1" style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px' }}>
           How brands and creators grow with Later.
         </p>
 
@@ -86,7 +86,7 @@ export default function GoBigTabs() {
           ))}
         </div>
 
-        <div className="bg-secondary overflow-hidden">
+        <div className="bg-secondary overflow-hidden reveal reveal-d2">
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
             <div className="p-8 lg:p-12 flex flex-col justify-center">
               <h3

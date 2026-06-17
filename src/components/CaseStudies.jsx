@@ -62,7 +62,7 @@ export default function CaseStudies() {
   return (
     <section className="text-white" style={{ backgroundColor: 'rgb(0,0,0)', padding: '140px 0 70px' }}>
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-10" style={{ padding: '0 40px' }}>
-        <div className="xl:col-span-4">
+        <div className="xl:col-span-4 reveal from-left">
           <p className="text-offline/60 mb-6" style={{ fontSize: 15, fontWeight: 700 }}>Our Work</p>
           <div className="flex flex-row xl:flex-col flex-wrap gap-2 mb-8">
             {cases.map((c, i) => (
@@ -83,7 +83,7 @@ export default function CaseStudies() {
           </a>
         </div>
 
-        <div className="xl:col-span-8">
+        <div className="xl:col-span-8 reveal from-right">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div className="relative overflow-hidden bg-charcoal" style={{ width: 310, height: 560 }}>
               <video

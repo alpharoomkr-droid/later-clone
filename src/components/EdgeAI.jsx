@@ -11,7 +11,7 @@ export default function EdgeAI() {
     <>
       <section className="wood-bg flex items-center relative overflow-hidden" style={{ padding: '56px 0' }}>
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 reveal from-left">
             <h2
               className="text-charcoal"
               style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px', marginBottom: 16 }}
@@ -25,7 +25,7 @@ export default function EdgeAI() {
               Learn more <ArrowIcon />
             </a>
           </div>
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 reveal from-right">
             <video
               autoPlay
               loop
@@ -40,7 +40,7 @@ export default function EdgeAI() {
       </section>
 
       <section className="flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1000px] mx-auto text-center mb-12" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1000px] mx-auto text-center mb-12 reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal mb-8"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}

@@ -7,7 +7,7 @@ const videoUrls = [
 export default function UgcVideos() {
   return (
     <section className="overflow-hidden" style={{ padding: '70px 0' }}>
-      <div className="max-w-[1440px] mx-auto mb-6" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1440px] mx-auto mb-6 reveal" style={{ padding: '0 40px' }}>
         <p className="text-charcoal/60" style={{ fontSize: 16, lineHeight: '24px' }}>
           A showcase of creator-produced content from real influencer marketing campaigns powered by Later, featuring authentic creator stories.
         </p>

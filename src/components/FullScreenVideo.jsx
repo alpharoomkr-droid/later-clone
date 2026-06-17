@@ -27,7 +27,7 @@ export default function FullScreenVideo() {
         </a>
       </div>
 
-      <div className="relative z-10 max-w-[700px]" style={{ padding: '0 40px 96px' }}>
+      <div className="relative z-10 max-w-[700px] reveal" style={{ padding: '0 40px 96px' }}>
         <p className="text-offline/80 mb-4" style={{ fontSize: 24, lineHeight: '36px' }}>
           Our experts plan, run, and optimize influencer campaigns that stand out, scale faster, and win big.
         </p>

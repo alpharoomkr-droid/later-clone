@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const navItems = [
   { label: 'For enterprise brands', hasDropdown: true },
@@ -21,9 +22,9 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-page-bg/95 backdrop-blur-md" style={{ zIndex: 999, height: 70 }}>
       <div className="max-w-[1440px] mx-auto flex items-center justify-between h-full" style={{ padding: '0 40px' }}>
-        <a href="/" className="flex items-center flex-shrink-0">
+        <Link to="/" className="flex items-center flex-shrink-0">
           <img src="/later-logo.svg" alt="Later Logo" width="112" height="34" />
-        </a>
+        </Link>
 
         <div className="hidden lg:flex items-center">
           <div className="flex items-center gap-1 bg-white/80 backdrop-blur-sm rounded-full px-2 py-1.5 border border-gray-200/60">

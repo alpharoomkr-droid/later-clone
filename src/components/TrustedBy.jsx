@@ -16,18 +16,18 @@ const logos = [
 
 export default function TrustedBy() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center py-20 px-6">
-      <p className="text-lg font-medium text-center mb-12 text-charcoal/60">
+    <section className="flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '80px 40px' }}>
+      <p className="text-center mb-12 text-charcoal/50" style={{ fontSize: 16, fontWeight: 500 }}>
         Trusted by industry leaders
       </p>
-      <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 max-w-[900px]">
+      <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 max-w-[1000px]">
         {logos.map((logo, i) => (
-          <div key={i} className="opacity-80 hover:opacity-100 transition-opacity">
+          <div key={i} className="opacity-60 hover:opacity-100 transition-opacity">
             <img
               src={logo.src}
               alt={logo.name}
-              height="45"
-              className="h-[45px] w-auto object-contain"
+              height="40"
+              className="h-[40px] w-auto object-contain"
               loading="lazy"
             />
           </div>

@@ -8,7 +8,7 @@ function ArrowIcon() {
 
 export default function FullScreenVideo() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-end overflow-hidden">
       <video
         autoPlay
         loop
@@ -19,17 +19,21 @@ export default function FullScreenVideo() {
       >
         <source src="https://later-com.s3.us-east-1.amazonaws.com/web-videos/New+Later+Brand/Homepage+Full+Screen+Video.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-10 max-w-[700px] mx-auto px-6 text-center lg:text-left">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
-          The team behind your best campaigns.
-        </h2>
-        <p className="text-lg lg:text-2xl text-offline/90 mb-8">
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+      <div className="absolute top-8 right-8 z-20">
+        <a href="#" className="btn-primary text-sm! py-2.5! px-5!">
+          Start your campaign <ArrowIcon />
+        </a>
+      </div>
+
+      <div className="relative z-10 max-w-[700px] px-6 lg:px-10 pb-16 lg:pb-24">
+        <p className="text-lg text-offline/80 mb-4">
           Our experts plan, run, and optimize influencer campaigns that stand out, scale faster, and win big.
         </p>
-        <a href="#" className="btn-dark">
-          <ArrowIcon /> Start your campaign <ArrowIcon />
-        </a>
+        <h2 className="text-3xl md:text-4xl lg:text-[56px] font-extrabold text-white leading-[1.1]" style={{ fontFamily: 'var(--font-heading)' }}>
+          The team behind your best campaigns.
+        </h2>
       </div>
     </section>
   )

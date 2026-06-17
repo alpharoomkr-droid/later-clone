@@ -8,13 +8,26 @@ function ArrowIcon() {
 
 export default function Hero() {
   return (
-    <section className="wood-bg min-h-screen flex items-center pt-20 lg:pt-0">
-      <div className="max-w-[1440px] mx-auto w-full px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <section className="wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
+      <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
         <div className="lg:col-span-7">
-          <h1 className="text-4xl md:text-6xl lg:text-[80px] font-extrabold leading-[1.05] tracking-tight mb-4 text-charcoal" style={{ fontFamily: 'var(--font-heading)' }}>
+          <h1
+            className="text-charcoal"
+            style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: '80.414px',
+              fontWeight: 900,
+              lineHeight: '80.414px',
+              letterSpacing: '0.40207px',
+              marginBottom: 16,
+            }}
+          >
             Unforgettable campaigns start with insight.
           </h1>
-          <p className="text-lg lg:text-xl text-charcoal/60 mb-8 max-w-[480px]">
+          <p
+            className="text-charcoal/60 mb-8 max-w-[480px]"
+            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px' }}
+          >
             Influencer marketing built for creators, trusted by brands, and designed for results.
           </p>
           <div className="flex flex-wrap gap-4">

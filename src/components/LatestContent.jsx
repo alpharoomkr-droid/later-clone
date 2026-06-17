@@ -22,9 +22,12 @@ const articles = [
 
 export default function LatestContent() {
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-10">
+    <section style={{ backgroundColor: '#F8F2EA', padding: '88px 40px' }}>
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-16" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2
+          className="text-charcoal text-center mb-16"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+        >
           The latest from Later.
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -35,8 +38,11 @@ export default function LatestContent() {
                   <img src={article.image} alt="" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="sm:w-1/2 flex flex-col justify-center">
-                  <span className="text-xs font-bold text-gridglow uppercase tracking-wider mb-2">{article.tag}</span>
-                  <h3 className="text-lg font-bold text-charcoal leading-snug group-hover:text-gridglow transition-colors" style={{ fontFamily: 'var(--font-heading)' }}>
+                  <span className="font-bold text-gridglow uppercase tracking-wider mb-2" style={{ fontSize: 12 }}>{article.tag}</span>
+                  <h3
+                    className="text-charcoal leading-snug group-hover:text-gridglow transition-colors"
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700 }}
+                  >
                     {article.title}
                   </h3>
                 </div>
@@ -49,8 +55,11 @@ export default function LatestContent() {
                 <div className="aspect-[4/5] overflow-hidden bg-gray-100 mb-4">
                   <img src={article.image} alt="" className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <span className="text-xs font-bold text-gridglow uppercase tracking-wider mb-2 block">{article.tag}</span>
-                <h3 className="text-xl font-bold text-charcoal leading-snug group-hover:text-gridglow transition-colors" style={{ fontFamily: 'var(--font-heading)' }}>
+                <span className="font-bold text-gridglow uppercase tracking-wider mb-2 block" style={{ fontSize: 12 }}>{article.tag}</span>
+                <h3
+                  className="text-charcoal leading-snug group-hover:text-gridglow transition-colors"
+                  style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700 }}
+                >
                   {article.title}
                 </h3>
               </a>

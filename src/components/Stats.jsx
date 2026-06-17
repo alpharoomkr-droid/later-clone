@@ -43,11 +43,17 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="min-h-screen flex flex-col items-center justify-center py-20 px-6 relative overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #7A63E8 0%, #C06CB0 35%, #E8707A 60%, #FE3F00 100%)' }}
+      className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+      style={{
+        background: 'linear-gradient(180deg, #7A63E8 0%, #C06CB0 35%, #E8707A 60%, #FE3F00 100%)',
+        padding: '80px 40px',
+      }}
     >
       <div className="relative z-10 max-w-[1200px] mx-auto w-full">
-        <h2 className="text-4xl md:text-5xl lg:text-[80px] font-extrabold text-charcoal text-center mb-16 leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2
+          className="text-charcoal text-center mb-16"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+        >
           The hype is real.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -63,10 +69,13 @@ export default function Stats() {
               }}
             >
               <img src={stat.icon} alt="" className="w-12 h-12 mb-4 brightness-0" loading="lazy" />
-              <div className="text-4xl lg:text-5xl font-extrabold text-charcoal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+              <div
+                className="text-charcoal mb-2"
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: '48px' }}
+              >
                 {stat.value}
               </div>
-              <p className="text-charcoal/60 text-base leading-snug">
+              <p className="text-charcoal/60 leading-snug" style={{ fontSize: 16 }}>
                 {stat.desc}
               </p>
             </div>

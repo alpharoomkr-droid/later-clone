@@ -19,10 +19,10 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-page-bg/80 backdrop-blur-md">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 lg:px-10 py-4">
+    <nav className="fixed top-0 left-0 right-0 bg-page-bg/80 backdrop-blur-md" style={{ zIndex: 999, height: 70 }}>
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between h-full" style={{ padding: '0 40px' }}>
         <a href="/" className="flex items-center flex-shrink-0">
-          <span className="text-[28px] font-black tracking-tight text-charcoal italic" style={{ fontFamily: 'var(--font-heading)' }}>
+          <span className="font-black tracking-tight text-charcoal italic" style={{ fontFamily: 'var(--font-heading)', fontSize: 28 }}>
             Later
           </span>
         </a>
@@ -32,7 +32,8 @@ export default function Navbar() {
             {navItems.map((item, i) => (
               <button
                 key={i}
-                className="text-sm font-medium text-charcoal hover:text-gridglow transition-colors flex items-center gap-1 px-4 py-2 rounded-full hover:bg-gray-50"
+                className="font-medium text-charcoal hover:text-gridglow transition-colors flex items-center gap-1 px-4 py-2 rounded-full hover:bg-gray-50"
+                style={{ fontSize: 14 }}
               >
                 {item.label}
                 {item.hasDropdown && (
@@ -44,10 +45,10 @@ export default function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="/login" className="text-sm font-medium text-charcoal hover:text-gridglow transition-colors">
+          <a href="/login" className="font-medium text-charcoal hover:text-gridglow transition-colors" style={{ fontSize: 14 }}>
             Sign in
           </a>
-          <a href="#" className="inline-flex items-center gap-2 bg-charcoal text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-black transition-colors">
+          <a href="#" className="inline-flex items-center gap-2 bg-charcoal text-white font-bold px-5 py-2.5 rounded-full hover:bg-black transition-colors" style={{ fontSize: 14 }}>
             Get Later <ArrowIcon />
           </a>
         </div>

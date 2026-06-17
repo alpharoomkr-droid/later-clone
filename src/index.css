@@ -1,49 +1,95 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Super X sans Display";
+  src: url("/fonts/superx/superx-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Super X sans Display";
+  src: url("/fonts/superx/superx-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Super X sans Display";
+  src: url("/fonts/superx/superx-extrabold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans";
+  src: url("/fonts/saans-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans";
+  src: url("/fonts/saans-medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans";
+  src: url("/fonts/saans-semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Saans";
+  src: url("/fonts/saans-bold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-gridglow: #FE3F00;
   --color-gridglow-10: rgba(254, 63, 0, 0.1);
   --color-gridglow-20: rgba(254, 63, 0, 0.2);
   --color-secondary: #7A63E8;
-  --color-charcoal: #1a1a1a;
+  --color-charcoal: #000000;
   --color-offline: #F8F2EA;
   --color-hottake: #FE3F00;
-  --color-inverse: #111111;
-  --color-page-bg: #FFFEFE;
-  --font-heading: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-body: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --color-inverse: #000000;
+  --color-page-bg: #FEFCFB;
+  --font-heading: "Super X sans Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Saans", "Inter Tight", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
+  font-size: 16px;
   background-color: var(--color-page-bg);
   color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ff-heading { font-family: var(--font-heading); }
+
 .wood-bg {
-  background: linear-gradient(135deg, #F8F2EA 0%, #EDE4D4 50%, #F0E8DA 100%);
+  background-color: #F8F2EA;
+  background-image: url("https://later.com/static/purple-wood-pattern-2eafae6fa555e6e4ccd5110fd7112d41.png");
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes ticker-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-
-.ticker-animate {
-  animation: ticker-scroll 30s linear infinite;
-}
+.ticker-animate { animation: ticker-scroll 30s linear infinite; }
 
 @keyframes word-rotate {
   0%, 20% { transform: translateY(0); }
@@ -51,21 +97,14 @@ body {
   66%, 86% { transform: translateY(-66.66%); }
   100% { transform: translateY(0); }
 }
-
-.word-rotate {
-  animation: word-rotate 6s ease-in-out infinite;
-}
+.word-rotate { animation: word-rotate 6s ease-in-out infinite; }
 
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { opacity: 1; transform: translateY(0); }
 
 .btn-primary {
   display: inline-flex;
@@ -74,9 +113,10 @@ body {
   background-color: var(--color-gridglow);
   color: var(--color-offline);
   font-weight: 700;
-  font-size: 18px;
-  padding: 12px 24px;
-  border: none;
+  font-size: 16px;
+  font-family: var(--font-body);
+  padding: 12px 40px 12px 24px;
+  border: 2px solid var(--color-gridglow);
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -88,11 +128,12 @@ body {
   align-items: center;
   gap: 8px;
   background-color: transparent;
-  color: var(--color-charcoal);
+  color: #000;
   font-weight: 700;
-  font-size: 18px;
-  padding: 12px 24px;
-  border: 2px solid var(--color-charcoal);
+  font-size: 16px;
+  font-family: var(--font-body);
+  padding: 12px 40px 12px 24px;
+  border: 2px solid #000;
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;
@@ -103,18 +144,17 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: var(--color-charcoal);
+  background-color: #000;
   color: var(--color-offline);
   font-weight: 700;
-  font-size: 18px;
-  padding: 12px 24px;
-  border: none;
+  font-size: 16px;
+  font-family: var(--font-body);
+  padding: 12px 40px 12px 24px;
+  border: 2px solid #000;
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 .btn-dark:hover { opacity: 0.9; }
 
-video {
-  object-fit: cover;
-}
+video { object-fit: cover; }

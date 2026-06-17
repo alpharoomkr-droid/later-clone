@@ -12,7 +12,16 @@ const decorations = [
 
 export default function AnimatedText() {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden py-24 lg:py-40 px-6 min-h-screen">
+    <section
+      className="relative flex items-center justify-center overflow-hidden min-h-screen"
+      style={{
+        backgroundColor: '#F8F2EA',
+        backgroundImage: 'url(https://later.com/static/screenmap-no-bg-82fc23e6d0e5c9920baa6b69c483d76b.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        padding: '96px 24px',
+      }}
+    >
       {decorations.map((d, i) => (
         <img
           key={i}
@@ -22,9 +31,17 @@ export default function AnimatedText() {
           loading="lazy"
         />
       ))}
-      <h2 className="text-3xl md:text-5xl lg:text-6xl xl:text-[80px] font-extrabold text-center leading-[1.1] max-w-[1100px] relative z-10 text-charcoal" style={{ fontFamily: 'var(--font-heading)' }}>
+      <h2
+        className="text-center relative z-10 text-charcoal max-w-[1100px]"
+        style={{
+          fontFamily: 'var(--font-heading)',
+          fontSize: 96,
+          fontWeight: 800,
+          lineHeight: '96px',
+        }}
+      >
         The only influencer marketing platform powered by real{' '}
-        <span className="inline-flex overflow-hidden h-[1.15em] align-bottom">
+        <span className="inline-flex overflow-hidden align-bottom" style={{ height: '1.15em' }}>
           <span className="flex flex-col word-rotate">
             <span className="text-secondary">campaign</span>
             <span className="text-gridglow">creator</span>

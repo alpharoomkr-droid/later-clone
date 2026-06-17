@@ -55,12 +55,15 @@ export default function GoBigTabs() {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <section className="py-20 lg:py-32 px-6 lg:px-10">
+    <section className="wood-bg" style={{ padding: '80px 40px' }}>
       <div className="max-w-[1440px] mx-auto">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-charcoal mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2
+          className="text-offline mb-2"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+        >
           Go big. We've got you.
         </h2>
-        <p className="text-xl lg:text-2xl text-charcoal/60 mb-10">
+        <p className="text-offline/60 mb-10" style={{ fontSize: 24, lineHeight: '36px' }}>
           How brands and creators grow with Later.
         </p>
 
@@ -71,11 +74,12 @@ export default function GoBigTabs() {
               role="tab"
               aria-selected={activeTab === i}
               onClick={() => setActiveTab(i)}
-              className={`px-5 py-2.5 text-sm font-bold transition-all ${
+              className={`px-5 py-2.5 font-bold transition-all ${
                 activeTab === i
                   ? 'bg-secondary text-white'
-                  : 'bg-gray-100 text-charcoal hover:bg-gray-200'
+                  : 'bg-white/20 text-offline hover:bg-white/30'
               }`}
+              style={{ fontSize: 14 }}
             >
               {tab.label}
             </button>
@@ -85,15 +89,18 @@ export default function GoBigTabs() {
         <div className="bg-secondary overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
             <div className="p-8 lg:p-12 flex flex-col justify-center">
-              <h3 className="text-2xl lg:text-3xl font-extrabold text-white mb-3" style={{ fontFamily: 'var(--font-heading)' }}>
+              <h3
+                className="text-white mb-3"
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 32, fontWeight: 900, lineHeight: '36px' }}
+              >
                 {tabs[activeTab].heading}
               </h3>
-              <p className="text-lg text-white/70 mb-6">
+              <p className="text-white/70 mb-6" style={{ fontSize: 18, lineHeight: '28px' }}>
                 {tabs[activeTab].description}
               </p>
               <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8">
                 {tabs[activeTab].checks.map((check, i) => (
-                  <div key={i} className="flex items-start gap-2 text-white font-medium text-sm">
+                  <div key={i} className="flex items-start gap-2 text-white font-medium" style={{ fontSize: 14 }}>
                     <CheckIcon />
                     {check}
                   </div>

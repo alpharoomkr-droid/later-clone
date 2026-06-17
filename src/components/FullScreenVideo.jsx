@@ -22,16 +22,19 @@ export default function FullScreenVideo() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
       <div className="absolute top-8 right-8 z-20">
-        <a href="#" className="btn-primary text-sm! py-2.5! px-5!">
+        <a href="#" className="btn-primary" style={{ fontSize: 14, padding: '10px 20px' }}>
           Start your campaign <ArrowIcon />
         </a>
       </div>
 
-      <div className="relative z-10 max-w-[700px] px-6 lg:px-10 pb-16 lg:pb-24">
-        <p className="text-lg text-offline/80 mb-4">
+      <div className="relative z-10 max-w-[700px] pb-16 lg:pb-24" style={{ padding: '0 40px 96px' }}>
+        <p className="text-offline/80 mb-4" style={{ fontSize: 18, lineHeight: '28px' }}>
           Our experts plan, run, and optimize influencer campaigns that stand out, scale faster, and win big.
         </p>
-        <h2 className="text-3xl md:text-4xl lg:text-[56px] font-extrabold text-white leading-[1.1]" style={{ fontFamily: 'var(--font-heading)' }}>
+        <h2
+          className="text-white"
+          style={{ fontFamily: 'var(--font-heading)', fontSize: 45, fontWeight: 900, lineHeight: '45px' }}
+        >
           The team behind your best campaigns.
         </h2>
       </div>

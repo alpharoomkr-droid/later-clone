@@ -10,12 +10,15 @@ export default function EdgeAI() {
   return (
     <>
       <section className="wood-bg min-h-screen flex items-center relative overflow-hidden">
-        <div className="max-w-[1440px] mx-auto w-full px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-20">
+        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '80px 40px' }}>
           <div className="lg:col-span-6">
-            <h2 className="text-3xl md:text-4xl lg:text-[56px] font-extrabold leading-[1.1] mb-6 text-charcoal" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h2
+              className="text-charcoal mb-6"
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+            >
               Other brands are guessing. You don't have to.
             </h2>
-            <p className="text-lg lg:text-xl text-charcoal/60 mb-6 max-w-[480px]">
+            <p className="text-charcoal/60 mb-6 max-w-[480px]" style={{ fontSize: 20, lineHeight: '32px' }}>
               Later EdgeAI looks at creator behavior, what's trending, and what people actually buy, so campaigns are built with confidence.
             </p>
             <a href="/influencer-marketing-platform/" className="inline-flex items-center gap-2 text-gridglow font-bold border-b border-gridglow/50 pb-1 hover:border-gridglow transition-colors">
@@ -36,9 +39,12 @@ export default function EdgeAI() {
         </div>
       </section>
 
-      <section className="bg-page-bg min-h-screen flex flex-col items-center justify-center py-20 px-6">
+      <section className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '80px 24px' }}>
         <div className="max-w-[1000px] mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-[56px] xl:text-[64px] font-extrabold leading-[1.1] mb-8 text-charcoal" style={{ fontFamily: 'var(--font-heading)' }}>
+          <h2
+            className="text-charcoal mb-8"
+            style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '56px' }}
+          >
             You don't need more creators. You need{' '}
             <span className="text-gridglow">the right ones.</span>
           </h2>
@@ -54,11 +60,11 @@ export default function EdgeAI() {
                   <span className="text-3xl text-gray-400">{name[0]}</span>
                 </div>
               </div>
-              <span className="text-sm font-medium text-charcoal mt-2">{name}</span>
+              <span className="text-charcoal mt-2" style={{ fontSize: 14, fontWeight: 500 }}>{name}</span>
             </div>
           ))}
         </div>
-        <p className="text-lg lg:text-2xl text-charcoal/60 max-w-[700px] mx-auto text-center">
+        <p className="text-charcoal/60 max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px' }}>
           We handpick creators proven to drive sales and brand lift, with brand fit, safety, and past performance checked upfront.
         </p>
       </section>

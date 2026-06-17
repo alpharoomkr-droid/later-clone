@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gridglow: #FE3F00;
+  --color-gridglow-10: rgba(254, 63, 0, 0.1);
+  --color-gridglow-20: rgba(254, 63, 0, 0.2);
+  --color-secondary: #7A63E8;
+  --color-charcoal: #1a1a1a;
+  --color-offline: #F8F2EA;
+  --color-hottake: #FE3F00;
+  --color-inverse: #111111;
+  --color-page-bg: #FFFEFE;
+  --font-heading: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-page-bg);
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wood-bg {
+  background: linear-gradient(135deg, #F8F2EA 0%, #EDE4D4 50%, #F0E8DA 100%);
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-animate {
+  animation: ticker-scroll 30s linear infinite;
+}
+
+@keyframes word-rotate {
+  0%, 20% { transform: translateY(0); }
+  33%, 53% { transform: translateY(-33.33%); }
+  66%, 86% { transform: translateY(-66.66%); }
+  100% { transform: translateY(0); }
+}
+
+.word-rotate {
+  animation: word-rotate 6s ease-in-out infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-gridglow);
+  color: var(--color-offline);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.btn-primary:hover { opacity: 0.9; }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: var(--color-charcoal);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: 2px solid var(--color-charcoal);
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.btn-outline:hover { opacity: 0.7; }
+
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-charcoal);
+  color: var(--color-offline);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.btn-dark:hover { opacity: 0.9; }
+
+video {
+  object-fit: cover;
+}

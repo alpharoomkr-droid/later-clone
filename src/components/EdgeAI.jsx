@@ -9,7 +9,7 @@ function ArrowIcon() {
 export default function EdgeAI() {
   return (
     <>
-      <section className="wood-bg min-h-screen flex items-center relative overflow-hidden" style={{ padding: '56px 0' }}>
+      <section className="wood-bg flex items-center relative overflow-hidden" style={{ padding: '56px 0' }}>
         <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
           <div className="lg:col-span-6">
             <h2
@@ -39,7 +39,7 @@ export default function EdgeAI() {
         </div>
       </section>
 
-      <section className="min-h-screen flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '56px 0' }}>
+      <section className="flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1000px] mx-auto text-center mb-12" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal mb-8"

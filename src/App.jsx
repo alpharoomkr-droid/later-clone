@@ -48,8 +48,8 @@ function App() {
       <FullScreenVideo />
       <CaseStudies />
       <LatestContent />
-      <Ticker />
       <FinalCta />
+      <Ticker />
       <Footer />
       <a
         href="#root"

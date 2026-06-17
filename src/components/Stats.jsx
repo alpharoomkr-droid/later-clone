@@ -4,17 +4,17 @@ const stats = [
   {
     icon: 'https://images.ctfassets.net/nfpsrlop6sws/01KamUKM2e5eAggQXPDyce/827312aef7c721f7d7fbc7747c474ed4/icon-binodulars.png?fm=webp',
     value: '16M+',
-    desc: 'creators analyzed across platforms.',
+    desc: 'creators analyzed  across platforms.',
   },
   {
     icon: 'https://images.ctfassets.net/nfpsrlop6sws/1rLL5MrQGfQPh63J3sPxeB/adaaa0adcbbf9b82daee08f30caf1a6a/icon-rocket.png?fm=webp',
     value: '136B',
-    desc: 'annual impressions from scheduled social posts.',
+    desc: 'annual impressions from  scheduled social posts.',
   },
   {
     icon: 'https://images.ctfassets.net/nfpsrlop6sws/dhAtI5w9PFYADKjNFcoaq/6dd169635013e1b97543e78c6e91fb63/icon-linkinbio.png?fm=webp',
     value: '1B+',
-    desc: 'Link in Bio transactions tracked.',
+    desc: 'Link in Bio  transactions tracked.',
   },
   {
     icon: 'https://images.ctfassets.net/nfpsrlop6sws/6pvtyLOmBLAENgCPe6XIvw/c7e1bd7f18de8a2c9df53e041553783c/icon-coins.png?fm=webp',
@@ -43,37 +43,36 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
-      style={{
-        background: 'linear-gradient(180deg, #7A63E8 0%, #C06CB0 35%, #E8707A 60%, #FE3F00 100%)',
-      }}
+      className="relative overflow-hidden"
+      style={{ backgroundColor: '#FEFCFB', padding: '56px 0' }}
     >
-      <div className="relative z-10 max-w-[1200px] mx-auto w-full" style={{ padding: '0 40px' }}>
+      <div
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(0deg, rgb(254, 63, 0) 0px, rgb(203, 138, 255) 100%)', opacity: 0.08 }}
+      />
+      <div className="relative z-10 max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
         <h2
-          className="text-charcoal text-center mb-16"
+          className="text-charcoal text-center"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
         >
           The hype is real.
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-8">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`bg-white p-6 lg:p-8 transition-all duration-700 ${
+              className={`transition-all duration-700 ${
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
-              style={{
-                transitionDelay: `${i * 150}ms`,
-                transform: visible ? `rotate(${i % 2 === 0 ? '-2' : '2'}deg)` : 'translateY(32px)',
-              }}
+              style={{ transitionDelay: `${i * 150}ms` }}
             >
               <img src={stat.icon} alt="" className="w-12 h-12 mb-4 brightness-0" loading="lazy" />
-              <div
+              <h3
                 className="text-charcoal mb-2"
-                style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: '60px' }}
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 70, fontWeight: 900, lineHeight: '87.5px', letterSpacing: '0.35px' }}
               >
                 {stat.value}
-              </div>
+              </h3>
               <p className="text-charcoal/60 leading-snug" style={{ fontSize: 16 }}>
                 {stat.desc}
               </p>

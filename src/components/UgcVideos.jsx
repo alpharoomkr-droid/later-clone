@@ -6,7 +6,12 @@ const videoUrls = [
 
 export default function UgcVideos() {
   return (
-    <section className="bg-gridglow overflow-hidden py-12 lg:py-20">
+    <section className="overflow-hidden" style={{ padding: '70px 0' }}>
+      <div className="max-w-[1440px] mx-auto mb-6" style={{ padding: '0 40px' }}>
+        <p className="text-charcoal/60" style={{ fontSize: 16, lineHeight: '24px' }}>
+          A showcase of creator-produced content from real influencer marketing campaigns powered by Later, featuring authentic creator stories.
+        </p>
+      </div>
       <div className="flex flex-col gap-4">
         {videoUrls.map((url, i) => (
           <div key={i} className="relative">
@@ -19,7 +24,6 @@ export default function UgcVideos() {
             >
               <source src={url} type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-gridglow/20" />
           </div>
         ))}
       </div>

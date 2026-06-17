@@ -23,12 +23,12 @@ export default function TrustedBy() {
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 max-w-[1000px]">
           {logos.map((logo, i) => (
-            <div key={i} className="opacity-60 hover:opacity-100 transition-opacity">
+            <div key={i} className="hover:opacity-100 transition-opacity" style={{ opacity: 0.8 }}>
               <img
                 src={logo.src}
                 alt={logo.name}
-                height="40"
-                className="h-[40px] w-auto object-contain"
+                height="38"
+                className="h-[38px] w-auto object-contain"
                 loading="lazy"
               />
             </div>

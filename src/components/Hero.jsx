@@ -9,8 +9,8 @@ function ArrowIcon() {
 export default function Hero() {
   return (
     <section className="wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
-      <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-0 items-center" style={{ padding: '0 40px' }}>
-        <div className="lg:col-span-6">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-0 items-center" style={{ padding: '0 40px' }}>
+        <div>
           <h1
             className="text-charcoal hero-enter"
             style={{
@@ -39,7 +39,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="lg:col-span-6 hero-enter-d3">
+        <div className="hero-enter-d3">
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/45Vk1pKDRiLbBlRiQEWC5X/ea32e64edd6d607565c1a7f6a4330f00/later-homepage-hero-image.png?fm=webp"
             alt="A reel of creator-produced content from Later influencer marketing campaigns"

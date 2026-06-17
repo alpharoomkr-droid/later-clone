@@ -18,10 +18,10 @@ export default function EdgeAI() {
             >
               Other brands are guessing. You don't have to.
             </h2>
-            <p className="text-charcoal mb-6 max-w-[480px]" style={{ fontSize: 20, lineHeight: '32px', opacity: 0.6 }}>
+            <p className="text-charcoal mb-6" style={{ fontSize: 20, lineHeight: '30px', opacity: 0.6 }}>
               Later EdgeAI looks at creator behavior, what's trending, and what people actually buy, so campaigns are built with confidence.
             </p>
-            <a href="/influencer-marketing-platform/" className="inline-flex items-center gap-2 text-gridglow font-bold border-b border-gridglow/50 pb-1 hover:border-gridglow transition-colors">
+            <a href="/influencer-marketing-platform/" className="inline-flex items-center gap-2 text-gridglow border-b-2 border-gridglow pb-1 hover:opacity-80 transition-opacity" style={{ fontSize: 16, fontWeight: 400 }}>
               Learn more <ArrowIcon />
             </a>
           </div>

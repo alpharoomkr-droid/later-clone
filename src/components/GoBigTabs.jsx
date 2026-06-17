@@ -76,8 +76,8 @@ export default function GoBigTabs() {
               onClick={() => setActiveTab(i)}
               className={`font-bold transition-all ${
                 activeTab === i
-                  ? 'bg-secondary text-white'
-                  : 'bg-white/20 text-offline hover:bg-white/30'
+                  ? 'bg-offline text-charcoal'
+                  : 'bg-transparent text-offline hover:bg-white/20'
               }`}
               style={{ fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 700, padding: '16px 24px' }}
             >
@@ -100,7 +100,7 @@ export default function GoBigTabs() {
               </p>
               <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8">
                 {tabs[activeTab].checks.map((check, i) => (
-                  <div key={i} className="flex items-start gap-2 text-white font-medium" style={{ fontSize: 14 }}>
+                  <div key={i} className="flex items-start gap-2 text-white" style={{ fontSize: 18, fontWeight: 400, lineHeight: '27px' }}>
                     <CheckIcon />
                     {check}
                   </div>

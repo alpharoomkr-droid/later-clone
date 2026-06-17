@@ -85,7 +85,7 @@ export default function CaseStudies() {
 
         <div className="xl:col-span-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div className="relative aspect-[9/16] max-h-[500px] overflow-hidden bg-charcoal">
+            <div className="relative overflow-hidden bg-charcoal" style={{ width: 310, height: 560 }}>
               <video
                 key={active}
                 autoPlay

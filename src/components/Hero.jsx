@@ -9,7 +9,7 @@ function ArrowIcon() {
 export default function Hero() {
   return (
     <section className="wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
-      <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-0 items-center" style={{ padding: '0 40px' }}>
         <div className="lg:col-span-7">
           <h1
             className="text-charcoal"
@@ -25,8 +25,8 @@ export default function Hero() {
             Unforgettable campaigns start with insight.
           </h1>
           <p
-            className="text-charcoal mb-8"
-            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', maxWidth: 590 }}
+            className="text-charcoal"
+            style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', maxWidth: 590, marginBottom: 40 }}
           >
             Influencer marketing built for creators, trusted by brands, and designed for results.
           </p>

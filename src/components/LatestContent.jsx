@@ -38,10 +38,10 @@ export default function LatestContent() {
                   <img src={article.image} alt="" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="sm:w-1/2 flex flex-col justify-center">
-                  <span className="font-bold text-gridglow uppercase tracking-wider mb-2" style={{ fontSize: 12 }}>{article.tag}</span>
+                  <span className="text-gridglow uppercase mb-2" style={{ fontSize: 14, fontWeight: 800, letterSpacing: '0.14px' }}>{article.tag}</span>
                   <h3
                     className="text-charcoal group-hover:text-gridglow transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 700, lineHeight: '37.5px' }}
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 700, lineHeight: '37.5px', letterSpacing: '0.15px' }}
                   >
                     {article.title}
                   </h3>
@@ -58,7 +58,7 @@ export default function LatestContent() {
                 <span className="font-bold text-gridglow uppercase tracking-wider mb-2 block" style={{ fontSize: 12 }}>{article.tag}</span>
                 <h3
                   className="text-charcoal group-hover:text-gridglow transition-colors"
-                  style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 700, lineHeight: '37.5px' }}
+                  style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 700, lineHeight: '37.5px', letterSpacing: '0.15px' }}
                 >
                   {article.title}
                 </h3>

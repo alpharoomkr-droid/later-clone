@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function ArrowIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -16,39 +18,150 @@ const socialIcons = [
   { name: 'Facebook', path: 'M22 12C22 6.5 17.5 2 12 2S2 6.5 2 12C2 16.9 5.7 21 10.5 21.8V14.9H7.9V12H10.5V9.8C10.5 7.3 12 5.9 14.3 5.9 15.4 5.9 16.5 6.1 16.5 6.1V8.6H15.3C14 8.6 13.5 9.4 13.5 10.2V12H16.3L15.9 14.9H13.5V21.8C18.3 21 22 16.9 22 12Z' },
 ]
 
+const footerColumns = [
+  {
+    header: 'Products + services',
+    links: [
+      { label: 'Full-service programs', href: '#' },
+      { label: 'Influencer marketing platform', href: '#' },
+      { label: 'Social media management', href: '#' },
+      { label: 'Mavely for Creators', href: '#' },
+      { label: 'AI creator matching', href: '#' },
+    ],
+  },
+  {
+    header: 'For enterprise brands',
+    links: [
+      { label: 'Campaign services', href: '#' },
+      { label: 'Platform access', href: '#' },
+      { label: 'Our creator network', href: '#' },
+      { label: 'Our work', href: '/case-studies/' },
+    ],
+    cta: { label: 'Book a strategy call', href: '#' },
+  },
+  {
+    header: 'For social media managers',
+    links: [
+      { label: 'Social media scheduler', href: '#' },
+      { label: 'Pricing', href: '/pricing/' },
+      { label: 'Integrations', href: '#' },
+    ],
+    cta: { label: 'Start free trial', href: '#' },
+  },
+  {
+    header: 'For creators',
+    links: [
+      { label: 'Join our campaign network', href: '#' },
+      { label: 'Mavely affiliate program', href: '#' },
+    ],
+  },
+  {
+    header: 'Resources',
+    links: [
+      { label: 'Blog', href: '/blog/' },
+      { label: 'Insights and Trends', href: '#' },
+      { label: 'Guides + templates', href: '#' },
+      { label: 'Expert Sessions', href: '#' },
+      { label: 'Help Center', href: '#' },
+    ],
+  },
+  {
+    header: 'Company',
+    links: [
+      { label: 'About Later', href: '#' },
+      { label: 'Careers', href: '#' },
+      { label: 'Case studies', href: '/case-studies/' },
+      { label: 'Press + media', href: '#' },
+      { label: 'Partners', href: '#' },
+    ],
+  },
+]
+
+function FooterLink({ label, href }) {
+  const isInternal = href.startsWith('/')
+  const className = 'text-offline/60 hover:text-white transition-colors block'
+  const style = { fontSize: 14, fontFamily: 'var(--font-body)', marginTop: 12 }
+
+  if (isInternal) {
+    return (
+      <Link to={href} className={className} style={style}>
+        {label}
+      </Link>
+    )
+  }
+  return (
+    <a href={href} className={className} style={style}>
+      {label}
+    </a>
+  )
+}
+
 export default function Footer() {
   return (
     <footer className="bg-inverse text-offline">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-10 pt-16 pb-8">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-y-6 gap-x-4 mb-14">
-          <div>
-            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block">Mavely for Creators</a>
-            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block mt-2">AI creator matching</a>
-          </div>
-          <div>
-            <a href="/case-studies/" className="text-sm text-offline/80 hover:text-white transition-colors block">Our work</a>
-          </div>
-          <div className="flex justify-center">
-            <a href="#" className="text-lg font-bold text-offline hover:text-gridglow transition-colors flex items-center gap-2">
-              Start free trial <ArrowIcon />
-            </a>
-          </div>
-          <div>
-            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block">Guides + templates</a>
-            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block mt-2">Expert Sessions</a>
-          </div>
-          <div>
-            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block">Partners</a>
-            <a href="#" className="text-sm text-offline/80 hover:text-white transition-colors block mt-2">Help Center</a>
+      {/* Main content area */}
+      <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div style={{ padding: '70px 0' }}>
+          {/* 6-column link grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10">
+            {footerColumns.map((col, i) => (
+              <div key={i}>
+                <p
+                  className="text-offline"
+                  style={{
+                    fontFamily: 'var(--font-heading)',
+                    fontWeight: 700,
+                    fontSize: 16,
+                    marginBottom: 20,
+                  }}
+                >
+                  {col.header}
+                </p>
+                {col.links.map((link, j) => (
+                  <FooterLink key={j} label={link.label} href={link.href} />
+                ))}
+                {col.cta && (
+                  <a
+                    href={col.cta.href}
+                    className="text-offline hover:text-white transition-colors flex items-center gap-2"
+                    style={{
+                      fontFamily: 'var(--font-heading)',
+                      fontWeight: 700,
+                      fontSize: 18,
+                      marginTop: 24,
+                    }}
+                  >
+                    {col.cta.label} <ArrowIcon />
+                  </a>
+                )}
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        {/* Social icons + Newsletter */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" style={{ paddingBottom: 48 }}>
+          {/* Follow us */}
           <div>
-            <p className="text-offline mb-4" style={{ fontSize: 16, fontWeight: 700 }}>Follow us</p>
+            <p
+              className="text-offline"
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontWeight: 700,
+                fontSize: 16,
+                marginBottom: 16,
+              }}
+            >
+              Follow us
+            </p>
             <div className="flex items-center gap-4">
               {socialIcons.map((icon, i) => (
-                <a key={i} href="#" className="text-offline hover:text-gridglow transition-colors" aria-label={icon.name}>
+                <a
+                  key={i}
+                  href="#"
+                  className="text-offline hover:text-white transition-colors"
+                  aria-label={icon.name}
+                >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d={icon.path} />
                   </svg>
@@ -56,40 +169,74 @@ export default function Footer() {
               ))}
             </div>
           </div>
+
+          {/* Newsletter */}
           <div>
-            <p className="text-offline mb-2" style={{ fontSize: 16, fontWeight: 700 }}>Join Our Newsletter</p>
-            <p className="text-sm text-offline/60 mb-4">Email Address <span className="text-gridglow">*</span></p>
+            <p
+              className="text-offline"
+              style={{
+                fontFamily: 'var(--font-heading)',
+                fontWeight: 700,
+                fontSize: 16,
+                marginBottom: 8,
+              }}
+            >
+              Join Our Newsletter
+            </p>
+            <p className="text-offline/60" style={{ fontSize: 14, marginBottom: 16 }}>
+              Email Address <span className="text-gridglow">*</span>
+            </p>
             <div className="flex gap-0">
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 bg-white/10 border border-white/20 text-white px-4 py-3 text-sm placeholder-white/40 focus:outline-none focus:border-white/40"
+                className="flex-1 bg-white/10 border border-white/20 text-white placeholder-white/40 focus:outline-none focus:border-white/40"
+                style={{ padding: '12px 16px', fontSize: 14, fontFamily: 'var(--font-body)' }}
               />
-              <button className="bg-white text-charcoal font-bold px-6 py-3 text-sm flex items-center gap-2 hover:bg-gray-100 transition-colors flex-shrink-0">
+              <button
+                className="bg-white text-charcoal hover:bg-gray-100 transition-colors flex items-center gap-2 flex-shrink-0"
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontWeight: 700,
+                  fontSize: 14,
+                  padding: '12px 24px',
+                }}
+              >
                 Subscribe <ArrowIcon />
               </button>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-6 flex flex-wrap items-center justify-between gap-4">
-          <p className="text-xs text-offline/40">© 2026 Later. All rights reserved.</p>
-          <div className="flex flex-wrap gap-6">
-            {['Sitemap', 'Terms', 'Privacy Policy', 'Cookie Settings'].map((link, i) => (
-              <a key={i} href="#" className="text-xs text-offline/40 hover:text-offline/60 transition-colors">{link}</a>
-            ))}
+        {/* Legal footer bar */}
+        <div
+          className="border-t border-white/10 flex flex-wrap items-center justify-between gap-4"
+          style={{ padding: '24px 0' }}
+        >
+          <p className="text-offline/40" style={{ fontSize: 12, fontFamily: 'var(--font-body)' }}>
+            &copy; 2026 Later. All rights reserved.
+          </p>
+          <div className="flex flex-wrap items-center gap-1" style={{ fontSize: 12 }}>
+            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Sitemap</a>
+            <span className="text-offline/40">|</span>
+            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Terms</a>
+            <span className="text-offline/40">|</span>
+            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Privacy Policy</a>
+            <span className="text-offline/40">|</span>
+            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Cookie Settings</a>
           </div>
         </div>
       </div>
 
-      <div className="px-6 lg:px-10 pb-4 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto">
+      {/* Giant "Later" text */}
+      <div className="overflow-hidden" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ paddingBottom: 16 }}>
           <div
-            className="text-[20vw] lg:text-[300px] font-black leading-none tracking-tighter select-none"
+            className="text-[20vw] lg:text-[300px] leading-none tracking-tighter select-none"
             style={{
               fontFamily: 'var(--font-heading)',
-              color: 'transparent',
-              WebkitTextStroke: '3px rgba(248,242,234,0.25)',
+              fontWeight: 900,
+              color: 'rgba(248,242,234,0.15)',
             }}
           >
             Later

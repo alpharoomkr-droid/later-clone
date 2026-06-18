@@ -32,7 +32,7 @@ export default function Navbar() {
               <button
                 key={i}
                 className="text-charcoal hover:text-gridglow transition-colors flex items-center gap-1 px-2 py-2 rounded-full hover:bg-gray-50"
-                style={{ fontSize: 16, fontWeight: 400 }}
+                style={{ fontSize: 14, fontWeight: 400 }}
               >
                 {item.label}
                 {item.hasDropdown && (

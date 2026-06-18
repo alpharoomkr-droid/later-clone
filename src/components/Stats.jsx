@@ -46,20 +46,20 @@ export default function Stats() {
       className="relative overflow-hidden"
       style={{
         background: 'linear-gradient(to top, #fe3f00, #cb8aff)',
-        padding: '80px 0',
+        padding: '70px 0',
       }}
     >
-      <div className="relative z-10 max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
         <h2
           className="text-center"
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: 56,
             fontWeight: 900,
-            lineHeight: '70px',
+            lineHeight: 1.1,
             letterSpacing: '0.28px',
             color: '#fff',
-            marginBottom: '2rem',
+            marginBottom: '3rem',
           }}
         >
           The hype is real.
@@ -71,59 +71,40 @@ export default function Stats() {
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`relative transition-all duration-700 ${
+              className={`flex flex-col items-start transition-all duration-700 ${
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${i * 150}ms` }}
             >
-              {/* Angled shadow behind card */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  backgroundColor: '#000',
-                  clipPath: 'polygon(4% 6%, 100% 0%, 96% 94%, 0% 100%)',
-                  transform: 'translate(6px, 6px)',
-                }}
+              <img
+                src={stat.icon}
+                alt=""
+                style={{ width: 48, height: 48, filter: 'brightness(0) invert(1)' }}
+                loading="lazy"
               />
-              {/* Card */}
-              <div
-                className="relative flex flex-col items-start"
+              <h3
                 style={{
-                  backgroundColor: '#FEFCFB',
-                  padding: '1.25rem',
-                  minHeight: 280,
-                  boxShadow: 'rgba(0,0,0,0.2) 10px 10px 30px',
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 70,
+                  fontWeight: 900,
+                  lineHeight: 1.25,
+                  letterSpacing: '0.35px',
+                  color: '#fff',
+                  marginTop: '0.5rem',
                 }}
               >
-                <img
-                  src={stat.icon}
-                  alt=""
-                  className="w-12 h-12 mb-4 brightness-0"
-                  loading="lazy"
-                />
-                <h3
-                  className="text-charcoal"
-                  style={{
-                    fontFamily: 'var(--font-heading)',
-                    fontSize: 70,
-                    fontWeight: 900,
-                    lineHeight: '87.5px',
-                    letterSpacing: '0.35px',
-                  }}
-                >
-                  {stat.value}
-                </h3>
-                <p
-                  className="text-charcoal/60"
-                  style={{
-                    fontSize: 18,
-                    lineHeight: 1.25,
-                    marginTop: 'auto',
-                  }}
-                >
-                  {stat.desc}
-                </p>
-              </div>
+                {stat.value}
+              </h3>
+              <p
+                style={{
+                  fontSize: 18,
+                  lineHeight: 1.4,
+                  color: 'rgba(255,255,255,0.7)',
+                  marginTop: '0.5rem',
+                }}
+              >
+                {stat.desc}
+              </p>
             </div>
           ))}
         </div>

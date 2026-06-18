@@ -6,12 +6,84 @@ function ArrowIcon() {
   )
 }
 
+function DecorativePattern() {
+  return (
+    <svg
+      style={{
+        position: 'absolute',
+        top: '50%',
+        right: '-5%',
+        transform: 'translateY(-50%)',
+        width: '70%',
+        height: '120%',
+        zIndex: 0,
+        pointerEvents: 'none',
+      }}
+      viewBox="0 0 800 800"
+      fill="none"
+      preserveAspectRatio="xMidYMid slice"
+    >
+      {/* Concentric radiating spiral/wave lines */}
+      {[80, 120, 160, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600].map((r) => (
+        <circle
+          key={r}
+          cx="400"
+          cy="400"
+          r={r}
+          stroke="rgba(0,0,0,0.04)"
+          strokeWidth="1.2"
+          fill="none"
+        />
+      ))}
+      {/* Radial spokes for the wave/spiral texture */}
+      {Array.from({ length: 24 }, (_, i) => {
+        const angle = (i * 15 * Math.PI) / 180
+        const x2 = 400 + 620 * Math.cos(angle)
+        const y2 = 400 + 620 * Math.sin(angle)
+        return (
+          <line
+            key={`spoke-${i}`}
+            x1="400"
+            y1="400"
+            x2={x2}
+            y2={y2}
+            stroke="rgba(0,0,0,0.025)"
+            strokeWidth="1"
+          />
+        )
+      })}
+      {/* Organic curved arcs for a spiral feel */}
+      {[100, 180, 260, 340, 420, 500, 580].map((r, i) => {
+        const startAngle = (i * 20 * Math.PI) / 180
+        const endAngle = startAngle + Math.PI * 1.2
+        const x1 = 400 + r * Math.cos(startAngle)
+        const y1 = 400 + r * Math.sin(startAngle)
+        const x2 = 400 + r * Math.cos(endAngle)
+        const y2 = 400 + r * Math.sin(endAngle)
+        return (
+          <path
+            key={`arc-${i}`}
+            d={`M ${x1} ${y1} A ${r} ${r} 0 1 1 ${x2} ${y2}`}
+            stroke="rgba(0,0,0,0.035)"
+            strokeWidth="1"
+            fill="none"
+          />
+        )
+      })}
+    </svg>
+  )
+}
+
 export default function Hero() {
   return (
-    <section className="wood-bg min-h-[100dvh] flex items-center" style={{ paddingTop: 70 }}>
+    <section
+      className="wood-bg min-h-[100dvh] flex items-center"
+      style={{ paddingTop: 70, position: 'relative', overflow: 'hidden' }}
+    >
+      <DecorativePattern />
       <div
         className="w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-0 items-center"
-        style={{ maxWidth: 1280, padding: '0 40px' }}
+        style={{ maxWidth: 1280, padding: '0 40px', position: 'relative', zIndex: 1 }}
       >
         {/* Left content: 7 of 12 columns */}
         <div className="lg:col-span-7">
@@ -21,7 +93,7 @@ export default function Hero() {
               fontFamily: 'var(--font-heading)',
               fontSize: 'clamp(3.125rem, 2rem + 3.5vw, 5.375rem)',
               fontWeight: 900,
-              lineHeight: 1.25,
+              lineHeight: 1.0,
               letterSpacing: '0.005em',
               marginBottom: 32,
             }}

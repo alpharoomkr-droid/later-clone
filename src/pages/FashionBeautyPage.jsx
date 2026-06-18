@@ -42,8 +42,8 @@ export default function FashionBeautyPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center">
+      <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -96,7 +96,7 @@ export default function FashionBeautyPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {benefits.map((b, i) => (
@@ -122,7 +122,7 @@ export default function FashionBeautyPage() {
       </section>
 
       {/* How Later Influence Works */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
@@ -180,7 +180,7 @@ export default function FashionBeautyPage() {
       </section>
 
       {/* Stats */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2
             className="text-offline reveal"
@@ -217,7 +217,7 @@ export default function FashionBeautyPage() {
       </section>
 
       {/* Find Influencers */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
@@ -253,7 +253,7 @@ export default function FashionBeautyPage() {
       </section>
 
       {/* Creator Program */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:[direction:rtl]">
             <div className="reveal lg:[direction:ltr]">
@@ -312,7 +312,7 @@ export default function FashionBeautyPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-offline"

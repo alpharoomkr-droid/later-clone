@@ -163,7 +163,7 @@ export default function InfluencerMarketingPlatformPage() {
     <>
       {/* Hero */}
       <section className="reveal wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
-        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
           <div className="max-w-[900px] mx-auto text-center">
             <div className="hero-enter flex items-center justify-center gap-2 mb-6">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -223,8 +223,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Confidence Section */}
-      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-14">
             <h2
               className="text-charcoal mb-5"
@@ -259,8 +259,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* EdgeAI Section */}
-      <section className="reveal wood-bg" style={{ padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-14">
             <h2
               className="text-charcoal mb-5"
@@ -324,8 +324,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="reveal text-white" style={{ backgroundColor: '#000', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal text-white" style={{ backgroundColor: '#000', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-offline text-center mb-14"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
@@ -396,8 +396,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Speed Stats */}
-      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-14">
             <h2
               className="text-charcoal mb-5"
@@ -441,8 +441,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* In-house CTA */}
-      <section className="reveal purple-wood-bg text-white" style={{ padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <section className="reveal purple-wood-bg text-white" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2
             className="mb-5"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
@@ -459,8 +459,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Resources */}
-      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center mb-14">
             <h2
               className="text-charcoal"
@@ -505,7 +505,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Bottom Ticker */}
-      <section className="reveal bg-inverse py-5 overflow-hidden">
+      <section className="reveal bg-inverse py-5 overflow-hidden" style={{ padding: '70px 0' }}>
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <TickerSet />
           <TickerSet />
@@ -515,8 +515,8 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="reveal wood-bg" style={{ padding: '80px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[800px] mx-auto text-center">
           <h2
             className="text-charcoal mb-10"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(44px, 5vw, 70px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.35px' }}

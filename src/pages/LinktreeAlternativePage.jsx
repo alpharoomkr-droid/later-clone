@@ -59,7 +59,7 @@ export default function LinktreeAlternativePage() {
     <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div
           className="max-w-[1440px] mx-auto px-[40px]"
           style={{ padding: '60px 40px' }}
@@ -119,7 +119,7 @@ export default function LinktreeAlternativePage() {
       </section>
 
       {/* 2. Benefits */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div
           className="max-w-[1440px] mx-auto px-[40px]"
           style={{ padding: '60px 40px', textAlign: 'center' }}
@@ -175,7 +175,7 @@ export default function LinktreeAlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Feature comparison</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
@@ -206,7 +206,7 @@ export default function LinktreeAlternativePage() {
       </section>
 
       {/* 4. Why Later */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>Linktree Alternative</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 12 }}>Why creators choose Later Link in Bio:</h2>
@@ -228,7 +228,7 @@ export default function LinktreeAlternativePage() {
       </section>
 
       {/* 5. Testimonials */}
-      <section className="purple-wood-bg reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', color: '#fff' }}>
           <p className="uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: 'rgba(255,255,255,0.7)' }}>WHY LATER LINK IN BIO?</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>Here's what Later Link in Bio customers have to say</h2>
@@ -253,7 +253,7 @@ export default function LinktreeAlternativePage() {
       </section>
 
       {/* 6. Compare Links */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
@@ -266,7 +266,7 @@ export default function LinktreeAlternativePage() {
       </section>
 
       {/* 7. Bottom CTA */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>Ready to add Later Link in Bio?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Switch to Later for free. Linktree customers can import their profile into Later Link in Bio with just a few clicks.</p>

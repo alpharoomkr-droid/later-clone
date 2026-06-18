@@ -31,8 +31,8 @@ export default function MarketingRoiPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ padding: '0 40px' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               INFLUENCER MARKETING METRICS
@@ -59,8 +59,8 @@ export default function MarketingRoiPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto reveal">
+      <section style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div className="text-center" style={{ marginBottom: 16 }}>
             <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>
               HOW IT WORKS
@@ -92,8 +92,8 @@ export default function MarketingRoiPage() {
 
       {/* Feature Sections (alternating) */}
       {featureSections.map((f, i) => (
-        <section key={i} className="py-16 md:py-24 px-6">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
+        <section key={i} style={{ padding: '70px 0' }}>
+          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal" style={{ padding: '0 40px' }}>
             <img
               src={f.img}
               alt={f.title}
@@ -117,7 +117,7 @@ export default function MarketingRoiPage() {
       ))}
 
       {/* Testimonial */}
-      <section className="wood-bg py-16 md:py-24 px-6">
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" style={{ margin: '0 auto 24px' }}>
             <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3" />
@@ -136,7 +136,7 @@ export default function MarketingRoiPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg text-white py-16 md:py-24 px-6 text-center">
+      <section className="purple-wood-bg text-white text-center" style={{ padding: '70px 0' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>
             Make decisions backed by data

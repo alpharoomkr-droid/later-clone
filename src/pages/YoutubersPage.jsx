@@ -56,7 +56,7 @@ export default function YoutubersPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 0, paddingLeft: 24, paddingRight: 24 }}>
-        <div className="max-w-7xl mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               YouTube Influencer Marketing
@@ -86,7 +86,7 @@ export default function YoutubersPage() {
 
       {/* Benefits — Like, comment, subscribe */}
       <section className="reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Like, comment, subscribe
           </h2>
@@ -107,7 +107,7 @@ export default function YoutubersPage() {
 
       {/* How Later Influence Works */}
       <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
             How Later Influence Works
           </p>
@@ -140,7 +140,7 @@ export default function YoutubersPage() {
 
       {/* Feature Sections (alternating) */}
       <section className="reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           {featureSections.map((f, i) => (
             <div
               key={i}
@@ -178,7 +178,7 @@ export default function YoutubersPage() {
 
       {/* Case Study — bibigo */}
       <section className="purple-wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
-        <div className="max-w-7xl mx-auto" style={{ textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ textAlign: 'center' }}>
           <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 24, color: 'rgba(255,255,255,0.7)' }}>
             Case Study
           </p>

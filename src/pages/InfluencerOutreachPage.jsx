@@ -99,7 +99,7 @@ export default function InfluencerOutreachPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
@@ -181,7 +181,7 @@ export default function InfluencerOutreachPage() {
         <section
           key={i}
           className={i % 2 === 0 ? 'wood-bg' : ''}
-          style={{ backgroundColor: i % 2 === 0 ? undefined : '#FEFCFB', padding: '80px 0' }}
+          style={{ backgroundColor: i % 2 === 0 ? undefined : '#FEFCFB', padding: '70px 0' }}
         >
           <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
             <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center`}>
@@ -229,7 +229,7 @@ export default function InfluencerOutreachPage() {
       ))}
 
       {/* Testimonial */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
         <div className="max-w-[900px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mx-auto" style={{ marginBottom: 32 }}>
             <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3"/>
@@ -257,7 +257,7 @@ export default function InfluencerOutreachPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg" style={{ padding: '80px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[700px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             style={{

@@ -161,8 +161,8 @@ export default function InfluencerCreatorProgramPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center hero-enter">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest mb-4" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2 }}>LATER FOR CREATORS</p>
           <h1 className="mx-auto mb-6" style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800 }}>
             Turn your influence into income with Later
@@ -185,8 +185,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Find & land brand collaborations */}
-      <section className="reveal py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 className="mb-3" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Find &amp; land brand collaborations with Later
           </h2>
@@ -204,8 +204,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Get discovered */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center" style={{ padding: '0 40px' }}>
           <img
             src="https://later.com/images/temp/get-discovered-by-your-favorite-brands-with-later.jpg"
             alt="Get discovered by your favorite brands"
@@ -226,8 +226,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* 3 Steps */}
-      <section className="reveal py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s, i) => (
               <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
@@ -241,8 +241,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Take your creator career to new heights */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center mb-12 reveal">
             <p className="text-charcoal/60 uppercase tracking-widest mb-3" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2 }}>CREATE, SHARE, EARN</p>
             <h2 className="mb-4" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
@@ -274,8 +274,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Sign up section */}
-      <section className="reveal py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Sign up for Later for free
           </h2>
@@ -324,8 +324,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Creator community */}
-      <section id="creator-network" className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="creator-network" className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2 className="text-center mb-10 reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Join the creator community
           </h2>
@@ -350,8 +350,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* FAQs */}
-      <section className="reveal py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[800px] mx-auto">
           <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             FAQs
           </h2>
@@ -372,8 +372,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[800px] mx-auto text-center">
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mx-auto mb-6">
             <path d="M0 32V18.3C0 6.1 7.4 0 18 0v8.6C12.2 9.6 9.4 13 9 18h9v14H0zm22 0V18.3C22 6.1 29.4 0 40 0v8.6c-5.8 1-8.6 4.4-9 8.4h9v14H22z" fill="#FE3F00" opacity="0.15" />
           </svg>
@@ -397,8 +397,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Blogs */}
-      <section className="reveal py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Blogs
           </h2>
@@ -419,8 +419,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Resources */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Resources
           </h2>
@@ -439,8 +439,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="reveal py-16 lg:py-20 text-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal text-center" style={{ padding: '70px 0' }}>
+        <div className="max-w-[800px] mx-auto">
           <h2 className="mb-4" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Earn more with Later for creators
           </h2>

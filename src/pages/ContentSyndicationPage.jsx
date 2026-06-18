@@ -28,7 +28,7 @@ export default function ContentSyndicationPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg reveal" style={{ paddingTop: 60, paddingBottom: 0 }}>
-        <div className="max-w-7xl mx-auto px-6 md:px-10 text-center hero-enter">
+        <div className="max-w-[1440px] mx-auto md:px-10 text-center hero-enter" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -62,8 +62,8 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* How it works - numbered steps */}
-      <section className="reveal py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto md:px-10" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}
@@ -105,8 +105,8 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Feature - Grow online brand awareness */}
-      <section className="wood-bg reveal py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto md:px-10" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <p
@@ -142,9 +142,9 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg reveal py-16 md:py-24">
+      <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
         <div
-          className="max-w-[900px] mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 items-center"
+          className="max-w-[900px] mx-auto md:px-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 items-center"
         >
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/1WJ3MfWOmvyTZsL2qbypLS/186a4e020709e4fdf7cc8c6cde6c1741/bob-land.png?w=640&h=641&q=50&fm=png"
@@ -169,8 +169,8 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="reveal text-center py-16 md:py-24" style={{ background: '#000' }}>
-        <div className="max-w-[700px] mx-auto px-6 md:px-10">
+      <section className="reveal text-center" style={{ background: '#000', padding: '70px 0' }}>
+        <div className="max-w-[700px] mx-auto md:px-10">
           <h2
             className="ff-heading"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24, color: '#fff' }}

@@ -66,8 +66,8 @@ export default function InfluencerAnalyticsPlatformPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ padding: '0 40px' }}>
           <div>
             <p
               className="text-gridglow hero-enter"
@@ -112,8 +112,8 @@ export default function InfluencerAnalyticsPlatformPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 md:py-24" style={{ backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-7xl mx-auto px-6 reveal">
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal reveal-d2 lg:order-2">
               <p
@@ -193,10 +193,10 @@ export default function InfluencerAnalyticsPlatformPage() {
       {featureSections.map((section, i) => (
         <section
           key={i}
-          className={`${i % 2 === 0 ? 'wood-bg' : ''} py-16 md:py-24`}
+          className={`${i % 2 === 0 ? 'wood-bg' : ''}`}
           style={{ backgroundColor: i % 2 === 0 ? undefined : '#FEFCFB' }}
         >
-          <div className="max-w-7xl mx-auto px-6 reveal">
+          <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className={`reveal ${section.reversed ? 'lg:order-2' : ''}`}>
                 <p
@@ -242,8 +242,8 @@ export default function InfluencerAnalyticsPlatformPage() {
       ))}
 
       {/* Testimonial */}
-      <section className="py-16 md:py-24" style={{ backgroundColor: '#000' }}>
-        <div className="max-w-[900px] mx-auto text-center px-6 reveal">
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
+        <div className="max-w-[900px] mx-auto text-center reveal">
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mx-auto" style={{ marginBottom: 32 }}>
             <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3"/>
           </svg>
@@ -269,8 +269,8 @@ export default function InfluencerAnalyticsPlatformPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg py-16 md:py-24">
-        <div className="max-w-[700px] mx-auto text-center px-6 reveal">
+      <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[700px] mx-auto text-center reveal">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',

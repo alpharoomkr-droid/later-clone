@@ -32,7 +32,7 @@ export default function InfluencerNetworkPage() {
       {/* Hero */}
       <section className="wood-bg reveal" style={{ padding: '64px 24px 0' }}>
         <div
-          className="max-w-7xl mx-auto"
+          className="max-w-[1440px] mx-auto"
           style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}
         >
           <div>
@@ -79,8 +79,8 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* How It Works */}
-      <section className="reveal py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center" style={{ marginBottom: 16 }}>
             <h2
               style={{
@@ -143,8 +143,8 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* Feature Sections (alternating) */}
-      <section className="reveal py-16 md:py-24 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           {featureSections.map((f, i) => (
             <div
               key={i}
@@ -204,7 +204,7 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg reveal py-16 md:py-24 px-6">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto text-center">
           <svg
             width="40"
@@ -240,7 +240,7 @@ export default function InfluencerNetworkPage() {
 
       {/* Bottom CTA */}
       <section
-        className="purple-wood-bg text-white reveal py-16 md:py-24 px-6"
+        className="purple-wood-bg text-white reveal"
         style={{ textAlign: 'center' }}
       >
         <div className="max-w-[700px] mx-auto">

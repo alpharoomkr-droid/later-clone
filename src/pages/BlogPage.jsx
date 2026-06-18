@@ -196,7 +196,7 @@ export default function BlogPage() {
 
       {/* Featured Post */}
       <section className="reveal" style={{ padding: '64px 40px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <a
             href={`/blog/${featuredPost.slug}`}
             className="featured-card"
@@ -247,7 +247,7 @@ export default function BlogPage() {
 
       {/* Category Filter */}
       <section className="reveal" style={{ padding: '0 40px 16px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', borderBottom: '1px solid #e0dcd6', paddingBottom: 20 }}>
             {categories.map(cat => (
               <button
@@ -277,7 +277,7 @@ export default function BlogPage() {
 
       {/* Article Grid */}
       <section className="reveal" style={{ padding: '32px 40px 80px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           {filteredPosts.length > 0 ? (
             <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}>
               {filteredPosts.map((post, i) => (
@@ -294,7 +294,7 @@ export default function BlogPage() {
 
       {/* Our Picks */}
       <section className="wood-bg reveal" style={{ padding: '64px 40px 80px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div style={{ marginBottom: 32 }}>
             <h2 className="ff-heading" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.1, marginBottom: 16 }}>Our Picks</h2>
             <p style={{ fontSize: 18, lineHeight: 1.6, color: '#555', maxWidth: 640 }}>

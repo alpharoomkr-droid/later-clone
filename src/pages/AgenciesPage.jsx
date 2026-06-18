@@ -36,8 +36,8 @@ export default function AgenciesPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+      <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             MANAGE YOUR CLIENTS' SOCIAL IN ONE APP
           </p>
@@ -59,7 +59,7 @@ export default function AgenciesPage() {
 
       {/* Benefits */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
@@ -74,7 +74,7 @@ export default function AgenciesPage() {
 
       {/* Why Agencies Choose Later */}
       <section className="wood-bg" style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Later for Agencies</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Why agencies choose Later</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -99,7 +99,7 @@ export default function AgenciesPage() {
 
       {/* Feature: Content Creation Tools */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/QdaVBe6UcPVh2WdyA4pSA/8508571e5a7645fbd5e80dc27d9051ce/content-creation-agencies.png?w=1174&h=1012&q=70&fm=png" alt="Content creation tools" style={{ width: '100%' }} />
             <div>
@@ -118,7 +118,7 @@ export default function AgenciesPage() {
 
       {/* Feature: Multi-Platform Management */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center', direction: 'rtl' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/5DvA5mdOfjGpaPRS2u6gh9/7b47b27d84191fa8970c6ff524756f5a/build-it-once.png?w=1136&h=960&q=70&fm=png" alt="Manage multiple social platforms" style={{ width: '100%', direction: 'ltr' }} />
             <div style={{ direction: 'ltr' }}>
@@ -137,7 +137,7 @@ export default function AgenciesPage() {
 
       {/* Testimonial */}
       <section className="wood-bg" style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
             Trusted by agencies worldwide.
           </h2>

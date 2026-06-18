@@ -130,8 +130,8 @@ export default function InfluencerMarketingServicesPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <div>
               <h1
@@ -174,7 +174,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Logo Ticker */}
-      <section className="reveal overflow-hidden py-8" style={{ backgroundColor: '#FEFCFB' }}>
+      <section className="reveal overflow-hidden py-8" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <LogoSet />
           <LogoSet />
@@ -184,8 +184,8 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* The work hits different */}
-      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -229,8 +229,8 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* From idea to outcome */}
-      <section className="reveal wood-bg py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -327,8 +327,8 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Impact stats */}
-      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -375,8 +375,8 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#000' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ backgroundColor: '#000', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-offline text-center"
             style={{
@@ -445,8 +445,8 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Resources */}
-      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -502,7 +502,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Bottom Ticker */}
-      <section className="reveal bg-inverse py-5 overflow-hidden">
+      <section className="reveal bg-inverse py-5 overflow-hidden" style={{ padding: '70px 0' }}>
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <TickerSet />
           <TickerSet />
@@ -512,8 +512,8 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="reveal purple-wood-bg py-16 lg:py-20">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="reveal purple-wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[800px] mx-auto text-center">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',

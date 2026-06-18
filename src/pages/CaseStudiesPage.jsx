@@ -87,7 +87,7 @@ export default function CaseStudiesPage() {
 
       {/* Featured */}
       <section className="reveal" style={{ padding: '64px 40px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <Link
             to={`/case-studies/${featured.slug}`}
             className="featured-grid"
@@ -125,7 +125,7 @@ export default function CaseStudiesPage() {
 
       {/* Influence Case Studies */}
       <section className="wood-bg reveal" style={{ padding: '64px 40px 80px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
               Later Influence Case Studies
@@ -146,7 +146,7 @@ export default function CaseStudiesPage() {
 
       {/* Social & Link in Bio Case Studies */}
       <section className="reveal" style={{ padding: '64px 40px 80px' }}>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
               Later Social &amp; Link in Bio Case Studies

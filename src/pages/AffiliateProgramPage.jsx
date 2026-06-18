@@ -119,7 +119,7 @@ export default function AffiliateProgramPage() {
       {/* ── Hero ── */}
       <section className="wood-bg reveal" style={{ padding: '100px 0 80px' }}>
         <div
-          className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
           style={{ padding: '0 40px' }}
         >
           <div>
@@ -192,7 +192,7 @@ export default function AffiliateProgramPage() {
 
       {/* ── How It Works Intro ── */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0 80px' }}>
-        <div className="max-w-7xl mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <p
             className="reveal"
             style={{
@@ -236,7 +236,7 @@ export default function AffiliateProgramPage() {
 
       {/* ── Benefits Cards ── */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '0 0 100px' }}>
-        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
             {benefits.map((b, i) => (
               <div
@@ -280,7 +280,7 @@ export default function AffiliateProgramPage() {
 
       {/* ── How It Works Steps ── */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           {steps.map((step, i) => {
             const isReversed = i % 2 === 1
             return (
@@ -347,7 +347,7 @@ export default function AffiliateProgramPage() {
 
       {/* ── FAQ ── */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal text-center reveal"
             style={{

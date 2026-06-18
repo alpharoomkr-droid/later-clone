@@ -74,7 +74,7 @@ export default function SocialMediaMarketingToolsPage() {
 
       {/* ── Hero ── */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -129,7 +129,7 @@ export default function SocialMediaMarketingToolsPage() {
 
       {/* ── Trusted By ── */}
       <section style={{ padding: '48px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <p
             className="text-center"
             style={{
@@ -160,7 +160,7 @@ export default function SocialMediaMarketingToolsPage() {
 
       {/* ── Feature Section Header ── */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <p
             className="text-gridglow"
             style={{ fontSize: 14, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 12 }}
@@ -185,7 +185,7 @@ export default function SocialMediaMarketingToolsPage() {
             className={i % 2 === 0 ? 'wood-bg' : ''}
             style={{ padding: '60px 40px' }}
           >
-            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9 items-center reveal">
+            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9 items-center reveal" style={{ padding: '0 40px' }}>
               {/* Text column */}
               <div className={reversed ? 'lg:order-2' : ''}>
                 <p

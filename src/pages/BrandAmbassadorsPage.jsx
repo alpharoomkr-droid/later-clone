@@ -59,8 +59,8 @@ export default function BrandAmbassadorsPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center">
+      <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -112,7 +112,7 @@ export default function BrandAmbassadorsPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal text-center mb-16 reveal"
@@ -144,7 +144,7 @@ export default function BrandAmbassadorsPage() {
       </section>
 
       {/* Start & Scale */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
@@ -205,7 +205,7 @@ export default function BrandAmbassadorsPage() {
       {showcases.map((s, i) => {
         const reversed = i % 2 === 1
         return (
-          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '80px 0' }}>
+          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}>
             <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
               <div
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}
@@ -254,7 +254,7 @@ export default function BrandAmbassadorsPage() {
       })}
 
       {/* Case Study */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <p
             className="text-offline/60 uppercase tracking-widest reveal"
@@ -312,7 +312,7 @@ export default function BrandAmbassadorsPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '80px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-white"

@@ -67,7 +67,7 @@ export default function ContentCreationToolsPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -103,7 +103,7 @@ export default function ContentCreationToolsPage() {
 
       {/* Value props */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}
@@ -136,7 +136,7 @@ export default function ContentCreationToolsPage() {
 
       {/* Numbered steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}
@@ -192,7 +192,7 @@ export default function ContentCreationToolsPage() {
 
       {/* UGC section with tabs */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}
@@ -249,7 +249,7 @@ export default function ContentCreationToolsPage() {
 
       {/* Create & Edit cards */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}

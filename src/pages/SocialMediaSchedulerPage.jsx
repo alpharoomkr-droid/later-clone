@@ -87,14 +87,14 @@ export default function SocialMediaSchedulerPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="reveal relative overflow-hidden flex items-center justify-center text-center" style={{ background: '#000', minHeight: '90vh' }}>
+      <section className="reveal relative overflow-hidden flex items-center justify-center text-center" style={{ background: '#000', minHeight: '90vh', padding: '70px 0' }}>
         <img
           src="https://images.ctfassets.net/nfpsrlop6sws/7b4Cst4eUbELbpHx1nVy1s/736d30102a739c3927f766e0b13d962a/Later-Social-VideoThumb-3.png"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 0.45 }}
         />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" style={{ padding: '60px 24px' }}>
+        <div className="relative z-10 max-w-[800px] mx-auto" style={{ padding: '60px 24px' }}>
           <div className="hero-enter flex items-center justify-center gap-2" style={{ marginBottom: 24 }}>
             <img src="https://later.com/images/g2-logo.svg" alt="G2" style={{ height: 20, marginRight: 4 }} />
             <span className="flex gap-0.5">
@@ -135,7 +135,7 @@ export default function SocialMediaSchedulerPage() {
 
       {/* Trusted By */}
       <section className="reveal wood-bg" style={{ padding: '40px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <p className="text-center" style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#000', opacity: 0.45, marginBottom: 28 }}>
             Trusted by the world's top brands
           </p>
@@ -149,7 +149,7 @@ export default function SocialMediaSchedulerPage() {
 
       {/* Use Later / Unplug */}
       <section className="reveal" style={{ padding: '64px 0 48px' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2
             style={{
               fontFamily: 'var(--font-heading)',
@@ -174,7 +174,7 @@ export default function SocialMediaSchedulerPage() {
         const reversed = i % 2 === 1
         return (
           <section key={f.tag} className={`reveal ${i % 2 === 0 ? '' : 'wood-bg'}`} style={{ padding: '64px 0' }}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
               <div className={reversed ? 'lg:order-2' : ''}>
                 <p style={{ fontSize: 14, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1.5, color: '#FE3F00', marginBottom: 12 }}>
                   {f.tag}
@@ -207,7 +207,7 @@ export default function SocialMediaSchedulerPage() {
 
       {/* Testimonial */}
       <section className="reveal" style={{ background: '#000', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/5jn0R7lkLHNPYjxclMVB4g/b551ed138659b0f10bbceebe60e33cca/LIFe-logo_white_1600x_1.png"
@@ -240,7 +240,7 @@ export default function SocialMediaSchedulerPage() {
 
       {/* Designed for the pros */}
       <section className="reveal" style={{ padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-center"
             style={{
@@ -299,7 +299,7 @@ export default function SocialMediaSchedulerPage() {
 
       {/* 3 Steps */}
       <section className="reveal wood-bg" style={{ padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-center"
             style={{
@@ -338,7 +338,7 @@ export default function SocialMediaSchedulerPage() {
 
       {/* Resources */}
       <section className="reveal" style={{ padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-center"
             style={{
@@ -378,8 +378,8 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="reveal" style={{ background: '#000', padding: '80px 0', textAlign: 'center' }}>
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="reveal" style={{ background: '#000', padding: '70px 0', textAlign: 'center' }}>
+        <div className="max-w-2xl mx-auto">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',

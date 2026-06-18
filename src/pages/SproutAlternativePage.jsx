@@ -62,7 +62,7 @@ export default function SproutAlternativePage() {
     <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
       {/* 1 — Hero */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
@@ -79,7 +79,7 @@ export default function SproutAlternativePage() {
       </section>
 
       {/* 2 — Benefits */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>THE BEST SPROUT SOCIAL ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>One app. Endless tools for growth.</h2>
@@ -100,7 +100,7 @@ export default function SproutAlternativePage() {
       </section>
 
       {/* 3 — Comparison Table */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Later vs. Sprout Social at a glance</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
@@ -131,7 +131,7 @@ export default function SproutAlternativePage() {
       </section>
 
       {/* 4 — Numbered Features */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>LATER VS. SPROUT SOCIAL</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 12 }}>See what Later can do for you.</h2>
@@ -155,7 +155,7 @@ export default function SproutAlternativePage() {
       </section>
 
       {/* 5 — Testimonials */}
-      <section className="purple-wood-bg reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Over 7 million people — from small shops to global brands — use Later. Here's why.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, maxWidth: 960, margin: '0 auto' }}>
@@ -176,7 +176,7 @@ export default function SproutAlternativePage() {
       </section>
 
       {/* 6 — Compare Links */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
@@ -189,7 +189,7 @@ export default function SproutAlternativePage() {
       </section>
 
       {/* 7 — Bottom CTA */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Social is the best Sprout Social alternative</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan free for 14 days.</p>

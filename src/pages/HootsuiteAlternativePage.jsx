@@ -71,7 +71,7 @@ export default function HootsuiteAlternativePage() {
     <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
@@ -92,7 +92,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 2. Benefits */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: '#FE3F00' }}>WHY LATER IS THE BEST HOOTSUITE ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Manage your social strategy & growth in one platform</h2>
@@ -112,7 +112,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
@@ -144,7 +144,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 4. Numbered Features */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div className="text-center" style={{ marginBottom: 24 }}>
             <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: '#FE3F00' }}>LATER VS. HOOTSUITE</p>
@@ -165,7 +165,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 5. Testimonial */}
-      <section className="purple-wood-bg reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div className="max-w-[900px] mx-auto text-center">
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, color: '#fff' }}>
@@ -184,7 +184,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 6. Compare Links */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <div className="max-w-[800px] mx-auto">
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
@@ -199,7 +199,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 7. Bottom CTA */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Social is the best Hootsuite alternative</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan free for 14 days.</p>

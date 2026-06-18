@@ -49,8 +49,8 @@ export default function ShopifyIntegrationPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p
@@ -103,8 +103,8 @@ export default function ShopifyIntegrationPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal reveal-d1 lg:order-1">
               <img
@@ -189,10 +189,9 @@ export default function ShopifyIntegrationPage() {
         return (
           <section
             key={i}
-            className="py-16 md:py-24"
-            style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA' }}
+            style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}
           >
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className={`reveal ${reversed ? 'lg:order-2' : ''}`}>
                   <p
@@ -234,8 +233,8 @@ export default function ShopifyIntegrationPage() {
       })}
 
       {/* Testimonial */}
-      <section className="py-16 md:py-24" style={{ backgroundColor: '#000' }}>
-        <div className="max-w-[900px] mx-auto text-center reveal px-6">
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
+        <div className="max-w-[900px] mx-auto text-center reveal">
           <svg className="mx-auto" width="40" height="32" viewBox="0 0 40 32" fill="none" style={{ marginBottom: 24 }}>
             <path d="M0 32V19.2C0 13.8667 1.26667 9.46667 3.8 6C6.46667 2.4 10.2 0.266667 15 0V7.2C12.6 7.73333 10.7333 8.93333 9.4 10.8C8.06667 12.6667 7.4 14.8 7.4 17.2H15V32H0ZM25 32V19.2C25 13.8667 26.2667 9.46667 28.8 6C31.4667 2.4 35.2 0.266667 40 0V7.2C37.6 7.73333 35.7333 8.93333 34.4 10.8C33.0667 12.6667 32.4 14.8 32.4 17.2H40V32H25Z" fill="rgba(248,242,234,0.2)"/>
           </svg>
@@ -273,8 +272,8 @@ export default function ShopifyIntegrationPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg py-16 md:py-24">
-        <div className="max-w-[800px] mx-auto text-center reveal px-6">
+      <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal">
           <h2
             className="text-white"
             style={{

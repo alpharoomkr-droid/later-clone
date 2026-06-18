@@ -59,13 +59,13 @@ export default function LinkInBioPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="reveal" style={{ position: 'relative', background: '#000', overflow: 'hidden' }}>
+      <section className="reveal" style={{ position: 'relative', background: '#000', overflow: 'hidden', padding: '70px 0' }}>
         <img
           src="https://images.ctfassets.net/nfpsrlop6sws/2Hk3atwezTOL4Mmh8ARsNG/13ac9d8c150ba46c807cff883234defc/link-in-bio-hero-noOverlay.jpg"
           alt=""
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }}
         />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ position: 'relative', zIndex: 1, paddingTop: 96, paddingBottom: 80 }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ position: 'relative', zIndex: 1, paddingTop: 96, paddingBottom: 80 }}>
           <p className="hero-enter" style={{ fontSize: 14, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>
             One link in bio, Endless Possibilities
           </p>
@@ -83,7 +83,7 @@ export default function LinkInBioPage() {
 
       {/* Trusted By */}
       <section className="reveal" style={{ borderBottom: '1px solid #eee' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 56, flexWrap: 'wrap', paddingTop: 40, paddingBottom: 40 }}>
+        <div className="max-w-[1440px] mx-auto" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 56, flexWrap: 'wrap', paddingTop: 40, paddingBottom: 40 }}>
           <span style={{ fontSize: 14, fontWeight: 600, color: '#999', textTransform: 'uppercase', letterSpacing: 1 }}>Trusted by</span>
           {trustedLogos.map((logo, i) => (
             <img key={i} src={logo.src} alt={logo.alt} style={{ height: 28, objectFit: 'contain', opacity: 0.6 }} />
@@ -93,7 +93,7 @@ export default function LinkInBioPage() {
 
       {/* What's a link in bio? */}
       <section className="reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
             What's a link in bio?
           </h2>
@@ -114,7 +114,7 @@ export default function LinkInBioPage() {
 
       {/* How to Customize */}
       <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center" style={{ marginBottom: 28 }}>
             <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(0,0,0,0.5)', marginBottom: 12 }}>
               HOW TO CUSTOMIZE LINK IN BIO
@@ -171,7 +171,7 @@ export default function LinkInBioPage() {
 
       {/* Link in Bio Features heading */}
       <section className="reveal" style={{ paddingTop: 64, paddingBottom: 0 }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(0,0,0,0.5)', marginBottom: 12 }}>
             LINK IN BIO FEATURES
           </p>
@@ -186,7 +186,7 @@ export default function LinkInBioPage() {
 
       {/* Feature Showcases */}
       <section className="reveal" style={{ paddingTop: 48, paddingBottom: 64 }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           {showcases.map((s, i) => (
             <div key={i} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" style={{ marginBottom: i < showcases.length - 1 ? 64 : 0 }}>
               {/* Image placeholder -- order flips on even items */}
@@ -208,7 +208,7 @@ export default function LinkInBioPage() {
 
       {/* Testimonial */}
       <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <img
@@ -238,7 +238,7 @@ export default function LinkInBioPage() {
 
       {/* FAQ */}
       <section className="reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[800px] mx-auto">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 36 }}>
             FAQ
           </h2>
@@ -285,7 +285,7 @@ export default function LinkInBioPage() {
 
       {/* Resources */}
       <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 36 }}>
             Resources and expertise to keep you ahead.
           </h2>
@@ -310,7 +310,7 @@ export default function LinkInBioPage() {
 
       {/* Final CTA */}
       <section className="reveal" style={{ paddingTop: 64, paddingBottom: 64, textAlign: 'center' }}>
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
             Add a link in bio to your Instagram, TikTok, and Snap.
           </h2>

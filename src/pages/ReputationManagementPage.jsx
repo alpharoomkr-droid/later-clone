@@ -49,7 +49,7 @@ export default function ReputationManagementPage() {
 
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <p
               className="text-gridglow"
@@ -86,7 +86,7 @@ export default function ReputationManagementPage() {
 
       {/* Value Props */}
       <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 16, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
@@ -124,7 +124,7 @@ export default function ReputationManagementPage() {
 
       {/* Numbered Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <p
               className="text-gridglow"
@@ -181,7 +181,7 @@ export default function ReputationManagementPage() {
 
       {/* Feature Section Header */}
       <section style={{ padding: '60px 40px 0', backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal"
             style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', maxWidth: 700, margin: '0 auto' }}
@@ -197,7 +197,7 @@ export default function ReputationManagementPage() {
           key={i}
           style={{ padding: '60px 40px', backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA' }}
         >
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
             <div className={`reveal ${i % 2 === 0 ? 'lg:order-2' : ''}`}>
               <h2
                 className="ff-heading text-charcoal"
@@ -226,7 +226,7 @@ export default function ReputationManagementPage() {
 
       {/* Testimonial */}
       <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div className="text-center" style={{ marginBottom: 48 }}>
             <p
               className="text-white/60"

@@ -56,8 +56,8 @@ export default function CampaignPlatformPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 reveal">
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="hero-enter">
               <p
@@ -94,8 +94,8 @@ export default function CampaignPlatformPage() {
       </section>
 
       {/* How it works - numbered steps */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 reveal">
+      <section style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}
@@ -142,10 +142,9 @@ export default function CampaignPlatformPage() {
         return (
           <section
             key={i}
-            className="py-16 md:py-24"
-            style={{ backgroundColor: i % 2 === 0 ? '#F8F2EA' : '#FEFCFB' }}
+            style={{ backgroundColor: i % 2 === 0 ? '#F8F2EA' : '#FEFCFB', padding: '70px 0' }}
           >
-            <div className="max-w-7xl mx-auto px-6 reveal">
+            <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className={reversed ? 'lg:order-2' : ''}>
                   <p
@@ -183,8 +182,8 @@ export default function CampaignPlatformPage() {
       })}
 
       {/* Testimonial */}
-      <section className="purple-wood-bg py-16 md:py-24">
-        <div className="max-w-[900px] mx-auto px-6 reveal text-center">
+      <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
+        <div className="max-w-[900px] mx-auto reveal text-center">
           <svg className="mx-auto mb-6" width="48" height="48" viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)">
             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
           </svg>
@@ -213,8 +212,8 @@ export default function CampaignPlatformPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 md:py-24" style={{ background: '#000', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto px-6 reveal">
+      <section style={{ background: '#000', textAlign: 'center', padding: '70px 0' }}>
+        <div className="max-w-[700px] mx-auto reveal">
           <h2
             className="ff-heading"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24, color: '#fff' }}

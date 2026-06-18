@@ -29,7 +29,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <p
               className="text-gridglow"
@@ -66,7 +66,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Value Props */}
       <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 12, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
@@ -99,7 +99,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Numbered Features */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <p
               className="text-gridglow"
@@ -150,7 +150,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Social Media Monitoring */}
       <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <h2
               className="ff-heading text-charcoal"
@@ -177,7 +177,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Sentiment Analysis */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal lg:order-2">
             <h2
               className="ff-heading text-charcoal"
@@ -204,7 +204,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Engage with your community */}
       <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <h2
               className="ff-heading text-charcoal"
@@ -231,7 +231,7 @@ export default function SocialMediaListeningPage() {
 
       {/* Testimonial */}
       <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-16 reveal">
+        <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-16 reveal" style={{ padding: '0 40px' }}>
           <div style={{ flex: 1 }}>
             <p
               className="text-white"

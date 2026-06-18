@@ -66,7 +66,7 @@ export default function CreatorIqAlternativePage() {
     <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
@@ -87,7 +87,7 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 2. Benefits */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, textTransform: 'uppercase', color: '#FE3F00' }}>THE BEST CREATORIQ ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Seamless influencer marketing</h2>
@@ -107,7 +107,7 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, textAlign: 'center' }}>Feature comparison</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
@@ -135,7 +135,7 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 4. Numbered Features */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ marginBottom: 24, textAlign: 'center' }}>
             <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, textTransform: 'uppercase', color: '#FE3F00' }}>CREATORIQ VS. LATER</p>
@@ -156,7 +156,7 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 5. Testimonial */}
-      <section className="purple-wood-bg reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[900px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
           <p style={{ fontSize: 18, lineHeight: 1.7, color: '#fff', marginBottom: 24, fontStyle: 'italic' }}>
@@ -168,7 +168,7 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 6. Compare Links */}
-      <section className="reveal">
+      <section className="reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>See how Later Influence compares to the competition.</p>
@@ -181,7 +181,7 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 7. Bottom CTA */}
-      <section className="wood-bg reveal">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Influence is the best CreatorIQ alternative</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>

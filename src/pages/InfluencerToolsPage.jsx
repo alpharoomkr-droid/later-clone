@@ -137,7 +137,7 @@ export default function InfluencerToolsPage() {
       </section>
 
       {/* Supercharge */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[700px] mx-auto text-center mb-16 reveal">
             <h2
@@ -174,7 +174,7 @@ export default function InfluencerToolsPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
@@ -238,7 +238,7 @@ export default function InfluencerToolsPage() {
       {featureSections.map((section, i) => (
         <section
           key={i}
-          style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '80px 0' }}
+          style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}
         >
           <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -280,7 +280,7 @@ export default function InfluencerToolsPage() {
       ))}
 
       {/* Testimonial */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <div className="flex justify-center mb-8">
             <img
@@ -303,7 +303,7 @@ export default function InfluencerToolsPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg" style={{ padding: '80px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[750px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             style={{

@@ -45,8 +45,8 @@ export default function SocialContentCreationPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg reveal py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div>
             <span
               className="hero-enter inline-block text-gridglow"
@@ -99,8 +99,8 @@ export default function SocialContentCreationPage() {
       </section>
 
       {/* How It Works */}
-      <section className="reveal py-16 md:py-24" style={{ backgroundColor: '#FEFCFB' }}>
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/3J3Fl89cMX8DVYKUp7L3so/75af675062542af1d331099023573945/later-content-creation-services-how-it-works.png?w=1136&h=960&q=70&fm=png"
@@ -166,12 +166,12 @@ export default function SocialContentCreationPage() {
       {featureShowcases.map((feature, i) => (
         <section
           key={i}
-          className={`reveal py-16 md:py-24 ${i % 2 === 1 ? 'wood-bg' : ''}`}
+          className={`reveal ${i % 2 === 1 ? 'wood-bg' : ''}`}
           style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : undefined }}
         >
           <div
-            className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
-          >
+            className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+           style={{ padding: '0 40px' }}>
             <div className={`reveal ${feature.direction === 'rtl' ? 'lg:order-2' : ''}`}>
               <span
                 className="text-gridglow"
@@ -219,8 +219,8 @@ export default function SocialContentCreationPage() {
       ))}
 
       {/* Testimonial */}
-      <section className="wood-bg reveal py-16 md:py-24">
-        <div className="max-w-[900px] mx-auto px-6">
+      <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[900px] mx-auto">
           <div style={{ backgroundColor: '#fff', borderRadius: 16, padding: '56px 48px' }}>
             <div className="flex flex-col md:flex-row gap-10 items-start">
               <img
@@ -249,8 +249,8 @@ export default function SocialContentCreationPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg reveal py-16 md:py-24">
-        <div className="max-w-[760px] mx-auto px-6 text-center">
+      <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
+        <div className="max-w-[760px] mx-auto text-center">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',

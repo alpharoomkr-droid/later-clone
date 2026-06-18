@@ -78,8 +78,8 @@ export default function MicroInfluencersPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+      <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -131,7 +131,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
@@ -174,7 +174,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <p
@@ -231,7 +231,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Case Study — Trident */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/3ViTOyAo52Zbl2AyV5tSIY/af7ef0b949aeee1d2931e75da387d075/trident-logo-pill.png?fm=webp&q=75&w=335&h=145"
@@ -262,7 +262,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Feature Cards — alternating */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="flex flex-col gap-20">
             {featureCards.map((card, i) => {
@@ -314,7 +314,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg text-white" style={{ padding: '80px 0' }}>
+      <section className="purple-wood-bg text-white" style={{ padding: '70px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="mb-6"

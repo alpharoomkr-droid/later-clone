@@ -129,7 +129,7 @@ export default function AgreementsPage() {
     <div className="min-h-screen bg-page-bg" style={{ paddingTop: 70 }}>
       {/* Page header */}
       <section className="reveal" style={{ padding: '80px 0 40px' }}>
-        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h1
             className="ff-heading text-charcoal text-center"
             style={{ fontSize: 'clamp(40px, 5vw, 64px)', lineHeight: 1.1, fontWeight: 700 }}
@@ -141,7 +141,7 @@ export default function AgreementsPage() {
 
       {/* Agreement sections */}
       <section className="reveal" style={{ padding: '0 0 100px' }}>
-        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[900px] mx-auto">
             {SECTIONS.map((section, idx) => (
               <div key={section.title} className="reveal" style={{ transitionDelay: `${idx * 60}ms` }}>

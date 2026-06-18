@@ -17,7 +17,7 @@ export default function HomePage() {
       <Hero />
       <div className="bg-secondary text-white text-center py-3 px-4" style={{ fontSize: 14 }}>
         <span className="font-medium">Later's AI creator matching connects your brand to creators who convert. </span>
-        <a href="/ai-creator-matching/" className="underline font-bold hover:opacity-80">Learn more.</a>
+        <a href="/influencer-marketing-tools/find-influencers" className="underline font-bold hover:opacity-80">Learn more.</a>
       </div>
       <TrustedBy />
       <UgcVideos />

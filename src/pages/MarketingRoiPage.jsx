@@ -46,7 +46,7 @@ export default function MarketingRoiPage() {
             <p className="hero-enter-d2" style={{ fontSize: 18, lineHeight: 1.6, color: '#555', marginBottom: 32, maxWidth: 520 }}>
               Budgeting and reporting made simple. Later Influence helps you measure ROI &amp; earned media value to make data-backed decisions about your influencer marketing budget.
             </p>
-            <a href="#" className="btn-primary hero-enter-d3" style={{ fontSize: 16 }}>Book a demo</a>
+            <a href="/influencer-marketing-services" className="btn-primary hero-enter-d3" style={{ fontSize: 16 }}>Book a demo</a>
           </div>
           <div className="hero-enter-d3">
             <img
@@ -110,7 +110,7 @@ export default function MarketingRoiPage() {
               <p style={{ fontSize: 17, color: '#555', lineHeight: 1.6, marginBottom: 24 }}>
                 {f.desc}
               </p>
-              <a href="#" className="btn-outline" style={{ fontSize: 15 }}>Learn more</a>
+              <a href="/influencer-marketing-tools/calculate-marketing-roi-emv" className="btn-outline" style={{ fontSize: 15 }}>Learn more</a>
             </div>
           </div>
         </section>
@@ -144,7 +144,7 @@ export default function MarketingRoiPage() {
           <p style={{ fontSize: 18, lineHeight: 1.6, opacity: 0.85, marginBottom: 32 }}>
             Find out what works (and what doesn't) with real-time earned media value &amp; ROI calculations from Later Influence.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 16 }}>Book a demo</a>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 16 }}>Book a demo</a>
         </div>
       </section>
     </div>

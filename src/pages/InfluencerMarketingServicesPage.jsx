@@ -154,7 +154,7 @@ export default function InfluencerMarketingServicesPage() {
                 We strategize, produce, and manage campaigns end to end, removing guesswork at every stage of the funnel.
               </p>
               <div className="hero-enter-d2">
-                <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+                <a href="/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                   Let&rsquo;s talk strategy <ArrowIcon />
                 </a>
               </div>
@@ -295,7 +295,7 @@ export default function InfluencerMarketingServicesPage() {
                 </button>
               ))}
               <div style={{ marginTop: 36 }}>
-                <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+                <a href="/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                   Let&rsquo;s talk strategy <ArrowIcon />
                 </a>
               </div>
@@ -527,7 +527,7 @@ export default function InfluencerMarketingServicesPage() {
           >
             Fearless creative. Smart execution.
           </h2>
-          <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+          <a href="/pricing" className="btn-primary" style={{ fontSize: 18 }}>
             Let&rsquo;s talk strategy <ArrowIcon />
           </a>
         </div>

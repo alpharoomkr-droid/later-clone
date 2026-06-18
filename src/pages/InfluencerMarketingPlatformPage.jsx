@@ -191,7 +191,7 @@ export default function InfluencerMarketingPlatformPage() {
               Know which creators, ideas, and spend will pay off before you hit launch.
             </p>
             <div className="hero-enter-d3 flex justify-center">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+              <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                 Start your campaign <ArrowIcon />
               </a>
             </div>
@@ -316,7 +316,7 @@ export default function InfluencerMarketingPlatformPage() {
             </div>
           </div>
           <div className="text-center mt-10">
-            <a href="#" className="btn-outline" style={{ fontSize: 16 }}>
+            <a href="/influencer-marketing-tools" className="btn-outline" style={{ fontSize: 16 }}>
               Learn more <ArrowIcon />
             </a>
           </div>
@@ -523,7 +523,7 @@ export default function InfluencerMarketingPlatformPage() {
           >
             Because guessing isn&rsquo;t a strategy.
           </h2>
-          <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+          <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
             Start your campaign <ArrowIcon />
           </a>
         </div>

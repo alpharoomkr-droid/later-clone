@@ -28,7 +28,7 @@ export default function FinalCta() {
         >
           When you get it right, it's impossible to ignore.
         </h2>
-        <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+        <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 18 }}>
           Start your campaign <ArrowIcon />
         </a>
       </div>

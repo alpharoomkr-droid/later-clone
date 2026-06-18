@@ -30,7 +30,7 @@ export default function FullScreenVideo() {
       />
 
       <div className="absolute top-8 right-10 z-20">
-        <a href="#" className="btn-primary" style={{ fontSize: 14, padding: '10px 20px' }}>
+        <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 14, padding: '10px 20px' }}>
           Start your campaign <ArrowIcon />
         </a>
       </div>

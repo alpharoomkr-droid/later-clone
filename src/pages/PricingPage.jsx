@@ -363,7 +363,7 @@ export default function PricingPage() {
                   </div>
 
                   <a
-                    href="#"
+                    href="/pricing"
                     className={plan.popular ? 'btn-primary' : 'btn-outline'}
                     style={{
                       fontSize: 16,
@@ -578,7 +578,7 @@ export default function PricingPage() {
               Whether you're a social media pro or just getting started, Later Social has you covered.
             </p>
             <div className="flex justify-center">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+              <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 18 }}>
                 Start 14-Day Free Trial <ArrowIcon />
               </a>
             </div>

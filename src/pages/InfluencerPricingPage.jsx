@@ -311,7 +311,7 @@ export default function InfluencerPricingPage() {
 
                 {/* Plan Details Link */}
                 <a
-                  href="#"
+                  href="/influencer-marketing-platform"
                   style={{
                     fontSize: 14,
                     fontWeight: 600,
@@ -326,7 +326,7 @@ export default function InfluencerPricingPage() {
                 </a>
 
                 <a
-                  href="#"
+                  href="/influencer-marketing-platform"
                   className={card.emphasized ? 'btn-primary' : 'btn-outline'}
                   style={{
                     fontSize: 16,
@@ -575,7 +575,7 @@ export default function InfluencerPricingPage() {
             >
               Find out what Later Influence can do for you and your business.
             </p>
-            <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+            <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 18 }}>
               Book a demo <ArrowIcon />
             </a>
           </div>

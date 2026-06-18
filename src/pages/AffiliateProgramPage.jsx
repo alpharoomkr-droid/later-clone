@@ -162,7 +162,7 @@ export default function AffiliateProgramPage() {
               Help others discover Later and enjoy exclusive perks as an affiliate. Earn commission, build your brand, and access resources to help you grow.
             </p>
             <div className="hero-enter-d3">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+              <a href="/influencer-creator-program" className="btn-primary" style={{ fontSize: 18 }}>
                 Apply now <ArrowIcon />
               </a>
             </div>
@@ -461,7 +461,7 @@ export default function AffiliateProgramPage() {
           </p>
           <div className="reveal reveal-d2">
             <a
-              href="#"
+              href="/influencer-creator-program"
               className="btn-primary"
               style={{ fontSize: 18 }}
             >

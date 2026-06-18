@@ -82,7 +82,7 @@ export default function InfluencerOutreachPage() {
               Save time pitching your brand to influencers. Later Influence's outreach tools help you connect with and build relationships with ease.
             </p>
             <div className="hero-enter-d3">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+              <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                 Book a demo <ArrowIcon />
               </a>
             </div>
@@ -211,7 +211,7 @@ export default function InfluencerOutreachPage() {
                 >
                   {section.desc}
                 </p>
-                <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+                <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                   Book a demo <ArrowIcon />
                 </a>
               </div>
@@ -277,7 +277,7 @@ export default function InfluencerOutreachPage() {
           >
             Connect with the best creators and turn influencer marketing into your #1 revenue generator.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 18 }}>
             Book a demo <ArrowIcon />
           </a>
         </div>

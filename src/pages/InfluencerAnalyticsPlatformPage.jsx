@@ -95,7 +95,7 @@ export default function InfluencerAnalyticsPlatformPage() {
               Measure the impact of your influencer campaigns with Later Influence's advanced analytics tools.
             </p>
             <div className="hero-enter-d3">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+              <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                 Book a demo <ArrowIcon />
               </a>
             </div>
@@ -224,7 +224,7 @@ export default function InfluencerAnalyticsPlatformPage() {
                 >
                   {section.desc}
                 </p>
-                <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+                <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                   Book a demo <ArrowIcon />
                 </a>
               </div>
@@ -289,7 +289,7 @@ export default function InfluencerAnalyticsPlatformPage() {
           >
             Find out what works, what doesn't, and where to double down with real-time results.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 18 }}>
             Book a demo <ArrowIcon />
           </a>
         </div>

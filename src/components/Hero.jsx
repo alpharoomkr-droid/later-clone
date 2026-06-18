@@ -114,7 +114,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-wrap gap-4 hero-enter-d2 justify-center lg:justify-start">
             <a
-              href="#"
+              href="/influencer-marketing-services"
               className="btn-primary"
               style={{
                 clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%)',

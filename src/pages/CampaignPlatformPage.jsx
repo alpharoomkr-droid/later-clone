@@ -78,7 +78,7 @@ export default function CampaignPlatformPage() {
               >
                 Handle every step of your influencer marketing with ease using Later Influence.
               </p>
-              <a href="#" className="btn-primary hero-enter-d2" style={{ fontSize: 16 }}>
+              <a href="/influencer-marketing-services" className="btn-primary hero-enter-d2" style={{ fontSize: 16 }}>
                 Book a demo
               </a>
             </div>
@@ -165,7 +165,7 @@ export default function CampaignPlatformPage() {
                   >
                     {f.desc}
                   </p>
-                  <a href="#" className="btn-outline reveal reveal-d3" style={{ fontSize: 15 }}>
+                  <a href="/influencer-marketing-tools/influencer-campaign-platform" className="btn-outline reveal reveal-d3" style={{ fontSize: 15 }}>
                     Book a demo
                   </a>
                 </div>
@@ -223,7 +223,7 @@ export default function CampaignPlatformPage() {
           <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)', marginBottom: 32, lineHeight: 1.6 }}>
             Find everything your team needs for end-to-end influencer marketing at Later.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 16 }}>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 16 }}>
             Book a demo
           </a>
         </div>

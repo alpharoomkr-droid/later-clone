@@ -84,7 +84,7 @@ export default function ShopifyIntegrationPage() {
                 Create &amp; share Shopify codes with influencers in seconds.
               </p>
               <a
-                href="#"
+                href="/influencer-marketing-platform"
                 className="btn-primary hero-enter-d3"
                 style={{ fontSize: 16, display: 'inline-block' }}
               >
@@ -298,7 +298,7 @@ export default function ShopifyIntegrationPage() {
           >
             Free products. Free shipping. It&rsquo;s easy with Later.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 16 }}>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 16 }}>
             Book a demo
           </a>
         </div>

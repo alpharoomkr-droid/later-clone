@@ -48,7 +48,7 @@ export default function ContentSyndicationPage() {
             Repurpose impactful influencer content across brand touchpoints and social
             platforms to grow your sales with Later Influence.
           </p>
-          <a href="#" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>
+          <a href="/influencer-marketing-services" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>
             Book a demo
           </a>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
@@ -128,7 +128,7 @@ export default function ContentSyndicationPage() {
                 Syndicate authentic content that resonates with your market to build consumer
                 trust, drive purchase intent and drive ratings & reviews.
               </p>
-              <a href="#" className="btn-outline reveal reveal-d3" style={{ fontSize: 15 }}>
+              <a href="/influencer-marketing-tools/influencer-content-syndication-platform" className="btn-outline reveal reveal-d3" style={{ fontSize: 15 }}>
                 Book a demo
               </a>
             </div>
@@ -180,7 +180,7 @@ export default function ContentSyndicationPage() {
           <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)', marginBottom: 32, lineHeight: 1.6 }}>
             Make your influencer content work harder for you with Later's content syndication tools.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 16 }}>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 16 }}>
             Book a demo
           </a>
         </div>

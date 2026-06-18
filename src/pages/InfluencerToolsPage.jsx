@@ -120,7 +120,7 @@ export default function InfluencerToolsPage() {
               Power your influencer marketing strategy with Later Influence's tools designed to help you grow, scale, and drive the results you need.
             </p>
             <div className="hero-enter-d3">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+              <a href="/influencer-marketing-platform/pricing" className="btn-primary" style={{ fontSize: 18 }}>
                 Book a demo <ArrowIcon />
               </a>
             </div>
@@ -323,7 +323,7 @@ export default function InfluencerToolsPage() {
           >
             Start working with the right influencers and turn influencer marketing into your #1 revenue generator.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 18 }}>
             Book a demo <ArrowIcon />
           </a>
         </div>

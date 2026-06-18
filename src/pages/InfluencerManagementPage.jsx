@@ -67,7 +67,7 @@ export default function InfluencerManagementPage() {
               Manage your influencers, customer advocates, and loyalists at scale with Later Influence.
             </p>
             <div className="hero-enter-d2">
-              <a href="#" className="btn-primary">Book a demo <ArrowIcon /></a>
+              <a href="/influencer-marketing-services" className="btn-primary">Book a demo <ArrowIcon /></a>
             </div>
           </div>
           <div className="hero-enter-d3">
@@ -177,7 +177,7 @@ export default function InfluencerManagementPage() {
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>
             Always stay in charge and on track with Later&rsquo;s influencer management platform.
           </p>
-          <a href="#" className="btn-primary">Book a demo <ArrowIcon /></a>
+          <a href="/influencer-marketing-services" className="btn-primary">Book a demo <ArrowIcon /></a>
         </div>
       </section>
     </div>

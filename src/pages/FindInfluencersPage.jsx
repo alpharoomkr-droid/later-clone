@@ -45,7 +45,7 @@ export default function FindInfluencersPage() {
             <p className="hero-enter-d2" style={{ fontSize: 18, lineHeight: 1.6, color: '#555', marginBottom: 32, maxWidth: 520 }}>
               Discover over 10M+ influencer profiles across every industry and platform with Later Influence.
             </p>
-            <a href="#" className="btn-primary hero-enter-d3" style={{ fontSize: 16 }}>Book a demo</a>
+            <a href="/influencer-marketing-services" className="btn-primary hero-enter-d3" style={{ fontSize: 16 }}>Book a demo</a>
           </div>
           <div className="hero-enter-d3">
             <img
@@ -120,7 +120,7 @@ export default function FindInfluencersPage() {
                 <p style={{ fontSize: 17, color: '#555', lineHeight: 1.6, marginBottom: 24 }}>
                   {f.desc}
                 </p>
-                <a href="#" className="btn-outline" style={{ fontSize: 15 }}>Learn more</a>
+                <a href="/influencer-marketing-tools/find-influencers" className="btn-outline" style={{ fontSize: 15 }}>Learn more</a>
               </div>
             </div>
           ))}
@@ -155,7 +155,7 @@ export default function FindInfluencersPage() {
           <p style={{ fontSize: 18, lineHeight: 1.6, opacity: 0.85, marginBottom: 32 }}>
             Start working with talented influencers who will take your brand to the next level.
           </p>
-          <a href="#" className="btn-primary" style={{ fontSize: 16 }}>Book a demo</a>
+          <a href="/influencer-marketing-services" className="btn-primary" style={{ fontSize: 16 }}>Book a demo</a>
         </div>
       </section>
     </div>

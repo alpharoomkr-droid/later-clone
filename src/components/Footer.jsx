@@ -22,57 +22,57 @@ const footerColumns = [
   {
     header: 'Products + services',
     links: [
-      { label: 'Full-service programs', href: '#' },
-      { label: 'Influencer marketing platform', href: '#' },
-      { label: 'Social media management', href: '#' },
-      { label: 'Mavely for Creators', href: '#' },
-      { label: 'AI creator matching', href: '#' },
+      { label: 'Full-service programs', href: '/influencer-marketing-services' },
+      { label: 'Influencer marketing platform', href: '/influencer-marketing-platform' },
+      { label: 'Social media management', href: '/social-media-scheduler' },
+      { label: 'Mavely for Creators', href: '/influencer-creator-program' },
+      { label: 'AI creator matching', href: '/influencer-marketing-tools/find-influencers' },
     ],
   },
   {
     header: 'For enterprise brands',
     links: [
-      { label: 'Campaign services', href: '#' },
-      { label: 'Platform access', href: '#' },
-      { label: 'Our creator network', href: '#' },
-      { label: 'Our work', href: '/case-studies/' },
+      { label: 'Campaign services', href: '/influencer-marketing-services' },
+      { label: 'Platform access', href: '/influencer-marketing-platform' },
+      { label: 'Our creator network', href: '/influencer-network' },
+      { label: 'Our work', href: '/case-studies' },
     ],
-    cta: { label: 'Book a strategy call', href: '#' },
+    cta: { label: 'Book a strategy call', href: '/influencer-marketing-services' },
   },
   {
     header: 'For social media managers',
     links: [
-      { label: 'Social media scheduler', href: '#' },
-      { label: 'Pricing', href: '/pricing/' },
-      { label: 'Integrations', href: '#' },
+      { label: 'Social media scheduler', href: '/social-media-scheduler' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Integrations', href: '/social-media-marketing-tools' },
     ],
-    cta: { label: 'Start free trial', href: '#' },
+    cta: { label: 'Start free trial', href: '/pricing' },
   },
   {
     header: 'For creators',
     links: [
-      { label: 'Join our campaign network', href: '#' },
-      { label: 'Mavely affiliate program', href: '#' },
+      { label: 'Join our campaign network', href: '/influencer-creator-program' },
+      { label: 'Mavely affiliate program', href: '/affiliate-program' },
     ],
   },
   {
     header: 'Resources',
     links: [
-      { label: 'Blog', href: '/blog/' },
-      { label: 'Insights and Trends', href: '#' },
-      { label: 'Guides + templates', href: '#' },
-      { label: 'Expert Sessions', href: '#' },
-      { label: 'Help Center', href: '#' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Insights and Trends', href: '/resources' },
+      { label: 'Guides + templates', href: '/resources' },
+      { label: 'Expert Sessions', href: '/resources' },
+      { label: 'Help Center', href: '/resources' },
     ],
   },
   {
     header: 'Company',
     links: [
-      { label: 'About Later', href: '#' },
-      { label: 'Careers', href: '#' },
-      { label: 'Case studies', href: '/case-studies/' },
-      { label: 'Press + media', href: '#' },
-      { label: 'Partners', href: '#' },
+      { label: 'About Later', href: '/partners' },
+      { label: 'Careers', href: '/partners' },
+      { label: 'Case studies', href: '/case-studies' },
+      { label: 'Press + media', href: '/resources' },
+      { label: 'Partners', href: '/partners' },
     ],
   },
 ]
@@ -217,13 +217,13 @@ export default function Footer() {
             &copy; 2026 Later. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-1" style={{ fontSize: 12 }}>
-            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Sitemap</a>
+            <a href="/agreements" className="text-offline/40 hover:text-offline/60 transition-colors">Sitemap</a>
             <span className="text-offline/40">|</span>
-            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Terms</a>
+            <a href="/agreements" className="text-offline/40 hover:text-offline/60 transition-colors">Terms</a>
             <span className="text-offline/40">|</span>
-            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Privacy Policy</a>
+            <a href="/agreements" className="text-offline/40 hover:text-offline/60 transition-colors">Privacy Policy</a>
             <span className="text-offline/40">|</span>
-            <a href="#" className="text-offline/40 hover:text-offline/60 transition-colors">Cookie Settings</a>
+            <a href="/agreements" className="text-offline/40 hover:text-offline/60 transition-colors">Cookie Settings</a>
           </div>
         </div>
       </div>

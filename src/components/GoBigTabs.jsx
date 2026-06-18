@@ -10,8 +10,8 @@ function ArrowIcon() {
 
 function CheckIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="flex-shrink-0 mt-0.5">
-      <path d="M4 10l4 4 8-8" stroke="#FE3F00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="flex-shrink-0 mt-0.5">
+      <path d="M5 12l5 5 9-9" stroke="#5124c1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
@@ -56,7 +56,7 @@ export default function GoBigTabs() {
 
   return (
     <section className="purple-wood-bg" style={{ padding: '80px 0 56px' }}>
-      <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1280px] mx-auto" style={{ padding: '0 40px' }}>
         <h2
           className="text-offline mb-2 reveal"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
@@ -67,7 +67,7 @@ export default function GoBigTabs() {
           How brands and creators grow with Later.
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-0" role="tablist">
+        <div className="flex flex-wrap mb-0" role="tablist" style={{ gap: 0 }}>
           {tabs.map((tab, i) => (
             <button
               key={i}
@@ -76,41 +76,58 @@ export default function GoBigTabs() {
               onClick={() => setActiveTab(i)}
               className={`font-bold transition-all ${
                 activeTab === i
-                  ? 'bg-offline text-charcoal'
+                  ? 'text-charcoal'
                   : 'bg-transparent text-offline hover:bg-white/20'
               }`}
-              style={{ fontFamily: 'var(--font-body)', fontSize: 15, fontWeight: 700, padding: '16px 24px' }}
+              style={{
+                fontFamily: 'var(--font-body)',
+                fontSize: 15,
+                fontWeight: 700,
+                padding: '16px 24px',
+                border: '1px solid #F8F2EA',
+                marginBottom: -1,
+                backgroundColor: activeTab === i ? '#F8F2EA' : 'transparent',
+                clipPath: activeTab === i
+                  ? 'polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)'
+                  : 'none',
+                position: 'relative',
+                zIndex: activeTab === i ? 1 : 0,
+              }}
             >
               {tab.label}
             </button>
           ))}
         </div>
 
-        <div className="bg-secondary overflow-hidden reveal reveal-d2">
-          <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
-            <div className="p-8 lg:p-12 flex flex-col justify-center">
+        <div className="overflow-hidden reveal reveal-d2" style={{ backgroundColor: '#F8F2EA' }}>
+          <div className="grid grid-cols-1 xl:grid-cols-12 min-h-[500px]">
+            <div className="xl:col-span-7 flex flex-col justify-center" style={{ padding: '2.5rem' }}>
               <h3
-                className="text-white mb-2"
+                className="text-charcoal mb-2"
                 style={{ fontFamily: 'var(--font-heading)', fontSize: 38, fontWeight: 700, lineHeight: '47.5px', letterSpacing: '0.19px' }}
               >
                 {tabs[activeTab].heading}
               </h3>
-              <p className="text-white/70 mb-6" style={{ fontSize: 18, lineHeight: '27px' }}>
+              <p className="text-charcoal/70 mb-6" style={{ fontSize: 18, lineHeight: '27px' }}>
                 {tabs[activeTab].description}
               </p>
               <div className="grid grid-cols-2 gap-x-6 gap-y-3 mb-8">
                 {tabs[activeTab].checks.map((check, i) => (
-                  <div key={i} className="flex items-start gap-2 text-white" style={{ fontSize: 18, fontWeight: 400, lineHeight: '27px' }}>
+                  <div key={i} className="flex items-start gap-2 text-charcoal" style={{ fontSize: 18, fontWeight: 400, lineHeight: '27px' }}>
                     <CheckIcon />
                     {check}
                   </div>
                 ))}
               </div>
-              <a href={tabs[activeTab].link} className="inline-flex items-center gap-2 text-gridglow border-b-2 border-gridglow pb-1 hover:opacity-80 transition-opacity w-fit" style={{ fontSize: 16, fontWeight: 400 }}>
+              <a
+                href={tabs[activeTab].link}
+                className="inline-flex items-center gap-2 pb-1 hover:opacity-80 transition-opacity w-fit"
+                style={{ fontSize: 16, fontWeight: 400, color: '#5124c1', borderBottom: '2px solid #5124c1' }}
+              >
                 Learn more <ArrowIcon />
               </a>
             </div>
-            <div className="relative">
+            <div className="xl:col-span-5 relative">
               <video
                 key={activeTab}
                 autoPlay

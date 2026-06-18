@@ -78,7 +78,7 @@ export default function MicroInfluencersPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -131,7 +131,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
@@ -151,7 +151,7 @@ export default function MicroInfluencersPage() {
               <div
                 key={i}
                 className={`reveal reveal-d${i + 1} p-8 text-center`}
-                style={{ backgroundColor: '#F8F2EA', borderRadius: 0 }}
+                style={{ backgroundColor: '#F8F2EA', borderRadius: 12 }}
               >
                 <img
                   src={b.icon}
@@ -174,7 +174,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
+      <section className="wood-bg" style={{ padding: '80px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <p
@@ -195,7 +195,7 @@ export default function MicroInfluencersPage() {
               Your go-to platform for all things creator
             </h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ gap: 48 }}>
             <div>
               <img
                 src="https://images.ctfassets.net/nfpsrlop6sws/iGdSaBKBPniMHuLFIYp98/a1c768cf160d22cf628da0052ec85b8c/why-use-later-influence.png?w=1136&h=960&q=70&fm=png"
@@ -231,7 +231,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Case Study — Trident */}
-      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/3ViTOyAo52Zbl2AyV5tSIY/af7ef0b949aeee1d2931e75da387d075/trident-logo-pill.png?fm=webp&q=75&w=335&h=145"
@@ -240,7 +240,7 @@ export default function MicroInfluencersPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[900px] mx-auto mb-10">
             {caseStudyStats.map((s, i) => (
-              <div key={i}>
+              <div key={i} className="text-center">
                 <div
                   className="text-gridglow"
                   style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1 }}
@@ -262,7 +262,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Feature Cards — alternating */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="flex flex-col gap-20">
             {featureCards.map((card, i) => {
@@ -314,7 +314,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg text-white" style={{ padding: '60px 0' }}>
+      <section className="purple-wood-bg text-white" style={{ padding: '80px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="mb-6"

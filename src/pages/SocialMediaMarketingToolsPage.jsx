@@ -22,7 +22,7 @@ const LOGOS = [
 const FEATURES = [
   {
     tag: 'Publish & Schedule',
-    title: 'Plan, schedule & auto publish to all social platforms',
+    title: 'Plan your posts in seconds',
     desc: 'From Instagram to TikTok, Pinterest, LinkedIn, and more — schedule and auto publish your content across all major social media platforms from one calendar.',
     cta: 'Learn more',
     href: '/social-media-scheduler/',
@@ -30,7 +30,7 @@ const FEATURES = [
   },
   {
     tag: 'Link in Bio Tool',
-    title: 'Drive traffic & sales from your bio link',
+    title: 'Turn followers into customers with Link in Bio',
     desc: 'Turn your Instagram and TikTok bio into a mini website. Drive traffic, sales, and engagement with a customizable Linkin.bio page that connects followers to your content.',
     cta: 'Learn more',
     href: '/link-in-bio/',
@@ -38,7 +38,7 @@ const FEATURES = [
   },
   {
     tag: 'Content Creation Tools',
-    title: 'Create scroll-stopping content, faster',
+    title: 'Create better content, faster',
     desc: 'Search and find unique brand content in seconds. Get creative tools to organize and edit your media, discover UGC, and get hashtag suggestions to boost your reach.',
     cta: 'Learn more',
     href: '/social-content-creation/',
@@ -46,7 +46,7 @@ const FEATURES = [
   },
   {
     tag: 'Caption Writer Tool',
-    title: 'Write better captions with AI',
+    title: 'Write Instagram captions faster with AI',
     desc: "Struggling with what to say? Later's AI-powered caption writer generates engaging, on-brand captions so you can spend less time writing and more time growing.",
     cta: 'Learn more',
     href: '/caption-writer/',
@@ -158,6 +158,24 @@ export default function SocialMediaMarketingToolsPage() {
         </div>
       </section>
 
+      {/* ── Feature Section Header ── */}
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center reveal">
+          <p
+            className="text-gridglow"
+            style={{ fontSize: 14, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 12 }}
+          >
+            LATER SOCIAL MARKETING TOOLS
+          </p>
+          <h2
+            className="ff-heading"
+            style={{ fontSize: 48, fontWeight: 900, lineHeight: 1.15, maxWidth: 600, margin: '0 auto' }}
+          >
+            Do every social media task faster &amp; easier
+          </h2>
+        </div>
+      </section>
+
       {/* ── Feature Sections (alternating layout) ── */}
       {FEATURES.map((f, i) => {
         const reversed = i % 2 === 1
@@ -167,17 +185,9 @@ export default function SocialMediaMarketingToolsPage() {
             className={i % 2 === 0 ? 'wood-bg' : ''}
             style={{ padding: '60px 40px' }}
           >
-            <div
-              className="max-w-[1440px] mx-auto reveal"
-              style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: 36,
-                alignItems: 'center',
-              }}
-            >
+            <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-9 items-center reveal">
               {/* Text column */}
-              <div style={{ order: reversed ? 2 : 0 }}>
+              <div className={reversed ? 'lg:order-2' : ''}>
                 <p
                   style={{
                     fontSize: 14,
@@ -222,7 +232,7 @@ export default function SocialMediaMarketingToolsPage() {
               </div>
 
               {/* Image column */}
-              <div style={{ order: reversed ? 0 : 1 }}>
+              <div className={reversed ? 'lg:order-1' : ''}>
                 <img
                   src={f.img}
                   alt={f.tag}
@@ -237,40 +247,46 @@ export default function SocialMediaMarketingToolsPage() {
 
       {/* ── Testimonial ── */}
       <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div
-          className="max-w-[900px] mx-auto reveal"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '200px 1fr',
-            gap: 32,
-            alignItems: 'center',
-          }}
-        >
-          <img
-            src="https://images.ctfassets.net/nfpsrlop6sws/5czdqmdPQtpordskGFSKmI/ac71c797e83900c76839758100ea049d/hippeas.png?w=640&h=640&q=50&fm=png"
-            alt="HIPPEAS Snacks"
-            style={{ width: '100%', borderRadius: 12 }}
-            loading="lazy"
-          />
-          <div>
-            <p
-              style={{
-                fontSize: 20,
-                lineHeight: 1.6,
-                color: '#fff',
-                marginBottom: 24,
-              }}
-            >
-              "Later has been a game-changer for our social media strategy. The
-              scheduling, analytics, and content tools help us stay consistent and
-              connected with our community every day."
-            </p>
-            <p style={{ fontWeight: 700, fontSize: 16, color: '#fff' }}>
-              Bella Ly @hippeas_snacks
-            </p>
-            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }}>
-              HIPPEAS Snacks
-            </p>
+        <div className="max-w-[900px] mx-auto reveal">
+          <p
+            className="text-white/60"
+            style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 12, textAlign: 'center' }}
+          >
+            CUSTOMER TESTIMONIAL
+          </p>
+          <h2
+            className="ff-heading text-white text-center"
+            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}
+          >
+            Why social media marketers love Later Social
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-8 items-center">
+            <img
+              src="https://images.ctfassets.net/nfpsrlop6sws/5czdqmdPQtpordskGFSKmI/ac71c797e83900c76839758100ea049d/hippeas.png?w=640&h=640&q=50&fm=png"
+              alt="HIPPEAS Snacks"
+              style={{ width: '100%', borderRadius: 12 }}
+              loading="lazy"
+            />
+            <div>
+              <p
+                style={{
+                  fontSize: 20,
+                  lineHeight: 1.6,
+                  color: '#fff',
+                  marginBottom: 24,
+                }}
+              >
+                "Later has been a game-changer for our social media strategy. The
+                scheduling, analytics, and content tools help us stay consistent and
+                connected with our community every day."
+              </p>
+              <p style={{ fontWeight: 700, fontSize: 16, color: '#fff' }}>
+                Bella Ly @hippeas_snacks
+              </p>
+              <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }}>
+                HIPPEAS Snacks
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -297,7 +313,7 @@ export default function SocialMediaMarketingToolsPage() {
               marginBottom: 36,
             }}
           >
-            Test out any Later plan 100% free for 14 days.
+            Create, edit, and share social media content faster with Later Social.
           </p>
           <Link to="/pricing" className="btn-primary" style={{ fontSize: 16 }}>
             Start free trial <ArrowIcon />

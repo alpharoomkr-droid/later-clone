@@ -77,7 +77,7 @@ export default function TikTokSchedulerPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>PLAN YOUR TIKTOK SUCCESS</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             TikTok Scheduler for Planning and Publishing Content in Advance
@@ -94,12 +94,12 @@ export default function TikTokSchedulerPage() {
 
       {/* Quick features */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+        <div className="max-w-[1100px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>The ultimate TikTok scheduling tool.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Strategize, schedule, and thrive on TikTok.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {features.map((f, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`}>
+              <div key={i} className={`text-center reveal reveal-d${i + 1}`}>
                 <img src={f.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{f.title}</h3>
                 <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5 }}>{f.desc}</p>
@@ -111,11 +111,11 @@ export default function TikTokSchedulerPage() {
 
       {/* Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>HOW LATER FOR TIKTOK WORKS</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Your all-in-one TikTok management tool.</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>From cooking videos to ASMR content, Later makes it easy to plan and schedule TikTok videos in less time.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/3xax5sIrOTOYy08dbTwAal/44fd883896223f0671d90226711272e0/tiktok-how-it-works.png?w=1153&h=1161&q=70&fm=png" alt="TikTok How It Works" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -146,7 +146,7 @@ export default function TikTokSchedulerPage() {
 
       {/* Feature showcases */}
       <section style={{ padding: '0 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1100px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>TIKTOK FEATURES</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Keep the good times scrolling.</h2>
           {showcases.map((s, i) => (
@@ -193,7 +193,7 @@ export default function TikTokSchedulerPage() {
 
       {/* Blogs & Resources */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.2, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Learn how to get better ROI from your social media content & campaigns.</h2>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, marginBottom: 32 }}>Blogs</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 32 }}>

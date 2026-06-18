@@ -97,9 +97,13 @@ export default function CanvaAlternativePage() {
       {/* 2 — Benefits */}
       <section className="reveal">
         <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>Later vs Canva</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>
             The social media marketing platform to share your passion, grow your community and build your business.
           </h2>
+          <p style={{ fontSize: 18, lineHeight: 1.6, color: '#555', maxWidth: 700, margin: '0 auto' }}>
+            Later gives you everything you need to plan, schedule, and analyze your social media content — without juggling multiple tools.
+          </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginTop: 56 }}>
             {BENEFITS.map((b) => (
               <div key={b.title} style={{ textAlign: 'center', padding: '32px 20px' }}>
@@ -108,6 +112,9 @@ export default function CanvaAlternativePage() {
                 <p style={{ fontSize: 15, lineHeight: 1.6, color: '#555' }}>{b.desc}</p>
               </div>
             ))}
+          </div>
+          <div style={{ marginTop: 32 }}>
+            <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
           </div>
         </div>
       </section>
@@ -137,6 +144,9 @@ export default function CanvaAlternativePage() {
             </table>
           </div>
           <p style={{ textAlign: 'center', fontSize: 13, color: '#999', marginTop: 16 }}>Last updated December 2022</p>
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
+          </div>
         </div>
       </section>
 
@@ -152,6 +162,9 @@ export default function CanvaAlternativePage() {
                 <span style={{ fontSize: 64, fontWeight: 800, color: '#FE3F00', opacity: 0.2, lineHeight: 1 }}>{item.num}</span>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, marginBottom: 16, marginTop: 8 }}>{item.title}</h3>
                 <p style={{ fontSize: 16, lineHeight: 1.7, color: '#555', maxWidth: 480 }}>{item.desc}</p>
+                <div style={{ marginTop: 24 }}>
+                  <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
+                </div>
               </div>
               <div style={{ direction: 'ltr' }}>
                 <img src={item.img} alt={item.title} style={{ width: '100%', borderRadius: 16 }} />

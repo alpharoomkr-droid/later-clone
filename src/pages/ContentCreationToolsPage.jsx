@@ -104,7 +104,19 @@ export default function ContentCreationToolsPage() {
       {/* Value props */}
       <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28, textAlign: 'center' }}>
+          <h2
+            className="ff-heading text-center"
+            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}
+          >
+            Create the content your audience wants
+          </h2>
+          <p
+            className="text-center"
+            style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}
+          >
+            Everything you need to produce standout social content, all in one place.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 28, textAlign: 'center' }}>
             {valueProps.map((v, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`}>
                 <img
@@ -133,11 +145,24 @@ export default function ContentCreationToolsPage() {
           </p>
           <h2
             className="ff-heading text-center"
-            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}
+            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}
           >
-            Search, find, & edit unique brand content in seconds
+            Search, find, &amp; edit unique brand content in seconds
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <p
+            className="text-center"
+            style={{
+              fontSize: 18,
+              color: '#555',
+              marginBottom: 32,
+              maxWidth: 640,
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            Later's content creation tools make it easy to produce on-brand content at every step.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: 36, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/7ASkAWfeyeEp67wh1EaUm7/2d01e287ce6cc367696982a6d1cc35b8/search-find-and-edit-unique-brand-content-in-seconds-with-Later.png?w=1168&h=1034&q=70&fm=png"
               alt="Search find and edit content with Later"
@@ -201,7 +226,7 @@ export default function ContentCreationToolsPage() {
               </button>
             ))}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2" style={{ gap: 36, alignItems: 'center' }}>
             <div>
               <h3 className="ff-heading" style={{ fontSize: 32, fontWeight: 800, marginBottom: 16 }}>
                 {ugcTabs[activeTab].label}
@@ -237,7 +262,7 @@ export default function ContentCreationToolsPage() {
           >
             Everything you need to produce scroll-stopping posts, all in one place.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
+          <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 32 }}>
             {createCards.map((c, i) => (
               <div
                 key={i}
@@ -256,9 +281,23 @@ export default function ContentCreationToolsPage() {
 
       {/* Testimonial */}
       <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[900px] mx-auto text-center reveal" style={{ color: '#fff', marginBottom: 32 }}>
+          <p
+            className="uppercase tracking-widest"
+            style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, opacity: 0.7 }}
+          >
+            CUSTOMER TESTIMONIAL
+          </p>
+          <h2
+            className="ff-heading"
+            style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15 }}
+          >
+            How Later's content creation tools help brands grow
+          </h2>
+        </div>
         <div
-          className="max-w-[900px] mx-auto reveal"
-          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 32, alignItems: 'center' }}
+          className="max-w-[900px] mx-auto reveal grid grid-cols-1 lg:grid-cols-[200px_1fr]"
+          style={{ gap: 32, alignItems: 'center' }}
         >
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/2GkucbncyJCQxYrMMcfIgl/ccff016ccc10fd06c97a006d42ca2a95/lush.png?w=640&h=640&q=50&fm=png"

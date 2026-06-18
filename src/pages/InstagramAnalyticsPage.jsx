@@ -55,7 +55,7 @@ export default function InstagramAnalyticsPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>Talk Data to Me</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             Get Instagram Analytics that actually make sense
@@ -72,11 +72,11 @@ export default function InstagramAnalyticsPage() {
 
       {/* Steps */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Why you need Analytics for Instagram</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>All data, no drama</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>Understand your audience, optimize your content, and grow your account with actionable insights.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/3B0jzk91BSIfp1JJq5LDRk/d7f2195fb37d20baa70596fe5696c7ea/later-instagram-analytics-how-it-works.png?w=1171&h=997&q=70&fm=png" alt="Instagram Analytics how it works" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -94,8 +94,8 @@ export default function InstagramAnalyticsPage() {
       </section>
 
       {/* Feature Showcases */}
-      <section style={{ padding: '0 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1100px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Later's Instagram Analytics Tools</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Get the insights you need, no number crunching required.</h2>
           {showcases.map((s, i) => (
@@ -113,12 +113,12 @@ export default function InstagramAnalyticsPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Customer Testimonial</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>How Later's Instagram Analytics Can Help You</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 32 }}>
-            <div className="reveal reveal-d1" style={{ background: '#fff', borderRadius: 12, padding: 32, display: 'flex', flexDirection: 'column' }}>
+            <div className="reveal reveal-d1" style={{ background: '#F8F2EA', borderRadius: 12, padding: 32, display: 'flex', flexDirection: 'column' }}>
               <img src="https://images.ctfassets.net/nfpsrlop6sws/5uEkgAvDHkaVHUwDFoEr9S/87948264d3fd47bbdaadd5a8e17a5bd1/nikki-reed-staci-inspektor.jpg?w=640&h=640&fl=progressive&q=50&fm=jpg" alt="Nikki Reed & Staci Inspektor" style={{ width: 64, height: 64, borderRadius: '50%', objectFit: 'cover', marginBottom: 20 }} />
               <p style={{ fontSize: 16, lineHeight: 1.6, color: '#333', marginBottom: 24, flex: 1 }}>"Not only is Later's Analytics feature incredibly user-friendly, it's also so helpful seeing our analytics all in one place! We especially love using the Performance Report to track performance over the last 90 days and see how our engagement compares to similar profiles in our industry."</p>
               <div>
@@ -126,7 +126,7 @@ export default function InstagramAnalyticsPage() {
                 <p style={{ fontSize: 14, color: '#777' }}>ATELIER SAUCIER, Co-founders</p>
               </div>
             </div>
-            <div className="reveal reveal-d2" style={{ background: '#fff', borderRadius: 12, padding: 32, display: 'flex', flexDirection: 'column' }}>
+            <div className="reveal reveal-d2" style={{ background: '#F8F2EA', borderRadius: 12, padding: 32, display: 'flex', flexDirection: 'column' }}>
               <img src="https://images.ctfassets.net/nfpsrlop6sws/7nMlwBPmQiAEXbrCVFUK91/842ff1f7d440fe30a27e7acf66f3578a/jessica-hong-apotheke.jpg?w=640&h=640&fl=progressive&q=50&fm=jpg" alt="Jessica Hong" style={{ width: 64, height: 64, borderRadius: '50%', objectFit: 'cover', marginBottom: 20 }} />
               <p style={{ fontSize: 16, lineHeight: 1.6, color: '#333', marginBottom: 24, flex: 1 }}>"Later's Instagram Reels analytics tools have helped us tremendously with being more data-driven in our content strategy. The Reels auto publish is also a must — now we can spend less time manually posting, and more time creating great content!"</p>
               <div>

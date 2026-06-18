@@ -57,78 +57,145 @@ const steps = [
 const careerFeatures = [
   {
     title: 'Manage your campaigns',
-    desc: 'Keep all your brand collaborations organized in one place. Track deliverables, deadlines, and payments effortlessly.',
+    desc: 'Check your application status, key deliverables, and deadlines across multiple campaigns and social channels.',
     img: 'https://images.ctfassets.net/nfpsrlop6sws/1Tvn7BbgutoTepkXQ4tgUI/a78854b05f2b6307fb8c02a91b98468c/manage-multiple-campaigns-at-once.png?w=1136&h=960&q=70&fm=png',
+    cta: { label: 'Join today', href: '#' },
   },
   {
     title: 'Join Mavely',
-    desc: 'Earn commission on every sale you drive through personalized affiliate links from top brands.',
+    desc: "Mavely's intuitive platform lets you create affiliate links to share products your audience loves. When they shop, you earn.",
     img: 'https://images.ctfassets.net/nfpsrlop6sws/1NdOC1hoJXZ6MQbB0iw9Mw/a58e68b2eb0256064c040dd7452d9184/manage-your-brand-campaigns.png?w=1136&h=960&q=70&fm=png',
+    cta: { label: 'Earn with Mavely', href: 'https://www.joinmavely.com/' },
   },
   {
     title: 'Get more clicks',
-    desc: 'Drive traffic from your social profiles with Link in Bio and turn followers into customers.',
+    desc: 'Use Link in Bio to drive traffic from Instagram & TikTok to anywhere you want, like your online shop, or YouTube.',
     img: 'https://later.com/images/temp/get-more-clicks-with-later.jpg',
+    cta: null,
   },
 ]
 
 const signUpFeatures = [
-  'Creator marketplace listing',
-  'Custom affiliate links',
-  'Link in Bio page',
-  'Personalized media kit',
-  'Social Media Scheduling',
-  'Hashtag suggestions',
+  { label: 'Creator marketplace listing', icon: 'https://later.com/images/icons/icon-database.png' },
+  { label: 'Custom affiliate links', icon: 'https://later.com/images/icons/icon-affiliate-links.png' },
+  { label: 'Link in Bio page', icon: 'https://later.com/images/icons/icon-linkinbio.png' },
+  { label: 'Personalized media kit', icon: 'https://later.com/images/icons/icon-media-kit.png' },
+  { label: 'Social Media Scheduling', icon: 'https://later.com/images/icons/icon-auto-publish.png' },
+  { label: 'Hashtag suggestions', icon: 'https://later.com/images/icons/icon-hashtag.png' },
 ]
 
 const creators = [
-  { handle: '@luda_', name: 'Ludovick Love', img: 'https://later.com/images/temp/profiles/luda.jpg', stats: '162.5K Instagram, 17.3K Pinterest' },
-  { handle: '@shadelleg', name: 'Shadelle Goodson', img: 'https://later.com/images/temp/profiles/shadelleg.jpg', stats: '13.7K Instagram, 26.9K YouTube' },
-  { handle: '@ayokwam', name: 'Kwame Appiah', img: 'https://later.com/images/temp/profiles/ayokwam.jpg', stats: '461K Instagram, 24.6K TikTok' },
-  { handle: '@jenickalopez', name: 'Jenicka Lopez', img: 'https://later.com/images/temp/profiles/jenickalopez.jpg', stats: '1.3M Instagram, 1.7M TikTok' },
-  { handle: '@martinebeerman', name: 'Martine Beerman', img: 'https://later.com/images/temp/profiles/martinebeerman.jpg', stats: '129K Instagram, 649 X' },
-  { handle: '@ayelow', name: 'David Contreras', img: 'https://later.com/images/temp/profiles/ayelow.jpg', stats: '16.6K Instagram, 5.3K TikTok' },
+  { handle: '@luda_', name: 'Ludovick Love', img: 'https://later.com/images/temp/profiles/luda.png', platform1: 'Instagram', count1: '162.5K', platform2: 'Pinterest', count2: '17.3K' },
+  { handle: '@shadelleg', name: 'Shadelle Goodson', img: 'https://later.com/images/temp/profiles/shadelleg.png', platform1: 'Instagram', count1: '13.7K', platform2: 'YouTube', count2: '26.9K' },
+  { handle: '@ayokwam', name: 'Kwame Appiah', img: 'https://later.com/images/temp/profiles/ayokwam.jpg', platform1: 'Instagram', count1: '461K', platform2: 'TikTok', count2: '24.6K' },
+  { handle: '@jenickalopez', name: 'Jenicka Lopez', img: 'https://later.com/images/temp/profiles/jenickalopez.jpg', platform1: 'Instagram', count1: '1.3M', platform2: 'TikTok', count2: '1.7M' },
+  { handle: '@martinebeerman', name: 'Martine Beerman', img: 'https://later.com/images/temp/profiles/martinebeerman.png', platform1: 'Instagram', count1: '129K', platform2: 'X', count2: '649' },
+  { handle: '@ayelow', name: 'David Contreras', img: 'https://later.com/images/temp/profiles/ayelow.jpg', platform1: 'Instagram', count1: '16.6K', platform2: 'TikTok', count2: '5.3K' },
+]
+
+const faqs = [
+  {
+    q: 'What is a creator?',
+    a: 'A creator is anyone who creates and shares digital content on social media. Creators typically work towards building an online community, monetizing their skillset, or a mix of both.',
+  },
+  {
+    q: 'How do I become a creator?',
+    a: 'If you\'re interested in learning how to become a full-time content creator, Later has your back. We have a ton of great resources in our Later Blog to help you get started. Then simply sign up for Later and add your profile to our creator marketplace so you can get discovered and win more brand deals.',
+  },
+  {
+    q: 'How do I partner with brands?',
+    a: 'Later makes it easy for you to find campaigns that match your values and expectations. Take a look through available campaigns and apply to ones that you\'re interested in with your Later media kit that clearly outlines your experience, reach, and payment expectations.',
+  },
+  {
+    q: 'How do brands choose influencers to work with?',
+    a: 'Brands typically choose influencers by looking at their audience demographics, engagement rates, and content quality. Brands can search Later\'s marketplace for creators that match their target audience and marketing goals.',
+  },
+  {
+    q: 'What is Later Link in Bio?',
+    a: 'Later Link in Bio is a fully customizable mini web page built into your Instagram and TikTok profiles — making your content clickable and shoppable. Create a custom Link in Bio page, drop the link in your bio, and help followers discover more about you, your products, and your brand.',
+  },
+]
+
+const blogPosts = [
+  {
+    title: "An Influencer's Guide to Working with Brands",
+    img: 'https://images.ctfassets.net/nfpsrlop6sws/6XbyPEsCf6as9KnbHviHOv/a7ed84fe9a67cdd5f3836445262b6648/Dec15-An_Influencers_Guide_to_Working_with_Brands-Horizontal.png?w=920&h=800&q=80&fm=png',
+    href: 'https://later.com/blog/work-with-brands/',
+  },
+  {
+    title: 'How to Successfully Pitch to Brands',
+    img: 'https://images.ctfassets.net/nfpsrlop6sws/5gUUGFszsT8kmabLMexbWi/8cf79ba9aa4e65f172129c9836d0d431/Nov1-How_to_Successfully_Pitch_to_Brands-Horizontal.png?w=920&h=800&q=80&fm=png',
+    href: 'https://later.com/blog/pitch-to-brands/',
+  },
+  {
+    title: 'How 350+ Influencers & Creators Make Money',
+    img: 'https://images.ctfassets.net/nfpsrlop6sws/4oE0Ru63G82XIz0Zu1aPR1/6ad7bb91f3a6b94fc0043edc240e77d2/March26-Influencers___Creators_Share_How_They_Make_Money_in_2024-Horizontal.png?w=920&h=800&q=80&fm=png',
+    href: 'https://later.com/blog/how-do-influencers-make-money/',
+  },
+]
+
+const resources = [
+  {
+    title: 'Apply to Later Campaigns',
+    desc: 'Search & find answers to your Later questions.',
+    href: 'https://help-influence.later.com/hc/en-us/articles/20462323829783-Applying-to-Later-Influence-formerly-Mavrck-Campaigns-with-Later-Social',
+  },
+  {
+    title: 'Creator Compensation Report',
+    desc: 'Learn all about creator compensation and industry trends.',
+    href: 'https://later.com/resources/report/creator-compensation/',
+  },
+  {
+    title: 'How to Make Money as a Content Creator on Instagram',
+    desc: 'Here are 3 easy ways to start making money as a content creator on Instagram and cash in on your content.',
+    href: 'https://later.com/resources/videos/make-money-as-an-instagram-content-creator/',
+  },
+  {
+    title: 'Guide to the Creator & Passion Economies',
+    desc: 'Learn how content creators are evolving within the growing passion economy.',
+    href: 'https://later.com/resources/guide/passion-economy-creators/',
+  },
 ]
 
 export default function InfluencerCreatorProgramPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
-          <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>LATER FOR CREATORS</p>
-          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center hero-enter">
+          <p className="text-charcoal/60 uppercase tracking-widest mb-4" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2 }}>LATER FOR CREATORS</p>
+          <h1 className="mx-auto mb-6" style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800 }}>
             Turn your influence into income with Later
           </h1>
-          <p className="hero-enter-d1" style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 700, margin: '0 auto 32px', color: '#333' }}>
+          <p className="hero-enter-d1 mx-auto mb-8" style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 700, color: '#333' }}>
             Connect with brands, manage campaigns, and earn more doing what you love. Monetize your content with Mavely or join our creator network and watch your creator career grow.
           </p>
-          <div className="hero-enter-d2" style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
+          <div className="hero-enter-d2 flex gap-4 justify-center flex-wrap mb-8">
             <a href="https://www.joinmavely.com/" className="btn-primary" target="_blank" rel="noopener noreferrer">Earn with Mavely <ArrowIcon /></a>
             <a href="#creator-network" className="btn-outline">Join creator network <ArrowIcon /></a>
           </div>
-          <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
+          <div className="hero-enter-d3 mx-auto" style={{ maxWidth: 900 }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/63iVbE514TCTTKuBvbgpiB/55d1a3d5a4150a16ddb3cad12f6a0ef3/hero-graphic.png?w=1608&h=964&q=80&fm=png"
               alt="Later for Creators"
-              style={{ width: '100%', display: 'block' }}
+              className="w-full block"
             />
           </div>
         </div>
       </section>
 
       {/* Find & land brand collaborations */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
+      <section className="reveal py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="mb-3" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Find &amp; land brand collaborations with Later
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Later makes it easy to stand out and earn more.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
+          <p className="mb-10" style={{ fontSize: 18, color: '#555' }}>Later makes it easy to stand out and earn more.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((f, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
-                <img src={f.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{f.title}</h3>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
+                <img src={f.icon} alt="" className="mx-auto mb-4" style={{ width: 48, height: 48 }} />
+                <h3 className="mb-2" style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700 }}>{f.title}</h3>
                 <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5 }}>{f.desc}</p>
               </div>
             ))}
@@ -137,19 +204,19 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Get discovered */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <img
             src="https://later.com/images/temp/get-discovered-by-your-favorite-brands-with-later.jpg"
             alt="Get discovered by your favorite brands"
-            style={{ width: '100%', borderRadius: 8 }}
+            className="w-full rounded-lg"
           />
           <div>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
+            <h2 className="mb-4" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
               Get discovered by your favorite brands
             </h2>
-            <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Join Later's community for free.</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 20, alignItems: 'center' }}>
+            <p className="mb-8" style={{ fontSize: 18, color: '#555' }}>Join Later's community for free.</p>
+            <div className="flex flex-wrap gap-5 items-center">
               {brandLogos.map((logo) => (
                 <img key={logo.name} src={logo.src} alt={logo.name} style={{ height: 28, objectFit: 'contain', opacity: 0.7 }} />
               ))}
@@ -159,13 +226,13 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* 3 Steps */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
+      <section className="reveal py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((s, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`}>
-                <span style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00', display: 'block', marginBottom: 12 }}>{s.num}</span>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{s.title}</h3>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
+                <span className="block mb-3" style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00' }}>{s.num}</span>
+                <h3 className="mb-2" style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700 }}>{s.title}</h3>
                 <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5 }}>{s.desc}</p>
               </div>
             ))}
@@ -174,23 +241,32 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Take your creator career to new heights */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 24 }}>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CREATE, SHARE, EARN</p>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 reveal">
+            <p className="text-charcoal/60 uppercase tracking-widest mb-3" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2 }}>CREATE, SHARE, EARN</p>
+            <h2 className="mb-4" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
               Take your creator career to new heights
             </h2>
-            <p style={{ fontSize: 18, color: '#555', maxWidth: 700, margin: '0 auto' }}>
+            <p className="mx-auto" style={{ fontSize: 18, color: '#555', maxWidth: 700 }}>
               Join Later for free to access the creator marketplace, brand collaborations, affiliate links, scheduling, and Link in Bio.
             </p>
           </div>
           {careerFeatures.map((f, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
-              <img src={f.img} alt={f.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
+            <div
+              key={i}
+              className={`reveal grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${i < careerFeatures.length - 1 ? 'mb-16' : ''}`}
+              style={{ direction: i % 2 === 1 ? 'rtl' : 'ltr' }}
+            >
+              <img src={f.img} alt={f.title} className="w-full rounded-lg" style={{ direction: 'ltr' }} />
               <div style={{ direction: 'ltr' }}>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>{f.title}</h3>
-                <p style={{ fontSize: 17, color: '#555', lineHeight: 1.6 }}>{f.desc}</p>
+                <h3 className="mb-4" style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15 }}>{f.title}</h3>
+                <p className="mb-6" style={{ fontSize: 17, color: '#555', lineHeight: 1.6 }}>{f.desc}</p>
+                {f.cta && (
+                  <a href={f.cta.href} className="btn-primary" target={f.cta.href.startsWith('http') ? '_blank' : undefined} rel={f.cta.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
+                    {f.cta.label} <ArrowIcon />
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -198,48 +274,74 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Sign up section */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-          <div>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
-              Sign up for Later for free
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 32 }}>
-              {signUpFeatures.map((feat) => (
-                <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="10" fill="#FE3F00" opacity="0.12" />
-                    <path d="M6 10l3 3 5-5" stroke="#FE3F00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  <span style={{ fontSize: 15, color: '#333' }}>{feat}</span>
-                </div>
-              ))}
-            </div>
-            <a href="/pricing" className="btn-primary">Join now <ArrowIcon /></a>
+      <section className="reveal py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
+            Sign up for Later for free
+          </h2>
+          <p className="text-center mb-4" style={{ fontSize: 18, color: '#555' }}>Connect with brands, manage collabs, and earn more with Later.</p>
+          <p className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700 }}>Included features</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12">
+            {signUpFeatures.map((feat) => (
+              <div key={feat.label} className="flex flex-col items-center text-center gap-3">
+                <img src={feat.icon} alt="" style={{ width: 36, height: 36 }} />
+                <span style={{ fontSize: 15, color: '#333' }}>{feat.label}</span>
+              </div>
+            ))}
           </div>
-          <div style={{ background: '#F8F2EA', borderRadius: 12, padding: 48, textAlign: 'center' }}>
-            <p style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 900, marginBottom: 8 }}>Free forever</p>
-            <p style={{ fontSize: 16, color: '#555' }}>No credit card required</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-4xl mx-auto">
+            <div className="bg-offline rounded-xl p-10 text-center">
+              <p className="mb-2" style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 900 }}>Join the creator marketplace</p>
+              <p className="mb-6" style={{ fontSize: 16, color: '#555' }}>Sign up for Later and join for free!</p>
+              <ul className="text-left inline-block mb-6" style={{ fontSize: 15 }}>
+                <li className="flex items-center gap-2 mb-2">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#FE3F00" opacity="0.12" /><path d="M6 10l3 3 5-5" stroke="#FE3F00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  Access to creator marketplace
+                </li>
+                <li className="flex items-center gap-2 mb-2">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#FE3F00" opacity="0.12" /><path d="M6 10l3 3 5-5" stroke="#FE3F00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  Custom affiliate links
+                </li>
+                <li className="flex items-center gap-2">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#FE3F00" opacity="0.12" /><path d="M6 10l3 3 5-5" stroke="#FE3F00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  Link in Bio page
+                </li>
+              </ul>
+              <div>
+                <a href="/pricing" className="btn-primary">Join now <ArrowIcon /></a>
+              </div>
+            </div>
+            <div className="text-center">
+              <img
+                src="https://later.com/images/temp/phone-outline.png"
+                alt="Later Link in Bio"
+                className="mx-auto"
+                style={{ maxWidth: 280, width: '100%' }}
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Creator community */}
-      <section id="creator-network" className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
+      <section id="creator-network" className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center mb-10 reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Join the creator community
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {creators.map((c, i) => (
-              <div key={i} className={`reveal reveal-d${(i % 3) + 1}`} style={{ background: '#fff', borderRadius: 12, overflow: 'hidden' }}>
+              <div key={i} className={`reveal reveal-d${(i % 3) + 1} bg-white rounded-xl overflow-hidden`}>
                 <div style={{ height: 220, overflow: 'hidden' }}>
-                  <img src={c.img} alt={c.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src={c.img} alt={c.name} className="w-full h-full object-cover" />
                 </div>
-                <div style={{ padding: 20 }}>
-                  <p style={{ fontWeight: 700, fontSize: 15, marginBottom: 2 }}>{c.name}</p>
-                  <p style={{ fontSize: 14, color: '#FE3F00', marginBottom: 6 }}>{c.handle}</p>
-                  <p style={{ fontSize: 13, color: '#777' }}>{c.stats}</p>
+                <div className="p-5">
+                  <p className="font-bold mb-0.5" style={{ fontSize: 15 }}>{c.handle}</p>
+                  <p className="mb-2" style={{ fontSize: 14, color: '#333' }}>{c.name}</p>
+                  <div className="flex items-center gap-4" style={{ fontSize: 13, color: '#777' }}>
+                    <span>{c.platform1} {c.count1}</span>
+                    <span>{c.platform2} {c.count2}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -247,33 +349,102 @@ export default function InfluencerCreatorProgramPage() {
         </div>
       </section>
 
+      {/* FAQs */}
+      <section className="reveal py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
+            FAQs
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <details key={i} className="reveal group border-b border-gray-200 pb-4">
+                <summary className="cursor-pointer list-none flex justify-between items-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700 }}>
+                  {faq.q}
+                  <svg className="ml-4 shrink-0 transition-transform group-open:rotate-180" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M5 8l5 5 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </summary>
+                <p className="mt-3" style={{ fontSize: 16, color: '#555', lineHeight: 1.6 }}>{faq.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
-          <svg width="40" height="32" viewBox="0 0 40 32" fill="none" style={{ margin: '0 auto 24px' }}>
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mx-auto mb-6">
             <path d="M0 32V18.3C0 6.1 7.4 0 18 0v8.6C12.2 9.6 9.4 13 9 18h9v14H0zm22 0V18.3C22 6.1 29.4 0 40 0v8.6c-5.8 1-8.6 4.4-9 8.4h9v14H22z" fill="#FE3F00" opacity="0.15" />
           </svg>
-          <p style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, lineHeight: 1.4, marginBottom: 32, maxWidth: 640, margin: '0 auto 32px' }}>
-            "I got my first paid brand using Later! It was easy to see what opportunities were available and to apply to any campaign."
+          <p className="mx-auto mb-8" style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, lineHeight: 1.4, maxWidth: 640 }}>
+            "I got my first paid brand using Later! It was easy to see what opportunities were available and to apply to any campaign. I continue to use Later and hope to snag more brand deals!"
           </p>
           <img
-            src="https://later.com/images/temp/profiles/thenoellanaomi.jpg"
+            src="https://later.com/images/temp/thenoellanaomi-profile.png"
             alt="Noella"
-            style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 12px' }}
+            className="mx-auto mb-3 rounded-full object-cover"
+            style={{ width: 56, height: 56 }}
           />
-          <p style={{ fontWeight: 700, fontSize: 15 }}>Noella</p>
-          <p style={{ fontSize: 14, color: '#FE3F00', marginBottom: 2 }}>@thenoellanaomi</p>
-          <p style={{ fontSize: 13, color: '#777' }}>13.4K Instagram</p>
+          <p className="font-bold" style={{ fontSize: 15 }}>@thenoellanaomi</p>
+          <p style={{ fontSize: 14, color: '#333' }}>Noella</p>
+          <p className="mt-1" style={{ fontSize: 13, color: '#777' }}>13.4K Instagram &middot; 1.6K Pinterest</p>
+          <div className="mt-4 flex items-center justify-center gap-2">
+            <span style={{ fontSize: 13, color: '#555' }}>Brand partnerships:</span>
+            <img src="https://later.com/images/temp/talleyvineyards.svg" alt="Talley Vineyards" style={{ height: 24 }} />
+          </div>
+        </div>
+      </section>
+
+      {/* Blogs */}
+      <section className="reveal py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
+            Blogs
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {blogPosts.map((post, i) => (
+              <a key={i} href={post.href} target="_blank" rel="noopener noreferrer" className={`reveal reveal-d${i + 1} block rounded-xl overflow-hidden bg-white hover:shadow-lg transition-shadow`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <div style={{ height: 200, overflow: 'hidden' }}>
+                  <img src={post.img} alt={post.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="p-5">
+                  <h3 className="mb-1" style={{ fontFamily: 'var(--font-heading)', fontSize: 18, fontWeight: 700, lineHeight: 1.3 }}>{post.title}</h3>
+                  <p style={{ fontSize: 13, color: '#777' }}>Blog Post</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Resources */}
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center mb-10" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
+            Resources
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {resources.map((r, i) => (
+              <div key={i} className={`reveal reveal-d${(i % 2) + 1} bg-white rounded-xl p-6`}>
+                <h3 className="mb-2" style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700 }}>{r.title}</h3>
+                <p className="mb-4" style={{ fontSize: 15, color: '#555', lineHeight: 1.5 }}>{r.desc}</p>
+                <a href={r.href} target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: '#FE3F00', fontWeight: 600, textDecoration: 'none' }}>
+                  Read More <ArrowIcon />
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
+      <section className="reveal py-16 lg:py-20 text-center">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-4" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}>
             Earn more with Later for creators
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Get discovered by brands and earn more doing what you love.</p>
+          <p className="mb-8" style={{ fontSize: 18, color: '#555' }}>Get discovered by brands and earn more doing what you love.</p>
           <a href="/pricing" className="btn-primary">Join today <ArrowIcon /></a>
         </div>
       </section>

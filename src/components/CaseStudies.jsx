@@ -61,18 +61,18 @@ export default function CaseStudies() {
 
   return (
     <section className="text-white" style={{ backgroundColor: 'rgb(0,0,0)', padding: '140px 0 70px' }}>
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-10" style={{ padding: '0 40px' }}>
-        <div className="xl:col-span-4 reveal from-left">
-          <p className="text-offline/60 mb-6" style={{ fontSize: 15, fontWeight: 700 }}>Our Work</p>
+      <div className="max-w-[1728px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-0" style={{ padding: '0 40px' }}>
+        <div className="xl:col-span-5 reveal from-left">
+          <p className="text-offline/60 mb-6" style={{ fontSize: 16, fontWeight: 500 }}>Our Work</p>
           <div className="flex flex-row xl:flex-col flex-wrap gap-2 mb-8">
             {cases.map((c, i) => (
               <button
                 key={i}
                 onClick={() => setActive(i)}
                 className={`text-left transition-all py-2 ${
-                  active === i ? 'text-offline' : 'text-offline/30 hover:text-offline/60'
+                  active === i ? 'text-offline' : 'text-offline/40 hover:text-offline/60'
                 }`}
-                style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 800, lineHeight: '55px', letterSpacing: '0.22px' }}
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.75rem, 1.5rem + 1vw, 2.75rem)', fontWeight: 800, lineHeight: 1.25, letterSpacing: '0.22px' }}
               >
                 {c.name}
               </button>
@@ -83,9 +83,9 @@ export default function CaseStudies() {
           </a>
         </div>
 
-        <div className="xl:col-span-8 reveal from-right">
+        <div className="xl:col-span-7 reveal from-right">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div className="relative overflow-hidden bg-charcoal" style={{ width: 310, height: 560 }}>
+            <div className="relative overflow-hidden bg-charcoal" style={{ width: 310, height: 560, borderRadius: 20 }}>
               <video
                 key={active}
                 autoPlay

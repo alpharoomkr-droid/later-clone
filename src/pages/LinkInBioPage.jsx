@@ -34,38 +34,38 @@ export default function LinkInBioPage() {
   ]
 
   const showcases = [
-    { tag: 'SET UP LINK IN BIO', title: 'Drive traffic and clicks', desc: 'Your link in bio page takes visitors beyond your profile to anywhere else on the web.' },
-    { tag: 'MEASURE WHAT MATTERS', title: 'Track every sale', desc: "Using Instagram for ecommerce? Later's link in bio lets you add up to five links on each Instagram, TikTok, or Snap post." },
-    { tag: 'CUSTOMIZE YOUR URL', title: 'One link in bio. Endless possibilities.', desc: 'Keep your social bios clean and fresh with a customizable link in bio URL.' },
+    { tag: 'SET UP LINK IN BIO', title: 'Drive traffic and clicks', desc: 'Your link in bio page takes visitors beyond your profile to anywhere else on the web. Whether it\'s a blog post or product page with your latest offer — you decide where your followers go next.' },
+    { tag: 'MEASURE WHAT MATTERS', title: 'Track every sale', desc: "Using Instagram for ecommerce? Later's link in bio lets you add up to five links on each Instagram, TikTok, or Snap post so you can direct your followers to your website or online shop." },
+    { tag: 'CUSTOMIZE YOUR URL', title: 'One link in bio. Endless possibilities.', desc: 'Keep your social bios clean and fresh with a customizable link in bio URL. No more copy and paste — manage all your links from one easy platform.' },
   ]
 
   const faqs = [
-    { q: 'How do I add a link to my TikTok bio?', a: "To add a link to your TikTok bio, go to your profile and tap \"Edit profile.\" In the Website field, paste your Later link in bio URL. This makes it easy for followers to access all your important links from one place." },
-    { q: 'Can I use one link in bio link for both Instagram and TikTok?', a: "Yes! With Later's link in bio, you can use a single URL across Instagram, TikTok, and Snap. Your page will automatically display relevant content for each platform." },
-    { q: "What's the difference between link in bio and Instagram shop tags?", a: "Instagram shop tags are limited to products in your Instagram shop catalog, while link in bio lets you direct followers to any URL — your blog, YouTube, newsletter signup, or online store." },
-    { q: 'Can I add multiple links in one post?', a: "Yes, Later's link in bio allows you to attach up to five links per post. Followers can tap on the post image in your link in bio page to see all associated links." },
-    { q: 'Do links need to be attached to a post?', a: "No, you can add standalone button links to your link in bio page that aren't attached to any specific post. These are great for evergreen content like your website, shop, or newsletter signup." },
-    { q: 'Can I track link in bio analytics?', a: "Absolutely. Later provides detailed analytics for your link in bio page including page views, link clicks, click-through rates, and revenue tracking so you can measure the impact of your content." },
-    { q: 'Is link in bio free?', a: "Yes, Later offers a free link in bio tool that includes essential features. For advanced customization, analytics, and integrations, check out Later's paid plans." },
-    { q: 'Can I customize the look of my link in bio page?', a: "Yes! You can customize your page with branded colors, fonts, button styles, featured banners, and themes to match your brand aesthetic perfectly." },
+    { q: 'How do I add a link to my TikTok bio?', a: "As long as you have over 1,000 followers on TikTok, you'll be able to add a customizable link in bio page to your TikTok bio. With link in bio you can link TikTok posts from your feed to specific URLs to drive traffic and increase engagement from TikTok." },
+    { q: 'Can I use one link in bio link for both Instagram and TikTok?', a: "Yup! You can use the same link in bio link for both your Instagram and TikTok profiles. Your followers will see the posts from the platform that they're on when they click your bio link." },
+    { q: "What's the difference between link in bio and Instagram shop tags?", a: "With link in bio, you can drive traffic to your website, product pages, blog posts, and more — all through the link in your Instagram bio! Unlike Instagram shop tags, link in bio doesn't tag posts directly on your Instagram feed." },
+    { q: 'Can I add multiple links in one post?', a: "Linking is available on all Later plans. Single links can be added to all TikTok, Instagram, and Snap posts. Growth and Advanced plans can add up to 5 links per Instagram post." },
+    { q: 'Do links need to be attached to a post?', a: "Yes. For links to display as a post on your link in bio page, they need to be attached to an Instagram or TikTok post. If you have previously published posts, you can always add them to your link in bio page through Later." },
+    { q: 'Will the link in bio page look exactly like my feed?', a: "Your link in bio page will contain any posts tagged with a link — meaning it may not mirror your exact feed if you don't tag every single post with a link." },
+    { q: 'What if I don\'t use Google Analytics?', a: "No problem. Analytics inside Later will help you measure ROI from Instagram, too. You can track page views, link clicks, click-through rates, and revenue." },
+    { q: 'What kind of profile do I need to use link in bio?', a: "You can use link in bio on any Instagram profile! Personal, creator, or business profiles are all eligible. Adding a bio link to TikTok requires a TikTok Business account with over 1,000 followers." },
   ]
 
   const resources = [
-    { title: 'Blog', desc: 'Tips and trends to level up your social media marketing strategy.', link: '/blog' },
-    { title: 'Marketing Resources', desc: 'Free resources, guides, and templates to grow your brand.', link: '/resources' },
-    { title: 'Help Center', desc: 'Get answers to your questions and learn how to use Later.', link: '/help' },
+    { title: 'Blog', desc: 'All the latest resources to boost your social strategy.', link: '/blog', img: 'https://later.com/static/35d40bbeb972c3ff06d1c3999d56cafd/34f1c/blog-thumbnail.png' },
+    { title: 'Marketing Resources', desc: 'Free tools to help you find success on social media.', link: '/resources', img: 'https://later.com/static/098a1dcd9bcfc169b0ebd251dce41d1d/34f1c/marketing-resources-thumbnail.png' },
+    { title: 'Help Center', desc: 'Search & find answers to your Later questions.', link: '/help', img: 'https://later.com/static/1194e534ab191bf7941e331cf826ee57/34f1c/help-center-thumbnail.png' },
   ]
 
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section style={{ position: 'relative', background: '#000', padding: '120px 40px 100px', overflow: 'hidden' }}>
+      <section className="reveal" style={{ position: 'relative', background: '#000', overflow: 'hidden' }}>
         <img
           src="https://images.ctfassets.net/nfpsrlop6sws/2Hk3atwezTOL4Mmh8ARsNG/13ac9d8c150ba46c807cff883234defc/link-in-bio-hero-noOverlay.jpg"
           alt=""
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5 }}
         />
-        <div className="max-w-[1440px] mx-auto text-center" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style={{ position: 'relative', zIndex: 1, paddingTop: 96, paddingBottom: 80 }}>
           <p className="hero-enter" style={{ fontSize: 14, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>
             One link in bio, Endless Possibilities
           </p>
@@ -82,8 +82,8 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Trusted By */}
-      <section style={{ padding: '48px 40px', borderBottom: '1px solid #eee' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 56, flexWrap: 'wrap' }}>
+      <section className="reveal" style={{ borderBottom: '1px solid #eee' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 56, flexWrap: 'wrap', paddingTop: 40, paddingBottom: 40 }}>
           <span style={{ fontSize: 14, fontWeight: 600, color: '#999', textTransform: 'uppercase', letterSpacing: 1 }}>Trusted by</span>
           {trustedLogos.map((logo, i) => (
             <img key={i} src={logo.src} alt={logo.alt} style={{ height: 28, objectFit: 'contain', opacity: 0.6 }} />
@@ -92,18 +92,18 @@ export default function LinkInBioPage() {
       </section>
 
       {/* What's a link in bio? */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+      <section className="reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
             What's a link in bio?
           </h2>
-          <p style={{ fontSize: 18, color: '#555', lineHeight: 1.6, maxWidth: 680, margin: '0 auto 56px' }}>
+          <p style={{ fontSize: 18, color: '#555', lineHeight: 1.6, maxWidth: 680, margin: '0 auto 48px' }}>
             Link in bio is a mini web page built into your Instagram, TikTok, and Snap profiles — making your content clickable and easier to find.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featureCards.map((card, i) => (
-              <div key={i} className={`reveal reveal-d${Math.min(i + 1, 3)}`} style={{ textAlign: 'center', padding: 24 }}>
-                <img src={card.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
+              <div key={i} className={`reveal reveal-d${Math.min(i + 1, 3)} h-full`} style={{ textAlign: 'center', padding: 24 }}>
+                <img src={card.icon} alt="" className="mx-auto" style={{ width: 48, height: 48, marginBottom: 16 }} />
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>{card.title}</h3>
                 <p style={{ fontSize: 15, color: '#555', lineHeight: 1.5 }}>{card.desc}</p>
               </div>
@@ -113,10 +113,10 @@ export default function LinkInBioPage() {
       </section>
 
       {/* How to Customize */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center" style={{ marginBottom: 28 }}>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
+            <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(0,0,0,0.5)', marginBottom: 12 }}>
               HOW TO CUSTOMIZE LINK IN BIO
             </p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
@@ -139,6 +139,7 @@ export default function LinkInBioPage() {
                   background: activeTab === i ? '#000' : 'transparent',
                   color: activeTab === i ? '#F8F2EA' : '#000',
                   border: '2px solid #000',
+                  borderRadius: 0,
                   cursor: 'pointer',
                   transition: 'all 0.2s ease',
                 }}
@@ -147,7 +148,7 @@ export default function LinkInBioPage() {
               </button>
             ))}
           </div>
-          <div style={{ background: '#fff', borderRadius: 12, padding: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center" style={{ background: '#fff', borderRadius: 12, padding: 40 }}>
             <div>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, marginBottom: 12 }}>
                 {customizeTabs[activeTab].title}
@@ -168,16 +169,32 @@ export default function LinkInBioPage() {
         </div>
       </section>
 
+      {/* Link in Bio Features heading */}
+      <section className="reveal" style={{ paddingTop: 64, paddingBottom: 0 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: 'rgba(0,0,0,0.5)', marginBottom: 12 }}>
+            LINK IN BIO FEATURES
+          </p>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
+            Here's what you can do with link in bio.
+          </h2>
+          <p style={{ fontSize: 18, color: '#555', lineHeight: 1.6, maxWidth: 680, margin: '0 auto' }}>
+            Manage all your links from one easy-to-use platform. Curate, sell, grow, and engage your audience all from one link.
+          </p>
+        </div>
+      </section>
+
       {/* Feature Showcases */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal" style={{ paddingTop: 48, paddingBottom: 64 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {showcases.map((s, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
-              <div style={{ background: '#F8F2EA', borderRadius: 12, aspectRatio: '4/3', display: 'flex', alignItems: 'center', justifyContent: 'center', direction: 'ltr' }}>
+            <div key={i} className="reveal grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" style={{ marginBottom: i < showcases.length - 1 ? 64 : 0 }}>
+              {/* Image placeholder -- order flips on even items */}
+              <div className={i % 2 === 1 ? 'lg:order-2' : ''} style={{ background: '#F8F2EA', borderRadius: 12, aspectRatio: '4/3', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <span style={{ fontSize: 80, opacity: 0.15 }}>&#128279;</span>
               </div>
-              <div style={{ direction: 'ltr' }}>
-                <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>{s.tag}</p>
+              <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
+                <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', color: '#FE3F00', marginBottom: 12 }}>{s.tag}</p>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>{s.title}</h3>
                 <p style={{ fontSize: 17, color: '#555', lineHeight: 1.6, marginBottom: 24 }}>{s.desc}</p>
                 <a href="/pricing" className="btn-outline" style={{ fontSize: 15 }}>
@@ -190,38 +207,43 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img
-              src="https://images.ctfassets.net/nfpsrlop6sws/41qrU1Am1UvJRoTaygr3Dk/b2115561b63f322e0ebb114a2d8ecdc7/highsnobiety-lib-iphone.png"
-              alt="HighSnobiety link in bio on iPhone"
-              style={{ maxWidth: 300, width: '100%' }}
-            />
-          </div>
-          <div>
-            <img
-              src="https://images.ctfassets.net/nfpsrlop6sws/aJQ3ZUTeCFt3yUP4Z2p4W/96f7ca40bd0e461f843ef8737d5ce12e/high-snobiety-logo.png"
-              alt="HighSnobiety"
-              style={{ height: 32, marginBottom: 32, opacity: 0.7 }}
-            />
-            <blockquote style={{ fontSize: 22, fontFamily: 'var(--font-heading)', fontWeight: 600, lineHeight: 1.4, marginBottom: 24 }}>
-              "Later's link in bio landing page is a copy of the account's grid. This is a seamless experience for our users who are looking for more."
-            </blockquote>
-            <p style={{ fontWeight: 700, fontSize: 16 }}>Brock Cardiner</p>
-            <p style={{ fontSize: 14, color: '#777' }}>Editorial Director, HighSnobiety</p>
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/41qrU1Am1UvJRoTaygr3Dk/b2115561b63f322e0ebb114a2d8ecdc7/highsnobiety-lib-iphone.png"
+                alt="HighSnobiety link in bio on iPhone"
+                style={{ maxWidth: 280, width: '100%' }}
+              />
+            </div>
+            <div>
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/aJQ3ZUTeCFt3yUP4Z2p4W/96f7ca40bd0e461f843ef8737d5ce12e/high-snobiety-logo.png"
+                alt="HighSnobiety"
+                style={{ height: 32, marginBottom: 32, opacity: 0.7 }}
+              />
+              <blockquote style={{ fontSize: 22, fontFamily: 'var(--font-heading)', fontWeight: 600, lineHeight: 1.4, marginBottom: 24 }}>
+                "Later's link in bio landing page is a copy of the account's grid. This is a seamless experience for our users who are looking for more. We use the Link in Bio analytics to send reports back to section editors about what people are clicking through to."
+              </blockquote>
+              <p style={{ fontWeight: 700, fontSize: 16 }}>Brock Cardiner</p>
+              <p style={{ fontSize: 14, color: '#777', marginBottom: 24 }}>Editorial Director, HighSnobiety</p>
+              <a href="/case-studies" className="btn-outline" style={{ fontSize: 15 }}>
+                Read case studies <ArrowIcon />
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>
-            FAQs
+      <section className="reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 36 }}>
+            FAQ
           </h2>
           {faqs.map((faq, i) => (
-            <div key={i} style={{ borderBottom: '1px solid #e5e5e5', paddingBottom: 20, marginBottom: 20 }}>
+            <div key={i} style={{ borderBottom: '1px solid #e5e5e5' }}>
               <button
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 style={{
@@ -233,7 +255,7 @@ export default function LinkInBioPage() {
                   justifyContent: 'space-between',
                   alignItems: 'center',
                   textAlign: 'left',
-                  padding: 0,
+                  padding: '20px 0',
                   fontFamily: 'var(--font-heading)',
                   fontSize: 20,
                   fontWeight: 700,
@@ -250,11 +272,11 @@ export default function LinkInBioPage() {
                 }}>+</span>
               </button>
               <div style={{
-                maxHeight: openFaq === i ? 200 : 0,
+                maxHeight: openFaq === i ? 300 : 0,
                 overflow: 'hidden',
                 transition: 'max-height 0.3s ease',
               }}>
-                <p style={{ fontSize: 16, color: '#555', lineHeight: 1.6, marginTop: 12 }}>{faq.a}</p>
+                <p style={{ fontSize: 16, color: '#555', lineHeight: 1.6, paddingBottom: 20 }}>{faq.a}</p>
               </div>
             </div>
           ))}
@@ -262,19 +284,24 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Resources */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>
-            Resources and expertise to keep you ahead
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 64 }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 36 }}>
+            Resources and expertise to keep you ahead.
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {resources.map((r, i) => (
-              <a key={i} href={r.link} className={`reveal reveal-d${i + 1}`} style={{ background: '#fff', borderRadius: 12, padding: 40, textDecoration: 'none', color: 'inherit', textAlign: 'center', transition: 'box-shadow 0.2s ease' }}>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 12 }}>{r.title}</h3>
-                <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5, marginBottom: 16 }}>{r.desc}</p>
-                <span style={{ color: '#FE3F00', fontWeight: 600, fontSize: 15, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-                  Learn more <ArrowIcon />
-                </span>
+              <a key={i} href={r.link} className={`reveal reveal-d${i + 1} h-full`} style={{ background: '#fff', borderRadius: 12, overflow: 'hidden', textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', transition: 'box-shadow 0.2s ease' }}>
+                <div style={{ aspectRatio: '550/292', overflow: 'hidden' }}>
+                  <img src={r.img} alt={r.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                </div>
+                <div style={{ padding: '24px 24px 32px', textAlign: 'left', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 700, marginBottom: 8 }}>{r.title}</h3>
+                  <p style={{ fontSize: 15, color: '#555', lineHeight: 1.5, marginBottom: 16, flex: 1 }}>{r.desc}</p>
+                  <span style={{ color: '#FE3F00', fontWeight: 600, fontSize: 15, display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                    Learn more <ArrowIcon />
+                  </span>
+                </div>
               </a>
             ))}
           </div>
@@ -282,8 +309,8 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
+      <section className="reveal" style={{ paddingTop: 64, paddingBottom: 64, textAlign: 'center' }}>
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
             Add a link in bio to your Instagram, TikTok, and Snap.
           </h2>

@@ -1,27 +1,23 @@
-import { Link } from 'react-router-dom'
-
 function ArrowIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ marginLeft: 8, display: 'inline' }}>
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
       <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   )
 }
 
 function CheckIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
-      <path d="M4 10l4 4 8-8" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  )
+  return <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10l4 4 8-8" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
 }
 
 function XIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
-      <path d="M5 5l10 10M15 5L5 15" stroke="#dc2626" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-    </svg>
-  )
+  return <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="#dc2626" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+}
+
+function CellIcon({ value }) {
+  if (value === true) return <CheckIcon />
+  if (value === false) return <XIcon />
+  return <span style={{ fontSize: 14, color: '#666' }}>{value}</span>
 }
 
 const benefits = [
@@ -31,15 +27,15 @@ const benefits = [
 ]
 
 const comparisonRows = [
-  { feature: 'Managed services', later: 'Yes', captiv8: 'Limited' },
-  { feature: 'All-in-one pricing', later: 'Yes', captiv8: 'No' },
-  { feature: 'Reviews and research', later: 'Yes', captiv8: 'No' },
-  { feature: 'Private-label your platform experience', later: 'Yes', captiv8: 'No' },
-  { feature: 'Social Media Management add-on', later: 'Yes', captiv8: 'No' },
-  { feature: 'Later Link in Bio add-on', later: 'Yes', captiv8: 'No' },
-  { feature: 'Social Listening', later: 'Yes', captiv8: 'Yes' },
-  { feature: 'Launch affiliate marketing and track campaigns', later: 'Yes', captiv8: 'Yes' },
-  { feature: 'Incentive management and fulfillment (Shopify)', later: 'Yes', captiv8: 'Yes' },
+  { feature: 'Managed services', later: true, captiv8: 'Limited' },
+  { feature: 'All-in-one pricing', later: true, captiv8: false },
+  { feature: 'Reviews and research', later: true, captiv8: false },
+  { feature: 'Private-label your platform experience', later: true, captiv8: false },
+  { feature: 'Social Media Management add-on', later: true, captiv8: false },
+  { feature: 'Later Link in Bio add-on', later: true, captiv8: false },
+  { feature: 'Social Listening', later: true, captiv8: true },
+  { feature: 'Launch affiliate marketing and track campaigns', later: true, captiv8: true },
+  { feature: 'Incentive management and fulfillment (Shopify)', later: true, captiv8: true },
   { feature: 'Creator payments', later: 'Cash, ACH, gift cards, Stripe', captiv8: 'PayPal' },
 ]
 
@@ -57,35 +53,34 @@ const compareLinks = [
 ]
 
 export default function Captiv8AlternativePage() {
-  const thHead = { fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center', borderBottom: '2px solid #e5e5e5' }
-  const td = { padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }
-  const tdFeature = { ...td, textAlign: 'left', fontWeight: 600 }
-
   return (
-    <div style={{ paddingTop: 70 }}>
+    <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
-      {/* 1. Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-          <div>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>LATER INFLUENCE</p>
-            <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
-              Later vs Captiv8: What's the best influencer marketing platform?
-            </h1>
-            <p style={{ fontSize: 18, lineHeight: 1.6, color: '#333', marginBottom: 32, maxWidth: 520 }}>
-              Unlike Captiv8, Later's in-house services team provides our customers with a full suite of services to supercharge their influencer marketing strategy and optimize their investments. Plus, you get clear, transparent pricing — no surprise costs for extra seats, campaigns, creators, or reports.
-            </p>
-            <Link to="/demo" className="btn-dark" style={{ fontSize: 16 }}>Book a demo <ArrowIcon /></Link>
-          </div>
-          <div>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/3FGdHaoo5me9zucLdlD7SX/72c2023a3deeadc6ba526cce56fa829f/captiv8-alternative-hero.png?w=1136&h=960&q=80&fm=png" alt="Later vs Captiv8" style={{ width: '100%', display: 'block' }} />
+      {/* 1 — Hero */}
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+            <div>
+              <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 16, textTransform: 'uppercase' }}>LATER INFLUENCE</p>
+              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
+                Later vs Captiv8: What's the best influencer marketing platform?
+              </h1>
+              <p style={{ fontSize: 18, lineHeight: 1.6, color: '#444', marginBottom: 32, maxWidth: 520 }}>
+                Unlike Captiv8, Later's in-house services team provides our customers with a full suite of services to supercharge their influencer marketing strategy and optimize their investments. Plus, you get clear, transparent pricing — no surprise costs for extra seats, campaigns, creators, or reports.
+              </p>
+              <a href="/demo/" className="btn-dark" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Book a demo <ArrowIcon /></a>
+            </div>
+            <div>
+              <img src="https://images.ctfassets.net/nfpsrlop6sws/3FGdHaoo5me9zucLdlD7SX/72c2023a3deeadc6ba526cce56fa829f/captiv8-alternative-hero.png?w=1136&h=960&q=80&fm=png" alt="Later vs Captiv8" style={{ width: '100%', borderRadius: 16 }} />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 2. Benefits */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+      {/* 2 — Benefits */}
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>THE BEST CAPTIV8 ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>See where Later goes further</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {benefits.map((b, i) => (
@@ -99,88 +94,87 @@ export default function Captiv8AlternativePage() {
         </div>
       </section>
 
-      {/* 3. Comparison Table */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[900px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
-          <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: 12, overflow: 'hidden' }}>
-            <thead>
-              <tr style={{ background: '#fafafa' }}>
-                <th style={{ ...thHead, textAlign: 'left' }}>Features</th>
-                <th style={thHead}>Later Influence</th>
-                <th style={thHead}>Captiv8</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonRows.map((r, i) => (
-                <tr key={i}>
-                  <td style={tdFeature}>{r.feature}</td>
-                  <td style={td}>{r.later === 'Yes' ? <CheckIcon /> : r.later}</td>
-                  <td style={td}>{r.captiv8 === 'Yes' ? <CheckIcon /> : r.captiv8 === 'No' ? <XIcon /> : r.captiv8}</td>
+      {/* 3 — Comparison Table */}
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Feature comparison</h2>
+          <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ background: '#000', color: '#fff' }}>
+                  <th style={{ padding: '16px 24px', textAlign: 'left', fontWeight: 600, fontSize: 15 }}>Features</th>
+                  <th style={{ padding: '16px 24px', textAlign: 'center', fontWeight: 600, fontSize: 15, width: 140 }}>Later Influence</th>
+                  <th style={{ padding: '16px 24px', textAlign: 'center', fontWeight: 600, fontSize: 15, width: 140 }}>Captiv8</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <p className="text-center" style={{ fontSize: 13, color: '#999', marginTop: 16 }}>Last updated May 2024</p>
+              </thead>
+              <tbody>
+                {comparisonRows.map((r, i) => (
+                  <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#f9f7f4' }}>
+                    <td style={{ padding: '14px 24px', fontSize: 15 }}>{r.feature}</td>
+                    <td style={{ padding: '14px 24px', textAlign: 'center' }}><span style={{ display: 'inline-flex', justifyContent: 'center' }}><CellIcon value={r.later} /></span></td>
+                    <td style={{ padding: '14px 24px', textAlign: 'center' }}><span style={{ display: 'inline-flex', justifyContent: 'center' }}><CellIcon value={r.captiv8} /></span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ textAlign: 'center', fontSize: 13, color: '#999', marginTop: 16 }}>Last updated May 2024</p>
         </div>
       </section>
 
-      {/* 4. Numbered Features */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 24 }}>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CAPTIV8 VS. LATER</p>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>4 reasons to choose Later Influence</h2>
-            <p style={{ fontSize: 18, color: '#555' }}>Later is easier to set up than Captiv8 — see for yourself with a free demo.</p>
-          </div>
+      {/* 4 — Numbered Features */}
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>CAPTIV8 VS. LATER</p>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, textAlign: 'center', marginBottom: 12 }}>4 reasons to choose Later Influence</h2>
+          <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 24 }}>Later is easier to set up than Captiv8 — see for yourself with a free demo.</p>
           {features.map((f, i) => (
-            <div key={f.num} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
-              <img src={f.img} alt={f.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} loading="lazy" />
+            <div key={f.num} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: i < features.length - 1 ? 80 : 0, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <div style={{ direction: 'ltr' }}>
-                <span style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00' }}>{f.num}</span>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 32, fontWeight: 900, lineHeight: 1.15, marginBottom: 16, marginTop: 8 }}>{f.title}</h3>
-                <p style={{ fontSize: 17, color: '#555', lineHeight: 1.6 }}>{f.desc}</p>
+                <span style={{ fontSize: 64, fontWeight: 800, color: '#FE3F00', opacity: 0.2, lineHeight: 1 }}>{f.num}</span>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, marginBottom: 16, marginTop: 8 }}>{f.title}</h3>
+                <p style={{ fontSize: 16, lineHeight: 1.7, color: '#555', maxWidth: 480 }}>{f.desc}</p>
+              </div>
+              <div style={{ direction: 'ltr' }}>
+                <img src={f.img} alt={f.title} style={{ width: '100%', borderRadius: 16 }} loading="lazy" />
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* 5. Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[900px] mx-auto text-center reveal">
-          <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: 48, textAlign: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
-            <p style={{ fontSize: 18, lineHeight: 1.7, color: '#fff', marginBottom: 24, fontStyle: 'italic' }}>
-              "Later makes dealing with the world of influencers as turnkey as it can be. I consider them partners. The influencer landscape is constantly changing and evolving. Later helps us stay on top of trends and reach consumers in an authentic, effective, and efficient way."
-            </p>
-            <p style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>Drew McGowan</p>
-            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Clif Bar &amp; Company, Communications and Influencer Marketing Strategy</p>
+      {/* 5 — Testimonial */}
+      <section className="purple-wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Leading brands trust Later Influence to power their campaigns.</h2>
+          <div style={{ maxWidth: 720, margin: '0 auto' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'contain', margin: '0 auto 24px', background: '#fff', padding: 8 }} />
+            <blockquote style={{ fontSize: 18, lineHeight: 1.7, fontStyle: 'italic', marginBottom: 24, opacity: 0.95 }}>"Later makes dealing with the world of influencers as turnkey as it can be. I consider them partners. The influencer landscape is constantly changing and evolving. Later helps us stay on top of trends and reach consumers in an authentic, effective, and efficient way."</blockquote>
+            <p style={{ fontWeight: 600, fontSize: 15 }}>Drew McGowan</p>
+            <p style={{ fontSize: 14, opacity: 0.8 }}>Clif Bar & Company · Communications and Influencer Marketing Strategy</p>
           </div>
         </div>
       </section>
 
-      {/* 6. Compare Links */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
+      {/* 6 — Compare Links */}
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>See how Later Influence compares to the competition.</p>
-          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
             {compareLinks.map((l, i) => (
-              <Link key={i} to={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</Link>
+              <a key={i} href={l.href} className="btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 15 }}>{l.label} <ArrowIcon /></a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 7. Bottom CTA */}
-      <section style={{ backgroundColor: '#000', padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, color: '#FEFCFB', marginBottom: 16 }}>
-            Later Influence is the best Captiv8 alternative
-          </h2>
-          <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>
-          <Link to="/demo" className="btn-dark" style={{ fontSize: 18, background: '#fff', color: '#000' }}>Book a demo <ArrowIcon /></Link>
+      {/* 7 — Bottom CTA */}
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Influence is the best Captiv8 alternative</h2>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>
+          <a href="/demo/" className="btn-dark" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Book a demo <ArrowIcon /></a>
         </div>
       </section>
 

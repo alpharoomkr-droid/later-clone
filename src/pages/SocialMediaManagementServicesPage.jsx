@@ -46,8 +46,8 @@ export default function SocialMediaManagementServicesPage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center">
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 0 }}>
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -101,8 +101,8 @@ export default function SocialMediaManagementServicesPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal py-16 md:py-24" style={{ backgroundColor: '#FEFCFB' }}>
+        <div className="max-w-7xl mx-auto px-6">
           <h2
             className="text-charcoal text-center mb-16 reveal"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.15 }}
@@ -144,8 +144,8 @@ export default function SocialMediaManagementServicesPage() {
       </section>
 
       {/* Social Media Growth Services */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="wood-bg reveal py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
               <h2
@@ -212,8 +212,8 @@ export default function SocialMediaManagementServicesPage() {
       {showcases.map((s, i) => {
         const reversed = i % 2 === 1
         return (
-          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '60px 0' }}>
-            <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+          <section key={i} className="reveal py-16 md:py-24" style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA' }}>
+            <div className="max-w-7xl mx-auto px-6">
               <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}>
                 <div className={`reveal ${reversed ? 'lg:[direction:ltr]' : ''}`}>
                   <p
@@ -251,8 +251,8 @@ export default function SocialMediaManagementServicesPage() {
       })}
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="wood-bg reveal py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
               <img
@@ -300,8 +300,8 @@ export default function SocialMediaManagementServicesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+      <section className="purple-wood-bg reveal py-16 md:py-24">
+        <div className="max-w-[800px] mx-auto text-center px-6">
           <h2
             className="text-white"
             style={{

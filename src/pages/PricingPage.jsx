@@ -5,7 +5,7 @@ const plans = [
     name: 'Starter',
     monthlyPrice: 25,
     yearlyPrice: 18.75,
-    description: 'For individuals & small teams getting started with social media.',
+    description: 'For casual scheduling',
     socialSets: 1,
     users: 1,
     postsPerProfile: '30 posts/profile',
@@ -30,7 +30,7 @@ const plans = [
     name: 'Growth',
     monthlyPrice: 50,
     yearlyPrice: 37.5,
-    description: 'For growing brands ready to scale their social presence.',
+    description: 'Smart scheduling, streamlined collaboration, and faster approvals that lift outcomes',
     socialSets: 2,
     users: 2,
     postsPerProfile: '180 posts/profile',
@@ -55,7 +55,7 @@ const plans = [
     name: 'Scale',
     monthlyPrice: 110,
     yearlyPrice: 82.5,
-    description: 'For larger teams & agencies managing multiple brands.',
+    description: 'For Enterprise-level analytics — without the enterprise contract',
     socialSets: 6,
     users: 4,
     postsPerProfile: 'Unlimited',
@@ -95,28 +95,32 @@ const featureRows = [
 
 const faqs = [
   {
-    q: 'Can I try Later for free?',
-    a: 'Yes! Later offers a free 14-day trial on all plans. No credit card required to start. You can explore all features and decide which plan works best for you before committing.',
-  },
-  {
     q: 'What is a Social Set?',
-    a: 'A Social Set is a group of social profiles — one per platform (Instagram, Facebook, TikTok, X/Twitter, Pinterest, LinkedIn, YouTube). Each Social Set lets you manage one profile per network.',
+    a: 'A Social Set includes one of each profile we support: Instagram, Facebook, TikTok, Pinterest, LinkedIn, YouTube, Threads and Snapchat. It helps you organize your content by brand or client.',
   },
   {
-    q: 'Can I change plans later?',
-    a: 'Absolutely. You can upgrade or downgrade your plan at any time. When you upgrade, the new features are available immediately. If you downgrade, the change takes effect at the end of your current billing cycle.',
+    q: 'Can I auto publish posts?',
+    a: 'Yes! Auto Publish works for Instagram (business + creator accounts), Facebook, TikTok (business account), LinkedIn, Pinterest, YouTube, Threads and Snapchat.',
   },
   {
-    q: 'What happens when my trial ends?',
-    a: 'When your 14-day trial ends, you\'ll be prompted to choose a plan. If you don\'t select a plan, your account will switch to limited access. Your data is never deleted — you can pick up right where you left off.',
+    q: 'How does post count work?',
+    a: 'Your post count is the number of scheduled posts you can create per month per social profile — not per Social Set. Posts count when they\'re scheduled — not when they\'re published.',
   },
   {
-    q: 'What payment methods do you accept?',
-    a: 'We accept all major credit cards (Visa, Mastercard, American Express) and debit cards. For annual enterprise plans, we also offer invoicing. All payments are processed securely through Stripe.',
+    q: 'What kind of analytics do I get with my plan?',
+    a: 'All Later plans come with access to powerful analytics tools. The only difference is how far back you can look. Starter: 3 months, Growth: 1 year, Scale: 2 years with custom analytics.',
   },
   {
-    q: 'Do you offer discounts for nonprofits or education?',
-    a: 'Yes, we offer special pricing for qualified nonprofits and educational institutions. Contact our sales team for details on eligibility and discounted rates.',
+    q: 'How many users come with a plan?',
+    a: 'Each plan comes with a set number of users. You can add additional users to each paid plan for $5 per additional user. Note: Starter plans are limited to 1 user.',
+  },
+  {
+    q: 'How do the annual plans work?',
+    a: 'Save 25% when you choose an annual subscription instead of a monthly subscription. Annual plans are billed once per year and renewed automatically.',
+  },
+  {
+    q: 'Do you have any non-profit pricing?',
+    a: 'Yes, qualified non-profit organizations can receive 50% off our annual Growth plan.',
   },
 ]
 
@@ -137,7 +141,15 @@ function ArrowIcon() {
 
 function CheckIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <svg className="mx-auto shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none">
+      <path d="M4 10.5l4 4 8-9" stroke="#FE3F00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function CheckIconInline() {
+  return (
+    <svg className="shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none">
       <path d="M4 10.5l4 4 8-9" stroke="#FE3F00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
@@ -145,7 +157,7 @@ function CheckIcon() {
 
 function XIcon() {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <svg className="mx-auto shrink-0" width="20" height="20" viewBox="0 0 20 20" fill="none">
       <path d="M6 6l8 8M14 6l-8 8" stroke="#ccc" strokeWidth="2" strokeLinecap="round" />
     </svg>
   )
@@ -158,10 +170,10 @@ function ChevronDown({ open }) {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
+      className="shrink-0"
       style={{
         transform: open ? 'rotate(180deg)' : 'rotate(0deg)',
         transition: 'transform 0.3s ease',
-        flexShrink: 0,
       }}
     >
       <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -180,13 +192,13 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section style={{ padding: '80px 0 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="text-center hero-enter" style={{ maxWidth: 800, margin: '0 auto' }}>
+      <section className="reveal py-16 pb-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center hero-enter mx-auto" style={{ maxWidth: 800 }}>
             <h1
               className="ff-heading"
               style={{
-                fontSize: 64,
+                fontSize: 'clamp(36px, 5vw, 64px)',
                 fontWeight: 900,
                 lineHeight: 1.05,
                 letterSpacing: '-0.5px',
@@ -196,32 +208,12 @@ export default function PricingPage() {
               Manage your entire social media strategy.{' '}
               <span style={{ color: '#FE3F00' }}>Free for 14 days.</span>
             </h1>
-            <p
-              className="hero-enter-d1"
-              style={{
-                fontSize: 18,
-                lineHeight: 1.6,
-                color: 'rgba(0,0,0,0.6)',
-                maxWidth: 560,
-                margin: '0 auto 40px',
-              }}
-            >
-              Plan, schedule, and analyze your social posts across every major platform. Start free, upgrade anytime.
-            </p>
           </div>
 
           {/* Trusted by logos */}
           <div
-            className="hero-enter-d2"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: 32,
-              marginTop: 32,
-              flexWrap: 'wrap',
-              opacity: 0.5,
-            }}
+            className="hero-enter-d2 flex items-center justify-center gap-8 flex-wrap mt-8"
+            style={{ opacity: 0.5 }}
           >
             {brandLogos.map((logo) => (
               <img
@@ -236,73 +228,65 @@ export default function PricingPage() {
       </section>
 
       {/* Billing Toggle */}
-      <section style={{ padding: '40px 0 16px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="reveal" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
+      <section className="reveal py-8 pb-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
             <span
+              className="cursor-pointer transition-all duration-200"
               style={{
                 fontSize: 16,
                 fontWeight: isYearly ? 400 : 700,
                 color: isYearly ? 'rgba(0,0,0,0.5)' : '#000',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
               }}
               onClick={() => setIsYearly(false)}
             >
-              Monthly
+              Bill Monthly
             </span>
             <button
               onClick={() => setIsYearly(!isYearly)}
+              className="relative shrink-0 border-none cursor-pointer transition-colors duration-300"
               style={{
-                position: 'relative',
                 width: 56,
                 height: 30,
                 borderRadius: 15,
-                border: 'none',
                 backgroundColor: isYearly ? '#FE3F00' : '#ccc',
-                cursor: 'pointer',
-                transition: 'background-color 0.3s ease',
-                flexShrink: 0,
               }}
             >
               <span
+                className="absolute rounded-full bg-white transition-[left] duration-300"
                 style={{
-                  position: 'absolute',
                   top: 3,
                   left: isYearly ? 29 : 3,
                   width: 24,
                   height: 24,
-                  borderRadius: '50%',
-                  backgroundColor: '#fff',
-                  transition: 'left 0.3s ease',
                   boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
                 }}
               />
             </button>
             <span
+              className="cursor-pointer transition-all duration-200"
               style={{
                 fontSize: 16,
                 fontWeight: isYearly ? 700 : 400,
                 color: isYearly ? '#000' : 'rgba(0,0,0,0.5)',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease',
               }}
               onClick={() => setIsYearly(true)}
             >
-              Yearly
+              Bill Yearly
             </span>
             {isYearly && (
               <span
+                className="whitespace-nowrap inline-flex items-center gap-1"
                 style={{
-                  backgroundColor: '#FE3F00',
-                  color: '#fff',
-                  fontSize: 12,
+                  backgroundColor: 'rgba(254,63,0,0.08)',
+                  color: '#FE3F00',
+                  fontSize: 13,
                   fontWeight: 700,
-                  padding: '4px 12px',
+                  padding: '6px 14px',
                   borderRadius: 20,
-                  whiteSpace: 'nowrap',
                 }}
               >
+                <img src="https://later.com/images/pricing/icon/dollar-sign.png" alt="" style={{ width: 16, height: 16 }} />
                 3 months free &middot; 25% off
               </span>
             )}
@@ -311,40 +295,28 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section style={{ padding: '32px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: 24,
-              maxWidth: 1100,
-              margin: '0 auto',
-            }}
-          >
+      <section className="reveal pt-6 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto" style={{ maxWidth: 1100 }}>
             {plans.map((plan, i) => {
               const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice
               return (
                 <div
                   key={plan.name}
-                  className={`reveal reveal-d${i + 1}`}
+                  className={`reveal reveal-d${i + 1} h-full relative flex flex-col`}
                   style={{
-                    position: 'relative',
                     border: plan.popular ? '2px solid #FE3F00' : '1px solid rgba(0,0,0,0.12)',
                     borderRadius: 16,
-                    padding: '40px 32px',
+                    padding: '40px 28px',
                     backgroundColor: plan.popular ? '#FFFAF8' : '#fff',
-                    display: 'flex',
-                    flexDirection: 'column',
                     ...(plan.popular ? { boxShadow: '0 8px 40px rgba(254,63,0,0.1)' } : {}),
                   }}
                 >
                   {plan.popular && (
                     <span
+                      className="absolute left-1/2 whitespace-nowrap"
                       style={{
-                        position: 'absolute',
                         top: -14,
-                        left: '50%',
                         transform: 'translateX(-50%)',
                         backgroundColor: '#FE3F00',
                         color: '#fff',
@@ -352,7 +324,6 @@ export default function PricingPage() {
                         fontWeight: 700,
                         padding: '5px 20px',
                         borderRadius: 20,
-                        whiteSpace: 'nowrap',
                       }}
                     >
                       Most popular
@@ -377,14 +348,16 @@ export default function PricingPage() {
                   <div style={{ marginBottom: 24 }}>
                     <span
                       className="ff-heading"
-                      style={{ fontSize: 48, fontWeight: 900, lineHeight: 1 }}
+                      style={{ fontSize: 44, fontWeight: 900, lineHeight: 1 }}
                     >
                       {formatPrice(price)}
                     </span>
-                    <span style={{ fontSize: 16, color: 'rgba(0,0,0,0.5)', marginLeft: 4 }}>/mo</span>
+                    <span style={{ fontSize: 14, color: 'rgba(0,0,0,0.5)', marginLeft: 2 }}>USD/month*</span>
                     {isYearly && (
-                      <div style={{ fontSize: 13, color: 'rgba(0,0,0,0.4)', marginTop: 4 }}>
-                        billed annually ({formatPrice(plan.monthlyPrice)}/mo if monthly)
+                      <div className="flex items-center gap-1 mt-1" style={{ fontSize: 13, color: 'rgba(0,0,0,0.4)' }}>
+                        Billed yearly
+                        <img src="https://later.com/images/pricing/icon/dollar-sign.png" alt="" style={{ width: 14, height: 14 }} />
+                        <span style={{ color: '#FE3F00', fontWeight: 600 }}>3 months free &middot; 25% off</span>
                       </div>
                     )}
                   </div>
@@ -396,32 +369,29 @@ export default function PricingPage() {
                       fontSize: 16,
                       justifyContent: 'center',
                       width: '100%',
-                      marginBottom: 32,
+                      marginBottom: 28,
                     }}
                   >
-                    Start free trial <ArrowIcon />
+                    Start 14-day free trial <ArrowIcon />
                   </a>
 
-                  <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: 24, flex: 1 }}>
-                    <p style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'rgba(0,0,0,0.4)', marginBottom: 16 }}>
-                      Includes
-                    </p>
-                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 12 }}>
-                      <li style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 15 }}>
-                        <CheckIcon />
-                        <span><strong>{plan.socialSets}</strong> Social Set{plan.socialSets > 1 ? 's' : ''}</span>
+                  <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: 20, flex: 1 }}>
+                    <ul className="flex flex-col gap-3" style={{ listStyle: 'none' }}>
+                      <li className="flex items-center gap-2.5" style={{ fontSize: 15 }}>
+                        <CheckIconInline />
+                        <span><strong>{plan.socialSets}</strong> social set{plan.socialSets > 1 ? 's' : ''} ({plan.socialSets * 8} profiles total)</span>
                       </li>
-                      <li style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 15 }}>
-                        <CheckIcon />
-                        <span><strong>{plan.users}</strong> User{plan.users > 1 ? 's' : ''}</span>
+                      <li className="flex items-center gap-2.5" style={{ fontSize: 15 }}>
+                        <CheckIconInline />
+                        <span><strong>{plan.users}</strong> user{plan.users > 1 ? 's' : ''}</span>
                       </li>
-                      <li style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 15 }}>
-                        <CheckIcon />
-                        <span><strong>{plan.postsPerProfile}</strong></span>
+                      <li className="flex items-center gap-2.5" style={{ fontSize: 15 }}>
+                        <CheckIconInline />
+                        <span>{plan.postsPerProfile === 'Unlimited' ? <strong>Unlimited posts</strong> : <><strong>{plan.postsPerProfile.split(' ')[0]}</strong> posts per profile</>}</span>
                       </li>
-                      <li style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 15 }}>
-                        <CheckIcon />
-                        <span><strong>{plan.aiCredits}</strong> AI Credits/mo</span>
+                      <li className="flex items-center gap-2.5" style={{ fontSize: 15 }}>
+                        <CheckIconInline />
+                        <span>AI content tools (<strong>{plan.aiCredits}</strong> AI credits/mo)</span>
                       </li>
                     </ul>
                   </div>
@@ -429,43 +399,43 @@ export default function PricingPage() {
               )
             })}
           </div>
+
+          <p className="text-center mt-4" style={{ fontSize: 13, color: 'rgba(0,0,0,0.4)' }}>
+            *Prices are billed in USD, applicable taxes are extra
+          </p>
         </div>
       </section>
 
       {/* Feature Comparison */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal wood-bg py-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="ff-heading reveal text-center"
             style={{
-              fontSize: 48,
+              fontSize: 'clamp(32px, 4vw, 48px)',
               fontWeight: 900,
               lineHeight: 1.1,
               marginBottom: 28,
             }}
           >
-            Compare plan features
+            Compare our plans and features
           </h2>
 
           <div
-            className="reveal reveal-d1"
-            style={{
-              maxWidth: 1000,
-              margin: '0 auto',
-              overflowX: 'auto',
-            }}
+            className="reveal reveal-d1 mx-auto overflow-x-auto"
+            style={{ maxWidth: 1000 }}
           >
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <table className="w-full" style={{ borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ borderBottom: '2px solid rgba(0,0,0,0.12)' }}>
-                  <th style={{ textAlign: 'left', padding: '16px 12px', fontSize: 14, fontWeight: 600, color: 'rgba(0,0,0,0.5)', width: '40%' }}>
-                    Feature
+                  <th className="text-left" style={{ padding: '16px 12px', fontSize: 14, fontWeight: 600, color: 'rgba(0,0,0,0.5)', width: '40%' }}>
+                    Features
                   </th>
                   {plans.map((plan) => (
                     <th
                       key={plan.name}
+                      className="text-center"
                       style={{
-                        textAlign: 'center',
                         padding: '16px 12px',
                         fontSize: 16,
                         fontWeight: 700,
@@ -474,6 +444,18 @@ export default function PricingPage() {
                       }}
                     >
                       {plan.name}
+                      {plan.popular && (
+                        <span
+                          className="block mx-auto mt-1"
+                          style={{
+                            fontSize: 11,
+                            fontWeight: 600,
+                            color: '#FE3F00',
+                          }}
+                        >
+                          Most popular
+                        </span>
+                      )}
                     </th>
                   ))}
                 </tr>
@@ -487,9 +469,9 @@ export default function PricingPage() {
                       backgroundColor: idx % 2 === 0 ? 'transparent' : 'rgba(0,0,0,0.02)',
                     }}
                   >
-                    <td style={{ padding: '14px 12px', fontSize: 15 }}>{row.label}</td>
+                    <td className="text-left" style={{ padding: '14px 12px', fontSize: 15 }}>{row.label}</td>
                     {plans.map((plan) => (
-                      <td key={plan.name} style={{ textAlign: 'center', padding: '14px 12px' }}>
+                      <td key={plan.name} className="text-center" style={{ padding: '14px 12px' }}>
                         {plan.features[row.key] ? <CheckIcon /> : <XIcon />}
                       </td>
                     ))}
@@ -502,21 +484,21 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal py-14">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="ff-heading reveal text-center"
             style={{
-              fontSize: 48,
+              fontSize: 'clamp(32px, 4vw, 48px)',
               fontWeight: 900,
               lineHeight: 1.1,
               marginBottom: 28,
             }}
           >
-            Frequently asked questions
+            Frequently Asked Questions
           </h2>
 
-          <div style={{ maxWidth: 760, margin: '0 auto' }}>
+          <div className="mx-auto" style={{ maxWidth: 760 }}>
             {faqs.map((faq, idx) => {
               const isOpen = openFaq === idx
               return (
@@ -529,17 +511,11 @@ export default function PricingPage() {
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="flex items-center justify-between w-full text-left gap-4 cursor-pointer"
                     style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      width: '100%',
-                      padding: '24px 0',
+                      padding: '20px 0',
                       background: 'none',
                       border: 'none',
-                      cursor: 'pointer',
-                      textAlign: 'left',
-                      gap: 16,
                     }}
                   >
                     <span style={{ fontSize: 18, fontWeight: 600, lineHeight: 1.4 }}>
@@ -549,7 +525,7 @@ export default function PricingPage() {
                   </button>
                   <div
                     style={{
-                      maxHeight: isOpen ? 300 : 0,
+                      maxHeight: isOpen ? 400 : 0,
                       overflow: 'hidden',
                       transition: 'max-height 0.4s ease, opacity 0.3s ease',
                       opacity: isOpen ? 1 : 0,
@@ -560,7 +536,7 @@ export default function PricingPage() {
                         fontSize: 16,
                         lineHeight: 1.7,
                         color: 'rgba(0,0,0,0.6)',
-                        paddingBottom: 24,
+                        paddingBottom: 20,
                       }}
                     >
                       {faq.a}
@@ -574,36 +550,38 @@ export default function PricingPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="reveal text-center" style={{ maxWidth: 700, margin: '0 auto' }}>
+      <section className="reveal purple-wood-bg py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mx-auto" style={{ maxWidth: 700 }}>
             <h2
               className="ff-heading"
               style={{
-                fontSize: 56,
+                fontSize: 'clamp(32px, 4.5vw, 56px)',
                 fontWeight: 900,
                 lineHeight: 1.08,
                 color: '#fff',
-                marginBottom: 24,
+                marginBottom: 16,
               }}
             >
               Find your perfect Later plan today
             </h2>
             <p
+              className="mx-auto"
               style={{
                 fontSize: 18,
                 lineHeight: 1.6,
                 color: 'rgba(255,255,255,0.75)',
-                marginBottom: 24,
+                marginBottom: 32,
                 maxWidth: 480,
-                margin: '0 auto 40px',
               }}
             >
-              Start your 14-day free trial. No credit card required.
+              Whether you're a social media pro or just getting started, Later Social has you covered.
             </p>
-            <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
-              Get started free <ArrowIcon />
-            </a>
+            <div className="flex justify-center">
+              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+                Start 14-Day Free Trial <ArrowIcon />
+              </a>
+            </div>
           </div>
         </div>
       </section>

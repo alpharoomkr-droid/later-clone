@@ -99,9 +99,9 @@ export default function ContentCalendarPage() {
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>
             Everything you need to plan a winning content strategy.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
             {valueProps.map((v, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
                 <h3
                   className="ff-heading"
                   style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}
@@ -124,11 +124,11 @@ export default function ContentCalendarPage() {
           >
             Manage your social media calendar with ease
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 items-center">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/2PlFehpkx4GKrmLGfuhreO/88897d84e9482665fbf231c860dee5f0/manage-your-social-media-calendar-with-ease.png?w=1136&h=1000&q=70&fm=png"
               alt="Manage your calendar"
-              style={{ width: '100%', borderRadius: 8 }}
+              className="w-full rounded-lg"
             />
             <div>
               {steps.map((s, i) => (
@@ -164,25 +164,20 @@ export default function ContentCalendarPage() {
           {features.map((f, i) => (
             <div
               key={i}
-              className="reveal"
-              style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: 36,
-                alignItems: 'center',
-                marginBottom: i < features.length - 1 ? 80 : 0,
-                direction: i % 2 === 1 ? 'rtl' : 'ltr',
-              }}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-9 items-center reveal reveal-d${(i % 2) + 1}`}
+              style={{ marginBottom: i < features.length - 1 ? 80 : 0 }}
             >
-              <img
-                src={f.img}
-                alt={f.title}
-                style={{ width: '100%', borderRadius: 8, direction: 'ltr' }}
-              />
-              <div style={{ direction: 'ltr' }}>
+              <div className={i % 2 === 1 ? 'lg:order-2' : ''}>
+                <img
+                  src={f.img}
+                  alt={f.title}
+                  className="w-full rounded-lg"
+                />
+              </div>
+              <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
                 <p
-                  className="uppercase tracking-widest"
-                  style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}
+                  className="uppercase tracking-widest text-gridglow"
+                  style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}
                 >
                   {f.tag}
                 </p>

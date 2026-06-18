@@ -52,7 +52,7 @@ export default function InstagramDesktopPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>DITCH THE SMALL SCREEN</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             Manage all your socials on the Later desktop app
@@ -69,10 +69,10 @@ export default function InstagramDesktopPage() {
 
       {/* Steps */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>SCHEDULE. POST. REPEAT.</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>How to post on Instagram from your desktop</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/5Z2fJbdbKcK0mQpmfx1hco/f48f2206d9bfdbce50591cf52f50e17a/post-on-instagram-from-desktop-with-later.png?w=1133&h=1088&q=70&fm=png" alt="Post on Instagram from desktop" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -91,7 +91,7 @@ export default function InstagramDesktopPage() {
 
       {/* Feature showcases */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1100px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>SET IT & FORGET IT</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Plan all of your Instagram posts right from your laptop</h2>
           {showcases.map((s, i) => (
@@ -110,7 +110,7 @@ export default function InstagramDesktopPage() {
 
       {/* Testimonial */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>DON'T JUST TAKE OUR WORD FOR IT</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>Here's why people love Later!</h2>
           <div style={{ maxWidth: 800, margin: '0 auto', background: '#fff', borderRadius: 12, padding: 48 }}>
@@ -149,7 +149,7 @@ export default function InstagramDesktopPage() {
 
       {/* Blogs & Resources */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 32, fontWeight: 900, lineHeight: 1.3, marginBottom: 12 }}>Learn how to get better ROI from your social media content & campaigns with Later's helpful (free!) resources.</h2>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 32, marginTop: 48 }}>Blogs</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 32 }}>

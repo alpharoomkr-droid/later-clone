@@ -55,8 +55,8 @@ export default function YoutubersPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 0, paddingLeft: 24, paddingRight: 24 }}>
+        <div className="max-w-7xl mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               YouTube Influencer Marketing
@@ -85,8 +85,8 @@ export default function YoutubersPage() {
       </section>
 
       {/* Benefits — Like, comment, subscribe */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+      <section className="reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
+        <div className="max-w-7xl mx-auto text-center">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Like, comment, subscribe
           </h2>
@@ -106,8 +106,8 @@ export default function YoutubersPage() {
       </section>
 
       {/* How Later Influence Works */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
+        <div className="max-w-7xl mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
             How Later Influence Works
           </p>
@@ -139,8 +139,8 @@ export default function YoutubersPage() {
       </section>
 
       {/* Feature Sections (alternating) */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
+        <div className="max-w-7xl mx-auto">
           {featureSections.map((f, i) => (
             <div
               key={i}
@@ -177,8 +177,8 @@ export default function YoutubersPage() {
       </section>
 
       {/* Case Study — bibigo */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ textAlign: 'center' }}>
+      <section className="purple-wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24 }}>
+        <div className="max-w-7xl mx-auto" style={{ textAlign: 'center' }}>
           <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 24, color: 'rgba(255,255,255,0.7)' }}>
             Case Study
           </p>
@@ -202,8 +202,8 @@ export default function YoutubersPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
+      <section className="wood-bg reveal" style={{ paddingTop: 64, paddingBottom: 96, paddingLeft: 24, paddingRight: 24, textAlign: 'center' }}>
+        <div className="max-w-[700px] mx-auto">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>
             Grow your brand on YouTube with Later's influencer marketing platform
           </h2>

@@ -69,10 +69,16 @@ export default function SocialMediaListeningPage() {
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 24, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
+            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 12, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
           >
             All the info you need, ready in seconds (not hours)
           </h2>
+          <p
+            className="text-charcoal text-center reveal"
+            style={{ fontSize: 18, lineHeight: '28px', opacity: 0.7, marginBottom: 48, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto' }}
+          >
+            Hear what your customers are saying. Take action before it's too late.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 reveal reveal-d1">
             {valueProps.map((vp, i) => (
               <div key={i}>
@@ -152,10 +158,11 @@ export default function SocialMediaListeningPage() {
             >
               Social Media Monitoring
             </h2>
-            <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500 }}>
+            <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500, marginBottom: 28 }}>
               Track every mention, hashtag, and keyword across platforms so nothing slips through the cracks.
               Later aggregates it all into one clean dashboard.
             </p>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
           <div className="reveal reveal-d1">
             <img
@@ -178,10 +185,11 @@ export default function SocialMediaListeningPage() {
             >
               Sentiment Analysis
             </h2>
-            <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500 }}>
+            <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500, marginBottom: 28 }}>
               Understand how people really feel about your brand. Later's sentiment analysis breaks down
               positive, negative, and neutral mentions so you can act fast.
             </p>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
           <div className="reveal reveal-d1 lg:order-1">
             <img
@@ -204,10 +212,11 @@ export default function SocialMediaListeningPage() {
             >
               Engage with your community
             </h2>
-            <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500 }}>
+            <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500, marginBottom: 28 }}>
               Reply to conversations, amplify positive sentiment, and manage your brand reputation
               all from one place.
             </p>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
           <div className="reveal reveal-d1">
             <img
@@ -254,10 +263,13 @@ export default function SocialMediaListeningPage() {
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2
             className="ff-heading"
-            style={{ fontSize: 56, fontWeight: 900, lineHeight: '62px', color: '#FEFCFB', marginBottom: 32 }}
+            style={{ fontSize: 56, fontWeight: 900, lineHeight: '62px', color: '#FEFCFB', marginBottom: 16 }}
           >
             See Later's Social Listening tool in action
           </h2>
+          <p style={{ fontSize: 18, lineHeight: '28px', color: '#FEFCFB', opacity: 0.7, marginBottom: 32 }}>
+            Understand your audience, track brand sentiment, and stay ahead of the conversation.
+          </p>
           <Link to="/signup" className="btn-primary" style={{ fontSize: 18 }}>
             Start free trial <ArrowIcon />
           </Link>

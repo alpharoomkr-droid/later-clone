@@ -16,19 +16,28 @@ const logos = [
 
 export default function TrustedBy() {
   return (
-    <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-      <div className="max-w-[1440px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 40px' }}>
-        <h2 className="text-center mb-12 text-charcoal" style={{ fontSize: 18, fontWeight: 700, lineHeight: '27px', letterSpacing: '0.09px' }}>
+    <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <div className="max-w-[1280px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 40px' }}>
+        <h2
+          className="text-center mb-12 text-charcoal"
+          style={{
+            fontFamily: 'var(--font-body)',
+            fontSize: 'clamp(1rem, 0.9rem + 0.25vw, 1.125rem)',
+            fontWeight: 700,
+            lineHeight: '27px',
+            letterSpacing: '0.09px',
+          }}
+        >
           Trusted by industry leaders
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 max-w-[1000px]">
+        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-8 md:gap-x-10 lg:gap-x-14 max-w-[1100px]">
           {logos.map((logo, i) => (
             <div key={i} className="hover:opacity-100 transition-opacity" style={{ opacity: 0.8 }}>
               <img
                 src={logo.src}
                 alt={logo.name}
-                height="38"
-                className="h-[38px] w-auto object-contain"
+                height="45"
+                className="h-[38px] md:h-[38px] lg:h-[45px] w-auto object-contain"
                 loading="lazy"
               />
             </div>

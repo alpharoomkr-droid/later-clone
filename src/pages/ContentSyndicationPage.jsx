@@ -27,8 +27,8 @@ export default function ContentSyndicationPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+      <section className="wood-bg reveal" style={{ paddingTop: 60, paddingBottom: 0 }}>
+        <div className="max-w-7xl mx-auto px-6 md:px-10 text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -62,8 +62,8 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* How it works - numbered steps */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}
@@ -76,11 +76,11 @@ export default function ContentSyndicationPage() {
           >
             Everything you need to locate, track, and amplify the best-performing influencer content.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/198PBmY1EzrFqcvd50cCz1/cd088c3fb5dbcc3c5b2164fafe776d2a/content-syndication-management-tools.png?w=1136&h=960&q=70&fm=png"
               alt="Content management tools"
-              style={{ width: '100%', borderRadius: 8 }}
+              className="w-full rounded-lg"
             />
             <div>
               {steps.map((s, i) => (
@@ -105,9 +105,9 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Feature - Grow online brand awareness */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+      <section className="wood-bg reveal py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <p
                 className="text-charcoal/60 uppercase tracking-widest reveal"
@@ -135,25 +135,23 @@ export default function ContentSyndicationPage() {
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/7cuZ53yMfBzFGFZJfTzM9C/7f4e350ec2b467208cdcd1f31125b048/content-syndication-brand-awareness.png?w=1136&h=960&q=70&fm=png"
               alt="Grow online brand awareness"
-              className="reveal reveal-d2"
-              style={{ width: '100%', borderRadius: 8 }}
+              className="reveal reveal-d2 w-full rounded-lg"
             />
           </div>
         </div>
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="purple-wood-bg reveal py-16 md:py-24">
         <div
-          className="max-w-[900px] mx-auto reveal"
-          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 32, alignItems: 'center' }}
+          className="max-w-[900px] mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 items-center"
         >
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/1WJ3MfWOmvyTZsL2qbypLS/186a4e020709e4fdf7cc8c6cde6c1741/bob-land.png?w=640&h=641&q=50&fm=png"
             alt="Bob Land"
-            style={{ width: '100%', borderRadius: 12 }}
+            className="w-full rounded-xl mx-auto max-w-[200px] md:max-w-none"
           />
-          <div>
+          <div className="text-center md:text-left">
             <p style={{ fontSize: 20, lineHeight: 1.6, color: '#fff', marginBottom: 24 }}>
               "We're solving for our content scale issues with (Later) since they offer a level
               of moderation and a large enough number of Influencers that target our particular
@@ -171,8 +169,8 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
+      <section className="reveal text-center py-16 md:py-24" style={{ background: '#000' }}>
+        <div className="max-w-[700px] mx-auto px-6 md:px-10">
           <h2
             className="ff-heading"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24, color: '#fff' }}

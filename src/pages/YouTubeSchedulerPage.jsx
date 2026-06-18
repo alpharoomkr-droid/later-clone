@@ -79,7 +79,7 @@ export default function YouTubeSchedulerPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>YOUTUBE YOUR WAY!</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             The YouTube Scheduler That Simplifies Your Content Planning
@@ -96,12 +96,12 @@ export default function YouTubeSchedulerPage() {
 
       {/* Quick features */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+        <div className="max-w-[1100px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>One solution for all your video scheduling needs.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Plan, schedule, and manage video content across all platforms.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {features.map((f, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`}>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{f.title}</h3>
                 <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5 }}>{f.desc}</p>
               </div>
@@ -112,11 +112,11 @@ export default function YouTubeSchedulerPage() {
 
       {/* Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>HOW TO SCHEDULE YOUTUBE SHORTS</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Drag it. Drop it. Watch the views roll in.</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>Try it on any Later plan for free.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/7DvRcfNQTUG192BANofL7b/5f3c86c694ca9e49d6be23adab5487f2/plan-schedule-auto-publish-youtube-shorts.png?w=1136&h=1000&q=70&fm=png" alt="YouTube Shorts scheduling" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -135,7 +135,7 @@ export default function YouTubeSchedulerPage() {
 
       {/* Feature showcases */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1100px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>YOUTUBE SCHEDULING TOOL</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Take on the world of YouTube.</h2>
           {showcases.map((s, i) => (
@@ -154,7 +154,7 @@ export default function YouTubeSchedulerPage() {
 
       {/* Testimonials */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CUSTOMER TESTIMONIALS</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>Why our customers love Later.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 32 }}>
@@ -193,7 +193,7 @@ export default function YouTubeSchedulerPage() {
 
       {/* Blogs & Resources */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.2, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Learn how to get better ROI from your social media content & campaigns.</h2>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, marginBottom: 32 }}>Blogs</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 32 }}>

@@ -20,6 +20,14 @@ export default function FullScreenVideo() {
         <source src="https://later-com.s3.us-east-1.amazonaws.com/web-videos/New+Later+Brand/Homepage+Full+Screen+Video.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(180deg, #fe3f00 0%, #cb8aff 100%)',
+          opacity: 0.9,
+          clipPath: 'polygon(0 60%, 100% 40%, 100% 100%, 0 100%)',
+        }}
+      />
 
       <div className="absolute top-8 right-10 z-20">
         <a href="#" className="btn-primary" style={{ fontSize: 14, padding: '10px 20px' }}>
@@ -27,8 +35,8 @@ export default function FullScreenVideo() {
         </a>
       </div>
 
-      <div className="relative z-10 max-w-[700px] reveal" style={{ padding: '0 40px 96px' }}>
-        <p className="text-offline/80 mb-4" style={{ fontSize: 24, lineHeight: '36px' }}>
+      <div className="relative z-10 max-w-[530px] reveal" style={{ padding: '0 40px 96px' }}>
+        <p className="text-offline/80 mb-4" style={{ fontSize: 16, lineHeight: '24px' }}>
           Our experts plan, run, and optimize influencer campaigns that stand out, scale faster, and win big.
         </p>
         <h2

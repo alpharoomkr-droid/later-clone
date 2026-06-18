@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 function ArrowIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ marginLeft: 8, display: 'inline' }}>
@@ -22,6 +20,12 @@ function XIcon() {
       <path d="M6 6l8 8M14 6l-8 8" stroke="#ef4444" strokeWidth="2" strokeLinecap="round"/>
     </svg>
   )
+}
+
+function CellIcon({ value }) {
+  if (value === true) return <CheckIcon />
+  if (value === false) return <XIcon />
+  return <span style={{ fontSize: 14, color: '#666' }}>{value}</span>
 }
 
 const benefits = [
@@ -63,43 +67,41 @@ const compareLinks = [
 ]
 
 export default function HootsuiteAlternativePage() {
-  const thHead = { fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center', borderBottom: '2px solid #e5e5e5' }
-  const td = { padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }
-  const tdFeature = { ...td, textAlign: 'left', fontWeight: 600 }
-
   return (
-    <div style={{ paddingTop: 70 }}>
+    <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-          <div>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>BUILD YOUR BRAND ON SOCIAL</p>
-            <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 52, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
-              Best social media management platform: Later vs. Hootsuite
-            </h1>
-            <p style={{ fontSize: 18, lineHeight: 1.6, color: '#333', marginBottom: 32, maxWidth: 520 }}>
-              See how Later Social saves you more time, helps you reach more engaged audiences, and grow your brand bigger, better, and faster with social media.
-            </p>
-            <Link to="/signup" className="btn-primary" style={{ fontSize: 16 }}>Start free trial <ArrowIcon /></Link>
-          </div>
-          <div>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/18nlMmXE3hWNzewBvR2u1T/2edc71d8a5760c618fcfe863900c06aa/later-hootsuite-hero.png?w=1136&h=960&q=80&fm=png" alt="Later vs Hootsuite" style={{ width: '100%', display: 'block' }} />
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+            <div>
+              <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16, color: '#FE3F00' }}>BUILD YOUR BRAND ON SOCIAL</p>
+              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 52, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
+                Best social media management platform: Later vs. Hootsuite
+              </h1>
+              <p style={{ fontSize: 18, lineHeight: 1.6, color: '#333', marginBottom: 32, maxWidth: 520 }}>
+                See how Later Social saves you more time, helps you reach more engaged audiences, and grow your brand bigger, better, and faster with social media.
+              </p>
+              <a href="/signup" className="btn-primary" style={{ fontSize: 16 }}>Start free trial <ArrowIcon /></a>
+            </div>
+            <div>
+              <img src="https://images.ctfassets.net/nfpsrlop6sws/18nlMmXE3hWNzewBvR2u1T/2edc71d8a5760c618fcfe863900c06aa/later-hootsuite-hero.png?w=1136&h=960&q=80&fm=png" alt="Later vs Hootsuite" style={{ width: '100%', display: 'block' }} />
+            </div>
           </div>
         </div>
       </section>
 
       {/* 2. Benefits */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
-          <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>WHY LATER IS THE BEST HOOTSUITE ALTERNATIVE</p>
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: '#FE3F00' }}>WHY LATER IS THE BEST HOOTSUITE ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Manage your social strategy & growth in one platform</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
             Later Social helps you manage your social media marketing, social commerce, and creator partnerships all in one app.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
             {benefits.map((b, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
+              <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center', padding: '32px 20px' }}>
                 <img src={b.icon} alt="" style={{ width: 56, height: 56, margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700, marginBottom: 8 }}>{b.title}</h3>
                 <p style={{ fontSize: 15, color: '#555', lineHeight: 1.5 }}>{b.desc}</p>
@@ -110,36 +112,42 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[900px] mx-auto reveal">
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
-          <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: 12, overflow: 'hidden' }}>
-            <thead>
-              <tr style={{ background: '#fafafa' }}>
-                <th style={{ ...thHead, textAlign: 'left' }}>Features</th>
-                <th style={thHead}>Later Social</th>
-                <th style={thHead}>Hootsuite</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonRows.map((r, i) => (
-                <tr key={i}>
-                  <td style={tdFeature}>{r.feature}</td>
-                  <td style={td}>{r.later ? <CheckIcon /> : <XIcon />}</td>
-                  <td style={td}>{r.hootsuite ? <CheckIcon /> : <XIcon />}</td>
+          <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff' }}>
+              <thead>
+                <tr style={{ background: '#000', color: '#fff' }}>
+                  <th style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'left' }}>Features</th>
+                  <th style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center' }}>Later Social</th>
+                  <th style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center' }}>Hootsuite</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {comparisonRows.map((r, i) => (
+                  <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#fafafa' }}>
+                    <td style={{ padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'left', fontWeight: 600, fontSize: 15 }}>{r.feature}</td>
+                    <td style={{ padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><CellIcon value={r.later} /></span>
+                    </td>
+                    <td style={{ padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><CellIcon value={r.hootsuite} /></span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <p className="text-center" style={{ fontSize: 13, color: '#999', marginTop: 16 }}>Last updated April 2025</p>
         </div>
       </section>
 
       {/* 4. Numbered Features */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 24 }}>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>LATER VS. HOOTSUITE</p>
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div className="text-center" style={{ marginBottom: 24 }}>
+            <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: '#FE3F00' }}>LATER VS. HOOTSUITE</p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>3 reasons to choose Later Social</h2>
             <p style={{ fontSize: 18, color: '#555' }}>Plus, try any Later plan for free.</p>
           </div>
@@ -157,43 +165,45 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 5. Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[900px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, color: '#fff' }}>
-            Over 7 million people — from creators to small shops to global brands — use Later Social. Here's why.
-          </h2>
-          <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: 48, textAlign: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/6m4TVrAovjBjvxbLJfjBEe/90ff1cdd42789f887c192f1ce31d2dcc/kate-talcott.jpg?w=640&h=640&fl=progressive&q=50&fm=jpg" alt="Kate Talcott" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
-            <p style={{ fontSize: 18, lineHeight: 1.7, color: '#fff', marginBottom: 24, fontStyle: 'italic' }}>
-              "Later's TikTok auto publish is a game-changer. With two kids, I could never sneak in time to post. Now I can reliably post at peak times—PLUS, Later's analytics allows me to reach peak viewership across all my platforms."
-            </p>
-            <p style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>Kate Talcott, @splatter.and.bloom</p>
-            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Founder — Splatter &amp; Bloom</p>
+      <section className="purple-wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div className="max-w-[900px] mx-auto text-center">
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, color: '#fff' }}>
+              Over 7 million people — from creators to small shops to global brands — use Later Social. Here's why.
+            </h2>
+            <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: 48, textAlign: 'center' }}>
+              <img src="https://images.ctfassets.net/nfpsrlop6sws/6m4TVrAovjBjvxbLJfjBEe/90ff1cdd42789f887c192f1ce31d2dcc/kate-talcott.jpg?w=640&h=640&fl=progressive&q=50&fm=jpg" alt="Kate Talcott" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
+              <p style={{ fontSize: 18, lineHeight: 1.7, color: '#fff', marginBottom: 24, fontStyle: 'italic' }}>
+                "Later's TikTok auto publish is a game-changer. With two kids, I could never sneak in time to post. Now I can reliably post at peak times—PLUS, Later's analytics allows me to reach peak viewership across all my platforms."
+              </p>
+              <p style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>Kate Talcott, @splatter.and.bloom</p>
+              <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Founder — Splatter &amp; Bloom</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 6. Compare Links */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
-          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            {compareLinks.map((l, i) => (
-              <Link key={i} to={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</Link>
-            ))}
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <div className="max-w-[800px] mx-auto">
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
+            <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
+            <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
+              {compareLinks.map((l, i) => (
+                <a key={i} href={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* 7. Bottom CTA */}
-      <section style={{ backgroundColor: '#000', padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, color: '#FEFCFB', marginBottom: 16 }}>
-            Later Social is the best Hootsuite alternative
-          </h2>
-          <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>Try any Later plan free for 14 days.</p>
-          <Link to="/signup" className="btn-primary" style={{ fontSize: 18 }}>Start free trial <ArrowIcon /></Link>
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Social is the best Hootsuite alternative</h2>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan free for 14 days.</p>
+          <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
         </div>
       </section>
 

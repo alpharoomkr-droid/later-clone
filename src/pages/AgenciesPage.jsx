@@ -36,7 +36,7 @@ export default function AgenciesPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             MANAGE YOUR CLIENTS' SOCIAL IN ONE APP
@@ -58,8 +58,8 @@ export default function AgenciesPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section style={{ padding: '80px 40px' }}>
+        <div className="max-w-[1200px] mx-auto">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
@@ -73,15 +73,15 @@ export default function AgenciesPage() {
       </section>
 
       {/* Why Agencies Choose Later */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Later for Agencies</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Why agencies choose Later</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
             Manage every client's social media from one app. Here's how it works.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/4Rj3dWeQsEayKog2wZ310o/8115a4742829bd737a6cb0161f692b8c/later-social-media-scheduling-tools-for-agencies.png?w=1160&h=978&q=70&fm=png" alt="Why agencies choose Later" style={{ width: '100%', borderRadius: 8 }} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/4Rj3dWeQsEayKog2wZ310o/8115a4742829bd737a6cb0161f692b8c/later-social-media-scheduling-tools-for-agencies.png?w=1160&h=978&q=70&fm=png" alt="Why agencies choose Later" style={{ width: '100%' }} />
             <div>
               {steps.map((s, i) => (
                 <div key={i} style={{ display: 'flex', gap: 20, marginBottom: 32 }}>
@@ -98,10 +98,10 @@ export default function AgenciesPage() {
       </section>
 
       {/* Feature: Content Creation Tools */}
-      <section style={{ padding: '60px 40px' }}>
+      <section style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/QdaVBe6UcPVh2WdyA4pSA/8508571e5a7645fbd5e80dc27d9051ce/content-creation-agencies.png?w=1174&h=1012&q=70&fm=png" alt="Content creation tools" style={{ width: '100%', borderRadius: 8 }} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/QdaVBe6UcPVh2WdyA4pSA/8508571e5a7645fbd5e80dc27d9051ce/content-creation-agencies.png?w=1174&h=1012&q=70&fm=png" alt="Content creation tools" style={{ width: '100%' }} />
             <div>
               <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>CONTENT CREATION TOOLS</p>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>Create scroll-stopping content.</h3>
@@ -117,10 +117,10 @@ export default function AgenciesPage() {
       </section>
 
       {/* Feature: Multi-Platform Management */}
-      <section style={{ padding: '0 40px 80px' }}>
+      <section style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', direction: 'rtl' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/5DvA5mdOfjGpaPRS2u6gh9/7b47b27d84191fa8970c6ff524756f5a/build-it-once.png?w=1136&h=960&q=70&fm=png" alt="Manage multiple social platforms" style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center', direction: 'rtl' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/5DvA5mdOfjGpaPRS2u6gh9/7b47b27d84191fa8970c6ff524756f5a/build-it-once.png?w=1136&h=960&q=70&fm=png" alt="Manage multiple social platforms" style={{ width: '100%', direction: 'ltr' }} />
             <div style={{ direction: 'ltr' }}>
               <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>MANAGE MULTIPLE SOCIAL PLATFORMS</p>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>One post. Every platform.</h3>
@@ -136,12 +136,12 @@ export default function AgenciesPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
             Trusted by agencies worldwide.
           </h2>
-          <div style={{ maxWidth: 720, margin: '0 auto', background: '#fff', borderRadius: 12, padding: 48, display: 'flex', gap: 32, alignItems: 'flex-start' }}>
+          <div style={{ maxWidth: 720, margin: '0 auto', background: '#fff', borderRadius: 12, padding: 56, display: 'flex', gap: 32, alignItems: 'flex-start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/6BBRKLdRpiNKoI3F6YsBm/b145d6978eb7043904a2809d032969a8/bread-and-butter.png?w=640&h=640&q=50&fm=png" alt="bread & butter" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} />
             <div>
               <p style={{ fontSize: 18, lineHeight: 1.6, color: '#333', marginBottom: 24 }}>
@@ -155,7 +155,7 @@ export default function AgenciesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
+      <section style={{ padding: '80px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Make your team & your clients happy.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan 100% free for 14 days. No credit card required.</p>

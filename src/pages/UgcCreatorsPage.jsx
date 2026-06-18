@@ -52,7 +52,7 @@ export default function UgcCreatorsPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             Best UGC Creator Platform
@@ -63,7 +63,7 @@ export default function UgcCreatorsPage() {
           <p className="hero-enter-d1" style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.6, maxWidth: 680, margin: '0 auto 32px', color: '#333' }}>
             Get authentic content from creators your customers trust. Later Influence makes it easy for creators and brands to work together.
           </p>
-          <a href="/influencer-marketing-services" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>
+          <a href="/influencer-marketing-services" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28, display: 'inline-block' }}>
             Book a demo
           </a>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
@@ -77,7 +77,7 @@ export default function UgcCreatorsPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ padding: '60px 40px' }}>
+      <section style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Unlock the benefits of UGC
@@ -85,7 +85,7 @@ export default function UgcCreatorsPage() {
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>
             User-generated content drives trust, engagement, and revenue.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
                 <img src={b.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
@@ -98,7 +98,7 @@ export default function UgcCreatorsPage() {
       </section>
 
       {/* How Later Influence Works */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
             How Later Influence Works
@@ -109,11 +109,11 @@ export default function UgcCreatorsPage() {
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
             From discovery to content collection, Later Influence streamlines every step.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/3ccJn1eHmSWc3Cub1tsgq0/4cd0201caed6a127fdc71987939b56f6/ugc-creators-discovery-campaigns-communications-collect.png?w=1136&h=960&q=70&fm=png"
               alt="Later Influence workflow"
-              style={{ width: '100%', borderRadius: 8 }}
+              style={{ width: '100%' }}
             />
             <div>
               {steps.map((s, i) => (
@@ -131,8 +131,8 @@ export default function UgcCreatorsPage() {
       </section>
 
       {/* Feature Cards */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section style={{ padding: '80px 40px' }}>
+        <div className="max-w-[1440px] mx-auto reveal">
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center reveal"
             style={{
@@ -157,8 +157,8 @@ export default function UgcCreatorsPage() {
             Tools and services to supercharge your strategy
           </h2>
           {featureCards.map((card, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
-              <img src={card.img} alt={card.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
+            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+              <img src={card.img} alt={card.title} style={{ width: '100%', direction: 'ltr' }} />
               <div style={{ direction: 'ltr' }}>
                 <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>{card.tag}</p>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>{card.title}</h3>
@@ -171,7 +171,7 @@ export default function UgcCreatorsPage() {
       </section>
 
       {/* Case Study — f'real foods */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal" style={{ textAlign: 'center' }}>
           <p
             className="uppercase tracking-widest"
@@ -214,12 +214,12 @@ export default function UgcCreatorsPage() {
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: 32,
+              gap: 40,
               marginBottom: 28,
             }}
           >
             {caseStudyStats.map((stat, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`}>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
                 <p
                   style={{
                     fontFamily: 'var(--font-heading)',
@@ -248,7 +248,7 @@ export default function UgcCreatorsPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>
             Grow with Later Influence, the top influencer marketing platform

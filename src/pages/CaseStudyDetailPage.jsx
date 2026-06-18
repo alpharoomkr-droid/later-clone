@@ -185,7 +185,7 @@ export default function CaseStudyDetailPage() {
   if (!study) {
     return (
       <div className="min-h-screen" style={{ paddingTop: 70 }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '60px 40px' }}>
+        <div className="max-w-7xl mx-auto text-center" style={{ padding: '80px 40px' }}>
           <h1 className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, marginBottom: 24 }}>Case study not found</h1>
           <p className="text-charcoal/60" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 32 }}>The case study you're looking for doesn't exist or may have been moved.</p>
           <Link to="/case-studies" className="btn-primary" style={{ fontSize: 16 }}>Back to Case Studies <ArrowIcon /></Link>
@@ -198,17 +198,16 @@ export default function CaseStudyDetailPage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* Breadcrumb + Hero */}
-      <section style={{ padding: '60px 0 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '60px 0 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <Link
             to="/case-studies"
-            className="reveal"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 14, fontWeight: 600, color: '#FE3F00', textDecoration: 'none', marginBottom: 24 }}
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Customer Case Studies
           </Link>
-          <div className="reveal" style={{ maxWidth: 900, marginBottom: 28 }}>
+          <div style={{ maxWidth: 900, marginBottom: 28 }}>
             <h1 className="ff-heading text-charcoal" style={{ fontSize: 56, fontWeight: 900, lineHeight: '64px', letterSpacing: 0.28 }}>
               {study.headline}
             </h1>
@@ -226,16 +225,16 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* At a Glance + Sidebar Info */}
-      <section style={{ padding: '64px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '64px 0 80px' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-16">
 
             {/* Main Content Column */}
             <div>
               {/* At a Glance */}
-              <div className="reveal" style={{ marginBottom: 24 }}>
+              <div className="reveal" style={{ marginBottom: 48 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 14, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 32, color: '#FE3F00' }}>At a Glance</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8" style={{ textAlign: 'center' }}>
                   {study.metrics.map((m, i) => (
                     <div key={i}>
                       <p className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, lineHeight: '56px', marginBottom: 8 }}>{m.value}</p>
@@ -246,7 +245,7 @@ export default function CaseStudyDetailPage() {
               </div>
 
               {/* The Objective */}
-              <div className="reveal" style={{ marginBottom: 24 }}>
+              <div className="reveal" style={{ marginBottom: 48 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 36, fontWeight: 900, lineHeight: '44px', marginBottom: 24 }}>The Objective</h2>
                 <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px' }}>{study.objective}</p>
               </div>
@@ -272,13 +271,13 @@ export default function CaseStudyDetailPage() {
               </blockquote>
 
               {/* The Solution */}
-              <div className="reveal" style={{ marginBottom: 24 }}>
+              <div className="reveal" style={{ marginBottom: 48 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 36, fontWeight: 900, lineHeight: '44px', marginBottom: 24 }}>The Solution</h2>
                 <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px' }}>{study.solution}</p>
               </div>
 
               {/* The Results */}
-              <div className="reveal" style={{ marginBottom: 24 }}>
+              <div className="reveal" style={{ marginBottom: 48 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 36, fontWeight: 900, lineHeight: '44px', marginBottom: 24 }}>The Results</h2>
                 <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', marginBottom: 32 }}>{study.results}</p>
               </div>
@@ -353,8 +352,8 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* Mid-page CTA Banner */}
-      <section className="wood-bg reveal" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+      <section className="wood-bg reveal" style={{ padding: '64px 0 80px' }}>
+        <div className="max-w-7xl mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, lineHeight: '56px', marginBottom: 16 }}>Grow with Later</h2>
           <p className="text-charcoal/70" style={{ fontSize: 20, lineHeight: '30px', marginBottom: 32, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
             Turn influencer marketing into your #1 revenue generator.
@@ -366,8 +365,8 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '64px 0 80px' }}>
+        <div className="max-w-7xl mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 className="ff-heading text-charcoal" style={{ fontSize: 44, fontWeight: 900, lineHeight: '52px', marginBottom: 16 }}>
             Work with Later for fast campaign results.
           </h2>
@@ -381,8 +380,8 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* Share Links */}
-      <section style={{ padding: '0 0 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '0 0 40px' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20 }}>
             <span style={{ fontSize: 14, fontWeight: 600, color: '#000', opacity: 0.5, textTransform: 'uppercase', letterSpacing: 1 }}>Share</span>
             {['facebook', 'twitter', 'linkedin', 'pinterest'].map((platform) => (
@@ -407,8 +406,8 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* Back to Home */}
-      <section style={{ padding: '0 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '0 0 80px' }}>
+        <div className="max-w-7xl mx-auto text-center" style={{ padding: '0 40px' }}>
           <Link
             to="/"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: '#FE3F00', textDecoration: 'none' }}

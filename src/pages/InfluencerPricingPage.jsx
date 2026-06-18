@@ -34,9 +34,9 @@ const pricingCards = [
     benefits: [
       'Launch campaigns 2x faster',
       'Access to best practices forged over a decade',
-      'Run 63% more campaigns',
-      'Save up to 30% on creator fees',
-      'Reduce brand safety risk',
+      'Run 63% more campaigns with our streamlined process',
+      'Save up to 30% on creator fees and we’ll handle creator negotiations',
+      'Reduce brand safety risk with a second set of eyes',
     ],
   },
   {
@@ -51,7 +51,7 @@ const pricingCards = [
     ],
     benefits: [
       'Drive efficiency with turnkey campaign management',
-      'Achieve tailored KPIs',
+      'Achieve tailored KPIs through creative excellence',
       'Access enterprise-grade expertise without hiring costs',
       'Ensure brand safety with comprehensive creator vetting',
       'Get leadership-ready analytics and reporting',
@@ -141,7 +141,13 @@ function ArrowIcon() {
 
 function CheckIcon({ color = '#FE3F00' }) {
   return (
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{ flexShrink: 0 }}>
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      style={{ flexShrink: 0, marginTop: 2 }}
+    >
       <path
         d="M4 10.5l4 4 8-9"
         stroke={color}
@@ -179,7 +185,13 @@ function ChevronDown({ open }) {
 
 function StarIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style={{ flexShrink: 0 }}>
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+      style={{ flexShrink: 0, marginTop: 2 }}
+    >
       <path
         d="M9 1l2.47 5.01L17 6.76l-4 3.9.94 5.51L9 13.77l-4.94 2.4.94-5.51-4-3.9 5.53-.75L9 1z"
         fill="#7A63E8"
@@ -194,13 +206,13 @@ export default function InfluencerPricingPage() {
   return (
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section style={{ padding: '80px 0 60px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '80px 0 40px' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center hero-enter" style={{ maxWidth: 820, margin: '0 auto' }}>
             <h1
               className="ff-heading"
               style={{
-                fontSize: 64,
+                fontSize: 'clamp(36px, 5vw, 64px)',
                 fontWeight: 900,
                 lineHeight: 1.05,
                 letterSpacing: '-0.5px',
@@ -227,31 +239,27 @@ export default function InfluencerPricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section style={{ padding: '20px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '20px 0 60px' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 1fr)',
-              gap: 24,
-              maxWidth: 1140,
-              margin: '0 auto',
-            }}
+            style={{ maxWidth: 1140, margin: '0 auto' }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {pricingCards.map((card, i) => (
               <div
                 key={card.name}
-                className={`reveal reveal-d${i + 1}`}
+                className={`reveal reveal-d${i + 1}${card.emphasized ? ' md:col-span-2 lg:col-span-1' : ''}`}
                 style={{
                   position: 'relative',
                   border: card.emphasized
                     ? '2px solid #7A63E8'
                     : '1px solid rgba(0,0,0,0.12)',
                   borderRadius: 16,
-                  padding: card.emphasized ? '48px 32px 40px' : '40px 32px',
+                  padding: card.emphasized ? '48px 28px 36px' : '36px 28px',
                   backgroundColor: card.emphasized ? '#F9F7FF' : '#fff',
                   display: 'flex',
                   flexDirection: 'column',
+                  height: '100%',
                   ...(card.emphasized
                     ? { boxShadow: '0 8px 40px rgba(122,99,232,0.12)' }
                     : {}),
@@ -271,6 +279,7 @@ export default function InfluencerPricingPage() {
                       padding: '5px 20px',
                       borderRadius: 20,
                       whiteSpace: 'nowrap',
+                      zIndex: 1,
                     }}
                   >
                     Most popular
@@ -280,7 +289,7 @@ export default function InfluencerPricingPage() {
                 <h3
                   className="ff-heading"
                   style={{
-                    fontSize: 28,
+                    fontSize: 26,
                     fontWeight: 900,
                     marginBottom: 12,
                   }}
@@ -293,12 +302,28 @@ export default function InfluencerPricingPage() {
                     fontSize: 15,
                     lineHeight: 1.55,
                     color: 'rgba(0,0,0,0.55)',
-                    marginBottom: 28,
-                    minHeight: 66,
+                    marginBottom: 24,
+                    minHeight: 48,
                   }}
                 >
                   {card.description}
                 </p>
+
+                {/* Plan Details Link */}
+                <a
+                  href="#"
+                  style={{
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: card.emphasized ? '#7A63E8' : '#FE3F00',
+                    textDecoration: 'underline',
+                    textUnderlineOffset: '3px',
+                    marginBottom: 16,
+                    display: 'inline-block',
+                  }}
+                >
+                  {card.name} Plan Details
+                </a>
 
                 <a
                   href="#"
@@ -307,7 +332,7 @@ export default function InfluencerPricingPage() {
                     fontSize: 16,
                     justifyContent: 'center',
                     width: '100%',
-                    marginBottom: 32,
+                    marginBottom: 28,
                   }}
                 >
                   Request Pricing <ArrowIcon />
@@ -317,28 +342,16 @@ export default function InfluencerPricingPage() {
                 <div
                   style={{
                     borderTop: '1px solid rgba(0,0,0,0.08)',
-                    paddingTop: 24,
-                    marginBottom: 28,
+                    paddingTop: 20,
+                    marginBottom: 24,
                   }}
                 >
-                  <p
-                    style={{
-                      fontSize: 12,
-                      fontWeight: 700,
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.8px',
-                      color: 'rgba(0,0,0,0.4)',
-                      marginBottom: 16,
-                    }}
-                  >
-                    What&apos;s included
-                  </p>
                   <ul
                     style={{
                       listStyle: 'none',
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: 12,
+                      gap: 10,
                       padding: 0,
                       margin: 0,
                     }}
@@ -351,10 +364,11 @@ export default function InfluencerPricingPage() {
                           alignItems: 'flex-start',
                           gap: 10,
                           fontSize: 14,
-                          lineHeight: 1.45,
+                          lineHeight: 1.5,
+                          textAlign: 'left',
                         }}
                       >
-                        <CheckIcon />
+                        <CheckIcon color={card.emphasized ? '#7A63E8' : '#FE3F00'} />
                         <span>{feat}</span>
                       </li>
                     ))}
@@ -370,17 +384,17 @@ export default function InfluencerPricingPage() {
                       textTransform: 'uppercase',
                       letterSpacing: '0.8px',
                       color: card.emphasized ? '#7A63E8' : '#FE3F00',
-                      marginBottom: 16,
+                      marginBottom: 14,
                     }}
                   >
-                    Key benefits
+                    Key Benefits:
                   </p>
                   <ul
                     style={{
                       listStyle: 'none',
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: 10,
+                      gap: 8,
                       padding: 0,
                       margin: 0,
                     }}
@@ -393,7 +407,8 @@ export default function InfluencerPricingPage() {
                           alignItems: 'flex-start',
                           gap: 10,
                           fontSize: 14,
-                          lineHeight: 1.45,
+                          lineHeight: 1.5,
+                          textAlign: 'left',
                         }}
                       >
                         <StarIcon />
@@ -409,20 +424,20 @@ export default function InfluencerPricingPage() {
       </section>
 
       {/* Trusted By */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal wood-bg" style={{ padding: '48px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p
-            className="reveal text-center"
+            className="text-center"
             style={{
               fontSize: 14,
               fontWeight: 600,
               textTransform: 'uppercase',
               letterSpacing: '1.5px',
               color: 'rgba(0,0,0,0.4)',
-              marginBottom: 36,
+              marginBottom: 32,
             }}
           >
-            Trusted by leading brands
+            Trusted by
           </p>
           <div
             className="reveal reveal-d1"
@@ -430,7 +445,7 @@ export default function InfluencerPricingPage() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              gap: 56,
+              gap: 48,
               flexWrap: 'wrap',
             }}
           >
@@ -438,7 +453,7 @@ export default function InfluencerPricingPage() {
               <img
                 key={logo.name}
                 src={logo.url}
-                alt={logo.name}
+                alt={`${logo.name} logo`}
                 style={{
                   height: 28,
                   objectFit: 'contain',
@@ -451,15 +466,15 @@ export default function InfluencerPricingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="ff-heading reveal text-center"
+            className="ff-heading text-center"
             style={{
-              fontSize: 48,
+              fontSize: 'clamp(32px, 4vw, 48px)',
               fontWeight: 900,
               lineHeight: 1.1,
-              marginBottom: 28,
+              marginBottom: 40,
             }}
           >
             Frequently asked questions
@@ -483,7 +498,7 @@ export default function InfluencerPricingPage() {
                       alignItems: 'center',
                       justifyContent: 'space-between',
                       width: '100%',
-                      padding: '24px 0',
+                      padding: '20px 0',
                       background: 'none',
                       border: 'none',
                       cursor: 'pointer',
@@ -492,9 +507,10 @@ export default function InfluencerPricingPage() {
                     }}
                   >
                     <span
+                      className="ff-heading"
                       style={{
                         fontSize: 18,
-                        fontWeight: 600,
+                        fontWeight: 700,
                         lineHeight: 1.4,
                       }}
                     >
@@ -504,7 +520,7 @@ export default function InfluencerPricingPage() {
                   </button>
                   <div
                     style={{
-                      maxHeight: isOpen ? 300 : 0,
+                      maxHeight: isOpen ? 400 : 0,
                       overflow: 'hidden',
                       transition:
                         'max-height 0.4s ease, opacity 0.3s ease',
@@ -516,7 +532,7 @@ export default function InfluencerPricingPage() {
                         fontSize: 16,
                         lineHeight: 1.7,
                         color: 'rgba(0,0,0,0.6)',
-                        paddingBottom: 24,
+                        paddingBottom: 20,
                       }}
                     >
                       {faq.a}
@@ -530,20 +546,20 @@ export default function InfluencerPricingPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal purple-wood-bg" style={{ padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className="reveal text-center"
+            className="text-center"
             style={{ maxWidth: 700, margin: '0 auto' }}
           >
             <h2
               className="ff-heading"
               style={{
-                fontSize: 56,
+                fontSize: 'clamp(36px, 4.5vw, 56px)',
                 fontWeight: 900,
                 lineHeight: 1.08,
                 color: '#fff',
-                marginBottom: 24,
+                marginBottom: 20,
               }}
             >
               Power up your influencer marketing
@@ -553,9 +569,8 @@ export default function InfluencerPricingPage() {
                 fontSize: 18,
                 lineHeight: 1.6,
                 color: 'rgba(255,255,255,0.75)',
-                marginBottom: 24,
                 maxWidth: 480,
-                margin: '0 auto 40px',
+                margin: '0 auto 36px',
               }}
             >
               Find out what Later Influence can do for you and your business.

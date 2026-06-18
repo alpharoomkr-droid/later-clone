@@ -39,9 +39,9 @@ function CaseStudyCard({ study, index }) {
     <Link
       to={`/case-studies/${study.slug}`}
       className={`reveal reveal-d${(index % 3) + 1}`}
-      style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+      style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}
     >
-      <div style={{ borderRadius: 12, overflow: 'hidden', background: '#fff', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+      <div style={{ borderRadius: 16, overflow: 'hidden', background: '#fff', transition: 'transform 0.3s ease, box-shadow 0.3s ease', display: 'flex', flexDirection: 'column', height: '100%' }}
         onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 32px rgba(0,0,0,0.1)' }}
         onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none' }}
       >
@@ -54,11 +54,11 @@ function CaseStudyCard({ study, index }) {
             onMouseLeave={e => { e.currentTarget.style.transform = 'scale(1)' }}
           />
         </div>
-        <div style={{ padding: '24px 24px 28px' }}>
+        <div style={{ padding: '24px 24px 28px', flex: 1, display: 'flex', flexDirection: 'column' }}>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 700, lineHeight: 1.3, marginBottom: 8 }}>
             {study.name}
           </h3>
-          <p style={{ fontSize: 15, color: '#555', lineHeight: 1.6, marginBottom: 16 }}>
+          <p style={{ fontSize: 15, color: '#555', lineHeight: 1.6, marginBottom: 16, flex: 1 }}>
             {study.desc}
           </p>
           <span
@@ -77,8 +77,8 @@ export default function CaseStudiesPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 64px' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+      <section className="wood-bg reveal" style={{ padding: '80px 40px 64px' }}>
+        <div className="max-w-3xl mx-auto text-center hero-enter">
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 64, fontWeight: 900, lineHeight: 1.1 }}>
             Case Studies
           </h1>
@@ -86,14 +86,14 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Featured */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal" style={{ padding: '64px 40px' }}>
+        <div className="max-w-7xl mx-auto">
           <Link
             to={`/case-studies/${featured.slug}`}
             className="featured-grid"
             style={{ textDecoration: 'none', color: 'inherit', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center' }}
           >
-            <div style={{ borderRadius: 12, overflow: 'hidden' }}>
+            <div style={{ borderRadius: 16, overflow: 'hidden' }}>
               <img
                 src={featured.img}
                 alt={featured.name}
@@ -124,9 +124,9 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Influence Case Studies */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 32 }}>
+      <section className="wood-bg reveal" style={{ padding: '64px 40px 80px' }}>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
               Later Influence Case Studies
             </h2>
@@ -134,7 +134,7 @@ export default function CaseStudiesPage() {
               See how top brands use Later's influencer marketing platform to launch campaigns, partner with creators, and drive real results.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}
             className="case-grid"
           >
             {influenceCaseStudies.map((study, i) => (
@@ -145,9 +145,9 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Social & Link in Bio Case Studies */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 32 }}>
+      <section className="reveal" style={{ padding: '64px 40px 80px' }}>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center" style={{ marginBottom: 40 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
               Later Social &amp; Link in Bio Case Studies
             </h2>
@@ -155,7 +155,7 @@ export default function CaseStudiesPage() {
               Discover how brands and creators use Later to grow their social media presence, drive engagement, and turn followers into customers.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}
             className="case-grid"
           >
             {socialCaseStudies.map((study, i) => (
@@ -166,8 +166,8 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '64px 40px 80px', textAlign: 'center' }}>
+        <div className="max-w-2xl mx-auto">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24, color: '#fff' }}>
             Unforgettable campaigns start with insight.
           </h2>

@@ -130,49 +130,51 @@ export default function InfluencerMarketingServicesPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '100px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
-          <div>
-            <h1
-              className="text-charcoal hero-enter"
-              style={{
-                fontFamily: 'var(--font-heading)',
-                fontSize: 76,
-                fontWeight: 900,
-                lineHeight: '80px',
-                letterSpacing: '0.38px',
-                marginBottom: 28,
-              }}
-            >
-              Influencer programs that do more than look good.
-            </h1>
-            <p
-              className="text-charcoal hero-enter-d1"
-              style={{ fontSize: 20, fontWeight: 400, lineHeight: '30px', maxWidth: 540, marginBottom: 36 }}
-            >
-              We strategize, produce, and manage campaigns end to end, removing guesswork at every stage of the funnel.
-            </p>
-            <div className="hero-enter-d2">
-              <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
-                Let&rsquo;s talk strategy <ArrowIcon />
-              </a>
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+            <div>
+              <h1
+                className="text-charcoal hero-enter"
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: 'clamp(48px, 5vw, 76px)',
+                  fontWeight: 900,
+                  lineHeight: 1.05,
+                  letterSpacing: '0.38px',
+                  marginBottom: 28,
+                }}
+              >
+                Influencer programs that do more than look good.
+              </h1>
+              <p
+                className="text-charcoal hero-enter-d1"
+                style={{ fontSize: 20, fontWeight: 400, lineHeight: '30px', maxWidth: 540, marginBottom: 36 }}
+              >
+                We strategize, produce, and manage campaigns end to end, removing guesswork at every stage of the funnel.
+              </p>
+              <div className="hero-enter-d2">
+                <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
+                  Let&rsquo;s talk strategy <ArrowIcon />
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="hero-enter-d3">
-            <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-charcoal/5">
-              <img
-                src="https://images.ctfassets.net/nfpsrlop6sws/45Vk1pKDRiLbBlRiQEWC5X/ea32e64edd6d607565c1a7f6a4330f00/later-homepage-hero-image.png?fm=webp"
-                alt="A reel of influencer marketing creative produced by Later"
-                className="w-full h-full object-cover"
-                loading="eager"
-              />
+            <div className="hero-enter-d3">
+              <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-charcoal/5">
+                <img
+                  src="https://images.ctfassets.net/nfpsrlop6sws/45Vk1pKDRiLbBlRiQEWC5X/ea32e64edd6d607565c1a7f6a4330f00/later-homepage-hero-image.png?fm=webp"
+                  alt="A reel of influencer marketing creative produced by Later"
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Logo Ticker */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '40px 0' }} className="overflow-hidden">
+      <section className="reveal overflow-hidden py-8" style={{ backgroundColor: '#FEFCFB' }}>
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <LogoSet />
           <LogoSet />
@@ -182,42 +184,42 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* The work hits different */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#FEFCFB' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-charcoal text-center reveal"
+            className="text-charcoal"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 60,
+              fontSize: 'clamp(36px, 4vw, 60px)',
               fontWeight: 900,
-              lineHeight: '66px',
+              lineHeight: 1.1,
               letterSpacing: '0.3px',
               maxWidth: 800,
-              margin: '0 auto 64px',
+              margin: '0 auto 48px',
             }}
           >
             The work hits different when it&rsquo;s done right.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {features.map((f, i) => (
               <div
                 key={i}
-                className={`reveal reveal-d${i + 1}`}
-                style={{ padding: '40px 32px', backgroundColor: '#F8F2EA', borderRadius: 12 }}
+                className={`reveal reveal-d${i + 1} h-full text-left`}
+                style={{ padding: '36px 28px', backgroundColor: '#F8F2EA', borderRadius: 12 }}
               >
                 <h3
                   className="text-charcoal"
                   style={{
                     fontFamily: 'var(--font-heading)',
-                    fontSize: 28,
+                    fontSize: 26,
                     fontWeight: 900,
-                    lineHeight: '34px',
-                    marginBottom: 16,
+                    lineHeight: '32px',
+                    marginBottom: 14,
                   }}
                 >
                   {f.title}
                 </h3>
-                <p className="text-charcoal/70" style={{ fontSize: 18, lineHeight: '28px' }}>
+                <p className="text-charcoal/70" style={{ fontSize: 17, lineHeight: '26px' }}>
                   {f.desc}
                 </p>
               </div>
@@ -227,22 +229,22 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* From idea to outcome */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal wood-bg py-16 lg:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-charcoal reveal"
+            className="text-charcoal"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 60,
+              fontSize: 'clamp(36px, 4vw, 60px)',
               fontWeight: 900,
-              lineHeight: '66px',
+              lineHeight: 1.1,
               letterSpacing: '0.3px',
               marginBottom: 32,
             }}
           >
             From idea to outcome.
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
             <div className="reveal">
               {steps.map((step, i) => (
                 <button
@@ -250,7 +252,7 @@ export default function InfluencerMarketingServicesPage() {
                   onClick={() => setActiveStep(i)}
                   className="w-full text-left"
                   style={{
-                    padding: '28px 0',
+                    padding: '24px 0',
                     cursor: 'pointer',
                     background: 'none',
                     border: 'none',
@@ -267,9 +269,9 @@ export default function InfluencerMarketingServicesPage() {
                     <h3
                       style={{
                         fontFamily: 'var(--font-heading)',
-                        fontSize: 28,
+                        fontSize: 26,
                         fontWeight: 900,
-                        lineHeight: '34px',
+                        lineHeight: '32px',
                         color: activeStep === i ? '#000' : 'rgba(0,0,0,0.4)',
                         transition: 'color 0.3s ease',
                       }}
@@ -286,13 +288,13 @@ export default function InfluencerMarketingServicesPage() {
                       paddingLeft: 44,
                     }}
                   >
-                    <p className="text-charcoal/70" style={{ fontSize: 18, lineHeight: '28px', paddingTop: 12 }}>
+                    <p className="text-charcoal/70" style={{ fontSize: 17, lineHeight: '26px', paddingTop: 10 }}>
                       {step.desc}
                     </p>
                   </div>
                 </button>
               ))}
-              <div style={{ marginTop: 40 }}>
+              <div style={{ marginTop: 36 }}>
                 <a href="#" className="btn-primary" style={{ fontSize: 18 }}>
                   Let&rsquo;s talk strategy <ArrowIcon />
                 </a>
@@ -300,7 +302,7 @@ export default function InfluencerMarketingServicesPage() {
             </div>
             <div className="reveal reveal-d2">
               <div
-                className="w-full aspect-square rounded-lg"
+                className="w-full aspect-square rounded-lg overflow-hidden"
                 style={{
                   background: 'linear-gradient(135deg, #F8F2EA 0%, #FE3F00 50%, #7A63E8 100%)',
                   display: 'flex',
@@ -325,76 +327,76 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Impact stats */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#FEFCFB' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-charcoal reveal"
+            className="text-charcoal"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 60,
+              fontSize: 'clamp(36px, 4vw, 60px)',
               fontWeight: 900,
-              lineHeight: '66px',
+              lineHeight: 1.1,
               letterSpacing: '0.3px',
               maxWidth: 700,
-              margin: '0 auto 20px',
+              margin: '0 auto 16px',
             }}
           >
             The impact of having the right team.
           </h2>
-          <p className="text-charcoal/60 reveal reveal-d1" style={{ fontSize: 20, lineHeight: '30px', maxWidth: 600, margin: '0 auto 64px' }}>
+          <p className="text-charcoal/60 reveal reveal-d1" style={{ fontSize: 20, lineHeight: '30px', maxWidth: 600, margin: '0 auto 48px' }}>
             When brands partner with our experts, the results speak for themselves.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {impactStats.map((stat, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`}>
                 <h3
                   className="text-gridglow"
                   style={{
                     fontFamily: 'var(--font-heading)',
-                    fontSize: 80,
+                    fontSize: 'clamp(56px, 5vw, 80px)',
                     fontWeight: 900,
-                    lineHeight: '90px',
+                    lineHeight: 1.1,
                     letterSpacing: '0.4px',
-                    marginBottom: 12,
+                    marginBottom: 8,
                   }}
                 >
                   {stat.value}
                 </h3>
-                <p className="text-charcoal" style={{ fontSize: 20, lineHeight: '28px', fontWeight: 500 }}>
+                <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '26px', fontWeight: 500 }}>
                   {stat.label}
                 </p>
               </div>
             ))}
           </div>
-          <p className="text-charcoal/40 reveal" style={{ fontSize: 13, marginTop: 40 }}>
+          <p className="text-charcoal/40 reveal" style={{ fontSize: 13, marginTop: 36 }}>
             Source: Internal Later campaign data (2025) based on managed services vs. self-serve customer analysis. These are averages and will vary by campaign.
           </p>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#000' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-offline text-center reveal"
+            className="text-offline text-center"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 56,
+              fontSize: 'clamp(36px, 4vw, 56px)',
               fontWeight: 900,
-              lineHeight: '64px',
+              lineHeight: 1.14,
               letterSpacing: '0.28px',
-              marginBottom: 32,
+              marginBottom: 40,
             }}
           >
             Straight from the feed.
           </h2>
-          <div className="max-w-[900px] mx-auto reveal">
+          <div className="max-w-4xl mx-auto reveal">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
               <div>
                 <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mb-6">
                   <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3"/>
                 </svg>
-                <p className="text-offline/90 mb-8" style={{ fontSize: 24, lineHeight: '36px' }}>
+                <p className="text-offline/90 mb-8" style={{ fontSize: 22, lineHeight: '34px' }}>
                   {testimonials[activeTestimonial].quote}
                 </p>
                 <p className="font-bold text-offline" style={{ fontSize: 16 }}>{testimonials[activeTestimonial].name}</p>
@@ -406,23 +408,23 @@ export default function InfluencerMarketingServicesPage() {
                   style={{ filter: 'brightness(0) invert(1)' }}
                 />
               </div>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-5">
                 {testimonials[activeTestimonial].stats.map((s, j) => (
-                  <div key={j} className="border border-offline/10 p-6">
+                  <div key={j} className="border border-offline/10 rounded-lg p-5">
                     <div
                       className="text-gridglow"
-                      style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900 }}
+                      style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.1 }}
                     >
                       {s.value}
                     </div>
-                    <p className="text-offline/60 mt-2" style={{ fontSize: 14 }}>
+                    <p className="text-offline/60 mt-2" style={{ fontSize: 14, lineHeight: '20px' }}>
                       {s.label}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="flex justify-center gap-3 mt-12">
+            <div className="flex justify-center gap-3 mt-10">
               {testimonials.map((_, i) => (
                 <button
                   key={i}
@@ -443,15 +445,15 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Resources */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal py-16 lg:py-20" style={{ backgroundColor: '#FEFCFB' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-charcoal reveal"
+            className="text-charcoal"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 56,
+              fontSize: 'clamp(36px, 4vw, 56px)',
               fontWeight: 900,
-              lineHeight: '64px',
+              lineHeight: 1.14,
               letterSpacing: '0.28px',
               marginBottom: 28,
             }}
@@ -466,7 +468,7 @@ export default function InfluencerMarketingServicesPage() {
               className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch rounded-lg overflow-hidden hover:opacity-95 transition-opacity"
               style={{ backgroundColor: '#F8F2EA', textDecoration: 'none' }}
             >
-              <div className="overflow-hidden">
+              <div className="overflow-hidden aspect-[4/3] lg:aspect-auto">
                 <img
                   src="https://images.ctfassets.net/nfpsrlop6sws/3YpPgpAo7omQsRCNp8DfWv/da8efc771126b48d675339a45fcf6fb4/featured-3.jpg"
                   alt="2025 State of Influencer Marketing report cover"
@@ -474,7 +476,7 @@ export default function InfluencerMarketingServicesPage() {
                   loading="lazy"
                 />
               </div>
-              <div style={{ padding: '48px 40px' }} className="flex flex-col justify-center">
+              <div className="p-8 lg:p-10 flex flex-col justify-center">
                 <p className="text-gridglow" style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Report
                 </p>
@@ -482,9 +484,9 @@ export default function InfluencerMarketingServicesPage() {
                   className="text-charcoal"
                   style={{
                     fontFamily: 'var(--font-heading)',
-                    fontSize: 32,
+                    fontSize: 'clamp(24px, 2.5vw, 32px)',
                     fontWeight: 900,
-                    lineHeight: '38px',
+                    lineHeight: 1.2,
                     marginBottom: 16,
                   }}
                 >
@@ -500,7 +502,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Bottom Ticker */}
-      <section className="bg-inverse py-6 overflow-hidden">
+      <section className="reveal bg-inverse py-5 overflow-hidden">
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <TickerSet />
           <TickerSet />
@@ -510,14 +512,14 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[700px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+      <section className="reveal purple-wood-bg py-16 lg:py-20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 70,
+              fontSize: 'clamp(44px, 5vw, 70px)',
               fontWeight: 900,
-              lineHeight: '78px',
+              lineHeight: 1.1,
               letterSpacing: '0.35px',
               color: '#FEFCFB',
               marginBottom: 32,

@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 function ArrowIcon() {
   return (
     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ marginLeft: 8, display: 'inline' }}>
@@ -24,6 +22,12 @@ function XIcon() {
   )
 }
 
+function CellIcon({ value }) {
+  if (value === true) return <CheckIcon />
+  if (value === false) return <XIcon />
+  return <span>{value}</span>
+}
+
 const benefits = [
   { icon: 'https://images.ctfassets.net/nfpsrlop6sws/7yABJG0xFhDaLvKHqmVMCM/c577ff2fa59e24041e9f7acb2d28c344/pointing-hand-icon.png', title: 'The easiest way to find influencers', desc: "Later's AI-driven tools use advanced filters to help you search for influencers based on over 20 criteria." },
   { icon: 'https://images.ctfassets.net/nfpsrlop6sws/1uT44PqVqmwMoRhV7xzgkN/0c77c42ca3e45d46b9d134f1c1b208d7/rocket-icon.png', title: 'Build review & ambassador programs', desc: 'Easily source and repurpose UGC and surveys, and build reviews and ambassadors programs — a must-have for any e-commerce brand.' },
@@ -32,15 +36,15 @@ const benefits = [
 ]
 
 const comparisonRows = [
-  { feature: 'Managed services', later: 'Yes', creatoriq: 'No' },
-  { feature: 'All-in-one pricing', later: 'Yes', creatoriq: 'No' },
-  { feature: 'Reviews and research', later: 'Yes', creatoriq: 'No' },
-  { feature: 'Private-label your platform experience', later: 'Yes', creatoriq: '$ Add-on' },
-  { feature: 'Social Media Management add-on', later: 'Yes', creatoriq: 'No' },
-  { feature: 'Later Link in Bio add-on', later: 'Yes', creatoriq: 'No' },
-  { feature: 'Social Listening', later: 'Yes', creatoriq: 'Yes' },
-  { feature: 'Launch affiliate marketing and track campaigns', later: 'Yes', creatoriq: 'Yes' },
-  { feature: 'Incentive management and fulfillment (Shopify)', later: 'Yes', creatoriq: 'Yes' },
+  { feature: 'Managed services', later: true, creatoriq: false },
+  { feature: 'All-in-one pricing', later: true, creatoriq: false },
+  { feature: 'Reviews and research', later: true, creatoriq: false },
+  { feature: 'Private-label your platform experience', later: true, creatoriq: '$ Add-on' },
+  { feature: 'Social Media Management add-on', later: true, creatoriq: false },
+  { feature: 'Later Link in Bio add-on', later: true, creatoriq: false },
+  { feature: 'Social Listening', later: true, creatoriq: true },
+  { feature: 'Launch affiliate marketing and track campaigns', later: true, creatoriq: true },
+  { feature: 'Incentive management and fulfillment (Shopify)', later: true, creatoriq: true },
   { feature: 'Influencer incentives and payments', later: 'Payment, product, promo codes, coupons, sweepstakes, contests, loyalty points', creatoriq: 'Payment, product, gift cards' },
 ]
 
@@ -58,36 +62,34 @@ const compareLinks = [
 ]
 
 export default function CreatorIqAlternativePage() {
-  const thHead = { fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center', borderBottom: '2px solid #e5e5e5' }
-  const td = { padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }
-  const tdFeature = { ...td, textAlign: 'left', fontWeight: 600 }
-
   return (
-    <div style={{ paddingTop: 70 }}>
+    <div style={{ paddingTop: 70, background: '#FEFCFB' }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-          <div>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>LATER INFLUENCE</p>
-            <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
-              Later vs CreatorIQ: What's the best influencer marketing platform?
-            </h1>
-            <p style={{ fontSize: 18, lineHeight: 1.6, color: '#333', marginBottom: 32, maxWidth: 520 }}>
-              Unlike CreatorIQ, Later's in-house services team provides our customers with a full suite of services to supercharge their influencer marketing strategy and optimize their investments. Plus, you get clear, transparent pricing — no surprise costs for extra seats, campaigns, creators, or reports.
-            </p>
-            <Link to="/demo" className="btn-dark" style={{ fontSize: 16 }}>Book a demo <ArrowIcon /></Link>
-          </div>
-          <div>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/2vZgcWVp3Im33iH8chPQiD/ef20395cda9a3875c50fa2a20470cb33/influencer-marketing-services-hero.png?w=1136&h=960&q=80&fm=png" alt="Later vs CreatorIQ" style={{ width: '100%', display: 'block' }} />
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+            <div>
+              <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16, textTransform: 'uppercase', color: '#FE3F00' }}>LATER INFLUENCE</p>
+              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
+                Later vs CreatorIQ: What's the best influencer marketing platform?
+              </h1>
+              <p style={{ fontSize: 18, lineHeight: 1.6, color: '#333', marginBottom: 32, maxWidth: 520 }}>
+                Unlike CreatorIQ, Later's in-house services team provides our customers with a full suite of services to supercharge their influencer marketing strategy and optimize their investments. Plus, you get clear, transparent pricing — no surprise costs for extra seats, campaigns, creators, or reports.
+              </p>
+              <a href="/demo/" className="btn-dark" style={{ fontSize: 16 }}>Book a demo <ArrowIcon /></a>
+            </div>
+            <div>
+              <img src="https://images.ctfassets.net/nfpsrlop6sws/2vZgcWVp3Im33iH8chPQiD/ef20395cda9a3875c50fa2a20470cb33/influencer-marketing-services-hero.png?w=1136&h=960&q=80&fm=png" alt="Later vs CreatorIQ" style={{ width: '100%', display: 'block' }} />
+            </div>
           </div>
         </div>
       </section>
 
       {/* 2. Benefits */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
-          <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>THE BEST CREATORIQ ALTERNATIVE</p>
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, textTransform: 'uppercase', color: '#FE3F00' }}>THE BEST CREATORIQ ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Seamless influencer marketing</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
             Later is the influencer marketing platform that works for you.
@@ -105,36 +107,38 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[900px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
-          <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: 12, overflow: 'hidden' }}>
-            <thead>
-              <tr style={{ background: '#fafafa' }}>
-                <th style={{ ...thHead, textAlign: 'left' }}>Features</th>
-                <th style={thHead}>Later Influence</th>
-                <th style={thHead}>CreatorIQ</th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonRows.map((r, i) => (
-                <tr key={i}>
-                  <td style={tdFeature}>{r.feature}</td>
-                  <td style={td}>{r.later === 'Yes' ? <CheckIcon /> : r.later}</td>
-                  <td style={td}>{r.creatoriq === 'Yes' ? <CheckIcon /> : r.creatoriq === 'No' ? <XIcon /> : r.creatoriq}</td>
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, textAlign: 'center' }}>Feature comparison</h2>
+          <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff' }}>
+              <thead style={{ background: '#000', color: '#fff' }}>
+                <tr>
+                  <th style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'left' }}>Features</th>
+                  <th style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center' }}>Later Influence</th>
+                  <th style={{ fontFamily: 'var(--font-heading)', fontSize: 16, fontWeight: 700, padding: '16px 24px', textAlign: 'center' }}>CreatorIQ</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-          <p className="text-center" style={{ fontSize: 13, color: '#999', marginTop: 16 }}>Last updated May 2024</p>
+              </thead>
+              <tbody>
+                {comparisonRows.map((r, i) => (
+                  <tr key={i} style={{ background: i % 2 === 0 ? '#fff' : '#fafafa' }}>
+                    <td style={{ padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'left', fontWeight: 600, fontSize: 15 }}>{r.feature}</td>
+                    <td style={{ padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }}><CellIcon value={r.later} /></td>
+                    <td style={{ padding: '14px 24px', borderBottom: '1px solid #eee', textAlign: 'center', fontSize: 15 }}><CellIcon value={r.creatoriq} /></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontSize: 13, color: '#999', marginTop: 16, textAlign: 'center' }}>Last updated May 2024</p>
         </div>
       </section>
 
       {/* 4. Numbered Features */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 24 }}>
-            <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CREATORIQ VS. LATER</p>
+      <section className="reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div style={{ marginBottom: 24, textAlign: 'center' }}>
+            <p style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, textTransform: 'uppercase', color: '#FE3F00' }}>CREATORIQ VS. LATER</p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>4 reasons to choose Later Influence</h2>
             <p style={{ fontSize: 18, color: '#555' }}>Later is easier to set up than CreatorIQ — see for yourself with a free demo.</p>
           </div>
@@ -152,40 +156,36 @@ export default function CreatorIqAlternativePage() {
       </section>
 
       {/* 5. Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[900px] mx-auto text-center reveal">
-          <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: 48, textAlign: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
-            <p style={{ fontSize: 18, lineHeight: 1.7, color: '#fff', marginBottom: 24, fontStyle: 'italic' }}>
-              "Later makes dealing with the world of influencers as turnkey as it can be. I consider them partners. The influencer landscape is constantly changing and evolving. Later helps us stay on top of trends and reach consumers in an authentic, effective, and efficient way."
-            </p>
-            <p style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>Drew McGowan</p>
-            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Clif Bar &amp; Company, Communications and Influencer Marketing Strategy</p>
-          </div>
+      <section className="purple-wood-bg reveal">
+        <div className="max-w-[900px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
+          <p style={{ fontSize: 18, lineHeight: 1.7, color: '#fff', marginBottom: 24, fontStyle: 'italic' }}>
+            "Later makes dealing with the world of influencers as turnkey as it can be. I consider them partners. The influencer landscape is constantly changing and evolving. Later helps us stay on top of trends and reach consumers in an authentic, effective, and efficient way."
+          </p>
+          <p style={{ fontWeight: 700, fontSize: 15, color: '#fff' }}>Drew McGowan</p>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)' }}>Clif Bar &amp; Company, Communications and Influencer Marketing Strategy</p>
         </div>
       </section>
 
       {/* 6. Compare Links */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
+      <section className="reveal">
+        <div className="max-w-[800px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>See how Later Influence compares to the competition.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             {compareLinks.map((l, i) => (
-              <Link key={i} to={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</Link>
+              <a key={i} href={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</a>
             ))}
           </div>
         </div>
       </section>
 
       {/* 7. Bottom CTA */}
-      <section style={{ backgroundColor: '#000', padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, color: '#FEFCFB', marginBottom: 16 }}>
-            Later Influence is the best CreatorIQ alternative
-          </h2>
-          <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>
-          <Link to="/demo" className="btn-dark" style={{ fontSize: 18, background: '#fff', color: '#000' }}>Book a demo <ArrowIcon /></Link>
+      <section className="wood-bg reveal">
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Influence is the best CreatorIQ alternative</h2>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>
+          <a href="/demo/" className="btn-dark" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Book a demo <ArrowIcon /></a>
         </div>
       </section>
 

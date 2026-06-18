@@ -8,7 +8,7 @@ function ArrowIcon() {
 
 export default function FinalCta() {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-screen flex items-center justify-center overflow-hidden">
       <picture>
         <source
           media="(min-width: 768px)"
@@ -20,7 +20,7 @@ export default function FinalCta() {
           className="absolute inset-0 w-full h-full object-cover"
         />
       </picture>
-      <div className="absolute inset-0 bg-charcoal/50" />
+      <div className="absolute inset-0 bg-charcoal/40" />
       <div className="relative z-10 max-w-[700px] mx-auto px-6 py-20 text-center reveal">
         <h2
           className="mb-6"

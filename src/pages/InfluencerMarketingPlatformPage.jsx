@@ -132,8 +132,8 @@ function LogoSet() {
   return (
     <>
       {brandLogos.map((logo, i) => (
-        <div key={i} className="flex-shrink-0 mx-8">
-          <img src={logo.src} alt={logo.name} className="h-[32px] w-auto object-contain opacity-70" loading="lazy" />
+        <div key={i} className="flex-shrink-0 mx-6">
+          <img src={logo.src} alt={logo.name} className="h-[28px] w-auto object-contain opacity-70" loading="lazy" />
         </div>
       ))}
     </>
@@ -144,7 +144,7 @@ function TickerSet() {
   return (
     <>
       {tickerItems.map((item, i) => (
-        <div key={i} className="flex items-center gap-4 flex-shrink-0 mx-6">
+        <div key={i} className="flex items-center gap-3 flex-shrink-0 mx-5">
           <img src={item.icon} alt="" className="w-7 h-7" />
           <span className="text-gridglow text-2xl lg:text-3xl font-extrabold uppercase whitespace-nowrap leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
             {item.text}
@@ -162,8 +162,8 @@ export default function InfluencerMarketingPlatformPage() {
   return (
     <>
       {/* Hero */}
-      <section className="wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
-        <div className="max-w-[1440px] mx-auto w-full" style={{ padding: '60px 40px' }}>
+      <section className="reveal wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
+        <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-[900px] mx-auto text-center">
             <div className="hero-enter flex items-center justify-center gap-2 mb-6">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -175,9 +175,9 @@ export default function InfluencerMarketingPlatformPage() {
               className="text-charcoal hero-enter-d1"
               style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: 86,
+                fontSize: 'clamp(48px, 6vw, 86px)',
                 fontWeight: 900,
-                lineHeight: '86px',
+                lineHeight: 1,
                 letterSpacing: '0.43px',
                 marginBottom: 32,
               }}
@@ -186,7 +186,7 @@ export default function InfluencerMarketingPlatformPage() {
             </h1>
             <p
               className="text-charcoal hero-enter-d2 mx-auto"
-              style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', maxWidth: 650, marginBottom: 24 }}
+              style={{ fontSize: 'clamp(18px, 2vw, 24px)', fontWeight: 400, lineHeight: 1.5, maxWidth: 650, marginBottom: 24 }}
             >
               Know which creators, ideas, and spend will pay off before you hit launch.
             </p>
@@ -195,7 +195,7 @@ export default function InfluencerMarketingPlatformPage() {
                 Start your campaign <ArrowIcon />
               </a>
             </div>
-            <div className="mt-12 hero-enter-d3">
+            <div className="mt-10 hero-enter-d3">
               <div className="relative w-full overflow-hidden bg-charcoal/5" style={{ aspectRatio: '16/9', maxWidth: 800, margin: '0 auto', borderRadius: 12 }}>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
@@ -213,7 +213,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Logo Ticker */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '40px 0' }} className="overflow-hidden">
+      <section className="reveal overflow-hidden" style={{ backgroundColor: '#FEFCFB', padding: '32px 0' }}>
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <LogoSet />
           <LogoSet />
@@ -223,12 +223,12 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Confidence Section */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[800px] mx-auto text-center mb-14">
             <h2
-              className="text-charcoal mb-6"
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+              className="text-charcoal mb-5"
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
             >
               Confidence at every campaign decision point.
             </h2>
@@ -236,20 +236,20 @@ export default function InfluencerMarketingPlatformPage() {
               You run the campaign. We make the decisions easier along the way.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {features.map((f, i) => (
               <div
                 key={i}
-                className={`reveal reveal-d${i + 1} p-8`}
+                className={`reveal reveal-d${i + 1} p-8 rounded-sm`}
                 style={{ backgroundColor: '#F8F2EA', borderTop: '3px solid #FE3F00' }}
               >
                 <h3
-                  className="text-charcoal mb-4"
-                  style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 900, lineHeight: '36px' }}
+                  className="text-charcoal mb-3"
+                  style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 900, lineHeight: '32px' }}
                 >
                   {f.title}
                 </h3>
-                <p className="text-charcoal/60" style={{ fontSize: 18, lineHeight: '28px' }}>
+                <p className="text-charcoal/60" style={{ fontSize: 17, lineHeight: '27px' }}>
                   {f.desc}
                 </p>
               </div>
@@ -259,12 +259,12 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* EdgeAI Section */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
+      <section className="reveal wood-bg" style={{ padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[800px] mx-auto text-center mb-14">
             <h2
-              className="text-charcoal mb-6"
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+              className="text-charcoal mb-5"
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
             >
               Smarter campaigns start before the brief.
             </h2>
@@ -272,13 +272,13 @@ export default function InfluencerMarketingPlatformPage() {
               Later EdgeAI turns real campaign history into intelligence you can use&mdash;so your next move is a smarter one.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 reveal">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
             <div className="lg:col-span-4 flex flex-col gap-2">
               {edgeAiTabs.map((tab, i) => (
                 <button
                   key={i}
                   onClick={() => setActiveTab(i)}
-                  className={`text-left p-5 transition-all ${
+                  className={`text-left p-5 rounded-sm transition-all ${
                     activeTab === i
                       ? 'bg-white shadow-md'
                       : 'bg-transparent hover:bg-white/50'
@@ -286,17 +286,17 @@ export default function InfluencerMarketingPlatformPage() {
                 >
                   <span
                     className="text-charcoal block"
-                    style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 900, lineHeight: '28px' }}
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 900, lineHeight: '26px' }}
                   >
                     {tab.title}
                   </span>
                 </button>
               ))}
             </div>
-            <div className="lg:col-span-8 bg-white p-10 shadow-md">
+            <div className="lg:col-span-8 bg-white p-8 lg:p-10 shadow-md rounded-sm">
               <h3
                 className="text-charcoal mb-6"
-                style={{ fontFamily: 'var(--font-heading)', fontSize: 32, fontWeight: 900, lineHeight: '40px' }}
+                style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 900, lineHeight: '36px' }}
               >
                 {edgeAiTabs[activeTab].title}
               </h3>
@@ -307,7 +307,7 @@ export default function InfluencerMarketingPlatformPage() {
                       <circle cx="10" cy="10" r="10" fill="#FE3F00" fillOpacity="0.15"/>
                       <path d="M6 10l3 3 5-5" stroke="#FE3F00" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span className="text-charcoal" style={{ fontSize: 20, lineHeight: '30px' }}>
+                    <span className="text-charcoal" style={{ fontSize: 18, lineHeight: '28px' }}>
                       {bullet}
                     </span>
                   </div>
@@ -315,7 +315,7 @@ export default function InfluencerMarketingPlatformPage() {
               </div>
             </div>
           </div>
-          <div className="text-center mt-10 reveal">
+          <div className="text-center mt-10">
             <a href="#" className="btn-outline" style={{ fontSize: 16 }}>
               Learn more <ArrowIcon />
             </a>
@@ -324,21 +324,21 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="text-white" style={{ backgroundColor: '#000', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal text-white" style={{ backgroundColor: '#000', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-offline text-center mb-16 reveal"
-            style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+            className="text-offline text-center mb-14"
+            style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
           >
             Straight from the feed.
           </h2>
-          <div className="max-w-[900px] mx-auto reveal">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          <div className="max-w-[960px] mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <div>
                 <svg width="40" height="32" viewBox="0 0 40 32" fill="none" className="mb-6">
                   <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3"/>
                 </svg>
-                <p className="text-offline/90 mb-8" style={{ fontSize: 24, lineHeight: '36px' }}>
+                <p className="text-offline/90 mb-8" style={{ fontSize: 22, lineHeight: '34px' }}>
                   {testimonials[activeTestimonial].quote}
                 </p>
                 <p className="font-bold text-offline" style={{ fontSize: 16 }}>{testimonials[activeTestimonial].name}</p>
@@ -351,10 +351,10 @@ export default function InfluencerMarketingPlatformPage() {
                 />
               </div>
               <div className="grid grid-cols-2 gap-6">
-                <div className="border border-offline/10 p-6">
+                <div className="border border-offline/10 p-6 text-center">
                   <div
                     className="text-gridglow"
-                    style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900 }}
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.1 }}
                   >
                     {testimonials[activeTestimonial].stat1.value}
                   </div>
@@ -362,10 +362,10 @@ export default function InfluencerMarketingPlatformPage() {
                     {testimonials[activeTestimonial].stat1.label}
                   </p>
                 </div>
-                <div className="border border-offline/10 p-6">
+                <div className="border border-offline/10 p-6 text-center">
                   <div
                     className="text-gridglow"
-                    style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900 }}
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.1 }}
                   >
                     {testimonials[activeTestimonial].stat2.value}
                   </div>
@@ -375,7 +375,7 @@ export default function InfluencerMarketingPlatformPage() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center gap-3 mt-12">
+            <div className="flex justify-center gap-3 mt-10">
               {testimonials.map((_, i) => (
                 <button
                   key={i}
@@ -396,12 +396,12 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Speed Stats */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[800px] mx-auto text-center mb-14">
             <h2
-              className="text-charcoal mb-6"
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+              className="text-charcoal mb-5"
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
             >
               Move faster without cutting corners.
             </h2>
@@ -409,22 +409,22 @@ export default function InfluencerMarketingPlatformPage() {
               Later EdgeAI reduces the time spent across every stage of a campaign, so teams can run more campaigns, test more ideas, and scale faster.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {speedStats.map((stat, i) => (
               <div
                 key={i}
-                className={`reveal reveal-d${i + 1} text-center p-10`}
+                className={`reveal reveal-d${i + 1} text-center p-8 rounded-sm`}
                 style={{ backgroundColor: '#F8F2EA' }}
               >
                 <div
-                  className="text-gridglow mb-4"
-                  style={{ fontFamily: 'var(--font-heading)', fontSize: 80, fontWeight: 900, lineHeight: '80px' }}
+                  className="text-gridglow mb-3"
+                  style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(56px, 5vw, 72px)', fontWeight: 900, lineHeight: 1 }}
                 >
                   {stat.value}
                 </div>
                 <h3
                   className="text-charcoal mb-2"
-                  style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 900, lineHeight: '28px' }}
+                  style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 900, lineHeight: '26px' }}
                 >
                   {stat.label}
                 </h3>
@@ -434,18 +434,18 @@ export default function InfluencerMarketingPlatformPage() {
               </div>
             ))}
           </div>
-          <p className="text-charcoal/40 text-center reveal" style={{ fontSize: 13, marginTop: 32 }}>
+          <p className="text-charcoal/40 text-center mt-8" style={{ fontSize: 13 }}>
             Source: Internal performance data from Later EdgeAI (2025). These are averages and will vary by campaign.
           </p>
         </div>
       </section>
 
       {/* In-house CTA */}
-      <section className="purple-wood-bg text-white" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+      <section className="reveal purple-wood-bg text-white" style={{ padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2
-            className="mb-6"
-            style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+            className="mb-5"
+            style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
           >
             Not ready to run campaigns in-house?
           </h2>
@@ -459,27 +459,27 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Resources */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="text-center mb-16 reveal">
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
             <h2
               className="text-charcoal"
-              style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
+              style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.28px' }}
             >
               Platform insights and resources.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {resources.map((r, i) => (
               <a
                 key={i}
                 href={r.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`reveal reveal-d${i + 1} block group overflow-hidden`}
+                className={`reveal reveal-d${i + 1} block group overflow-hidden rounded-sm`}
                 style={{ backgroundColor: '#F8F2EA' }}
               >
-                <div className="h-[200px] overflow-hidden">
+                <div className="aspect-[16/10] overflow-hidden">
                   <img
                     src={r.image}
                     alt={r.title}
@@ -488,12 +488,12 @@ export default function InfluencerMarketingPlatformPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <span className="text-gridglow mb-3 block" style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>
+                  <span className="text-gridglow mb-2 block" style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px' }}>
                     {r.type}
                   </span>
                   <h3
                     className="text-charcoal group-hover:text-gridglow transition-colors"
-                    style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 900, lineHeight: '28px' }}
+                    style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 900, lineHeight: '26px' }}
                   >
                     {r.title}
                   </h3>
@@ -505,7 +505,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Bottom Ticker */}
-      <section className="bg-inverse py-6 overflow-hidden">
+      <section className="reveal bg-inverse py-5 overflow-hidden">
         <div className="flex items-center whitespace-nowrap ticker-animate">
           <TickerSet />
           <TickerSet />
@@ -515,11 +515,11 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+      <section className="reveal wood-bg" style={{ padding: '80px 0' }}>
+        <div className="max-w-[800px] mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2
             className="text-charcoal mb-10"
-            style={{ fontFamily: 'var(--font-heading)', fontSize: 70, fontWeight: 900, lineHeight: '87.5px', letterSpacing: '0.35px' }}
+            style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(44px, 5vw, 70px)', fontWeight: 900, lineHeight: 1.25, letterSpacing: '0.35px' }}
           >
             Because guessing isn&rsquo;t a strategy.
           </h2>

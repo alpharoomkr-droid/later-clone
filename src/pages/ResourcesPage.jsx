@@ -130,12 +130,12 @@ export default function ResourcesPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 64px' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+      <section className="wood-bg reveal" style={{ padding: '80px 40px 64px' }}>
+        <div className="max-w-3xl mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             Resources
           </p>
-          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
             Later Marketing Resources
           </h1>
           <p className="hero-enter-d1" style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 700, margin: '0 auto', color: '#333' }}>
@@ -145,14 +145,14 @@ export default function ResourcesPage() {
       </section>
 
       {/* Featured */}
-      <section style={{ padding: '64px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal" style={{ padding: '64px 40px' }}>
+        <div className="max-w-7xl mx-auto">
           <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 32 }}>Featured</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+          <div className="featured-resources-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
             {/* Hero card */}
             <a
               href={featuredResources[0].link}
-              style={{ textDecoration: 'none', color: 'inherit', gridRow: '1 / 3', display: 'flex', flexDirection: 'column', borderRadius: 12, overflow: 'hidden', background: '#fff', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+              style={{ textDecoration: 'none', color: 'inherit', gridRow: '1 / 3', display: 'flex', flexDirection: 'column', borderRadius: 16, overflow: 'hidden', background: '#fff', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.1)' }}
               onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none' }}
             >
@@ -181,7 +181,7 @@ export default function ResourcesPage() {
                 key={i}
                 href={r.link}
                 className={`reveal reveal-d${i + 1}`}
-                style={{ textDecoration: 'none', color: 'inherit', display: 'flex', borderRadius: 12, overflow: 'hidden', background: '#fff', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+                style={{ textDecoration: 'none', color: 'inherit', display: 'flex', borderRadius: 16, overflow: 'hidden', background: '#fff', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-4px)'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(0,0,0,0.08)' }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none' }}
               >
@@ -207,8 +207,8 @@ export default function ResourcesPage() {
       </section>
 
       {/* Filter Bar */}
-      <section style={{ padding: '0 40px 48px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal" style={{ padding: '0 40px 48px' }}>
+        <div className="max-w-7xl mx-auto">
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', borderBottom: '1px solid #e0dcd6', paddingBottom: 24 }}>
             {/* Platform */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -248,15 +248,15 @@ export default function ResourcesPage() {
       </section>
 
       {/* Resource Grid */}
-      <section style={{ padding: '0 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
+      <section className="reveal" style={{ padding: '0 40px 80px' }}>
+        <div className="max-w-7xl mx-auto">
+          <div className="resource-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}>
             {resourceCards.map((r, i) => (
               <a
                 key={i}
                 href={r.link}
                 className={`reveal reveal-d${(i % 3) + 1}`}
-                style={{ textDecoration: 'none', color: 'inherit', borderRadius: 12, overflow: 'hidden', background: '#fff', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+                style={{ textDecoration: 'none', color: 'inherit', borderRadius: 16, overflow: 'hidden', background: '#fff', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
                 onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.1)' }}
                 onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none' }}
               >
@@ -291,8 +291,8 @@ export default function ResourcesPage() {
       </section>
 
       {/* Newsletter */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[600px] mx-auto text-center reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '64px 40px 80px' }}>
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="ff-heading" style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, color: '#fff', marginBottom: 16 }}>
             Subscribe to Later's newsletter
           </h2>
@@ -323,10 +323,10 @@ export default function ResourcesPage() {
       </section>
 
       {/* More Resources */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
-          <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 24 }}>More Resources</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 24 }}>
+      <section className="reveal" style={{ padding: '64px 40px 80px' }}>
+        <div className="max-w-7xl mx-auto">
+          <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 32 }}>More Resources</h2>
+          <div className="more-resources-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 24, alignItems: 'stretch' }}>
             {moreResources.map((r, i) => (
               <a
                 key={i}
@@ -335,7 +335,7 @@ export default function ResourcesPage() {
                 style={{
                   textDecoration: 'none',
                   color: 'inherit',
-                  borderRadius: 12,
+                  borderRadius: 16,
                   overflow: 'hidden',
                   background: r.image ? 'transparent' : '#F8F2EA',
                   display: 'flex',
@@ -376,8 +376,8 @@ export default function ResourcesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[720px] mx-auto reveal">
+      <section className="wood-bg reveal" style={{ padding: '64px 40px 80px', textAlign: 'center' }}>
+        <div className="max-w-2xl mx-auto">
           <h2 className="ff-heading" style={{ fontSize: 46, fontWeight: 900, lineHeight: 1.1, marginBottom: 20 }}>
             Get the best social media marketing tools in one app
           </h2>
@@ -390,6 +390,19 @@ export default function ResourcesPage() {
           </a>
         </div>
       </section>
+
+      <style>{`
+        @media (max-width: 1024px) {
+          .resource-grid { grid-template-columns: repeat(2, 1fr) !important; }
+          .more-resources-grid { grid-template-columns: repeat(3, 1fr) !important; }
+          .featured-resources-grid { grid-template-columns: 1fr !important; }
+          .featured-resources-grid > a:first-child { grid-row: auto !important; }
+        }
+        @media (max-width: 640px) {
+          .resource-grid { grid-template-columns: 1fr !important; }
+          .more-resources-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </div>
   )
 }

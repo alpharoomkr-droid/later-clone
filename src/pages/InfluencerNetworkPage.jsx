@@ -30,9 +30,9 @@ export default function InfluencerNetworkPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+      <section className="wood-bg reveal" style={{ padding: '64px 24px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto"
+          className="max-w-7xl mx-auto"
           style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}
         >
           <div>
@@ -79,8 +79,8 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal py-16 md:py-24 px-6">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center" style={{ marginBottom: 16 }}>
             <h2
               style={{
@@ -143,8 +143,8 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* Feature Sections (alternating) */}
-      <section style={{ padding: '0 40px 100px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal py-16 md:py-24 px-6">
+        <div className="max-w-7xl mx-auto">
           {featureSections.map((f, i) => (
             <div
               key={i}
@@ -204,8 +204,8 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal">
+      <section className="wood-bg reveal py-16 md:py-24 px-6">
+        <div className="max-w-[800px] mx-auto text-center">
           <svg
             width="40"
             height="32"
@@ -240,10 +240,10 @@ export default function InfluencerNetworkPage() {
 
       {/* Bottom CTA */}
       <section
-        className="purple-wood-bg text-white"
-        style={{ padding: '60px 40px', textAlign: 'center' }}
+        className="purple-wood-bg text-white reveal py-16 md:py-24 px-6"
+        style={{ textAlign: 'center' }}
       >
-        <div className="max-w-[700px] mx-auto reveal">
+        <div className="max-w-[700px] mx-auto">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',

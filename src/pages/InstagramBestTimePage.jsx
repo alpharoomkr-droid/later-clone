@@ -42,7 +42,7 @@ export default function InstagramBestTimePage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>Ready, Set, Scheduled.</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             Find your best time to post on Instagram
@@ -59,11 +59,11 @@ export default function InstagramBestTimePage() {
 
       {/* Steps */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>The Best Times to Post on Instagram</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>More reach, less guesswork</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>No number crunching here! Later Social analyzes 6 months' worth of Instagram profile data, then highlights your unique best time to post on the calendar.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/2H8BW0f0HfusiI7joD2UQA/42f1cf598d957538c6b92f45deb819da/bttp-how-it-works.png?w=1136&h=1012&q=70&fm=png" alt="Best Time to Post how it works" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -81,8 +81,8 @@ export default function InstagramBestTimePage() {
       </section>
 
       {/* Feature Showcases */}
-      <section style={{ padding: '0 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1100px] mx-auto">
           {showcases.map((s, i) => (
             <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={s.img} alt={s.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
@@ -98,11 +98,11 @@ export default function InstagramBestTimePage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Testimonial</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>How Best Time to Post helps Later Social users</h2>
-          <div style={{ maxWidth: 720, margin: '0 auto', background: '#fff', borderRadius: 12, padding: 40, textAlign: 'center' }}>
+          <div style={{ maxWidth: 720, margin: '0 auto', background: '#F8F2EA', borderRadius: 12, padding: 40, textAlign: 'center' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/6gdO8tgJsusrGqyW7Lv819/03dec4e02a6c50d38e4bd071ca1b8afb/artifact-uprising.png?w=640&h=640&q=50&fm=png" alt="Artifact Uprising" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
             <p style={{ fontSize: 18, lineHeight: 1.7, color: '#333', marginBottom: 24, fontStyle: 'italic' }}>"We love using Later because not only does it allow us to visually see our images laid out on a calendar week by week, but it shows us the best time to post. We wouldn't go anywhere else to schedule and curate our social media — biggest fans of the Later team and the technology they've created!"</p>
             <p style={{ fontWeight: 700, fontSize: 16 }}>Megan White</p>

@@ -144,7 +144,7 @@ function BlogCard({ post, delay = 0 }) {
     <a
       href={`/blog/${post.slug}`}
       className={`reveal${delay ? ` reveal-d${delay}` : ''}`}
-      style={{ textDecoration: 'none', color: 'inherit', borderRadius: 12, overflow: 'hidden', background: '#fff', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+      style={{ textDecoration: 'none', color: 'inherit', borderRadius: 16, overflow: 'hidden', background: '#fff', display: 'flex', flexDirection: 'column', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
       onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.1)' }}
       onMouseLeave={e => { e.currentTarget.style.transform = 'none'; e.currentTarget.style.boxShadow = 'none' }}
     >
@@ -180,12 +180,12 @@ export default function BlogPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 64px' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+      <section className="wood-bg reveal" style={{ padding: '80px 40px 64px' }}>
+        <div className="max-w-3xl mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             Blog
           </p>
-          <h1 className="ff-heading" style={{ fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
+          <h1 className="ff-heading" style={{ fontSize: 56, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
             Your guide to smarter influencer & social marketing
           </h1>
           <p className="hero-enter-d1" style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 700, margin: '0 auto', color: '#333' }}>
@@ -195,8 +195,8 @@ export default function BlogPage() {
       </section>
 
       {/* Featured Post */}
-      <section style={{ padding: '64px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal" style={{ padding: '64px 40px' }}>
+        <div className="max-w-7xl mx-auto">
           <a
             href={`/blog/${featuredPost.slug}`}
             className="featured-card"
@@ -206,7 +206,7 @@ export default function BlogPage() {
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: 0,
-              borderRadius: 12,
+              borderRadius: 16,
               overflow: 'hidden',
               background: '#fff',
               transition: 'transform 0.3s ease, box-shadow 0.3s ease',
@@ -246,8 +246,8 @@ export default function BlogPage() {
       </section>
 
       {/* Category Filter */}
-      <section style={{ padding: '0 40px 16px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="reveal" style={{ padding: '0 40px 16px' }}>
+        <div className="max-w-7xl mx-auto">
           <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', borderBottom: '1px solid #e0dcd6', paddingBottom: 20 }}>
             {categories.map(cat => (
               <button
@@ -276,16 +276,16 @@ export default function BlogPage() {
       </section>
 
       {/* Article Grid */}
-      <section style={{ padding: '32px 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal" style={{ padding: '32px 40px 80px' }}>
+        <div className="max-w-7xl mx-auto">
           {filteredPosts.length > 0 ? (
-            <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
+            <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}>
               {filteredPosts.map((post, i) => (
                 <BlogCard key={post.slug} post={post} delay={(i % 3) + 1} />
               ))}
             </div>
           ) : (
-            <div className="reveal" style={{ textAlign: 'center', padding: '64px 0' }}>
+            <div style={{ textAlign: 'center', padding: '64px 0' }}>
               <p style={{ fontSize: 18, color: '#777' }}>No posts found in this category.</p>
             </div>
           )}
@@ -293,15 +293,15 @@ export default function BlogPage() {
       </section>
 
       {/* Our Picks */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <div className="reveal" style={{ marginBottom: 28 }}>
+      <section className="wood-bg reveal" style={{ padding: '64px 40px 80px' }}>
+        <div className="max-w-7xl mx-auto">
+          <div style={{ marginBottom: 32 }}>
             <h2 className="ff-heading" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.1, marginBottom: 16 }}>Our Picks</h2>
             <p style={{ fontSize: 18, lineHeight: 1.6, color: '#555', maxWidth: 640 }}>
               A roundup of Later's top social media and influencer marketing tips to fuel your growth
             </p>
           </div>
-          <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
+          <div className="blog-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}>
             {ourPicks.map((post, i) => (
               <BlogCard key={post.slug} post={post} delay={(i % 3) + 1} />
             ))}
@@ -310,8 +310,8 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[640px] mx-auto text-center reveal">
+      <section className="purple-wood-bg reveal" style={{ padding: '64px 40px 80px' }}>
+        <div className="max-w-2xl mx-auto text-center">
           <h2 className="ff-heading" style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, color: '#fff', marginBottom: 16 }}>
             Subscribe to Later's newsletter and get the latest news delivered straight to your inbox
           </h2>
@@ -342,8 +342,8 @@ export default function BlogPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[720px] mx-auto reveal">
+      <section className="reveal" style={{ padding: '64px 40px 80px', textAlign: 'center' }}>
+        <div className="max-w-2xl mx-auto">
           <h2 className="ff-heading" style={{ fontSize: 46, fontWeight: 900, lineHeight: 1.1, marginBottom: 20 }}>
             Ready to grow your brand in the creator economy?
           </h2>

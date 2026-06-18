@@ -116,6 +116,9 @@ export default function MetaAlternativePage() {
               </div>
             ))}
           </div>
+          <div style={{ marginTop: 32 }}>
+            <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
+          </div>
         </div>
       </section>
 
@@ -144,6 +147,9 @@ export default function MetaAlternativePage() {
             </table>
           </div>
           <p style={{ textAlign: 'center', fontSize: 13, color: '#999', marginTop: 16 }}>Last updated April 2025</p>
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
+          </div>
         </div>
       </section>
 
@@ -159,6 +165,9 @@ export default function MetaAlternativePage() {
                 <span style={{ fontSize: 64, fontWeight: 800, color: '#FE3F00', opacity: 0.2, lineHeight: 1 }}>{item.num}</span>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, marginBottom: 16, marginTop: 8 }}>{item.title}</h3>
                 <p style={{ fontSize: 16, lineHeight: 1.7, color: '#555', maxWidth: 480 }}>{item.desc}</p>
+                <div style={{ marginTop: 24 }}>
+                  <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>
+                </div>
               </div>
               <div style={{ direction: 'ltr' }}>
                 <img src={item.img} alt={item.title} style={{ width: '100%', borderRadius: 16 }} />

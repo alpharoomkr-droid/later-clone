@@ -100,12 +100,24 @@ export default function SocialMediaAnalyticsPage() {
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 32 }}
+            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 12 }}
           >
             Analytics built for growth
           </h2>
+          <p
+            className="text-charcoal text-center reveal"
+            style={{ fontSize: 18, lineHeight: '28px', opacity: 0.7, marginBottom: 48, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto' }}
+          >
+            Reach your social media goals faster with detailed data.
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 reveal reveal-d1">
-            <div style={{ padding: '32px 0' }}>
+            <div className="text-center" style={{ padding: '32px 0' }}>
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/3VbQ3xI0fDOSQw2yofBSok/346cf97d29755f1dbc2ec89c36e107e9/target-60.png"
+                alt="Target icon"
+                className="mx-auto"
+                style={{ width: 60, height: 60, marginBottom: 20 }}
+              />
               <h3 className="ff-heading text-charcoal" style={{ fontSize: 24, fontWeight: 900, lineHeight: '30px', marginBottom: 12 }}>
                 Simplify your reporting
               </h3>
@@ -113,7 +125,13 @@ export default function SocialMediaAnalyticsPage() {
                 Pull together all of your social media metrics in one place. No more jumping between apps to understand how your content is performing across channels.
               </p>
             </div>
-            <div style={{ padding: '32px 0' }}>
+            <div className="text-center" style={{ padding: '32px 0' }}>
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/6CFALc9zz6gg7JjgTs0S9W/70752ee531d8b4fff2ec81c3ca6aabd8/data-60.png"
+                alt="Data icon"
+                className="mx-auto"
+                style={{ width: 60, height: 60, marginBottom: 20 }}
+              />
               <h3 className="ff-heading text-charcoal" style={{ fontSize: 24, fontWeight: 900, lineHeight: '30px', marginBottom: 12 }}>
                 Data-driven insights
               </h3>
@@ -121,7 +139,13 @@ export default function SocialMediaAnalyticsPage() {
                 Get actionable recommendations based on your data so you can create content that resonates with your audience and drives real, measurable results.
               </p>
             </div>
-            <div style={{ padding: '32px 0' }}>
+            <div className="text-center" style={{ padding: '32px 0' }}>
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/2uVIveCiE1SdKM0g7ZP8VY/f11ddc7850194a41078684b9514ee39b/plant-60.png"
+                alt="Plant icon"
+                className="mx-auto"
+                style={{ width: 60, height: 60, marginBottom: 20 }}
+              />
               <h3 className="ff-heading text-charcoal" style={{ fontSize: 24, fontWeight: 900, lineHeight: '30px', marginBottom: 12 }}>
                 Expand your reach
               </h3>
@@ -197,6 +221,24 @@ export default function SocialMediaAnalyticsPage() {
         </div>
       </section>
 
+      {/* Platform Analytics Header */}
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0 0' }}>
+        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+          <p
+            className="text-gridglow"
+            style={{ fontSize: 14, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 16 }}
+          >
+            In Data We Trust
+          </p>
+          <h2
+            className="ff-heading text-charcoal"
+            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 12 }}
+          >
+            Manage your platform analytics in one place
+          </h2>
+        </div>
+      </section>
+
       {/* Instagram Analytics */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
@@ -215,7 +257,7 @@ export default function SocialMediaAnalyticsPage() {
             <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 28, opacity: 0.7 }}>
               Track your Instagram performance with detailed analytics on stories, reels, posts, and profile activity. Understand what drives engagement and grow your following with data-backed insights.
             </p>
-            <Link to="/signup" className="btn-primary">Start free trial <ArrowIcon /></Link>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
         </div>
       </section>
@@ -238,7 +280,7 @@ export default function SocialMediaAnalyticsPage() {
             <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 28, opacity: 0.7 }}>
               Dive into your TikTok metrics including video views, profile visits, and follower growth. See which content goes viral and replicate your success with confidence.
             </p>
-            <Link to="/signup" className="btn-primary">Start free trial <ArrowIcon /></Link>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
         </div>
       </section>
@@ -261,7 +303,7 @@ export default function SocialMediaAnalyticsPage() {
             <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 28, opacity: 0.7 }}>
               Measure pin performance, outbound clicks, and audience insights to optimize your Pinterest strategy and drive meaningful traffic to your website.
             </p>
-            <Link to="/signup" className="btn-primary">Start free trial <ArrowIcon /></Link>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
         </div>
       </section>
@@ -284,7 +326,7 @@ export default function SocialMediaAnalyticsPage() {
             <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 28, opacity: 0.7 }}>
               Monitor your Facebook page performance with insights on post reach, engagement, and audience demographics to refine your content strategy and maximize results.
             </p>
-            <Link to="/signup" className="btn-primary">Start free trial <ArrowIcon /></Link>
+            <Link to="/pricing" className="btn-outline">Explore plans <ArrowIcon /></Link>
           </div>
         </div>
       </section>
@@ -322,10 +364,13 @@ export default function SocialMediaAnalyticsPage() {
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading"
-            style={{ fontSize: 52, fontWeight: 900, lineHeight: '58px', color: '#FEFCFB', marginBottom: 32 }}
+            style={{ fontSize: 52, fontWeight: 900, lineHeight: '58px', color: '#FEFCFB', marginBottom: 16 }}
           >
             Measure your performance with proven social media analytics
           </h2>
+          <p style={{ fontSize: 18, lineHeight: '28px', color: '#FEFCFB', opacity: 0.7, marginBottom: 32 }}>
+            Make decisions backed by accurate data — and watch your social channels grow.
+          </p>
           <Link to="/signup" className="btn-primary" style={{ fontSize: 18 }}>
             Start free trial <ArrowIcon />
           </Link>

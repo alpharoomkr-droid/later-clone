@@ -56,42 +56,46 @@ export default function CampaignPlatformPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
-          <p
-            className="text-charcoal/60 uppercase tracking-widest"
-            style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
-          >
-            Influencer Campaign Platform
-          </p>
-          <h1
-            className="ff-heading hero-enter-d1"
-            style={{ fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 820, margin: '0 auto 24px' }}
-          >
-            The only way to manage influencer campaigns
-          </h1>
-          <p
-            className="hero-enter-d2"
-            style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 680, margin: '0 auto 32px', color: '#333' }}
-          >
-            Handle every step of your influencer marketing with ease using Later Influence.
-          </p>
-          <a href="#" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>
-            Book a demo
-          </a>
-          <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
-            <img
-              src="https://images.ctfassets.net/nfpsrlop6sws/qzvunGuVEq79YwmaINw0C/ac609818ec8a47b4b13705882282c834/influencer-campaign-hero.png?w=1136&h=960&q=80&fm=png"
-              alt="Later Influencer Campaign Platform"
-              style={{ width: '100%', display: 'block' }}
-            />
+      <section className="wood-bg py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 reveal">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="hero-enter">
+              <p
+                className="text-charcoal/60 uppercase tracking-widest"
+                style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
+              >
+                Influencer Campaign Platform
+              </p>
+              <h1
+                className="ff-heading hero-enter-d1"
+                style={{ fontSize: 56, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}
+              >
+                The only way to manage influencer campaigns
+              </h1>
+              <p
+                className="hero-enter-d2"
+                style={{ fontSize: 18, lineHeight: 1.6, marginBottom: 32, color: '#333' }}
+              >
+                Handle every step of your influencer marketing with ease using Later Influence.
+              </p>
+              <a href="#" className="btn-primary hero-enter-d2" style={{ fontSize: 16 }}>
+                Book a demo
+              </a>
+            </div>
+            <div className="hero-enter-d3">
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/qzvunGuVEq79YwmaINw0C/ac609818ec8a47b4b13705882282c834/influencer-campaign-hero.png?w=1136&h=960&q=80&fm=png"
+                alt="Later Influencer Campaign Platform"
+                style={{ width: '100%', display: 'block' }}
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* How it works - numbered steps */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+      <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-6 reveal">
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}
@@ -104,7 +108,7 @@ export default function CampaignPlatformPage() {
           >
             Later Influence helps you create effective campaigns by finding the right influencers to create content, rate &amp; review your product, and provide brand insights.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/RbPQToU4fyfSoD4Yghi0u/72ebe680006f77fb23bf0d25a758faa4/influencer-campaign-deliver-in-one-place.png?w=1136&h=960&q=70&fm=png"
               alt="Deliver campaigns from one platform"
@@ -138,19 +142,12 @@ export default function CampaignPlatformPage() {
         return (
           <section
             key={i}
-            style={{ backgroundColor: i % 2 === 0 ? '#F8F2EA' : '#FEFCFB', padding: '60px 40px' }}
+            className="py-16 md:py-24"
+            style={{ backgroundColor: i % 2 === 0 ? '#F8F2EA' : '#FEFCFB' }}
           >
-            <div className="max-w-[1440px] mx-auto reveal">
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: 36,
-                  alignItems: 'center',
-                  direction: reversed ? 'rtl' : 'ltr',
-                }}
-              >
-                <div style={{ direction: 'ltr' }}>
+            <div className="max-w-7xl mx-auto px-6 reveal">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className={reversed ? 'lg:order-2' : ''}>
                   <p
                     className="text-charcoal/60 uppercase tracking-widest reveal"
                     style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}
@@ -176,8 +173,8 @@ export default function CampaignPlatformPage() {
                 <img
                   src={f.img}
                   alt={f.imgAlt}
-                  className="reveal reveal-d2"
-                  style={{ width: '100%', borderRadius: 8, direction: 'ltr' }}
+                  className={`reveal reveal-d2${reversed ? ' lg:order-1' : ''}`}
+                  style={{ width: '100%', borderRadius: 8 }}
                 />
               </div>
             </div>
@@ -186,36 +183,38 @@ export default function CampaignPlatformPage() {
       })}
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div
-          className="max-w-[900px] mx-auto reveal"
-          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 32, alignItems: 'center' }}
-        >
-          <img
-            src="https://images.ctfassets.net/nfpsrlop6sws/1WJ3MfWOmvyTZsL2qbypLS/186a4e020709e4fdf7cc8c6cde6c1741/bob-land.png?w=640&h=641&q=50&fm=png"
-            alt="Bob Land"
-            style={{ width: '100%', borderRadius: 12 }}
-          />
-          <div>
-            <p style={{ fontSize: 20, lineHeight: 1.6, color: '#fff', marginBottom: 24 }}>
-              &ldquo;We&rsquo;re solving for our content scale issues with (Later) since they offer a level
-              of moderation and a large enough number of Influencers that target our particular
-              audience. Content is king and we&rsquo;re being asked monthly by our Retail partners to
-              increase the amount and quality of content. Reviews are an important part so we&rsquo;ve
-              learned to repurpose our Influencer content in many, many ways and across many
-              channels.&rdquo;
-            </p>
-            <p style={{ fontWeight: 700, fontSize: 16, color: '#fff' }}>Bob Land</p>
-            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }}>
-              Dorel Juvenile, Vice President of Consumer Experience
-            </p>
+      <section className="purple-wood-bg py-16 md:py-24">
+        <div className="max-w-[900px] mx-auto px-6 reveal text-center">
+          <svg className="mx-auto mb-6" width="48" height="48" viewBox="0 0 24 24" fill="rgba(255,255,255,0.3)">
+            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+          </svg>
+          <p style={{ fontSize: 20, lineHeight: 1.6, color: '#fff', marginBottom: 24 }}>
+            &ldquo;We&rsquo;re solving for our content scale issues with (Later) since they offer a level
+            of moderation and a large enough number of Influencers that target our particular
+            audience. Content is king and we&rsquo;re being asked monthly by our Retail partners to
+            increase the amount and quality of content. Reviews are an important part so we&rsquo;ve
+            learned to repurpose our Influencer content in many, many ways and across many
+            channels.&rdquo;
+          </p>
+          <div className="flex items-center justify-center gap-4">
+            <img
+              src="https://images.ctfassets.net/nfpsrlop6sws/1WJ3MfWOmvyTZsL2qbypLS/186a4e020709e4fdf7cc8c6cde6c1741/bob-land.png?w=640&h=641&q=50&fm=png"
+              alt="Bob Land"
+              className="w-16 h-16 rounded-full object-cover"
+            />
+            <div className="text-left">
+              <p style={{ fontWeight: 700, fontSize: 16, color: '#fff' }}>Bob Land</p>
+              <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)' }}>
+                Dorel Juvenile, Vice President of Consumer Experience
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
+      <section className="py-16 md:py-24" style={{ background: '#000', textAlign: 'center' }}>
+        <div className="max-w-[700px] mx-auto px-6 reveal">
           <h2
             className="ff-heading"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24, color: '#fff' }}

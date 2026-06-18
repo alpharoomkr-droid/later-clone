@@ -31,7 +31,7 @@ export default function AnimatedText() {
         />
       ))}
       <h2
-        className="text-center relative z-10 text-charcoal max-w-[1100px]"
+        className="text-center relative z-10 text-charcoal max-w-[1200px]"
         style={{
           fontFamily: 'var(--font-heading)',
           fontSize: 96,

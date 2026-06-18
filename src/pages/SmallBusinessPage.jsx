@@ -56,7 +56,7 @@ export default function SmallBusinessPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             MANAGE SOCIAL MEDIA WITH LATER
@@ -78,8 +78,8 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section style={{ padding: '80px 40px' }}>
+        <div className="max-w-[1200px] mx-auto">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
@@ -93,15 +93,15 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* How to use Later Social */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Later for Small Business</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>How to use Later Social</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
             Check social media off your to-do list — for the whole week — in just one sitting.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/1dihRRmCfVycQkhId1JaW1/97bd1263b7f44849561fab2170f2c2ab/check-social-media-off.png?w=1136&h=960&q=70&fm=png" alt="How to use Later Social" style={{ width: '100%', borderRadius: 8 }} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/1dihRRmCfVycQkhId1JaW1/97bd1263b7f44849561fab2170f2c2ab/check-social-media-off.png?w=1136&h=960&q=70&fm=png" alt="How to use Later Social" style={{ width: '100%' }} />
             <div>
               {steps.map((s, i) => (
                 <div key={i} style={{ display: 'flex', gap: 20, marginBottom: 32 }}>
@@ -118,10 +118,10 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* Feature: Multi-Profile Scheduling */}
-      <section style={{ padding: '60px 40px' }}>
+      <section style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/2TIopEhJArrIRQjNBCUVwu/3868bad1167d4246db5f69d75ac6aeb1/small-business-owner-build-it-once.png?w=1136&h=960&q=70&fm=png" alt="Multi-profile scheduling" style={{ width: '100%', borderRadius: 8 }} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/2TIopEhJArrIRQjNBCUVwu/3868bad1167d4246db5f69d75ac6aeb1/small-business-owner-build-it-once.png?w=1136&h=960&q=70&fm=png" alt="Multi-profile scheduling" style={{ width: '100%' }} />
             <div>
               <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>MULTI-PROFILE SCHEDULING</p>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>Build it once, post everywhere.</h3>
@@ -137,10 +137,10 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* Feature: Caption Writer */}
-      <section style={{ padding: '0 40px 80px' }}>
+      <section style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', direction: 'rtl' }}>
-            <img src="https://images.ctfassets.net/nfpsrlop6sws/6Mo2bca7BGcz7m8GDFZc2u/b04b7096fe3387731ff22c4fae5a55ef/caption-writer.png?w=1136&h=960&q=70&fm=png" alt="Caption Writer" style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center', direction: 'rtl' }}>
+            <img src="https://images.ctfassets.net/nfpsrlop6sws/6Mo2bca7BGcz7m8GDFZc2u/b04b7096fe3387731ff22c4fae5a55ef/caption-writer.png?w=1136&h=960&q=70&fm=png" alt="Caption Writer" style={{ width: '100%', direction: 'ltr' }} />
             <div style={{ direction: 'ltr' }}>
               <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>CAPTION WRITER</p>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>Write captions faster with AI.</h3>
@@ -156,7 +156,7 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+      <section className="wood-bg" style={{ padding: '80px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
             Loved by small businesses everywhere.
@@ -177,7 +177,7 @@ export default function SmallBusinessPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
+      <section style={{ padding: '80px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Post more, stress less.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan 100% free for 14 days. No credit card required.</p>

@@ -63,25 +63,40 @@ const STEPS = [
 ]
 
 const RESOURCES = [
-  { title: 'Blog', desc: 'Expert tips, trends, and strategies for social media marketing.', href: '/blog/' },
-  { title: 'Marketing Resources', desc: 'Free guides, templates, and tools to elevate your social game.', href: '/resources/' },
-  { title: 'Help Center', desc: 'Get answers fast with step-by-step guides and tutorials.', href: '/help/' },
+  {
+    title: 'Blog',
+    desc: 'All the latest resources to boost your social strategy.',
+    href: '/blog/',
+    img: 'https://later.com/static/35d40bbeb972c3ff06d1c3999d56cafd/34f1c/blog-thumbnail.png',
+  },
+  {
+    title: 'Marketing Resources',
+    desc: 'Free tools to help you find success on social media.',
+    href: '/resources/',
+    img: 'https://later.com/static/098a1dcd9bcfc169b0ebd251dce41d1d/34f1c/marketing-resources-thumbnail.png',
+  },
+  {
+    title: 'Help Center',
+    desc: 'Search & find answers to your Later questions.',
+    href: '/help/',
+    img: 'https://later.com/static/1194e534ab191bf7941e331cf826ee57/34f1c/help-center-thumbnail.png',
+  },
 ]
 
 export default function SocialMediaSchedulerPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="relative overflow-hidden flex items-center justify-center text-center" style={{ background: '#000', minHeight: '90vh' }}>
+      <section className="reveal relative overflow-hidden flex items-center justify-center text-center" style={{ background: '#000', minHeight: '90vh' }}>
         <img
           src="https://images.ctfassets.net/nfpsrlop6sws/7b4Cst4eUbELbpHx1nVy1s/736d30102a739c3927f766e0b13d962a/Later-Social-VideoThumb-3.png"
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 0.45 }}
         />
-        <div className="relative z-10" style={{ maxWidth: 780, padding: '60px 40px' }}>
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" style={{ padding: '60px 24px' }}>
           <div className="hero-enter flex items-center justify-center gap-2" style={{ marginBottom: 24 }}>
-            <span style={{ fontSize: 14, fontWeight: 600, color: '#fff', opacity: 0.8 }}>G2 Leader</span>
+            <img src="https://later.com/images/g2-logo.svg" alt="G2" style={{ height: 20, marginRight: 4 }} />
             <span className="flex gap-0.5">
               {[1,2,3,4].map(i => <StarIcon key={i} />)}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FE3F00" strokeWidth="2">
@@ -96,32 +111,35 @@ export default function SocialMediaSchedulerPage() {
             className="hero-enter-d1"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 76,
+              fontSize: 'clamp(40px, 5.5vw, 76px)',
               fontWeight: 900,
-              lineHeight: '80px',
+              lineHeight: 1.05,
               letterSpacing: '0.4px',
               color: '#fff',
               marginBottom: 24,
+              textAlign: 'center',
             }}
           >
             Social media management made easy
           </h1>
-          <p className="hero-enter-d2" style={{ fontSize: 20, lineHeight: '30px', color: 'rgba(255,255,255,0.85)', maxWidth: 620, margin: '0 auto 36px' }}>
+          <p className="hero-enter-d2" style={{ fontSize: 20, lineHeight: '30px', color: 'rgba(255,255,255,0.85)', maxWidth: 620, margin: '0 auto 36px', textAlign: 'center' }}>
             Crush your social goals faster with Later. Automate daily social tasks and turn followers into customers with Linkin.bio — all in one app.
           </p>
-          <a href="/pricing/" className="btn-primary hero-enter-d3" style={{ fontSize: 18 }}>
-            Get 14 days for free <ArrowIcon />
-          </a>
+          <div style={{ textAlign: 'center' }}>
+            <a href="/pricing/" className="btn-primary hero-enter-d3" style={{ fontSize: 18 }}>
+              Get 14 days for free <ArrowIcon />
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Trusted By */}
-      <section className="wood-bg" style={{ padding: '48px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
-          <p className="text-center" style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#000', opacity: 0.45, marginBottom: 32 }}>
+      <section className="reveal wood-bg" style={{ padding: '40px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-center" style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, color: '#000', opacity: 0.45, marginBottom: 28 }}>
             Trusted by the world's top brands
           </p>
-          <div className="flex items-center justify-center flex-wrap gap-12">
+          <div className="flex items-center justify-center flex-wrap gap-10 sm:gap-14">
             {LOGOS.map(l => (
               <img key={l.alt} src={l.src} alt={l.alt} style={{ height: 28, objectFit: 'contain', opacity: 0.7 }} loading="lazy" />
             ))}
@@ -130,21 +148,22 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Use Later / Unplug */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+      <section className="reveal" style={{ padding: '64px 0 48px' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 52,
+              fontSize: 'clamp(32px, 4vw, 52px)',
               fontWeight: 900,
-              lineHeight: '58px',
+              lineHeight: 1.12,
               maxWidth: 700,
               margin: '0 auto 20px',
+              textAlign: 'center',
             }}
           >
             Use Later when you're online. Unplug when you're not.
           </h2>
-          <p style={{ fontSize: 20, lineHeight: '30px', color: '#000', opacity: 0.6, maxWidth: 500, margin: '0 auto' }}>
+          <p style={{ fontSize: 20, lineHeight: '30px', color: '#000', opacity: 0.6, maxWidth: 500, margin: '0 auto', textAlign: 'center' }}>
             Make your job and your life easier (we won't tell).
           </p>
         </div>
@@ -154,10 +173,8 @@ export default function SocialMediaSchedulerPage() {
       {FEATURES.map((f, i) => {
         const reversed = i % 2 === 1
         return (
-          <section key={f.tag} className={i % 2 === 0 ? '' : 'wood-bg'} style={{ padding: '60px 40px' }}>
-            <div
-              className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal"
-            >
+          <section key={f.tag} className={`reveal ${i % 2 === 0 ? '' : 'wood-bg'}`} style={{ padding: '64px 0' }}>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className={reversed ? 'lg:order-2' : ''}>
                 <p style={{ fontSize: 14, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1.5, color: '#FE3F00', marginBottom: 12 }}>
                   {f.tag}
@@ -165,9 +182,9 @@ export default function SocialMediaSchedulerPage() {
                 <h2
                   style={{
                     fontFamily: 'var(--font-heading)',
-                    fontSize: 48,
+                    fontSize: 'clamp(32px, 3.5vw, 48px)',
                     fontWeight: 900,
-                    lineHeight: '54px',
+                    lineHeight: 1.12,
                     marginBottom: 20,
                   }}
                 >
@@ -189,8 +206,8 @@ export default function SocialMediaSchedulerPage() {
       })}
 
       {/* Testimonial */}
-      <section style={{ background: '#000', padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
+      <section className="reveal" style={{ background: '#000', padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/5jn0R7lkLHNPYjxclMVB4g/b551ed138659b0f10bbceebe60e33cca/LIFe-logo_white_1600x_1.png"
@@ -208,101 +225,109 @@ export default function SocialMediaSchedulerPage() {
               Read the case study <ArrowIcon />
             </a>
           </div>
-          <div className="flex gap-8 justify-center">
-            <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: 12, padding: '36px 32px', textAlign: 'center', flex: 1 }}>
-              <p style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00', marginBottom: 8 }}>4.7M</p>
-              <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.6)' }}>TikTok likes</p>
+          <div className="flex gap-6 justify-center">
+            <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: 12, padding: '32px 28px', textAlign: 'center', flex: 1, maxWidth: 220 }}>
+              <p style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, color: '#FE3F00', marginBottom: 8 }}>4.7M</p>
+              <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.6)' }}>TikTok likes</p>
             </div>
-            <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: 12, padding: '36px 32px', textAlign: 'center', flex: 1 }}>
-              <p style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00', marginBottom: 8 }}>2 hrs</p>
-              <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.6)' }}>saved every week</p>
+            <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: 12, padding: '32px 28px', textAlign: 'center', flex: 1, maxWidth: 220 }}>
+              <p style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, color: '#FE3F00', marginBottom: 8 }}>2 hrs</p>
+              <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.6)' }}>saved every week</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Designed for the pros */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal" style={{ padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-center reveal"
+            className="text-center"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 48,
+              fontSize: 'clamp(32px, 3.5vw, 48px)',
               fontWeight: 900,
-              lineHeight: '54px',
-              marginBottom: 32,
+              lineHeight: 1.12,
+              marginBottom: 40,
+              textAlign: 'center',
             }}
           >
             Social media management designed for the pros
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
-            <div className="rounded-xl overflow-hidden" style={{ background: '#FE3F00' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a href="/social-media-managers/" className="block rounded-xl overflow-hidden group" style={{ background: '#FE3F00', textDecoration: 'none' }}>
               <img
                 src="https://images.ctfassets.net/nfpsrlop6sws/5tfjluVhyHIiUqQ5CaXAvi/a2960bb77de6dbfb409823600bfbf2b9/social-media-managers-orange-bg.png"
                 alt="Social media managers"
                 className="w-full h-auto"
                 loading="lazy"
               />
-              <div style={{ padding: '32px 36px' }}>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 900, color: '#fff', marginBottom: 8 }}>
+              <div style={{ padding: '28px 32px' }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 26, fontWeight: 900, color: '#fff', marginBottom: 8 }}>
                   Social media managers
                 </h3>
-                <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.85)' }}>
+                <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
                   Grow followers & boost engagement, minus the stress.
                 </p>
+                <span style={{ fontSize: 16, fontWeight: 600, color: '#fff', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                  Explore now <ArrowIcon />
+                </span>
               </div>
-            </div>
-            <div className="rounded-xl overflow-hidden" style={{ background: '#FE3F00' }}>
+            </a>
+            <a href="/agencies-freelancers/" className="block rounded-xl overflow-hidden group" style={{ background: '#FE3F00', textDecoration: 'none' }}>
               <img
                 src="https://images.ctfassets.net/nfpsrlop6sws/qq3AlM92QhRMBVfi0lZME/69ffdad48132dd11bd7874f000826e1e/agencies-freelancers-orange-bg.png"
                 alt="Agencies & freelancers"
                 className="w-full h-auto"
                 loading="lazy"
               />
-              <div style={{ padding: '32px 36px' }}>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 900, color: '#fff', marginBottom: 8 }}>
+              <div style={{ padding: '28px 32px' }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 26, fontWeight: 900, color: '#fff', marginBottom: 8 }}>
                   Agencies & freelancers
                 </h3>
-                <p style={{ fontSize: 18, color: 'rgba(255,255,255,0.85)' }}>
+                <p style={{ fontSize: 17, color: 'rgba(255,255,255,0.85)', marginBottom: 12 }}>
                   Easily manage social posts for multiple brands in less time.
                 </p>
+                <span style={{ fontSize: 16, fontWeight: 600, color: '#fff', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+                  Explore now <ArrowIcon />
+                </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* 3 Steps */}
-      <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal wood-bg" style={{ padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-center reveal"
+            className="text-center"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 48,
+              fontSize: 'clamp(28px, 3vw, 40px)',
               fontWeight: 900,
-              lineHeight: '54px',
-              marginBottom: 32,
+              lineHeight: 1.2,
+              marginBottom: 40,
+              textAlign: 'center',
             }}
           >
             Get started in 3 easy steps
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {STEPS.map(s => (
               <a
                 key={s.num}
                 href={s.href}
                 className="block rounded-xl bg-white hover:shadow-lg transition-shadow"
-                style={{ padding: '40px 32px', textDecoration: 'none', color: 'inherit' }}
+                style={{ padding: '36px 28px', textDecoration: 'none', color: 'inherit' }}
               >
-                <p style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00', marginBottom: 12 }}>
+                <p style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, color: '#FE3F00', marginBottom: 12 }}>
                   {s.num}
                 </p>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 900, marginBottom: 12 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 900, marginBottom: 10 }}>
                   {s.title}
                 </h3>
-                <p style={{ fontSize: 16, lineHeight: '24px', color: '#000', opacity: 0.6 }}>
+                <p style={{ fontSize: 15, lineHeight: '24px', color: '#000', opacity: 0.6 }}>
                   {s.desc}
                 </p>
               </a>
@@ -312,40 +337,40 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Resources */}
-      <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+      <section className="reveal" style={{ padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-center reveal"
+            className="text-center"
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 48,
+              fontSize: 'clamp(32px, 3.5vw, 48px)',
               fontWeight: 900,
-              lineHeight: '54px',
-              marginBottom: 16,
+              lineHeight: 1.12,
+              marginBottom: 40,
+              textAlign: 'center',
             }}
           >
-            Resources and expertise to keep you ahead
+            Resources and expertise to keep you ahead.
           </h2>
-          <p className="text-center reveal" style={{ fontSize: 18, color: '#000', opacity: 0.6, marginBottom: 32 }}>
-            Everything you need to grow your social presence.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {RESOURCES.map(r => (
               <a
                 key={r.title}
                 href={r.href}
-                className="block rounded-xl border-2 border-charcoal/10 hover:border-charcoal/30 transition-colors"
-                style={{ padding: '40px 32px', textDecoration: 'none', color: 'inherit' }}
+                className="block rounded-xl overflow-hidden border-2 border-black/5 hover:border-black/15 hover:shadow-lg transition-all"
+                style={{ textDecoration: 'none', color: 'inherit' }}
               >
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 900, marginBottom: 12 }}>
-                  {r.title}
-                </h3>
-                <p style={{ fontSize: 16, lineHeight: '24px', color: '#000', opacity: 0.6, marginBottom: 20 }}>
-                  {r.desc}
-                </p>
-                <span style={{ fontSize: 16, fontWeight: 600, color: '#FE3F00', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-                  Learn more <ArrowIcon />
-                </span>
+                <div style={{ aspectRatio: '550/292', overflow: 'hidden', background: '#f5f0eb' }}>
+                  <img src={r.img} alt={r.title} className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div style={{ padding: '24px 28px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 22, fontWeight: 900, marginBottom: 8 }}>
+                    {r.title}
+                  </h3>
+                  <p style={{ fontSize: 15, lineHeight: '24px', color: '#000', opacity: 0.6 }}>
+                    {r.desc}
+                  </p>
+                </div>
               </a>
             ))}
           </div>
@@ -353,21 +378,22 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ background: '#000', padding: '60px 40px', textAlign: 'center' }}>
-        <div className="max-w-[700px] mx-auto reveal">
+      <section className="reveal" style={{ background: '#000', padding: '80px 0', textAlign: 'center' }}>
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 56,
+              fontSize: 'clamp(36px, 4vw, 56px)',
               fontWeight: 900,
-              lineHeight: '62px',
+              lineHeight: 1.1,
               color: '#fff',
               marginBottom: 20,
+              textAlign: 'center',
             }}
           >
             Plan, schedule, and stay ahead
           </h2>
-          <p style={{ fontSize: 20, lineHeight: '30px', color: 'rgba(255,255,255,0.7)', marginBottom: 36 }}>
+          <p style={{ fontSize: 20, lineHeight: '30px', color: 'rgba(255,255,255,0.7)', marginBottom: 36, textAlign: 'center' }}>
             Manage all things social in one app — sign up for free.
           </p>
           <a href="/pricing/" className="btn-primary" style={{ fontSize: 18 }}>

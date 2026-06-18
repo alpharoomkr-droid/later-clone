@@ -10,9 +10,9 @@ function TickerSet() {
   return (
     <>
       {items.map((item, i) => (
-        <div key={i} className="flex items-center gap-4 flex-shrink-0 mx-6">
+        <div key={i} className="flex items-center gap-3 flex-shrink-0">
           <img src={item.icon} alt="" className="w-7 h-7" />
-          <span className="text-gridglow text-2xl lg:text-3xl font-extrabold uppercase whitespace-nowrap leading-tight" style={{ fontFamily: 'var(--font-heading)' }}>
+          <span className="text-gridglow text-2xl lg:text-3xl font-extrabold uppercase whitespace-nowrap" style={{ fontFamily: 'var(--font-heading)', lineHeight: 1 }}>
             {item.text}
           </span>
         </div>
@@ -23,8 +23,8 @@ function TickerSet() {
 
 export default function Ticker() {
   return (
-    <section className="bg-inverse py-6 overflow-hidden">
-      <div className="flex items-center whitespace-nowrap ticker-animate">
+    <section className="bg-inverse py-4 overflow-hidden">
+      <div className="flex items-center gap-10 md:gap-14 whitespace-nowrap ticker-animate">
         <TickerSet />
         <TickerSet />
         <TickerSet />

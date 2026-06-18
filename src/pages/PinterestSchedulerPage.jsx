@@ -75,7 +75,7 @@ export default function PinterestSchedulerPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>CREATE PIN-WORTHY POSTS</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             Reach new customers with Later's Pinterest Scheduler.
@@ -92,12 +92,12 @@ export default function PinterestSchedulerPage() {
 
       {/* Quick features */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+        <div className="max-w-[1100px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Do it all with Later's Pinterest scheduling tool.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Work smarter with Later.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {features.map((f, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`}>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
                 <img src={f.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{f.title}</h3>
                 <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5 }}>{f.desc}</p>
@@ -109,11 +109,11 @@ export default function PinterestSchedulerPage() {
 
       {/* Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>HOW LATER'S PINTEREST SCHEDULER WORKS</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Share your products & get discovered on Pinterest.</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>With photo & video editing tools and seamless scheduling, Later has everything you need to grow on Pinterest.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/5bFCB5DwvvdUOu8dZkf6S0/27c2ce21af70fae5821b8d8094a4eef7/later-pinterest-scheduler-tools.png?w=1138&h=929&q=70&fm=png" alt="Pinterest Scheduler Tools" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -132,7 +132,7 @@ export default function PinterestSchedulerPage() {
 
       {/* Feature showcases */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1100px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>LATER'S PINTEREST FEATURES</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Stand out on Pinterest with Later.</h2>
           {showcases.map((s, i) => (
@@ -151,7 +151,7 @@ export default function PinterestSchedulerPage() {
 
       {/* Calendar planner */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal text-center">
+        <div className="max-w-[1100px] mx-auto reveal text-center">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>PINTEREST FEED PLANNER</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Visual content calendar</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 28 }}>Schedule, manage, and edit your posts from any device.</p>
@@ -207,7 +207,7 @@ export default function PinterestSchedulerPage() {
 
       {/* Blogs & Resources */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.2, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Learn how to get better ROI from your social media content & campaigns.</h2>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, marginBottom: 32 }}>Blogs</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 32 }}>

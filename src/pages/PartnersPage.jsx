@@ -121,8 +121,8 @@ export default function PartnersPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '100px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+      <section className="wood-bg reveal" style={{ padding: '100px 0 80px' }}>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div>
             <p
               className="text-gridglow hero-enter"
@@ -172,8 +172,8 @@ export default function PartnersPage() {
       </section>
 
       {/* Trusted By */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '48px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '48px 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <p
             className="text-center text-charcoal/40 reveal"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: 32 }}
@@ -197,7 +197,7 @@ export default function PartnersPage() {
 
       {/* How It Works */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[720px] mx-auto text-center">
             <p
               className="text-gridglow reveal"
@@ -234,9 +234,9 @@ export default function PartnersPage() {
       </section>
 
       {/* Partnership Categories */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="wood-bg reveal" style={{ padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {partnerCategories.map((cat, i) => (
               <div
                 key={cat.title}
@@ -284,8 +284,8 @@ export default function PartnersPage() {
       </section>
 
       {/* Integrations */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{
@@ -319,12 +319,11 @@ export default function PartnersPage() {
               </button>
             ))}
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-10 reveal reveal-d2" style={{ maxWidth: 900, margin: '0 auto' }}>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-10 reveal reveal-d2" style={{ maxWidth: 900, margin: '0 auto' }}>
             {getFilteredIntegrations().map((item) => (
               <div
                 key={item.name}
                 style={{
-                  width: 120,
                   height: 80,
                   display: 'flex',
                   alignItems: 'center',
@@ -353,8 +352,8 @@ export default function PartnersPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="wood-bg reveal" style={{ padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-16 items-center reveal">
             <div>
               <svg width="48" height="36" viewBox="0 0 48 36" fill="none" style={{ marginBottom: 28 }}>
@@ -392,8 +391,8 @@ export default function PartnersPage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto">
             <h2
               className="ff-heading text-charcoal text-center reveal"
@@ -460,8 +459,8 @@ export default function PartnersPage() {
       </section>
 
       {/* Contact Form */}
-      <section id="contact" className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <section id="contact" className="wood-bg reveal" style={{ padding: '60px 0' }}>
+        <div className="max-w-7xl mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[600px] mx-auto">
             <h2
               className="ff-heading text-charcoal text-center reveal"

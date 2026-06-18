@@ -10,8 +10,8 @@ export default function EdgeAI() {
   return (
     <>
       <section className="wood-bg flex items-center relative overflow-hidden" style={{ padding: '56px 0' }}>
-        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
-          <div className="lg:col-span-6 reveal from-left">
+        <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
+          <div className="lg:col-span-5 reveal from-left">
             <h2
               className="text-charcoal"
               style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px', marginBottom: 16 }}
@@ -25,7 +25,7 @@ export default function EdgeAI() {
               Learn more <ArrowIcon />
             </a>
           </div>
-          <div className="lg:col-span-6 reveal from-right">
+          <div className="lg:col-span-7 reveal from-right">
             <video
               autoPlay
               loop
@@ -49,12 +49,12 @@ export default function EdgeAI() {
             <span className="text-gridglow">the right ones.</span>
           </h2>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 mb-10 max-w-[900px]">
+        <div className="reveal flex flex-wrap justify-center gap-4 mb-10 max-w-[900px]">
           {['Aubrey Ross', 'CJ Khusas', 'Taurlor Moore', 'Tyler Hall', 'Maya Chen'].map((name, i) => (
             <div key={i} className="flex flex-col items-center">
               <div
                 className="w-36 h-44 lg:w-44 lg:h-56 overflow-hidden"
-                style={{ border: `3px solid ${['#7A63E8', '#FE3F00', '#E8707A', '#7A63E8', '#FE3F00'][i]}` }}
+                style={{ border: `3px solid ${['#7A63E8', '#FE3F00', '#E8707A', '#7A63E8', '#FE3F00'][i]}`, boxShadow: 'rgba(0,0,0,0.25) 0px 5px 15px' }}
               >
                 <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                   <span className="text-3xl text-gray-400">{name[0]}</span>
@@ -64,7 +64,7 @@ export default function EdgeAI() {
             </div>
           ))}
         </div>
-        <p className="text-charcoal max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px', opacity: 0.6, padding: '0 40px' }}>
+        <p className="reveal text-charcoal max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px', opacity: 0.6, padding: '0 40px' }}>
           We handpick creators proven to drive sales and brand lift, with brand fit, safety, and past performance checked upfront.
         </p>
       </section>

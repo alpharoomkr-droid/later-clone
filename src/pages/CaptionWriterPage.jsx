@@ -134,7 +134,7 @@ export default function CaptionWriterPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 reveal reveal-d1">
             {valueCards.map((card, i) => (
-              <div key={i} style={{ padding: '32px 0' }}>
+              <div key={i} className="text-center" style={{ padding: '32px 0' }}>
                 <h3
                   className="ff-heading text-charcoal"
                   style={{ fontSize: 24, fontWeight: 900, lineHeight: '30px', marginBottom: 12 }}
@@ -231,7 +231,7 @@ export default function CaptionWriterPage() {
           {moreWays.map((item, i) => (
             <div
               key={i}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal"
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal reveal-d${i + 1}`}
               style={{ marginBottom: i < moreWays.length - 1 ? 80 : 0 }}
             >
               <div className={i % 2 === 1 ? 'lg:order-2' : ''}>

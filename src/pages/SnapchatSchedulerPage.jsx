@@ -27,7 +27,7 @@ export default function SnapchatSchedulerPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter">
+        <div className="max-w-[1100px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>PLAN NOW, POST LATER</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             Plan, schedule, and grow on Snapchat.
@@ -44,12 +44,12 @@ export default function SnapchatSchedulerPage() {
 
       {/* Quick features */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal">
+        <div className="max-w-[1100px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Snap, schedule, relax.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Dial in your Snapchat strategy with easy scheduling tools.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {features.map((f, i) => (
-              <div key={i} className={`reveal reveal-d${i + 1}`}>
+              <div key={i} className={`reveal reveal-d${i + 1} text-center`}>
                 <img src={f.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>{f.title}</h3>
                 <p style={{ fontSize: 16, color: '#555', lineHeight: 1.5 }}>{f.desc}</p>
@@ -61,11 +61,11 @@ export default function SnapchatSchedulerPage() {
 
       {/* Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal">
+        <div className="max-w-[1100px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>HOW TO SCHEDULE SNAPS WITH LATER</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Keep your Snap streak going with Later's scheduler.</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>Try it on any Later plan for free.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/s6szg81PSdx9Tn2qkbwc0/2753dfb867e9c4efb92da8cf2f169207/scheduler-snap-with-later.png?w=1136&h=1020&q=70&fm=png" alt="Schedule Snaps with Later" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -84,10 +84,10 @@ export default function SnapchatSchedulerPage() {
 
       {/* Feature showcase - Auto Publish */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto">
+        <div className="max-w-[1100px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>SNAPCHAT SCHEDULING APP</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Your Snaps, scheduled your way.</h2>
-          <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80 }}>
+          <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'start', marginBottom: 80 }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/61p6gL8qLEvyASNBN5itt4/b64e71490e53468c266269121867ab74/snapchat-scheduler-auto-publish.png?w=1136&h=960&q=70&fm=png" alt="Snapchat auto publish" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>AUTO PUBLISH</p>

@@ -9,9 +9,9 @@ function ArrowIcon() {
 }
 
 const valueCards = [
-  { title: 'See more sales from loyal customers', desc: 'Turn happy customers into repeat buyers with loyalty programs, reviews, and referrals that drive real revenue.' },
-  { title: 'Connect with your audience', desc: 'Engage your community with authentic interactions, user-generated content, and meaningful conversations.' },
-  { title: 'Build lasting trust', desc: 'Earn credibility through social proof, verified reviews, and consistent brand experiences across every touchpoint.' },
+  { icon: 'https://images.ctfassets.net/nfpsrlop6sws/6NZbEqE52cBL3Q4c624JyJ/d00a0d04c694c90be4db40b588f63f00/Later_Icon_PayoutRevenue.png', title: 'See more sales from loyal customers', desc: 'Turn happy customers into repeat buyers with loyalty programs, reviews, and referrals that drive real revenue.' },
+  { icon: 'https://images.ctfassets.net/nfpsrlop6sws/6zd2wo2zPiiSsFzLT5qwEu/6fdfaa6edd03bb41c5a309e5348ce118/Growth__Arrow_.png', title: 'Connect with your audience', desc: 'Engage your community with authentic interactions, user-generated content, and meaningful conversations.' },
+  { icon: 'https://images.ctfassets.net/nfpsrlop6sws/2TFMduJpudJQZp5d2eDHee/b0c01b8a08ec6c4e3c10b0d719f51a85/icon-lead.png', title: 'Build lasting trust', desc: 'Earn credibility through social proof, verified reviews, and consistent brand experiences across every touchpoint.' },
 ]
 
 const steps = [
@@ -89,10 +89,16 @@ export default function ReputationManagementPage() {
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 24, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
+            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 16, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
           >
             Stand out (in the ways you want to)
           </h2>
+          <p
+            className="text-charcoal text-center reveal"
+            style={{ fontSize: 18, lineHeight: '28px', opacity: 0.7, maxWidth: 600, margin: '0 auto 40px' }}
+          >
+            Become the brand people never doubt &amp; can&rsquo;t live without
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal reveal-d1">
             {valueCards.map((card, i) => (
               <div
@@ -100,6 +106,7 @@ export default function ReputationManagementPage() {
                 className="p-8"
                 style={{ backgroundColor: '#F8F2EA', borderTop: '3px solid #FE3F00' }}
               >
+                <img src={card.icon} alt="" style={{ width: 48, height: 48, marginBottom: 16 }} loading="lazy" />
                 <h3
                   className="ff-heading text-charcoal"
                   style={{ fontSize: 22, fontWeight: 700, lineHeight: '28px', marginBottom: 12 }}
@@ -127,10 +134,16 @@ export default function ReputationManagementPage() {
             </p>
             <h2
               className="ff-heading text-charcoal"
-              style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 28 }}
+              style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 16 }}
             >
               Go from liked to loved
             </h2>
+            <p
+              className="text-charcoal"
+              style={{ fontSize: 18, lineHeight: '28px', opacity: 0.7, maxWidth: 500, marginBottom: 28 }}
+            >
+              Our influencer marketing &amp; reputation management tools ensure customers see the best of you on your website, on social media and beyond.
+            </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
               {steps.map((s) => (
                 <div key={s.num} style={{ display: 'flex', gap: 20, alignItems: 'flex-start' }}>
@@ -166,6 +179,18 @@ export default function ReputationManagementPage() {
         </div>
       </section>
 
+      {/* Feature Section Header */}
+      <section style={{ padding: '60px 40px 0', backgroundColor: '#FEFCFB' }}>
+        <div className="max-w-[1440px] mx-auto text-center reveal">
+          <h2
+            className="ff-heading text-charcoal"
+            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', maxWidth: 700, margin: '0 auto' }}
+          >
+            See how reputation management strategies impact your brand
+          </h2>
+        </div>
+      </section>
+
       {/* Feature Sections (alternating) */}
       {features.map((feat, i) => (
         <section
@@ -173,7 +198,7 @@ export default function ReputationManagementPage() {
           style={{ padding: '60px 40px', backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA' }}
         >
           <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className={`reveal ${i % 2 !== 0 ? 'lg:order-2' : ''}`}>
+            <div className={`reveal ${i % 2 === 0 ? 'lg:order-2' : ''}`}>
               <h2
                 className="ff-heading text-charcoal"
                 style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 20 }}
@@ -183,8 +208,11 @@ export default function ReputationManagementPage() {
               <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', opacity: 0.7, maxWidth: 500 }}>
                 {feat.desc}
               </p>
+              <Link to="/demo" className="btn-outline" style={{ fontSize: 15, marginTop: 24 }}>
+                Learn more <ArrowIcon />
+              </Link>
             </div>
-            <div className={`reveal reveal-d1 ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
+            <div className={`reveal reveal-d1 ${i % 2 === 0 ? 'lg:order-1' : ''}`}>
               <img
                 src={feat.img}
                 alt={feat.alt}
@@ -198,28 +226,44 @@ export default function ReputationManagementPage() {
 
       {/* Testimonial */}
       <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-16 reveal">
-          <div style={{ flex: 1 }}>
+        <div className="max-w-[1440px] mx-auto reveal">
+          <div className="text-center" style={{ marginBottom: 48 }}>
             <p
-              className="text-white"
-              style={{ fontSize: 32, lineHeight: '44px', fontWeight: 400, marginBottom: 32 }}
+              className="text-white/60"
+              style={{ fontSize: 13, fontWeight: 600, textTransform: 'uppercase', letterSpacing: 1.5, marginBottom: 12 }}
             >
-              &ldquo;Later&rsquo;s reputation management tools have transformed how we connect with our community and build lasting brand loyalty. The platform makes it easy to collect authentic feedback and turn it into action.&rdquo;
+              TESTIMONIAL
             </p>
-            <p className="text-white" style={{ fontSize: 16, fontWeight: 700 }}>
-              Drew McGowan
-            </p>
-            <p className="text-white" style={{ fontSize: 14, opacity: 0.7 }}>
-              Clif Bar &amp; Company
-            </p>
+            <h2
+              className="ff-heading text-white"
+              style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15 }}
+            >
+              Why brands love Later Influence
+            </h2>
           </div>
-          <div style={{ flexShrink: 0 }}>
-            <img
-              src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png"
-              alt="Clif Bar & Company"
-              style={{ width: 200, height: 200, borderRadius: 12, objectFit: 'contain', backgroundColor: 'rgba(255,255,255,0.1)', padding: 24 }}
-              loading="lazy"
-            />
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <div style={{ flex: 1 }}>
+              <p
+                className="text-white"
+                style={{ fontSize: 32, lineHeight: '44px', fontWeight: 400, marginBottom: 32 }}
+              >
+                &ldquo;Later&rsquo;s reputation management tools have transformed how we connect with our community and build lasting brand loyalty. The platform makes it easy to collect authentic feedback and turn it into action.&rdquo;
+              </p>
+              <p className="text-white" style={{ fontSize: 16, fontWeight: 700 }}>
+                Drew McGowan
+              </p>
+              <p className="text-white" style={{ fontSize: 14, opacity: 0.7 }}>
+                Clif Bar &amp; Company
+              </p>
+            </div>
+            <div style={{ flexShrink: 0 }}>
+              <img
+                src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png"
+                alt="Clif Bar & Company"
+                style={{ width: 200, height: 200, borderRadius: 12, objectFit: 'contain', backgroundColor: 'rgba(255,255,255,0.1)', padding: 24 }}
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -233,6 +277,11 @@ export default function ReputationManagementPage() {
           >
             Grow your brand with Later&rsquo;s reputation management software
           </h2>
+          <p
+            style={{ fontSize: 18, color: 'rgba(255,255,255,0.7)', marginBottom: 36, lineHeight: '28px', maxWidth: 600, margin: '0 auto 36px' }}
+          >
+            Build your reputation and turn influencer marketing into your #1 revenue generator.
+          </p>
           <Link to="/demo" className="btn-primary" style={{ fontSize: 18 }}>
             Book a demo <ArrowIcon />
           </Link>

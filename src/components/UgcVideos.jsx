@@ -6,21 +6,19 @@ const videoUrls = [
 
 export default function UgcVideos() {
   return (
-    <section className="overflow-hidden" style={{ padding: '70px 0' }}>
-      <div className="max-w-[1440px] mx-auto mb-6 reveal" style={{ padding: '0 40px' }}>
-        <p className="text-charcoal/60" style={{ fontSize: 16, lineHeight: '24px' }}>
-          A showcase of creator-produced content from real influencer marketing campaigns powered by Later, featuring authentic creator stories.
-        </p>
-      </div>
-      <div className="flex flex-col gap-4">
+    <section
+      className="overflow-hidden reveal"
+      style={{ height: '100vh', background: '#F8F2EA' }}
+    >
+      <div className="flex flex-col" style={{ height: '100%' }}>
         {videoUrls.map((url, i) => (
-          <div key={i} className="relative">
+          <div key={i} className="relative" style={{ height: 'calc(100% / 3)' }}>
             <video
               autoPlay
               loop
               muted
               playsInline
-              className="w-full h-[200px] lg:h-[300px] object-cover"
+              className="w-full h-full object-cover"
             >
               <source src={url} type="video/mp4" />
             </video>

@@ -223,7 +223,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Confidence Section */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
@@ -259,7 +259,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* EdgeAI Section */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
@@ -324,7 +324,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="text-white" style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section className="text-white" style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-offline text-center mb-16 reveal"
@@ -396,7 +396,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Speed Stats */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
@@ -441,7 +441,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* In-house CTA */}
-      <section className="purple-wood-bg text-white" style={{ padding: '100px 0' }}>
+      <section className="purple-wood-bg text-white" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="mb-6"
@@ -459,7 +459,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Resources */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="text-center mb-16 reveal">
             <h2
@@ -515,7 +515,7 @@ export default function InfluencerMarketingPlatformPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="wood-bg" style={{ padding: '120px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal mb-10"

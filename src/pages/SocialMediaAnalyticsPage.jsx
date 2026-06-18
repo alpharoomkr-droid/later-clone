@@ -187,7 +187,7 @@ export default function SocialMediaAnalyticsPage() {
           >
             Trusted by industry leaders
           </h2>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 max-w-[900px]">
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 max-w-[900px] mx-auto">
             {logos.map((logo, i) => (
               <div key={i} style={{ opacity: 0.8 }} className="hover:opacity-100 transition-opacity">
                 <img src={logo.src} alt={logo.name} className="h-[38px] w-auto object-contain" loading="lazy" />
@@ -318,7 +318,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading"

@@ -125,7 +125,7 @@ export default function AgenciesFreelancersPage() {
       </section>
 
       {/* Benefits Grid */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {benefits.map((b, i) => (
@@ -142,7 +142,7 @@ export default function AgenciesFreelancersPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
@@ -183,7 +183,7 @@ export default function AgenciesFreelancersPage() {
       {features.map((f, i) => {
         const reversed = i % 2 === 1
         return (
-          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '100px 0' }}>
+          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '60px 0' }}>
             <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
               <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}>
                 <div className={`reveal ${reversed ? 'lg:[direction:ltr]' : ''}`}>
@@ -210,7 +210,7 @@ export default function AgenciesFreelancersPage() {
       })}
 
       {/* Testimonials */}
-      <section style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2 className="text-offline text-center mb-16 reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.15 }}>
             Trusted by agencies worldwide
@@ -236,7 +236,7 @@ export default function AgenciesFreelancersPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '120px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2 className="text-white" style={{ fontFamily: 'var(--font-heading)', fontSize: 50, fontWeight: 900, lineHeight: 1.1, marginBottom: 20 }}>
             Make your team &amp; your clients happy

@@ -54,16 +54,16 @@ export default function Stats() {
         >
           The hype is real.
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-8" style={{ gap: 0 }}>
           {stats.map((stat, i) => (
             <div
               key={i}
-              className={`transition-all duration-700 ${
+              className={`text-center transition-all duration-700 ${
                 visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
-              style={{ transitionDelay: `${i * 150}ms` }}
+              style={{ transitionDelay: `${i * 150}ms`, padding: '0 24px' }}
             >
-              <img src={stat.icon} alt="" className="w-12 h-12 mb-4 brightness-0" loading="lazy" />
+              <img src={stat.icon} alt="" className="w-12 h-12 mb-4 brightness-0 mx-auto" loading="lazy" />
               <h3
                 className="text-charcoal mb-2"
                 style={{ fontFamily: 'var(--font-heading)', fontSize: 70, fontWeight: 900, lineHeight: '87.5px', letterSpacing: '0.35px' }}

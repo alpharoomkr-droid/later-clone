@@ -99,7 +99,7 @@ export default function SocialContentCreationPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <img
@@ -167,7 +167,7 @@ export default function SocialContentCreationPage() {
         <section
           key={i}
           className={i % 2 === 1 ? 'wood-bg' : ''}
-          style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : undefined, padding: '100px 0' }}
+          style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : undefined, padding: '60px 0' }}
         >
           <div
             className={`max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center`}
@@ -220,7 +220,7 @@ export default function SocialContentCreationPage() {
       ))}
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[900px] mx-auto reveal" style={{ padding: '0 40px' }}>
           <div style={{ backgroundColor: '#fff', borderRadius: 16, padding: '56px 48px' }}>
             <div className="flex flex-col md:flex-row gap-10 items-start">
@@ -250,7 +250,7 @@ export default function SocialContentCreationPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '120px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[760px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             style={{

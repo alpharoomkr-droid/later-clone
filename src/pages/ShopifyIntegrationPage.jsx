@@ -101,7 +101,7 @@ export default function ShopifyIntegrationPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
@@ -187,7 +187,7 @@ export default function ShopifyIntegrationPage() {
         return (
           <section
             key={i}
-            style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '100px 0' }}
+            style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '60px 0' }}
           >
             <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
               <div
@@ -235,7 +235,7 @@ export default function ShopifyIntegrationPage() {
       })}
 
       {/* Testimonial */}
-      <section style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[900px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <p
             style={{
@@ -271,7 +271,7 @@ export default function ShopifyIntegrationPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg" style={{ padding: '120px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-white"

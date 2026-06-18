@@ -312,7 +312,7 @@ export default function CaptionWriterPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading"

@@ -182,7 +182,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* The work hits different */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal text-center reveal"
@@ -227,7 +227,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* From idea to outcome */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal reveal"
@@ -325,7 +325,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Impact stats */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal reveal"
@@ -373,7 +373,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Testimonials */}
-      <section style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-offline text-center reveal"
@@ -443,7 +443,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Resources */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal reveal"
@@ -510,7 +510,7 @@ export default function InfluencerMarketingServicesPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg" style={{ padding: '120px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[700px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             style={{

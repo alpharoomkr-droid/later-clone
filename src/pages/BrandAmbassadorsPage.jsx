@@ -112,7 +112,7 @@ export default function BrandAmbassadorsPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal text-center mb-16 reveal"
@@ -144,7 +144,7 @@ export default function BrandAmbassadorsPage() {
       </section>
 
       {/* Start & Scale */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal">
@@ -205,7 +205,7 @@ export default function BrandAmbassadorsPage() {
       {showcases.map((s, i) => {
         const reversed = i % 2 === 1
         return (
-          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '100px 0' }}>
+          <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '60px 0' }}>
             <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
               <div
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}
@@ -254,7 +254,7 @@ export default function BrandAmbassadorsPage() {
       })}
 
       {/* Case Study */}
-      <section style={{ backgroundColor: '#000', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <p
             className="text-offline/60 uppercase tracking-widest reveal"
@@ -312,7 +312,7 @@ export default function BrandAmbassadorsPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '120px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-white"

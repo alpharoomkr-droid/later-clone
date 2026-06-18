@@ -142,7 +142,7 @@ export default function AgreementsPage() {
       {/* Agreement sections */}
       <section style={{ padding: '0 0 100px' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
-          <div className="max-w-[900px]">
+          <div className="max-w-[900px] mx-auto">
             {SECTIONS.map((section, idx) => (
               <div key={section.title} className="reveal" style={{ transitionDelay: `${idx * 60}ms` }}>
                 <div style={{ padding: '36px 0' }} className={idx < SECTIONS.length - 1 ? 'border-b border-charcoal/10' : ''}>

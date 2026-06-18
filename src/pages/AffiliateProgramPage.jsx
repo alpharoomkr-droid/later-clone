@@ -251,7 +251,7 @@ export default function AffiliateProgramPage() {
                 <img
                   src={b.icon}
                   alt=""
-                  style={{ width: 48, height: 48, marginBottom: 24 }}
+                  className="mx-auto" style={{ width: 48, height: 48, marginBottom: 24 }}
                   loading="lazy"
                 />
                 <h3
@@ -279,7 +279,7 @@ export default function AffiliateProgramPage() {
       </section>
 
       {/* ── How It Works Steps ── */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           {steps.map((step, i) => {
             const isReversed = i % 2 === 1
@@ -346,7 +346,7 @@ export default function AffiliateProgramPage() {
       </section>
 
       {/* ── FAQ ── */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="text-charcoal text-center reveal"
@@ -429,7 +429,7 @@ export default function AffiliateProgramPage() {
       </section>
 
       {/* ── Bottom CTA ── */}
-      <section className="purple-wood-bg" style={{ padding: '100px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div
           className="max-w-[1440px] mx-auto text-center reveal"
           style={{ padding: '0 40px' }}

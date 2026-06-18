@@ -131,7 +131,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Benefits */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
@@ -174,7 +174,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* How It Works */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <p
@@ -262,7 +262,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Feature Cards — alternating */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="flex flex-col gap-20">
             {featureCards.map((card, i) => {
@@ -314,7 +314,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg text-white" style={{ padding: '120px 0' }}>
+      <section className="purple-wood-bg text-white" style={{ padding: '60px 0' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="mb-6"

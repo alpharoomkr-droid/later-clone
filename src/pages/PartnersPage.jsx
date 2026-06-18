@@ -196,7 +196,7 @@ export default function PartnersPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[720px] mx-auto text-center">
             <p
@@ -234,7 +234,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Partnership Categories */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {partnerCategories.map((cat, i) => (
@@ -284,7 +284,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Integrations */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
@@ -353,7 +353,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '100px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-16 items-center reveal">
             <div>
@@ -392,7 +392,7 @@ export default function PartnersPage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '100px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[800px] mx-auto">
             <h2
@@ -460,7 +460,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Contact Form */}
-      <section id="contact" className="wood-bg" style={{ padding: '100px 0' }}>
+      <section id="contact" className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <div className="max-w-[600px] mx-auto">
             <h2

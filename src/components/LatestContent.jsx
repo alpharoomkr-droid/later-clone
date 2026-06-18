@@ -23,7 +23,7 @@ const articles = [
 export default function LatestContent() {
   return (
     <section style={{ backgroundColor: '#F8F2EA', padding: '88px 0' }}>
-      <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
         <h2
           className="text-charcoal text-center reveal"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 30, fontWeight: 900, lineHeight: '37.5px', letterSpacing: '0.15px', marginBottom: 50 }}

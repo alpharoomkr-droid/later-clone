@@ -58,7 +58,7 @@ export default function ThreadsSchedulerPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center hero-enter" style={{ padding: '0 20px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>PLAN NOW, POST LATER</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
             Schedule Threads Posts Instantly and Easily with Later
@@ -75,7 +75,7 @@ export default function ThreadsSchedulerPage() {
 
       {/* Quick features */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Grow your brand on Threads faster</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Easy tools to help you boost your content performance.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
@@ -91,7 +91,7 @@ export default function ThreadsSchedulerPage() {
 
       {/* Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>HOW TO SCHEDULE THREADS WITH LATER</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Reach millions of new followers</h2>
           <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>Try it on any Later plan for free.</p>
@@ -114,7 +114,7 @@ export default function ThreadsSchedulerPage() {
 
       {/* Feature showcases */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>THREADS SCHEDULING APP</p>
           <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Build your Threads presence with Later's scheduling tool</h2>
           {showcases.map((s, i) => (
@@ -165,7 +165,7 @@ export default function ThreadsSchedulerPage() {
 
       {/* Blogs & Resources */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.2, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Learn how to get better ROI from your social media content & campaigns.</h2>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, marginBottom: 32 }}>Blogs</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 32 }}>

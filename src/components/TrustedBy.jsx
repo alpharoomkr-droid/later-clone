@@ -17,7 +17,7 @@ const logos = [
 export default function TrustedBy() {
   return (
     <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-      <div className="max-w-[1280px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1200px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 20px' }}>
         <h2
           className="text-center mb-12 text-charcoal"
           style={{

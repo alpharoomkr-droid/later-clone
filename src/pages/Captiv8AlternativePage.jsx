@@ -58,7 +58,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 1 — Hero */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 16, textTransform: 'uppercase' }}>LATER INFLUENCE</p>
@@ -79,7 +79,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 2 — Benefits */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>THE BEST CAPTIV8 ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>See where Later goes further</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
@@ -96,7 +96,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 3 — Comparison Table */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Feature comparison</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -124,7 +124,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 4 — Numbered Features */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>CAPTIV8 VS. LATER</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, textAlign: 'center', marginBottom: 12 }}>4 reasons to choose Later Influence</h2>
           <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 24 }}>Later is easier to set up than Captiv8 — see for yourself with a free demo.</p>
@@ -145,7 +145,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 5 — Testimonial */}
       <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Leading brands trust Later Influence to power their campaigns.</h2>
           <div style={{ maxWidth: 720, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'contain', margin: '0 auto 24px', background: '#fff', padding: 8 }} />
@@ -158,7 +158,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 6 — Compare Links */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>See how Later Influence compares to the competition.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
@@ -171,7 +171,7 @@ export default function Captiv8AlternativePage() {
 
       {/* 7 — Bottom CTA */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Influence is the best Captiv8 alternative</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>
           <a href="/demo/" className="btn-dark" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Book a demo <ArrowIcon /></a>

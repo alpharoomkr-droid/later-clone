@@ -32,7 +32,7 @@ export default function MarketingRoiPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ padding: '0 20px' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               INFLUENCER MARKETING METRICS
@@ -60,7 +60,7 @@ export default function MarketingRoiPage() {
 
       {/* How It Works */}
       <section style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <div className="text-center" style={{ marginBottom: 16 }}>
             <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>
               HOW IT WORKS
@@ -93,7 +93,7 @@ export default function MarketingRoiPage() {
       {/* Feature Sections (alternating) */}
       {featureSections.map((f, i) => (
         <section key={i} style={{ padding: '70px 0' }}>
-          <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal" style={{ padding: '0 40px' }}>
+          <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal" style={{ padding: '0 20px' }}>
             <img
               src={f.img}
               alt={f.title}

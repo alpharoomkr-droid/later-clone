@@ -193,7 +193,7 @@ export default function PricingPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="text-center hero-enter mx-auto" style={{ maxWidth: 800 }}>
             <h1
               className="ff-heading"
@@ -229,7 +229,7 @@ export default function PricingPage() {
 
       {/* Billing Toggle */}
       <section className="reveal py-8 pb-4" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <span
               className="cursor-pointer transition-all duration-200"
@@ -296,7 +296,7 @@ export default function PricingPage() {
 
       {/* Pricing Cards */}
       <section className="reveal pt-6 pb-16" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto" style={{ maxWidth: 1100 }}>
             {plans.map((plan, i) => {
               const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice
@@ -408,7 +408,7 @@ export default function PricingPage() {
 
       {/* Feature Comparison */}
       <section className="reveal wood-bg py-14" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading reveal text-center"
             style={{
@@ -485,7 +485,7 @@ export default function PricingPage() {
 
       {/* FAQ Section */}
       <section className="reveal py-14" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading reveal text-center"
             style={{
@@ -551,7 +551,7 @@ export default function PricingPage() {
 
       {/* Bottom CTA */}
       <section className="reveal purple-wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="text-center mx-auto" style={{ maxWidth: 700 }}>
             <h2
               className="ff-heading"

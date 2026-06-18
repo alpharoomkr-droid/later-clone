@@ -50,7 +50,7 @@ export default function ShopifyIntegrationPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p
@@ -104,7 +104,7 @@ export default function ShopifyIntegrationPage() {
 
       {/* How It Works */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal reveal-d1 lg:order-1">
               <img
@@ -191,7 +191,7 @@ export default function ShopifyIntegrationPage() {
             key={i}
             style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}
           >
-            <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+            <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className={`reveal ${reversed ? 'lg:order-2' : ''}`}>
                   <p

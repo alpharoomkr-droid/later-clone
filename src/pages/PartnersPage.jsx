@@ -122,7 +122,7 @@ export default function PartnersPage() {
 
       {/* Hero */}
       <section className="wood-bg reveal" style={{ padding: '100px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div>
             <p
               className="text-gridglow hero-enter"
@@ -173,7 +173,7 @@ export default function PartnersPage() {
 
       {/* Trusted By */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '48px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <p
             className="text-center text-charcoal/40 reveal"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: 32 }}
@@ -197,7 +197,7 @@ export default function PartnersPage() {
 
       {/* How It Works */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="max-w-[720px] mx-auto text-center">
             <p
               className="text-gridglow reveal"
@@ -235,7 +235,7 @@ export default function PartnersPage() {
 
       {/* Partnership Categories */}
       <section className="wood-bg reveal" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {partnerCategories.map((cat, i) => (
               <div
@@ -285,7 +285,7 @@ export default function PartnersPage() {
 
       {/* Integrations */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{
@@ -353,7 +353,7 @@ export default function PartnersPage() {
 
       {/* Testimonial */}
       <section className="wood-bg reveal" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-16 items-center reveal">
             <div>
               <svg width="48" height="36" viewBox="0 0 48 36" fill="none" style={{ marginBottom: 28 }}>
@@ -392,7 +392,7 @@ export default function PartnersPage() {
 
       {/* FAQ */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="max-w-[800px] mx-auto">
             <h2
               className="ff-heading text-charcoal text-center reveal"
@@ -460,7 +460,7 @@ export default function PartnersPage() {
 
       {/* Contact Form */}
       <section id="contact" className="wood-bg reveal" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="max-w-[600px] mx-auto">
             <h2
               className="ff-heading text-charcoal text-center reveal"

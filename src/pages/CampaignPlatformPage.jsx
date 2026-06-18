@@ -57,7 +57,7 @@ export default function CampaignPlatformPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="hero-enter">
               <p
@@ -95,7 +95,7 @@ export default function CampaignPlatformPage() {
 
       {/* How it works - numbered steps */}
       <section style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}
@@ -144,7 +144,7 @@ export default function CampaignPlatformPage() {
             key={i}
             style={{ backgroundColor: i % 2 === 0 ? '#F8F2EA' : '#FEFCFB', padding: '70px 0' }}
           >
-            <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+            <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div className={reversed ? 'lg:order-2' : ''}>
                   <p

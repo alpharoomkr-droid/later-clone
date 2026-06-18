@@ -83,8 +83,8 @@ export default function CaptionWriterPage() {
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-          style={{ padding: '0 40px' }}
+          className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          style={{ padding: '0 20px' }}
         >
           <div className="reveal">
             <p
@@ -125,7 +125,7 @@ export default function CaptionWriterPage() {
 
       {/* Value Props */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 32 }}
@@ -156,8 +156,8 @@ export default function CaptionWriterPage() {
       {/* Numbered Steps */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
-          style={{ padding: '0 40px' }}
+          className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+          style={{ padding: '0 20px' }}
         >
           <div className="reveal">
             <img
@@ -206,7 +206,7 @@ export default function CaptionWriterPage() {
 
       {/* Mid CTA Banner */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '64px 0' }}>
-        <div className="max-w-[900px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[900px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-charcoal"
             style={{ fontSize: 36, fontWeight: 900, lineHeight: '42px', marginBottom: 28 }}
@@ -221,7 +221,7 @@ export default function CaptionWriterPage() {
 
       {/* More Ways to Use Later */}
       <section style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 24 }}
@@ -273,7 +273,7 @@ export default function CaptionWriterPage() {
 
       {/* Testimonials */}
       <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-center reveal"
             style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 32, color: '#FEFCFB' }}
@@ -313,7 +313,7 @@ export default function CaptionWriterPage() {
 
       {/* Final CTA */}
       <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading"
             style={{ fontSize: 52, fontWeight: 900, lineHeight: '58px', color: '#FEFCFB', marginBottom: 20 }}

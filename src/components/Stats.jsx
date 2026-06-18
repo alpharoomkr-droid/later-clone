@@ -49,7 +49,7 @@ export default function Stats() {
         padding: '70px 0',
       }}
     >
-      <div className="max-w-[1440px] mx-auto w-full" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1200px] mx-auto w-full" style={{ padding: '0 20px' }}>
         <h2
           className="text-center"
           style={{

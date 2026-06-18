@@ -60,7 +60,7 @@ export default function BrandAmbassadorsPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -113,7 +113,7 @@ export default function BrandAmbassadorsPage() {
 
       {/* Benefits */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="text-charcoal text-center mb-16 reveal"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.15 }}
@@ -145,7 +145,7 @@ export default function BrandAmbassadorsPage() {
 
       {/* Start & Scale */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <p
@@ -206,7 +206,7 @@ export default function BrandAmbassadorsPage() {
         const reversed = i % 2 === 1
         return (
           <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}>
-            <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+            <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
               <div
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}
               >
@@ -255,7 +255,7 @@ export default function BrandAmbassadorsPage() {
 
       {/* Case Study */}
       <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <p
             className="text-offline/60 uppercase tracking-widest reveal"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -313,7 +313,7 @@ export default function BrandAmbassadorsPage() {
 
       {/* Bottom CTA */}
       <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="text-white"
             style={{

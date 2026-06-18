@@ -79,7 +79,7 @@ export default function MicroInfluencersPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center hero-enter" style={{ padding: '0 20px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -132,7 +132,7 @@ export default function MicroInfluencersPage() {
 
       {/* Benefits */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <h2
               className="text-charcoal"
@@ -175,7 +175,7 @@ export default function MicroInfluencersPage() {
 
       {/* How It Works */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="max-w-[800px] mx-auto text-center mb-16 reveal">
             <p
               className="text-charcoal/60 uppercase tracking-widest"
@@ -232,7 +232,7 @@ export default function MicroInfluencersPage() {
 
       {/* Case Study — Trident */}
       <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/3ViTOyAo52Zbl2AyV5tSIY/af7ef0b949aeee1d2931e75da387d075/trident-logo-pill.png?fm=webp&q=75&w=335&h=145"
             alt="Trident"
@@ -263,7 +263,7 @@ export default function MicroInfluencersPage() {
 
       {/* Feature Cards — alternating */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="flex flex-col gap-20">
             {featureCards.map((card, i) => {
               const reversed = i % 2 !== 0
@@ -315,7 +315,7 @@ export default function MicroInfluencersPage() {
 
       {/* Bottom CTA */}
       <section className="purple-wood-bg text-white" style={{ padding: '70px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="mb-6"
             style={{

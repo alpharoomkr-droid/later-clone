@@ -185,7 +185,7 @@ export default function CaseStudyDetailPage() {
   if (!study) {
     return (
       <div className="min-h-screen" style={{ paddingTop: 70 }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '80px 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '80px 40px' }}>
           <h1 className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, marginBottom: 24 }}>Case study not found</h1>
           <p className="text-charcoal/60" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 32 }}>The case study you're looking for doesn't exist or may have been moved.</p>
           <Link to="/case-studies" className="btn-primary" style={{ fontSize: 16 }}>Back to Case Studies <ArrowIcon /></Link>
@@ -199,7 +199,7 @@ export default function CaseStudyDetailPage() {
 
       {/* Breadcrumb + Hero */}
       <section className="reveal" style={{ padding: '60px 0 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <Link
             to="/case-studies"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 14, fontWeight: 600, color: '#FE3F00', textDecoration: 'none', marginBottom: 24 }}
@@ -226,7 +226,7 @@ export default function CaseStudyDetailPage() {
 
       {/* At a Glance + Sidebar Info */}
       <section className="reveal" style={{ padding: '64px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-16">
 
             {/* Main Content Column */}
@@ -353,7 +353,7 @@ export default function CaseStudyDetailPage() {
 
       {/* Mid-page CTA Banner */}
       <section className="wood-bg reveal" style={{ padding: '64px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <h2 className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, lineHeight: '56px', marginBottom: 16 }}>Grow with Later</h2>
           <p className="text-charcoal/70" style={{ fontSize: 20, lineHeight: '30px', marginBottom: 32, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
             Turn influencer marketing into your #1 revenue generator.
@@ -366,7 +366,7 @@ export default function CaseStudyDetailPage() {
 
       {/* Bottom CTA */}
       <section className="reveal" style={{ padding: '64px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <h2 className="ff-heading text-charcoal" style={{ fontSize: 44, fontWeight: 900, lineHeight: '52px', marginBottom: 16 }}>
             Work with Later for fast campaign results.
           </h2>
@@ -381,7 +381,7 @@ export default function CaseStudyDetailPage() {
 
       {/* Share Links */}
       <section className="reveal" style={{ padding: '0 0 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20 }}>
             <span style={{ fontSize: 14, fontWeight: 600, color: '#000', opacity: 0.5, textTransform: 'uppercase', letterSpacing: 1 }}>Share</span>
             {['facebook', 'twitter', 'linkedin', 'pinterest'].map((platform) => (
@@ -407,7 +407,7 @@ export default function CaseStudyDetailPage() {
 
       {/* Back to Home */}
       <section className="reveal" style={{ padding: '0 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <Link
             to="/"
             style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 16, fontWeight: 600, color: '#FE3F00', textDecoration: 'none' }}

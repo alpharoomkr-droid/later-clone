@@ -31,7 +31,7 @@ export default function FindInfluencersPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               Influencer Search Tool
@@ -59,7 +59,7 @@ export default function FindInfluencersPage() {
 
       {/* How It Works */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <div className="text-center" style={{ marginBottom: 16 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
               Find influencer partners that grow your brand
@@ -91,7 +91,7 @@ export default function FindInfluencersPage() {
 
       {/* Feature Sections (alternating) */}
       <section style={{ padding: '0 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           {featureSections.map((f, i) => (
             <div
               key={i}

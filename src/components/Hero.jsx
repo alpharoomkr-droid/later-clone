@@ -83,7 +83,7 @@ export default function Hero() {
       <DecorativePattern />
       <div
         className="w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-0 items-center"
-        style={{ maxWidth: 1280, padding: '0 40px', position: 'relative', zIndex: 1 }}
+        style={{ maxWidth: 1200, padding: '0 20px', position: 'relative', zIndex: 1 }}
       >
         {/* Left content: 7 of 12 columns */}
         <div className="lg:col-span-7">

@@ -146,7 +146,7 @@ export default function ResourcesPage() {
 
       {/* Featured */}
       <section className="reveal" style={{ padding: '64px 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 32 }}>Featured</h2>
           <div className="featured-resources-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
             {/* Hero card */}
@@ -208,7 +208,7 @@ export default function ResourcesPage() {
 
       {/* Filter Bar */}
       <section className="reveal" style={{ padding: '0 40px 48px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', borderBottom: '1px solid #e0dcd6', paddingBottom: 24 }}>
             {/* Platform */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -249,7 +249,7 @@ export default function ResourcesPage() {
 
       {/* Resource Grid */}
       <section className="reveal" style={{ padding: '0 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="resource-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, alignItems: 'stretch' }}>
             {resourceCards.map((r, i) => (
               <a
@@ -324,7 +324,7 @@ export default function ResourcesPage() {
 
       {/* More Resources */}
       <section className="reveal" style={{ padding: '64px 40px 80px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 32 }}>More Resources</h2>
           <div className="more-resources-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 24, alignItems: 'stretch' }}>
             {moreResources.map((r, i) => (

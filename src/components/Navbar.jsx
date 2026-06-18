@@ -187,7 +187,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-page-bg/95 backdrop-blur-md" style={{ zIndex: 999, height: 70 }}>
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between h-full" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1200px] mx-auto flex items-center justify-between h-full" style={{ padding: '0 20px' }}>
         <Link to="/" className="flex items-center flex-shrink-0">
           <img src="/later-logo.svg" alt="Later Logo" width="112" height="34" />
         </Link>

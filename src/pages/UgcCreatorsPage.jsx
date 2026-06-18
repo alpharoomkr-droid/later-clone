@@ -53,7 +53,7 @@ export default function UgcCreatorsPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center hero-enter" style={{ padding: '0 20px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             Best UGC Creator Platform
           </p>
@@ -78,7 +78,7 @@ export default function UgcCreatorsPage() {
 
       {/* Benefits */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Unlock the benefits of UGC
           </h2>
@@ -99,7 +99,7 @@ export default function UgcCreatorsPage() {
 
       {/* How Later Influence Works */}
       <section className="wood-bg" style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
             How Later Influence Works
           </p>
@@ -132,7 +132,7 @@ export default function UgcCreatorsPage() {
 
       {/* Feature Cards */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center reveal"
             style={{
@@ -172,7 +172,7 @@ export default function UgcCreatorsPage() {
 
       {/* Case Study — f'real foods */}
       <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ textAlign: 'center' }}>
           <p
             className="uppercase tracking-widest"
             style={{

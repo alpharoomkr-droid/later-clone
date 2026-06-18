@@ -71,7 +71,7 @@ export default function FoodBeveragePage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p
@@ -109,7 +109,7 @@ export default function FoodBeveragePage() {
 
       {/* Benefits */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1} text-center`} style={{ padding: '40px 24px' }}>
@@ -126,7 +126,7 @@ export default function FoodBeveragePage() {
 
       {/* Why Choose Later Influence */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
@@ -164,14 +164,14 @@ export default function FoodBeveragePage() {
 
       {/* Stats / Case Studies */}
       <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <p className="text-offline/60 uppercase tracking-widest reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
             Proven Results
           </p>
           <h2 className="text-offline reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.15, maxWidth: 700, margin: '0 auto 48px' }}>
             Results that speak for themselves
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1440px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
             {stats.map((s, i) => (
               <div key={i} className={`reveal reveal-d${i + 1} text-center border border-offline/10 rounded-lg p-10`}>
                 <p className="text-offline/50 mb-4" style={{ fontSize: 14, fontWeight: 600 }}>{s.brand}</p>
@@ -190,7 +190,7 @@ export default function FoodBeveragePage() {
         const reversed = i % 2 === 1
         return (
           <section key={i} style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}>
-            <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+            <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
               <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${reversed ? 'lg:[direction:rtl]' : ''}`}>
                 <div className={`reveal ${reversed ? 'lg:[direction:ltr]' : ''}`}>
                   <p className="text-gridglow uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, marginBottom: 12 }}>
@@ -217,7 +217,7 @@ export default function FoodBeveragePage() {
 
       {/* Bottom CTA */}
       <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2 className="text-white" style={{ fontFamily: 'var(--font-heading)', fontSize: 50, fontWeight: 900, lineHeight: 1.1, marginBottom: 20 }}>
             Find your next best partnership today
           </h2>

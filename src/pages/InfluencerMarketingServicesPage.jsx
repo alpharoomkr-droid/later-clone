@@ -131,7 +131,7 @@ export default function InfluencerMarketingServicesPage() {
 
       {/* Hero */}
       <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
             <div>
               <h1
@@ -185,7 +185,7 @@ export default function InfluencerMarketingServicesPage() {
 
       {/* The work hits different */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -230,7 +230,7 @@ export default function InfluencerMarketingServicesPage() {
 
       {/* From idea to outcome */}
       <section className="reveal wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -328,7 +328,7 @@ export default function InfluencerMarketingServicesPage() {
 
       {/* Impact stats */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center" style={{ padding: '0 20px' }}>
           <h2
             className="text-charcoal"
             style={{
@@ -376,7 +376,7 @@ export default function InfluencerMarketingServicesPage() {
 
       {/* Testimonials */}
       <section className="reveal" style={{ backgroundColor: '#000', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="text-offline text-center"
             style={{
@@ -446,7 +446,7 @@ export default function InfluencerMarketingServicesPage() {
 
       {/* Resources */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="text-charcoal"
             style={{

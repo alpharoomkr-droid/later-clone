@@ -67,7 +67,7 @@ export default function InfluencerAnalyticsPlatformPage() {
 
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal" style={{ padding: '0 20px' }}>
           <div>
             <p
               className="text-gridglow hero-enter"
@@ -113,7 +113,7 @@ export default function InfluencerAnalyticsPlatformPage() {
 
       {/* How It Works */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="reveal reveal-d2 lg:order-2">
               <p
@@ -196,7 +196,7 @@ export default function InfluencerAnalyticsPlatformPage() {
           className={`${i % 2 === 0 ? 'wood-bg' : ''}`}
           style={{ backgroundColor: i % 2 === 0 ? undefined : '#FEFCFB' }}
         >
-          <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+          <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className={`reveal ${section.reversed ? 'lg:order-2' : ''}`}>
                 <p

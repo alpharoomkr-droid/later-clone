@@ -65,7 +65,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 1 — Hero */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 16, textTransform: 'uppercase' }}>PLANOLY VS. LATER</p>
@@ -82,7 +82,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 2 — Benefits */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>THE PLANOLY ALTERNATIVE FOR YOU</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>One App. Endless tools for growth.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>Social scheduling, Link in Bio, and brand partnerships – get them all with Later.</p>
@@ -103,7 +103,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 3 — Comparison Table */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Later vs. Planoly at a glance</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -134,7 +134,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 4 — Numbered Features */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>PLANOLY VS. LATER</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 12 }}>See what Later can do for you.</h2>
           <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 24 }}>Start using our tools today and try any plan free for 14 days.</p>
@@ -158,7 +158,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 5 — Testimonials */}
       <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Over 7 million people — from small shops to global brands — use Later. Here's why.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, maxWidth: 960, margin: '0 auto' }}>
             <div>
@@ -179,7 +179,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 6 — Compare Links */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
@@ -192,7 +192,7 @@ export default function PlanolyAlternativePage() {
 
       {/* 7 — Bottom CTA */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Need a Planoly alternative?</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan free for 14 days.</p>
           <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>

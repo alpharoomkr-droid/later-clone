@@ -28,7 +28,7 @@ export default function ContentSyndicationPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg reveal" style={{ paddingTop: 60, paddingBottom: 0 }}>
-        <div className="max-w-[1440px] mx-auto md:px-10 text-center hero-enter" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto md:px-10 text-center hero-enter" style={{ padding: '0 20px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -63,7 +63,7 @@ export default function ContentSyndicationPage() {
 
       {/* How it works - numbered steps */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto md:px-10" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto md:px-10" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-center"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}
@@ -106,7 +106,7 @@ export default function ContentSyndicationPage() {
 
       {/* Feature - Grow online brand awareness */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto md:px-10" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto md:px-10" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
               <p

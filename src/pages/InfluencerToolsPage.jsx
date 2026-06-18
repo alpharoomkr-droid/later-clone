@@ -92,7 +92,7 @@ export default function InfluencerToolsPage() {
 
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '100px 0 80px' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div>
             <p
               className="text-gridglow hero-enter"
@@ -138,7 +138,7 @@ export default function InfluencerToolsPage() {
 
       {/* Supercharge */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="max-w-[700px] mx-auto text-center mb-16 reveal">
             <h2
               className="text-charcoal mb-4"
@@ -175,7 +175,7 @@ export default function InfluencerToolsPage() {
 
       {/* How It Works */}
       <section className="wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="reveal">
               <p
@@ -240,7 +240,7 @@ export default function InfluencerToolsPage() {
           key={i}
           style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA', padding: '70px 0' }}
         >
-          <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+          <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className={`reveal ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
                 <p
@@ -281,7 +281,7 @@ export default function InfluencerToolsPage() {
 
       {/* Testimonial */}
       <section style={{ backgroundColor: '#000', padding: '70px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <div className="flex justify-center mb-8">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/1eCCedygHqYqwD09vpxPYH/2fb86b51d93ee8c7981fbc18f70b3892/kym-recco.png?w=640&h=640&q=50&fm=png"
@@ -304,7 +304,7 @@ export default function InfluencerToolsPage() {
 
       {/* Final CTA */}
       <section className="purple-wood-bg" style={{ padding: '70px 0' }}>
-        <div className="max-w-[750px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[750px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             style={{
               fontFamily: 'var(--font-heading)',

@@ -58,8 +58,8 @@ export default function SocialMediaAnalyticsPage() {
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-          style={{ padding: '0 40px' }}
+          className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          style={{ padding: '0 20px' }}
         >
           <div className="reveal">
             <p
@@ -97,7 +97,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Value Props */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
             style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 12 }}
@@ -160,8 +160,8 @@ export default function SocialMediaAnalyticsPage() {
       {/* Analytics Tools - Numbered List */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
-          style={{ padding: '0 40px' }}
+          className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+          style={{ padding: '0 20px' }}
         >
           <div className="reveal">
             <img
@@ -204,7 +204,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Trusted By */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="text-center text-charcoal"
             style={{ fontSize: 18, fontWeight: 700, lineHeight: '27px', marginBottom: 24 }}
@@ -223,7 +223,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Platform Analytics Header */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <p
             className="text-gridglow"
             style={{ fontSize: 14, fontWeight: 700, letterSpacing: 1.5, textTransform: 'uppercase', marginBottom: 16 }}
@@ -241,7 +241,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Instagram Analytics */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div className="reveal">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/ewoVk0Lh25i2CSL5XV8Xb/1eb0f7d7fa81d563bfc003729c98c443/later-instagram-analytics.png?w=1136&h=960&q=70&fm=png"
@@ -264,7 +264,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* TikTok Analytics */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div className="reveal lg:order-2">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/3JcgfOB8vsy6VO4FACZ2PU/ed77fbffc5d775383b43801f42edd714/later-tiktok-analytics.png?w=1136&h=960&q=70&fm=png"
@@ -287,7 +287,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Pinterest Analytics */}
       <section className="wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div className="reveal">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/dj6TzVa5UiWY5FjhbSI9v/6b27134b38b42a90d407a769f561295f/later-pinterest-analytics.png?w=1136&h=960&q=70&fm=png"
@@ -310,7 +310,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Facebook Analytics */}
       <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div className="reveal lg:order-2">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/I8rjdIqQtVktSskqPSx91/5223c3a3b509c64fcd89f7f30a15b6d9/later-facebook-analytics.png?w=1136&h=960&q=70&fm=png"
@@ -334,8 +334,8 @@ export default function SocialMediaAnalyticsPage() {
       {/* Testimonial */}
       <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal"
-          style={{ padding: '0 40px' }}
+          className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal"
+          style={{ padding: '0 20px' }}
         >
           <div>
             <img
@@ -361,7 +361,7 @@ export default function SocialMediaAnalyticsPage() {
 
       {/* Final CTA */}
       <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
-        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[800px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading"
             style={{ fontSize: 52, fontWeight: 900, lineHeight: '58px', color: '#FEFCFB', marginBottom: 16 }}

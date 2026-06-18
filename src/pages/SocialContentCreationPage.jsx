@@ -46,7 +46,7 @@ export default function SocialContentCreationPage() {
 
       {/* Hero */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 20px' }}>
           <div>
             <span
               className="hero-enter inline-block text-gridglow"
@@ -100,7 +100,7 @@ export default function SocialContentCreationPage() {
 
       {/* How It Works */}
       <section className="reveal" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center" style={{ padding: '0 20px' }}>
           <div className="reveal">
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/3J3Fl89cMX8DVYKUp7L3so/75af675062542af1d331099023573945/later-content-creation-services-how-it-works.png?w=1136&h=960&q=70&fm=png"
@@ -170,8 +170,8 @@ export default function SocialContentCreationPage() {
           style={{ backgroundColor: i % 2 === 0 ? '#FEFCFB' : undefined }}
         >
           <div
-            className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
-           style={{ padding: '0 40px' }}>
+            className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+           style={{ padding: '0 20px' }}>
             <div className={`reveal ${feature.direction === 'rtl' ? 'lg:order-2' : ''}`}>
               <span
                 className="text-gridglow"

@@ -84,7 +84,7 @@ export default function SocialMediaPublishingPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto text-center hero-enter" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center hero-enter" style={{ padding: '0 20px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}
@@ -124,7 +124,7 @@ export default function SocialMediaPublishingPage() {
 
       {/* Value Props */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto text-center reveal" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading"
             style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}
@@ -157,7 +157,7 @@ export default function SocialMediaPublishingPage() {
 
       {/* Numbered Steps */}
       <section className="wood-bg" style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto reveal" style={{ padding: '0 20px' }}>
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center"
             style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}
@@ -222,7 +222,7 @@ export default function SocialMediaPublishingPage() {
 
       {/* Feature Sections */}
       <section style={{ padding: '60px 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="text-center reveal" style={{ marginBottom: 60 }}>
             <p
               className="text-charcoal/60 uppercase tracking-widest"

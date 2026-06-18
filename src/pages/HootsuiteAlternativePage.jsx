@@ -72,7 +72,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 1. Hero */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16, color: '#FE3F00' }}>BUILD YOUR BRAND ON SOCIAL</p>
@@ -93,7 +93,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 2. Benefits */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: '#FE3F00' }}>WHY LATER IS THE BEST HOOTSUITE ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Manage your social strategy & growth in one platform</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -113,7 +113,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 3. Comparison Table */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff' }}>
@@ -145,7 +145,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 4. Numbered Features */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div className="text-center" style={{ marginBottom: 24 }}>
             <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12, color: '#FE3F00' }}>LATER VS. HOOTSUITE</p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>3 reasons to choose Later Social</h2>
@@ -166,7 +166,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 5. Testimonial */}
       <section className="purple-wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <div className="max-w-[900px] mx-auto text-center">
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, color: '#fff' }}>
               Over 7 million people — from creators to small shops to global brands — use Later Social. Here's why.
@@ -185,7 +185,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 6. Compare Links */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <div className="max-w-[800px] mx-auto">
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
             <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
@@ -200,7 +200,7 @@ export default function HootsuiteAlternativePage() {
 
       {/* 7. Bottom CTA */}
       <section className="wood-bg reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1200px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Social is the best Hootsuite alternative</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any Later plan free for 14 days.</p>
           <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>

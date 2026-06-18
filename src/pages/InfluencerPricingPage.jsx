@@ -207,7 +207,7 @@ export default function InfluencerPricingPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="reveal" style={{ padding: '80px 0 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="text-center hero-enter" style={{ maxWidth: 820, margin: '0 auto' }}>
             <h1
               className="ff-heading"
@@ -240,7 +240,7 @@ export default function InfluencerPricingPage() {
 
       {/* Pricing Cards */}
       <section className="reveal" style={{ padding: '20px 0 60px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div
             style={{ maxWidth: 1140, margin: '0 auto' }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -425,7 +425,7 @@ export default function InfluencerPricingPage() {
 
       {/* Trusted By */}
       <section className="reveal wood-bg" style={{ padding: '48px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <p
             className="text-center"
             style={{
@@ -467,7 +467,7 @@ export default function InfluencerPricingPage() {
 
       {/* FAQ Section */}
       <section className="reveal" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <h2
             className="ff-heading text-center"
             style={{
@@ -547,7 +547,7 @@ export default function InfluencerPricingPage() {
 
       {/* Bottom CTA */}
       <section className="reveal purple-wood-bg" style={{ padding: '60px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div
             className="text-center"
             style={{ maxWidth: 700, margin: '0 auto' }}

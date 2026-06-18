@@ -55,7 +55,7 @@ export default function InfluencerManagementPage() {
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
       <section className="wood-bg" style={{ padding: '70px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
           <div className="hero-enter">
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               Connect with Influencers
@@ -82,7 +82,7 @@ export default function InfluencerManagementPage() {
 
       {/* How It Works */}
       <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
           <div className="reveal">
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
               Effortlessly manage influencer relationships
@@ -118,7 +118,7 @@ export default function InfluencerManagementPage() {
       {featureSections.map((f, i) => (
         <section key={i} className={i % 2 === 0 ? 'wood-bg' : ''} style={{ padding: '80px 40px' }}>
           <div
-            className="max-w-[1440px] mx-auto reveal"
+            className="max-w-[1200px] mx-auto reveal"
             style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',

@@ -10,7 +10,7 @@ export default function EdgeAI() {
   return (
     <>
       <section className="wood-bg flex items-center relative overflow-hidden" style={{ padding: '56px 0' }}>
-        <div className="max-w-[1280px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" style={{ padding: '0 20px' }}>
           <div className="lg:col-span-5 reveal from-left">
             <h2
               className="text-charcoal"
@@ -40,7 +40,7 @@ export default function EdgeAI() {
       </section>
 
       <section className="flex flex-col items-center justify-center" style={{ backgroundColor: '#FEFCFB', padding: '70px 0' }}>
-        <div className="max-w-[1000px] mx-auto text-center mb-12 reveal" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1000px] mx-auto text-center mb-12 reveal" style={{ padding: '0 20px' }}>
           <h2
             className="text-charcoal mb-8"
             style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}
@@ -64,7 +64,7 @@ export default function EdgeAI() {
             </div>
           ))}
         </div>
-        <p className="reveal text-charcoal max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px', opacity: 0.6, padding: '0 40px' }}>
+        <p className="reveal text-charcoal max-w-[700px] mx-auto text-center" style={{ fontSize: 24, lineHeight: '36px', opacity: 0.6, padding: '0 20px' }}>
           We handpick creators proven to drive sales and brand lift, with brand fit, safety, and past performance checked upfront.
         </p>
       </section>

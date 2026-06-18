@@ -56,7 +56,7 @@ export default function GoBigTabs() {
 
   return (
     <section className="purple-wood-bg" style={{ padding: '70px 0 56px' }}>
-      <div className="max-w-[1280px] mx-auto" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
         <h2
           className="text-offline mb-2 reveal"
           style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: '70px', letterSpacing: '0.28px' }}

@@ -32,7 +32,7 @@ export default function InfluencerNetworkPage() {
       {/* Hero */}
       <section className="wood-bg reveal" style={{ padding: '64px 24px 0' }}>
         <div
-          className="max-w-[1440px] mx-auto"
+          className="max-w-[1200px] mx-auto"
           style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}
         >
           <div>
@@ -80,7 +80,7 @@ export default function InfluencerNetworkPage() {
 
       {/* How It Works */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           <div className="text-center" style={{ marginBottom: 16 }}>
             <h2
               style={{
@@ -144,7 +144,7 @@ export default function InfluencerNetworkPage() {
 
       {/* Feature Sections (alternating) */}
       <section className="reveal" style={{ padding: '70px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
           {featureSections.map((f, i) => (
             <div
               key={i}

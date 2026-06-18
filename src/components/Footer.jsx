@@ -100,7 +100,7 @@ export default function Footer() {
   return (
     <footer className="bg-inverse text-offline">
       {/* Main content area */}
-      <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
+      <div className="max-w-[1200px] mx-auto" style={{ padding: '0 20px' }}>
         <div style={{ padding: '70px 0' }}>
           {/* 6-column link grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10">
@@ -229,8 +229,8 @@ export default function Footer() {
       </div>
 
       {/* Giant "Later" text */}
-      <div className="overflow-hidden" style={{ padding: '0 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ paddingBottom: 16 }}>
+      <div className="overflow-hidden" style={{ padding: '0 20px' }}>
+        <div className="max-w-[1200px] mx-auto" style={{ paddingBottom: 16 }}>
           <div
             className="text-[20vw] lg:text-[300px] leading-none tracking-tighter select-none"
             style={{

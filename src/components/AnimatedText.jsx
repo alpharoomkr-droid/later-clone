@@ -38,7 +38,7 @@ export default function AnimatedText() {
           fontWeight: 800,
           lineHeight: '110.4px',
           letterSpacing: '0.48px',
-          padding: '0 40px',
+          padding: '0 20px',
         }}
       >
         The only influencer marketing platform powered by real{' '}

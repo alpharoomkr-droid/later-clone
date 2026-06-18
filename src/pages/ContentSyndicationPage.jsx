@@ -27,7 +27,7 @@ export default function ContentSyndicationPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -48,7 +48,7 @@ export default function ContentSyndicationPage() {
             Repurpose impactful influencer content across brand touchpoints and social
             platforms to grow your sales with Later Influence.
           </p>
-          <a href="#" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 48 }}>
+          <a href="#" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>
             Book a demo
           </a>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
@@ -62,7 +62,7 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* How it works - numbered steps */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <h2
             className="ff-heading text-center"
@@ -72,11 +72,11 @@ export default function ContentSyndicationPage() {
           </h2>
           <p
             className="text-center"
-            style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}
+            style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.6 }}
           >
             Everything you need to locate, track, and amplify the best-performing influencer content.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/198PBmY1EzrFqcvd50cCz1/cd088c3fb5dbcc3c5b2164fafe776d2a/content-syndication-management-tools.png?w=1136&h=960&q=70&fm=png"
               alt="Content management tools"
@@ -105,9 +105,9 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Feature - Grow online brand awareness */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <p
                 className="text-charcoal/60 uppercase tracking-widest reveal"
@@ -143,10 +143,10 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div
           className="max-w-[900px] mx-auto reveal"
-          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 48, alignItems: 'center' }}
+          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 32, alignItems: 'center' }}
         >
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/1WJ3MfWOmvyTZsL2qbypLS/186a4e020709e4fdf7cc8c6cde6c1741/bob-land.png?w=640&h=641&q=50&fm=png"
@@ -171,7 +171,7 @@ export default function ContentSyndicationPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '80px 40px', background: '#000', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2
             className="ff-heading"

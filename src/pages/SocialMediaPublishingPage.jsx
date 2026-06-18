@@ -83,7 +83,7 @@ export default function SocialMediaPublishingPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -108,7 +108,7 @@ export default function SocialMediaPublishingPage() {
           <Link
             to="/pricing"
             className="btn-primary hero-enter-d2"
-            style={{ fontSize: 16, marginBottom: 48 }}
+            style={{ fontSize: 16, marginBottom: 28 }}
           >
             Get started
           </Link>
@@ -123,7 +123,7 @@ export default function SocialMediaPublishingPage() {
       </section>
 
       {/* Value Props */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2
             className="ff-heading"
@@ -131,10 +131,10 @@ export default function SocialMediaPublishingPage() {
           >
             Post more, grow more with Later
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56 }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>
             Everything you need to publish like a pro, without the stress.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {valueProps.map((v, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
                 <img
@@ -156,7 +156,7 @@ export default function SocialMediaPublishingPage() {
       </section>
 
       {/* Numbered Steps */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center"
@@ -175,7 +175,7 @@ export default function SocialMediaPublishingPage() {
             style={{
               fontSize: 18,
               color: '#555',
-              marginBottom: 56,
+              marginBottom: 32,
               maxWidth: 640,
               marginLeft: 'auto',
               marginRight: 'auto',
@@ -187,7 +187,7 @@ export default function SocialMediaPublishingPage() {
             style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
-              gap: 60,
+              gap: 36,
               alignItems: 'center',
             }}
           >
@@ -222,7 +222,7 @@ export default function SocialMediaPublishingPage() {
       </section>
 
       {/* Feature Sections */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           {features.map((f, i) => (
             <div
@@ -231,7 +231,7 @@ export default function SocialMediaPublishingPage() {
               style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
-                gap: 60,
+                gap: 36,
                 alignItems: 'center',
                 marginBottom: 80,
                 direction: i % 2 === 1 ? 'rtl' : 'ltr',
@@ -274,7 +274,7 @@ export default function SocialMediaPublishingPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div
           className="max-w-[800px] mx-auto text-center reveal"
           style={{ color: '#fff' }}
@@ -301,7 +301,7 @@ export default function SocialMediaPublishingPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '80px 40px', background: '#000', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2
             className="ff-heading"

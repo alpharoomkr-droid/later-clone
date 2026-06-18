@@ -190,7 +190,7 @@ export default function InfluencerToolsPage() {
               >
                 Influencer tools that do the work for you
               </h2>
-              <p className="text-charcoal/60" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 40 }}>
+              <p className="text-charcoal/60" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 24 }}>
                 Get the most out of your influencer marketing software that drives the results you need.
               </p>
               <div className="flex flex-col gap-0">

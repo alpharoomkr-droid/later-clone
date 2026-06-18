@@ -66,7 +66,7 @@ export default function ContentCreationToolsPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -88,7 +88,7 @@ export default function ContentCreationToolsPage() {
             Later gives you the tools to find UGC, edit photos, and get hashtag suggestions
             so every post is on-brand and on-point.
           </p>
-          <Link to="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 48 }}>
+          <Link to="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>
             Get 14 days for free
           </Link>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
@@ -102,9 +102,9 @@ export default function ContentCreationToolsPage() {
       </section>
 
       {/* Value props */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40, textAlign: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28, textAlign: 'center' }}>
             {valueProps.map((v, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`}>
                 <img
@@ -123,7 +123,7 @@ export default function ContentCreationToolsPage() {
       </section>
 
       {/* Numbered steps */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center"
@@ -133,11 +133,11 @@ export default function ContentCreationToolsPage() {
           </p>
           <h2
             className="ff-heading text-center"
-            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}
+            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}
           >
             Search, find, & edit unique brand content in seconds
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/7ASkAWfeyeEp67wh1EaUm7/2d01e287ce6cc367696982a6d1cc35b8/search-find-and-edit-unique-brand-content-in-seconds-with-Later.png?w=1168&h=1034&q=70&fm=png"
               alt="Search find and edit content with Later"
@@ -166,7 +166,7 @@ export default function ContentCreationToolsPage() {
       </section>
 
       {/* UGC section with tabs */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p
             className="text-charcoal/60 uppercase tracking-widest text-center"
@@ -176,11 +176,11 @@ export default function ContentCreationToolsPage() {
           </p>
           <h2
             className="ff-heading text-center"
-            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}
+            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}
           >
             Share authentic user-generated content
           </h2>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 12, marginBottom: 48 }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: 12, marginBottom: 28 }}>
             {ugcTabs.map((tab, i) => (
               <button
                 key={i}
@@ -201,7 +201,7 @@ export default function ContentCreationToolsPage() {
               </button>
             ))}
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <h3 className="ff-heading" style={{ fontSize: 32, fontWeight: 800, marginBottom: 16 }}>
                 {ugcTabs[activeTab].label}
@@ -223,7 +223,7 @@ export default function ContentCreationToolsPage() {
       </section>
 
       {/* Create & Edit cards */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <h2
             className="ff-heading text-center"
@@ -233,7 +233,7 @@ export default function ContentCreationToolsPage() {
           </h2>
           <p
             className="text-center"
-            style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto' }}
+            style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 600, marginLeft: 'auto', marginRight: 'auto' }}
           >
             Everything you need to produce scroll-stopping posts, all in one place.
           </p>
@@ -255,10 +255,10 @@ export default function ContentCreationToolsPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div
           className="max-w-[900px] mx-auto reveal"
-          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 48, alignItems: 'center' }}
+          style={{ display: 'grid', gridTemplateColumns: '200px 1fr', gap: 32, alignItems: 'center' }}
         >
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/2GkucbncyJCQxYrMMcfIgl/ccff016ccc10fd06c97a006d42ca2a95/lush.png?w=640&h=640&q=50&fm=png"
@@ -279,7 +279,7 @@ export default function ContentCreationToolsPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '80px 40px', background: '#000', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2
             className="ff-heading"

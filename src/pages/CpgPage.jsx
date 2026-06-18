@@ -40,7 +40,7 @@ export default function CpgPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center">
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
@@ -79,7 +79,7 @@ export default function CpgPage() {
           <a
             href="/influencer-marketing-services"
             className="btn-primary hero-enter-d3"
-            style={{ fontSize: 16, marginBottom: 48, display: 'inline-block' }}
+            style={{ fontSize: 16, marginBottom: 28, display: 'inline-block' }}
           >
             Book a demo
           </a>
@@ -137,7 +137,7 @@ export default function CpgPage() {
                   fontSize: 44,
                   fontWeight: 900,
                   lineHeight: 1.15,
-                  marginBottom: 40,
+                  marginBottom: 24,
                 }}
               >
                 Easy Influencer Marketing
@@ -195,7 +195,7 @@ export default function CpgPage() {
                 Outcomes-Driven Campaigns
               </h2>
               <p style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.6, color: '#444', marginBottom: 32 }}>See how CLIF Bar used Later Influence to scale their influencer marketing program and achieve outstanding results.</p>
-              <div style={{ display: 'flex', gap: 40, marginBottom: 32 }}>
+              <div style={{ display: 'flex', gap: 28, marginBottom: 32 }}>
                 {clifStats.map((st, i) => (
                   <div key={i}>
                     <div className="text-gridglow" style={{ fontFamily: 'var(--font-heading)', fontSize: 40, fontWeight: 900, lineHeight: 1 }}>
@@ -287,10 +287,10 @@ export default function CpgPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div
           className="max-w-[900px] mx-auto reveal"
-          style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: 48, alignItems: 'center' }}
+          style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: 32, alignItems: 'center' }}
         >
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png"

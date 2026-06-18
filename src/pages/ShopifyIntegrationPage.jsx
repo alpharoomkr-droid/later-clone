@@ -49,7 +49,7 @@ export default function ShopifyIntegrationPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center">
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
@@ -86,7 +86,7 @@ export default function ShopifyIntegrationPage() {
           <a
             href="#"
             className="btn-primary hero-enter-d3"
-            style={{ fontSize: 16, marginBottom: 48, display: 'inline-block' }}
+            style={{ fontSize: 16, marginBottom: 28, display: 'inline-block' }}
           >
             Book a demo
           </a>
@@ -129,7 +129,7 @@ export default function ShopifyIntegrationPage() {
                   fontSize: 18,
                   lineHeight: 1.6,
                   color: '#444',
-                  marginBottom: 40,
+                  marginBottom: 24,
                 }}
               >
                 Let creators choose their preferred products from your store with Shopify codes.
@@ -244,7 +244,7 @@ export default function ShopifyIntegrationPage() {
               lineHeight: 1.7,
               color: 'rgba(248,242,234,0.9)',
               fontStyle: 'italic',
-              marginBottom: 40,
+              marginBottom: 24,
             }}
           >
             &ldquo;There is so much depth and diversity in Later&rsquo;s influencer network. No matter how many campaigns we run, there are always new, on-brand influencers to engage with&mdash;and the creative performs long after the campaign is over.&rdquo;

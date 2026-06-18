@@ -59,7 +59,7 @@ export default function BrandAmbassadorsPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center">
           <p
             className="text-charcoal/60 uppercase tracking-widest hero-enter"
@@ -97,7 +97,7 @@ export default function BrandAmbassadorsPage() {
           <a
             href="/influencer-marketing-services"
             className="btn-primary hero-enter-d3"
-            style={{ fontSize: 16, marginBottom: 48, display: 'inline-block' }}
+            style={{ fontSize: 16, marginBottom: 28, display: 'inline-block' }}
           >
             Book a demo
           </a>
@@ -161,7 +161,7 @@ export default function BrandAmbassadorsPage() {
                   fontSize: 44,
                   fontWeight: 900,
                   lineHeight: 1.15,
-                  marginBottom: 40,
+                  marginBottom: 24,
                 }}
               >
                 Start &amp; scale brand ambassador programs

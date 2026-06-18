@@ -451,7 +451,7 @@ export default function InfluencerPricingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading reveal text-center"
@@ -459,7 +459,7 @@ export default function InfluencerPricingPage() {
               fontSize: 48,
               fontWeight: 900,
               lineHeight: 1.1,
-              marginBottom: 48,
+              marginBottom: 28,
             }}
           >
             Frequently asked questions
@@ -553,7 +553,7 @@ export default function InfluencerPricingPage() {
                 fontSize: 18,
                 lineHeight: 1.6,
                 color: 'rgba(255,255,255,0.75)',
-                marginBottom: 40,
+                marginBottom: 24,
                 maxWidth: 480,
                 margin: '0 auto 40px',
               }}

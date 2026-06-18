@@ -94,7 +94,7 @@ export default function InfluencerCreatorProgramPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>LATER FOR CREATORS</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
@@ -103,7 +103,7 @@ export default function InfluencerCreatorProgramPage() {
           <p className="hero-enter-d1" style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 700, margin: '0 auto 32px', color: '#333' }}>
             Connect with brands, manage campaigns, and earn more doing what you love. Monetize your content with Mavely or join our creator network and watch your creator career grow.
           </p>
-          <div className="hero-enter-d2" style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 48 }}>
+          <div className="hero-enter-d2" style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 28 }}>
             <a href="https://www.joinmavely.com/" className="btn-primary" target="_blank" rel="noopener noreferrer">Earn with Mavely <ArrowIcon /></a>
             <a href="#creator-network" className="btn-outline">Join creator network <ArrowIcon /></a>
           </div>
@@ -118,13 +118,13 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Find & land brand collaborations */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Find &amp; land brand collaborations with Later
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56 }}>Later makes it easy to stand out and earn more.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Later makes it easy to stand out and earn more.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {features.map((f, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
                 <img src={f.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
@@ -137,8 +137,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Get discovered */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <img
             src="https://later.com/images/temp/get-discovered-by-your-favorite-brands-with-later.jpg"
             alt="Get discovered by your favorite brands"
@@ -159,9 +159,9 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* 3 Steps */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {steps.map((s, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`}>
                 <span style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00', display: 'block', marginBottom: 12 }}>{s.num}</span>
@@ -174,9 +174,9 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Take your creator career to new heights */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 64 }}>
+          <div className="text-center reveal" style={{ marginBottom: 24 }}>
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CREATE, SHARE, EARN</p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
               Take your creator career to new heights
@@ -186,7 +186,7 @@ export default function InfluencerCreatorProgramPage() {
             </p>
           </div>
           {careerFeatures.map((f, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={f.img} alt={f.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
               <div style={{ direction: 'ltr' }}>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>{f.title}</h3>
@@ -198,8 +198,8 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Sign up section */}
-      <section style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
               Sign up for Later for free
@@ -225,9 +225,9 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Creator community */}
-      <section id="creator-network" className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section id="creator-network" className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}>
+          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>
             Join the creator community
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
@@ -248,7 +248,7 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Testimonial */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" style={{ margin: '0 auto 24px' }}>
             <path d="M0 32V18.3C0 6.1 7.4 0 18 0v8.6C12.2 9.6 9.4 13 9 18h9v14H0zm22 0V18.3C22 6.1 29.4 0 40 0v8.6c-5.8 1-8.6 4.4-9 8.4h9v14H22z" fill="#FE3F00" opacity="0.15" />
@@ -268,7 +268,7 @@ export default function InfluencerCreatorProgramPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="wood-bg" style={{ padding: '80px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
             Earn more with Later for creators

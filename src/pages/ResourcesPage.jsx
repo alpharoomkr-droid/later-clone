@@ -291,7 +291,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Newsletter */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[600px] mx-auto text-center reveal">
           <h2 className="ff-heading" style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, color: '#fff', marginBottom: 16 }}>
             Subscribe to Later's newsletter
@@ -323,9 +323,9 @@ export default function ResourcesPage() {
       </section>
 
       {/* More Resources */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 40 }}>More Resources</h2>
+          <h2 className="ff-heading" style={{ fontSize: 32, fontWeight: 900, marginBottom: 24 }}>More Resources</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 24 }}>
             {moreResources.map((r, i) => (
               <a
@@ -376,7 +376,7 @@ export default function ResourcesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '100px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[720px] mx-auto reveal">
           <h2 className="ff-heading" style={{ fontSize: 46, fontWeight: 900, lineHeight: 1.1, marginBottom: 20 }}>
             Get the best social media marketing tools in one app

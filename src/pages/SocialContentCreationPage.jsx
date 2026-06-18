@@ -118,7 +118,7 @@ export default function SocialContentCreationPage() {
                 fontWeight: 900,
                 lineHeight: '58px',
                 letterSpacing: '0.26px',
-                marginBottom: 40,
+                marginBottom: 24,
               }}
             >
               High-impact content, easy collaboration

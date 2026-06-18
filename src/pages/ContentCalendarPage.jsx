@@ -49,7 +49,7 @@ export default function ContentCalendarPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -73,7 +73,7 @@ export default function ContentCalendarPage() {
           <Link
             to="/pricing"
             className="btn-primary hero-enter-d2"
-            style={{ fontSize: 16, marginBottom: 48 }}
+            style={{ fontSize: 16, marginBottom: 28 }}
           >
             Start a 14-Day Trial
           </Link>
@@ -88,7 +88,7 @@ export default function ContentCalendarPage() {
       </section>
 
       {/* Value Props */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2
             className="ff-heading"
@@ -96,10 +96,10 @@ export default function ContentCalendarPage() {
           >
             Save time with smart planning
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56 }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>
             Everything you need to plan a winning content strategy.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {valueProps.map((v, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
                 <h3
@@ -116,15 +116,15 @@ export default function ContentCalendarPage() {
       </section>
 
       {/* Numbered Steps */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <h2
             className="ff-heading text-center"
-            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}
+            style={{ fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}
           >
             Manage your social media calendar with ease
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/2PlFehpkx4GKrmLGfuhreO/88897d84e9482665fbf231c860dee5f0/manage-your-social-media-calendar-with-ease.png?w=1136&h=1000&q=70&fm=png"
               alt="Manage your calendar"
@@ -159,7 +159,7 @@ export default function ContentCalendarPage() {
       <TrustedBy />
 
       {/* Feature Sections */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           {features.map((f, i) => (
             <div
@@ -168,7 +168,7 @@ export default function ContentCalendarPage() {
               style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
-                gap: 60,
+                gap: 36,
                 alignItems: 'center',
                 marginBottom: i < features.length - 1 ? 80 : 0,
                 direction: i % 2 === 1 ? 'rtl' : 'ltr',
@@ -205,7 +205,7 @@ export default function ContentCalendarPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal" style={{ color: '#fff' }}>
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/7LfVwNa05ypLSmVOtFzPlQ/fbe6354d679b58b12994ed2c02dd4dfe/sam-turnball.jpg?w=640&h=640&fl=progressive&q=50&fm=jpg"
@@ -223,7 +223,7 @@ export default function ContentCalendarPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '80px 40px', background: '#000', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2
             className="ff-heading"

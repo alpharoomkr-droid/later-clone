@@ -104,7 +104,7 @@ export default function InstagramSchedulerPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>Your go-to Instagram scheduler</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
@@ -113,7 +113,7 @@ export default function InstagramSchedulerPage() {
           <p className="hero-enter-d1" style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.6, maxWidth: 680, margin: '0 auto 32px', color: '#333' }}>
             Plan your feed, schedule ahead of time, and auto post single images, carousels, Stories, and Reels with Later's Instagram scheduler. Plus, get the analytics to help you measure what matters, learn the best time to post, and get hashtag suggestions.
           </p>
-          <a href="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 48 }}>Get 14 days for free</a>
+          <a href="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>Get 14 days for free</a>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/1rb0sshParJgHTmQu03HDZ/aed059959a194e7b82ba910a10d1ff5a/instagram-scheduler-hero.png?w=1136&h=1000&q=80&fm=png" alt="Later Instagram Scheduler" style={{ width: '100%', display: 'block' }} />
           </div>
@@ -121,11 +121,11 @@ export default function InstagramSchedulerPage() {
       </section>
 
       {/* Quick features */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Post more, work less.</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56 }}>Easily schedule whatever content you want, whenever you want.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Easily schedule whatever content you want, whenever you want.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {features.map((f, i) => (
               <a key={i} href={f.link} className={`reveal reveal-d${i + 1}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <img src={f.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
@@ -138,12 +138,12 @@ export default function InstagramSchedulerPage() {
       </section>
 
       {/* Steps */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Schedule Instagram Posts</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>On your mark, get set, schedule.</h2>
-          <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>From photo dumps to Reels, you can schedule anything and do more on Instagram with Later.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>From photo dumps to Reels, you can schedule anything and do more on Instagram with Later.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/cNB0c2tiLiCcNPS1eNk4w/9f0b52f5884c6c24d4513d67fc12be5a/schedule-instagram.png?w=1136&h=1020&q=70&fm=png" alt="Schedule Instagram" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -161,12 +161,12 @@ export default function InstagramSchedulerPage() {
       </section>
 
       {/* Feature showcases */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Get sweet features with Later's Instagram scheduling tool</p>
-          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 64 }}>Come for the scheduling. Stay for the auto posting.</h2>
+          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Come for the scheduling. Stay for the auto posting.</h2>
           {showcases.map((s, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={s.img} alt={s.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
               <div style={{ direction: 'ltr' }}>
                 <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>{s.tag}</p>
@@ -180,10 +180,10 @@ export default function InstagramSchedulerPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Customer Testimonials</p>
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}>What our customers say about our Instagram scheduler.</h2>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>What our customers say about our Instagram scheduler.</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
             {testimonials.map((t, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ background: '#fff', borderRadius: 12, padding: 32, display: 'flex', flexDirection: 'column' }}>
@@ -203,9 +203,9 @@ export default function InstagramSchedulerPage() {
       </section>
 
       {/* FAQs */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}>FAQs</h2>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>FAQs</h2>
           {faqs.map((f, i) => (
             <details key={i} style={{ borderBottom: '1px solid #e5e5e5', paddingBottom: 20, marginBottom: 20 }}>
               <summary style={{ fontFamily: 'var(--font-heading)', fontSize: 20, fontWeight: 700, cursor: 'pointer', listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -219,7 +219,7 @@ export default function InstagramSchedulerPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '80px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>The best Instagram scheduling & management tool.</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Test out any Later plan 100% free for 14 days.</p>

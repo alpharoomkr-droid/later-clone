@@ -30,8 +30,8 @@ export default function InfluencerPaymentsPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               Influencer Payment Platform
@@ -58,7 +58,7 @@ export default function InfluencerPaymentsPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ padding: '100px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <div className="text-center" style={{ marginBottom: 16 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
@@ -68,7 +68,7 @@ export default function InfluencerPaymentsPage() {
               Spend less time distributing money so you can focus on building relationships and driving impactful campaigns.
             </p>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/70lothQgZTfgvYiFSgxA7k/3be71b849110c93a913ccb9801b03423/influencer-payments-manage-invoice.png?w=1136&h=960&q=70&fm=png"
               alt="Manage invoices and payments"
@@ -99,7 +99,7 @@ export default function InfluencerPaymentsPage() {
               style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
-                gap: 60,
+                gap: 36,
                 alignItems: 'center',
                 marginBottom: i < featureSections.length - 1 ? 80 : 0,
                 direction: i % 2 === 1 ? 'rtl' : 'ltr',
@@ -128,7 +128,7 @@ export default function InfluencerPaymentsPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" style={{ margin: '0 auto 24px' }}>
             <path d="M0 32V19.2C0 6.4 8.8 0 17.6 0l-1.6 6.4C10.4 8 8 12.8 8 19.2h8V32H0zm22.4 0V19.2C22.4 6.4 31.2 0 40 0l-1.6 6.4C32.8 8 30.4 12.8 30.4 19.2h8V32H22.4z" fill="#FE3F00" fillOpacity="0.3" />
@@ -147,7 +147,7 @@ export default function InfluencerPaymentsPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="purple-wood-bg text-white" style={{ padding: '120px 40px', textAlign: 'center' }}>
+      <section className="purple-wood-bg text-white" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>
             Pay influencers on time, every time

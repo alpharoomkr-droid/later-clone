@@ -293,9 +293,9 @@ export default function BlogPage() {
       </section>
 
       {/* Our Picks */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <div className="reveal" style={{ marginBottom: 48 }}>
+          <div className="reveal" style={{ marginBottom: 28 }}>
             <h2 className="ff-heading" style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.1, marginBottom: 16 }}>Our Picks</h2>
             <p style={{ fontSize: 18, lineHeight: 1.6, color: '#555', maxWidth: 640 }}>
               A roundup of Later's top social media and influencer marketing tips to fuel your growth
@@ -310,7 +310,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[640px] mx-auto text-center reveal">
           <h2 className="ff-heading" style={{ fontSize: 36, fontWeight: 900, lineHeight: 1.15, color: '#fff', marginBottom: 16 }}>
             Subscribe to Later's newsletter and get the latest news delivered straight to your inbox
@@ -342,7 +342,7 @@ export default function BlogPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '100px 40px', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[720px] mx-auto reveal">
           <h2 className="ff-heading" style={{ fontSize: 46, fontWeight: 900, lineHeight: 1.1, marginBottom: 20 }}>
             Ready to grow your brand in the creator economy?

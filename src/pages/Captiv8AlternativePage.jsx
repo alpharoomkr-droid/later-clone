@@ -65,8 +65,8 @@ export default function Captiv8AlternativePage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>LATER INFLUENCE</p>
             <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
@@ -84,10 +84,10 @@ export default function Captiv8AlternativePage() {
       </section>
 
       {/* 2. Benefits */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}>See where Later goes further</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>See where Later goes further</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
                 <img src={b.icon} alt="" style={{ width: 56, height: 56, margin: '0 auto 16px' }} />
@@ -100,9 +100,9 @@ export default function Captiv8AlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[900px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}>Feature comparison</h2>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
           <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: 12, overflow: 'hidden' }}>
             <thead>
               <tr style={{ background: '#fafafa' }}>
@@ -126,15 +126,15 @@ export default function Captiv8AlternativePage() {
       </section>
 
       {/* 4. Numbered Features */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 64 }}>
+          <div className="text-center reveal" style={{ marginBottom: 24 }}>
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CAPTIV8 VS. LATER</p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>4 reasons to choose Later Influence</h2>
             <p style={{ fontSize: 18, color: '#555' }}>Later is easier to set up than Captiv8 — see for yourself with a free demo.</p>
           </div>
           {features.map((f, i) => (
-            <div key={f.num} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={f.num} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={f.img} alt={f.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} loading="lazy" />
               <div style={{ direction: 'ltr' }}>
                 <span style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00' }}>{f.num}</span>
@@ -147,7 +147,7 @@ export default function Captiv8AlternativePage() {
       </section>
 
       {/* 5. Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[900px] mx-auto text-center reveal">
           <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: 48, textAlign: 'center' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
@@ -161,10 +161,10 @@ export default function Captiv8AlternativePage() {
       </section>
 
       {/* 6. Compare Links */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 40 }}>See how Later Influence compares to the competition.</p>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>See how Later Influence compares to the competition.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             {compareLinks.map((l, i) => (
               <Link key={i} to={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</Link>
@@ -174,7 +174,7 @@ export default function Captiv8AlternativePage() {
       </section>
 
       {/* 7. Bottom CTA */}
-      <section style={{ backgroundColor: '#000', padding: '100px 40px' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, color: '#FEFCFB', marginBottom: 16 }}>
             Later Influence is the best Captiv8 alternative

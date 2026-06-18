@@ -356,7 +356,7 @@ export default function AffiliateProgramPage() {
               fontWeight: 900,
               lineHeight: '66px',
               letterSpacing: '0.3px',
-              marginBottom: 56,
+              marginBottom: 32,
             }}
           >
             Frequently asked questions

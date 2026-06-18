@@ -92,7 +92,7 @@ export default function LinkInBioPage() {
       </section>
 
       {/* What's a link in bio? */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
             What's a link in bio?
@@ -113,9 +113,9 @@ export default function LinkInBioPage() {
       </section>
 
       {/* How to Customize */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
-          <div className="text-center" style={{ marginBottom: 48 }}>
+          <div className="text-center" style={{ marginBottom: 28 }}>
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
               HOW TO CUSTOMIZE LINK IN BIO
             </p>
@@ -147,7 +147,7 @@ export default function LinkInBioPage() {
               </button>
             ))}
           </div>
-          <div style={{ background: '#fff', borderRadius: 12, padding: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
+          <div style={{ background: '#fff', borderRadius: 12, padding: 40, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center' }}>
             <div>
               <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, fontWeight: 700, marginBottom: 12 }}>
                 {customizeTabs[activeTab].title}
@@ -169,10 +169,10 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Feature Showcases */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           {showcases.map((s, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <div style={{ background: '#F8F2EA', borderRadius: 12, aspectRatio: '4/3', display: 'flex', alignItems: 'center', justifyContent: 'center', direction: 'ltr' }}>
                 <span style={{ fontSize: 80, opacity: 0.15 }}>&#128279;</span>
               </div>
@@ -190,8 +190,8 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/41qrU1Am1UvJRoTaygr3Dk/b2115561b63f322e0ebb114a2d8ecdc7/highsnobiety-lib-iphone.png"
@@ -215,9 +215,9 @@ export default function LinkInBioPage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>
             FAQs
           </h2>
           {faqs.map((faq, i) => (
@@ -262,9 +262,9 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Resources */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>
             Resources and expertise to keep you ahead
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32 }}>
@@ -282,7 +282,7 @@ export default function LinkInBioPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '100px 40px', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 20 }}>
             Add a link in bio to your Instagram, TikTok, and Snap.

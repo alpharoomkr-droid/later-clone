@@ -137,7 +137,7 @@ export default function InfluencerAnalyticsPlatformPage() {
               </h2>
               <p
                 className="text-charcoal/70"
-                style={{ fontSize: 18, lineHeight: '28px', maxWidth: 480, marginBottom: 40 }}
+                style={{ fontSize: 18, lineHeight: '28px', maxWidth: 480, marginBottom: 24 }}
               >
                 Get accurate metrics to optimize your campaigns and maximize ROI on your influencer marketing spend, every time.
               </p>

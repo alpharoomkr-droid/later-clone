@@ -237,7 +237,7 @@ export default function InfluencerMarketingServicesPage() {
               fontWeight: 900,
               lineHeight: '66px',
               letterSpacing: '0.3px',
-              marginBottom: 56,
+              marginBottom: 32,
             }}
           >
             From idea to outcome.
@@ -383,7 +383,7 @@ export default function InfluencerMarketingServicesPage() {
               fontWeight: 900,
               lineHeight: '64px',
               letterSpacing: '0.28px',
-              marginBottom: 56,
+              marginBottom: 32,
             }}
           >
             Straight from the feed.
@@ -453,7 +453,7 @@ export default function InfluencerMarketingServicesPage() {
               fontWeight: 900,
               lineHeight: '64px',
               letterSpacing: '0.28px',
-              marginBottom: 48,
+              marginBottom: 28,
             }}
           >
             Resources for better campaigns.

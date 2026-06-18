@@ -71,8 +71,8 @@ export default function HootsuiteAlternativePage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* 1. Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>BUILD YOUR BRAND ON SOCIAL</p>
             <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 52, fontWeight: 900, lineHeight: 1.1, marginBottom: 24 }}>
@@ -90,11 +90,11 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 2. Benefits */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>WHY LATER IS THE BEST HOOTSUITE ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Manage your social strategy & growth in one platform</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
             Later Social helps you manage your social media marketing, social commerce, and creator partnerships all in one app.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
@@ -110,9 +110,9 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 3. Comparison Table */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[900px] mx-auto reveal">
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}>Feature comparison</h2>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Feature comparison</h2>
           <table style={{ width: '100%', borderCollapse: 'collapse', background: '#fff', borderRadius: 12, overflow: 'hidden' }}>
             <thead>
               <tr style={{ background: '#fafafa' }}>
@@ -136,15 +136,15 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 4. Numbered Features */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 64 }}>
+          <div className="text-center reveal" style={{ marginBottom: 24 }}>
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>LATER VS. HOOTSUITE</p>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>3 reasons to choose Later Social</h2>
             <p style={{ fontSize: 18, color: '#555' }}>Plus, try any Later plan for free.</p>
           </div>
           {features.map((f, i) => (
-            <div key={f.num} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={f.num} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={f.img} alt={f.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} loading="lazy" />
               <div style={{ direction: 'ltr' }}>
                 <span style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#FE3F00' }}>{f.num}</span>
@@ -157,9 +157,9 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 5. Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[900px] mx-auto text-center reveal">
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 48, color: '#fff' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 28, color: '#fff' }}>
             Over 7 million people — from creators to small shops to global brands — use Later Social. Here's why.
           </h2>
           <div style={{ background: 'rgba(255,255,255,0.12)', borderRadius: 16, padding: 48, textAlign: 'center' }}>
@@ -174,10 +174,10 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 6. Compare Links */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 40 }}>Learn why over 7 million people use Later Social every day.</p>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             {compareLinks.map((l, i) => (
               <Link key={i} to={l.href} className="btn-outline" style={{ fontSize: 15 }}>{l.label}</Link>
@@ -187,7 +187,7 @@ export default function HootsuiteAlternativePage() {
       </section>
 
       {/* 7. Bottom CTA */}
-      <section style={{ backgroundColor: '#000', padding: '100px 40px' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, lineHeight: 1.1, color: '#FEFCFB', marginBottom: 16 }}>
             Later Social is the best Hootsuite alternative

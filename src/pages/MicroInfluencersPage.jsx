@@ -78,7 +78,7 @@ export default function MicroInfluencersPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -116,7 +116,7 @@ export default function MicroInfluencersPage() {
           <a
             href="/influencer-marketing-services/"
             className="btn-primary hero-enter-d2"
-            style={{ fontSize: 16, marginBottom: 48 }}
+            style={{ fontSize: 16, marginBottom: 28 }}
           >
             Book a demo
           </a>
@@ -231,7 +231,7 @@ export default function MicroInfluencersPage() {
       </section>
 
       {/* Case Study — Trident */}
-      <section style={{ backgroundColor: '#000', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#000', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <img
             src="https://images.ctfassets.net/nfpsrlop6sws/3ViTOyAo52Zbl2AyV5tSIY/af7ef0b949aeee1d2931e75da387d075/trident-logo-pill.png?fm=webp&q=75&w=335&h=145"

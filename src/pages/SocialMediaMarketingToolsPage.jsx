@@ -73,7 +73,7 @@ export default function SocialMediaMarketingToolsPage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* ── Hero ── */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p
             className="text-charcoal/60 uppercase tracking-widest"
@@ -112,7 +112,7 @@ export default function SocialMediaMarketingToolsPage() {
           <Link
             to="/pricing"
             className="btn-primary hero-enter-d3"
-            style={{ fontSize: 16, marginBottom: 48 }}
+            style={{ fontSize: 16, marginBottom: 28 }}
           >
             Start free trial <ArrowIcon />
           </Link>
@@ -165,14 +165,14 @@ export default function SocialMediaMarketingToolsPage() {
           <section
             key={f.tag}
             className={i % 2 === 0 ? 'wood-bg' : ''}
-            style={{ padding: '80px 40px' }}
+            style={{ padding: '60px 40px' }}
           >
             <div
               className="max-w-[1440px] mx-auto reveal"
               style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
-                gap: 60,
+                gap: 36,
                 alignItems: 'center',
               }}
             >
@@ -236,13 +236,13 @@ export default function SocialMediaMarketingToolsPage() {
       })}
 
       {/* ── Testimonial ── */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div
           className="max-w-[900px] mx-auto reveal"
           style={{
             display: 'grid',
             gridTemplateColumns: '200px 1fr',
-            gap: 48,
+            gap: 32,
             alignItems: 'center',
           }}
         >
@@ -276,7 +276,7 @@ export default function SocialMediaMarketingToolsPage() {
       </section>
 
       {/* ── Final CTA ── */}
-      <section style={{ padding: '100px 40px', background: '#000', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', background: '#000', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2
             className="ff-heading"

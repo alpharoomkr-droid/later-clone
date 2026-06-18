@@ -30,10 +30,10 @@ export default function InfluencerNetworkPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div
           className="max-w-[1440px] mx-auto"
-          style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}
+          style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}
         >
           <div>
             <p
@@ -79,7 +79,7 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ padding: '100px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <div className="text-center" style={{ marginBottom: 16 }}>
             <h2
@@ -98,7 +98,7 @@ export default function InfluencerNetworkPage() {
             style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
-              gap: 60,
+              gap: 36,
               alignItems: 'center',
               marginTop: 56,
             }}
@@ -152,7 +152,7 @@ export default function InfluencerNetworkPage() {
               style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
-                gap: 60,
+                gap: 36,
                 alignItems: 'center',
                 marginBottom: i < featureSections.length - 1 ? 80 : 0,
                 direction: i % 2 === 1 ? 'rtl' : 'ltr',
@@ -204,7 +204,7 @@ export default function InfluencerNetworkPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <svg
             width="40"
@@ -241,7 +241,7 @@ export default function InfluencerNetworkPage() {
       {/* Bottom CTA */}
       <section
         className="purple-wood-bg text-white"
-        style={{ padding: '120px 40px', textAlign: 'center' }}
+        style={{ padding: '60px 40px', textAlign: 'center' }}
       >
         <div className="max-w-[700px] mx-auto reveal">
           <h2

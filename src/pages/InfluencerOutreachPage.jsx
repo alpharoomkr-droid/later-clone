@@ -124,7 +124,7 @@ export default function InfluencerOutreachPage() {
               </h2>
               <p
                 className="text-charcoal/70"
-                style={{ fontSize: 18, lineHeight: '28px', maxWidth: 480, marginBottom: 40 }}
+                style={{ fontSize: 18, lineHeight: '28px', maxWidth: 480, marginBottom: 24 }}
               >
                 Discover why brands and creators prefer collaborating within Later's influencer marketing platform.
               </p>

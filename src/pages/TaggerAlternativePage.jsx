@@ -55,8 +55,8 @@ export default function TaggerAlternativePage() {
 
       {/* 1 — Hero */}
       <section className="wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '80px 40px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 16, textTransform: 'uppercase' }}>LATER INFLUENCE</p>
               <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 52, lineHeight: 1.1, marginBottom: 24 }}>Later vs Sprout Social Influencer Marketing: What's the best influencer marketing platform?</h1>
@@ -72,10 +72,10 @@ export default function TaggerAlternativePage() {
 
       {/* 2 — Benefits */}
       <section className="reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>THE BEST SPROUT SOCIAL ALTERNATIVE</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Everything you need, nothing you don't</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>Later is the influencer marketing platform that works for you.</p>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>Later is the influencer marketing platform that works for you.</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
             {BENEFITS.map((b) => (
               <div key={b.title} style={{ textAlign: 'center', padding: '32px 20px' }}>
@@ -90,8 +90,8 @@ export default function TaggerAlternativePage() {
 
       {/* 3 — Comparison Table */}
       <section className="wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 48 }}>Later vs. Sprout Social Influencer Marketing at a glance</h2>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Later vs. Sprout Social Influencer Marketing at a glance</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
@@ -118,12 +118,12 @@ export default function TaggerAlternativePage() {
 
       {/* 4 — Numbered Features */}
       <section className="reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>SPROUT SOCIAL INFLUENCER MARKETING</p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 12 }}>4 reasons to choose Later Influence</h2>
-          <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 64 }}>Later is easier to set up than Sprout Social Influencer Marketing — see for yourself with a free demo.</p>
+          <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 24 }}>Later is easier to set up than Sprout Social Influencer Marketing — see for yourself with a free demo.</p>
           {NUMBERED.map((item, i) => (
-            <div key={item.num} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: i < NUMBERED.length - 1 ? 80 : 0, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={item.num} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: i < NUMBERED.length - 1 ? 80 : 0, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <div style={{ direction: 'ltr' }}>
                 <span style={{ fontSize: 64, fontWeight: 800, color: '#FE3F00', opacity: 0.2, lineHeight: 1 }}>{item.num}</span>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, marginBottom: 16, marginTop: 8 }}>{item.title}</h3>
@@ -139,8 +139,8 @@ export default function TaggerAlternativePage() {
 
       {/* 5 — Testimonial */}
       <section className="purple-wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px', textAlign: 'center', color: '#fff' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 48, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Leading brands trust Later Influence to power their campaigns.</h2>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Leading brands trust Later Influence to power their campaigns.</h2>
           <div style={{ maxWidth: 720, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/7DfjliJUsF4VCh2qrwjgn3/764daf6de35ceab9f198dfa14f05e560/clif-logo.png?w=616&h=616&q=50&fm=png" alt="Clif Bar" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'contain', margin: '0 auto 24px', background: '#fff', padding: 8 }} />
             <blockquote style={{ fontSize: 18, lineHeight: 1.7, fontStyle: 'italic', marginBottom: 24, opacity: 0.95 }}>"Later makes dealing with the world of influencers as turnkey as it can be. I consider them partners. The influencer landscape is constantly changing and evolving. Later helps us stay on top of trends and reach consumers in an authentic, effective, and efficient way."</blockquote>
@@ -152,9 +152,9 @@ export default function TaggerAlternativePage() {
 
       {/* 6 — Compare Links */}
       <section className="reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best influencer marketing platform for you?</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 40 }}>See how Later Influence compares to other platforms.</p>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>See how Later Influence compares to other platforms.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
             {COMPARE_LINKS.map((l) => (
               <a key={l.href} href={l.href} className="btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 15 }}>{l.label} <ArrowIcon /></a>
@@ -165,7 +165,7 @@ export default function TaggerAlternativePage() {
 
       {/* 7 — Bottom CTA */}
       <section className="wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '80px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Later Influence is the best Sprout Social Influencer Marketing alternative</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>We help leading brands create unforgettable campaigns.</p>
           <a href="/demo/" className="btn-dark" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Book a demo <ArrowIcon /></a>

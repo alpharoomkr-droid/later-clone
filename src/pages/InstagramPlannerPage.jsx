@@ -31,7 +31,7 @@ export default function InstagramPlannerPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>Easy Instagram planning app</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
@@ -40,7 +40,7 @@ export default function InstagramPlannerPage() {
           <p className="hero-enter-d1" style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 680, margin: '0 auto 32px', color: '#333' }}>
             Find the perfect vibe for your feed with the Visual Planner on Later Social! Create and preview posts before you schedule & rearrange your grid exactly how you want it.
           </p>
-          <a href="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 48 }}>Get 14 days for free</a>
+          <a href="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>Get 14 days for free</a>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/3vnYyG6OTfQpWB6TP2UrYZ/4b013d821268b3a41db07ae2c4610516/later-instagram-visual-planner-hero.png?w=1168&h=870&q=80&fm=png" alt="Later Visual Instagram Planner" style={{ width: '100%', display: 'block' }} />
           </div>
@@ -48,14 +48,14 @@ export default function InstagramPlannerPage() {
       </section>
 
       {/* How it works */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>How the Visual Planner works</p>
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>Plan and preview your grid</h2>
-          <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
+          <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
             Use Later's Visual Planner to create, edit, and preview your Instagram feed — then schedule your posts to publish whenever you want.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/4Kt8wIntNQwQ0L7hsrOjLi/66e92c3db94ad0e1d8d738d3bab3be27/later-instagram-feed-planner.png?w=1134&h=1048&q=70&fm=png" alt="Instagram Feed Planner" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -73,12 +73,12 @@ export default function InstagramPlannerPage() {
       </section>
 
       {/* Feature showcases */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Plan your Instagram layout</p>
-          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 64 }}>Save time while staying on brand</h2>
+          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Save time while staying on brand</h2>
           {showcases.map((s, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={s.img} alt={s.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
               <div style={{ direction: 'ltr' }}>
                 <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>{s.tag}</p>
@@ -92,10 +92,10 @@ export default function InstagramPlannerPage() {
       </section>
 
       {/* Testimonial */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[900px] mx-auto text-center reveal">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>Testimonial</p>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 48 }}>Why people love Later Social's Visual Planner</h2>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 28 }}>Why people love Later Social's Visual Planner</h2>
           <div style={{ background: '#F8F2EA', borderRadius: 16, padding: 48, maxWidth: 700, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/5czdqmdPQtpordskGFSKmI/ac71c797e83900c76839758100ea049d/hippeas.png?w=640&h=640&q=50&fm=png" alt="HIPPEAS Snacks" style={{ width: 72, height: 72, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
             <p style={{ fontSize: 18, lineHeight: 1.7, color: '#333', marginBottom: 24, fontStyle: 'italic' }}>
@@ -108,7 +108,7 @@ export default function InstagramPlannerPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '80px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Plan, preview, & schedule your Instagram posts</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Start scheduling with Later Social — try it for free.</p>

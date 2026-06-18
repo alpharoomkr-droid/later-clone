@@ -63,8 +63,8 @@ export default function NativePostingAlternativePage() {
 
       {/* 1 — Hero */}
       <section className="wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '80px 40px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <div>
               <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 16, textTransform: 'uppercase' }}>
                 More than just a social media scheduler
@@ -92,14 +92,14 @@ export default function NativePostingAlternativePage() {
 
       {/* 2 — Benefits */}
       <section className="reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase' }}>
             Social media marketing made easy
           </p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>
             Why do you need Later? It goes beyond posting.
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 680, marginLeft: 'auto', marginRight: 'auto' }}>
             Forget posting on the go, Later gives you smart tools to automate posting, turn followers into customers, track your results, and get better each step of the way.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32 }}>
@@ -116,8 +116,8 @@ export default function NativePostingAlternativePage() {
 
       {/* 3 — Comparison Table */}
       <section className="wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 48 }}>Later vs. Posting Manually at a glance</h2>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 28 }}>Later vs. Posting Manually at a glance</h2>
           <div style={{ maxWidth: 900, margin: '0 auto', borderRadius: 16, overflow: 'hidden', border: '1px solid #e5e5e5' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
@@ -144,14 +144,14 @@ export default function NativePostingAlternativePage() {
 
       {/* 4 — Features */}
       <section className="reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px' }}>
           <p style={{ fontSize: 13, fontWeight: 700, letterSpacing: 2, color: '#FE3F00', marginBottom: 12, textTransform: 'uppercase', textAlign: 'center' }}>
             More than just a social media scheduler
           </p>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, textAlign: 'center', marginBottom: 12 }}>See what Later can do for you.</h2>
-          <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 64 }}>Start using our tools today and try any plan free for 14 days.</p>
+          <p style={{ fontSize: 18, color: '#555', textAlign: 'center', marginBottom: 24 }}>Start using our tools today and try any plan free for 14 days.</p>
           {FEATURES.map((item, i) => (
-            <div key={item.title} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: i < FEATURES.length - 1 ? 80 : 0, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={item.title} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: i < FEATURES.length - 1 ? 80 : 0, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <div style={{ direction: 'ltr' }}>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 28, marginBottom: 16 }}>{item.title}</h3>
                 <p style={{ fontSize: 16, lineHeight: 1.7, color: '#555', maxWidth: 480 }}>{item.desc}</p>
@@ -166,8 +166,8 @@ export default function NativePostingAlternativePage() {
 
       {/* 5 — Testimonial */}
       <section className="purple-wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px', textAlign: 'center', color: '#fff' }}>
-          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 48, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Over 7 million people — from small shops to global brands — use Later. Here's why.</h2>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center', color: '#fff' }}>
+          <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 28, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}>Over 7 million people — from small shops to global brands — use Later. Here's why.</h2>
           <div style={{ maxWidth: 720, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/5fzCk9FyNc8vd4QSN37J3e/23ff1c25c81f9ce891d267cf71beeb6f/elizabeth-joy.png?w=640&h=641&q=50&fm=png" alt="Elizabeth Joy" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', margin: '0 auto 24px' }} />
             <blockquote style={{ fontSize: 18, lineHeight: 1.7, fontStyle: 'italic', marginBottom: 24, opacity: 0.95 }}>"Later's scheduling tool helps us stay more consistent across our social channels so we can share our resources about sustainability & slow fashion. It's great because we've also seen an increase in the number of views & engagement that we get with our content."</blockquote>
@@ -179,9 +179,9 @@ export default function NativePostingAlternativePage() {
 
       {/* 6 — Compare Links */}
       <section className="reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '100px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 36, marginBottom: 12 }}>What's the best social media marketing platform for you?</h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 40 }}>Learn why over 7 million people use Later Social every day.</p>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 24 }}>Learn why over 7 million people use Later Social every day.</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 16 }}>
             {COMPARE_LINKS.map((l) => (
               <a key={l.href} href={l.href} className="btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 15 }}>{l.label} <ArrowIcon /></a>
@@ -192,7 +192,7 @@ export default function NativePostingAlternativePage() {
 
       {/* 7 — Bottom CTA */}
       <section className="wood-bg reveal">
-        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '80px 40px', textAlign: 'center' }}>
+        <div className="max-w-[1440px] mx-auto px-[40px]" style={{ padding: '60px 40px', textAlign: 'center' }}>
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, marginBottom: 16 }}>Start using Later to grow your social media</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Try any plan free for 14 days.</p>
           <a href="/pricing/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>Start free trial <ArrowIcon /></a>

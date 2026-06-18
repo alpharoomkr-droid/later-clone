@@ -185,7 +185,7 @@ export default function CaseStudyDetailPage() {
   if (!study) {
     return (
       <div className="min-h-screen" style={{ paddingTop: 70 }}>
-        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '120px 40px' }}>
+        <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '60px 40px' }}>
           <h1 className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, marginBottom: 24 }}>Case study not found</h1>
           <p className="text-charcoal/60" style={{ fontSize: 18, lineHeight: '28px', marginBottom: 32 }}>The case study you're looking for doesn't exist or may have been moved.</p>
           <Link to="/case-studies" className="btn-primary" style={{ fontSize: 16 }}>Back to Case Studies <ArrowIcon /></Link>
@@ -203,12 +203,12 @@ export default function CaseStudyDetailPage() {
           <Link
             to="/case-studies"
             className="reveal"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 14, fontWeight: 600, color: '#FE3F00', textDecoration: 'none', marginBottom: 40 }}
+            style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 14, fontWeight: 600, color: '#FE3F00', textDecoration: 'none', marginBottom: 24 }}
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
             Customer Case Studies
           </Link>
-          <div className="reveal" style={{ maxWidth: 900, marginBottom: 48 }}>
+          <div className="reveal" style={{ maxWidth: 900, marginBottom: 28 }}>
             <h1 className="ff-heading text-charcoal" style={{ fontSize: 56, fontWeight: 900, lineHeight: '64px', letterSpacing: 0.28 }}>
               {study.headline}
             </h1>
@@ -233,7 +233,7 @@ export default function CaseStudyDetailPage() {
             {/* Main Content Column */}
             <div>
               {/* At a Glance */}
-              <div className="reveal" style={{ marginBottom: 64 }}>
+              <div className="reveal" style={{ marginBottom: 24 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 14, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 32, color: '#FE3F00' }}>At a Glance</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                   {study.metrics.map((m, i) => (
@@ -246,7 +246,7 @@ export default function CaseStudyDetailPage() {
               </div>
 
               {/* The Objective */}
-              <div className="reveal" style={{ marginBottom: 64 }}>
+              <div className="reveal" style={{ marginBottom: 24 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 36, fontWeight: 900, lineHeight: '44px', marginBottom: 24 }}>The Objective</h2>
                 <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px' }}>{study.objective}</p>
               </div>
@@ -272,13 +272,13 @@ export default function CaseStudyDetailPage() {
               </blockquote>
 
               {/* The Solution */}
-              <div className="reveal" style={{ marginBottom: 64 }}>
+              <div className="reveal" style={{ marginBottom: 24 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 36, fontWeight: 900, lineHeight: '44px', marginBottom: 24 }}>The Solution</h2>
                 <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px' }}>{study.solution}</p>
               </div>
 
               {/* The Results */}
-              <div className="reveal" style={{ marginBottom: 64 }}>
+              <div className="reveal" style={{ marginBottom: 24 }}>
                 <h2 className="ff-heading text-charcoal" style={{ fontSize: 36, fontWeight: 900, lineHeight: '44px', marginBottom: 24 }}>The Results</h2>
                 <p className="text-charcoal" style={{ fontSize: 18, lineHeight: '30px', marginBottom: 32 }}>{study.results}</p>
               </div>
@@ -306,7 +306,7 @@ export default function CaseStudyDetailPage() {
               )}
 
               {/* Result Details */}
-              <div className="reveal" style={{ marginBottom: 64 }}>
+              <div className="reveal" style={{ marginBottom: 24 }}>
                 <h3 className="ff-heading text-charcoal" style={{ fontSize: 24, fontWeight: 900, marginBottom: 20 }}>Key Results</h3>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {study.resultDetails.map((detail, i) => (
@@ -353,7 +353,7 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* Mid-page CTA Banner */}
-      <section className="wood-bg reveal" style={{ padding: '80px 0' }}>
+      <section className="wood-bg reveal" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center" style={{ padding: '0 40px' }}>
           <h2 className="ff-heading text-charcoal" style={{ fontSize: 48, fontWeight: 900, lineHeight: '56px', marginBottom: 16 }}>Grow with Later</h2>
           <p className="text-charcoal/70" style={{ fontSize: 20, lineHeight: '30px', marginBottom: 32, maxWidth: 560, marginLeft: 'auto', marginRight: 'auto' }}>
@@ -366,7 +366,7 @@ export default function CaseStudyDetailPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal" style={{ padding: '0 40px' }}>
           <h2 className="ff-heading text-charcoal" style={{ fontSize: 44, fontWeight: 900, lineHeight: '52px', marginBottom: 16 }}>
             Work with Later for fast campaign results.

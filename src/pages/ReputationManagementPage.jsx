@@ -48,7 +48,7 @@ export default function ReputationManagementPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="reveal">
             <p
@@ -85,11 +85,11 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* Value Props */}
-      <section style={{ padding: '100px 40px', backgroundColor: '#FEFCFB' }}>
+      <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 64, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
+            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 24, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
           >
             Stand out (in the ways you want to)
           </h2>
@@ -116,7 +116,7 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* Numbered Steps */}
-      <section className="wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="reveal">
             <p
@@ -127,7 +127,7 @@ export default function ReputationManagementPage() {
             </p>
             <h2
               className="ff-heading text-charcoal"
-              style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 48 }}
+              style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 28 }}
             >
               Go from liked to loved
             </h2>
@@ -170,7 +170,7 @@ export default function ReputationManagementPage() {
       {features.map((feat, i) => (
         <section
           key={i}
-          style={{ padding: '100px 40px', backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA' }}
+          style={{ padding: '60px 40px', backgroundColor: i % 2 === 0 ? '#FEFCFB' : '#F8F2EA' }}
         >
           <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className={`reveal ${i % 2 !== 0 ? 'lg:order-2' : ''}`}>
@@ -197,7 +197,7 @@ export default function ReputationManagementPage() {
       ))}
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-16 reveal">
           <div style={{ flex: 1 }}>
             <p
@@ -225,7 +225,7 @@ export default function ReputationManagementPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '120px 40px', backgroundColor: '#000' }}>
+      <section style={{ padding: '60px 40px', backgroundColor: '#000' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2
             className="ff-heading"

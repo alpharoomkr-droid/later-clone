@@ -86,12 +86,12 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Featured */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <Link
             to={`/case-studies/${featured.slug}`}
             className="featured-grid"
-            style={{ textDecoration: 'none', color: 'inherit', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}
+            style={{ textDecoration: 'none', color: 'inherit', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, alignItems: 'center' }}
           >
             <div style={{ borderRadius: 12, overflow: 'hidden' }}>
               <img
@@ -124,9 +124,9 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Influence Case Studies */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 56 }}>
+          <div className="text-center reveal" style={{ marginBottom: 32 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
               Later Influence Case Studies
             </h2>
@@ -145,9 +145,9 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Social & Link in Bio Case Studies */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
-          <div className="text-center reveal" style={{ marginBottom: 56 }}>
+          <div className="text-center reveal" style={{ marginBottom: 32 }}>
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
               Later Social &amp; Link in Bio Case Studies
             </h2>
@@ -166,7 +166,7 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="purple-wood-bg" style={{ padding: '100px 40px', textAlign: 'center' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24, color: '#fff' }}>
             Unforgettable campaigns start with insight.

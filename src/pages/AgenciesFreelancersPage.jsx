@@ -87,7 +87,7 @@ export default function AgenciesFreelancersPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -149,7 +149,7 @@ export default function AgenciesFreelancersPage() {
               <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
                 How it works
               </p>
-              <h2 className="text-charcoal" style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.15, marginBottom: 40 }}>
+              <h2 className="text-charcoal" style={{ fontFamily: 'var(--font-heading)', fontSize: 44, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>
                 How Later for Agencies &amp; Freelancers works
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>

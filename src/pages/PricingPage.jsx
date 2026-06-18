@@ -217,7 +217,7 @@ export default function PricingPage() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              gap: 48,
+              gap: 32,
               marginTop: 32,
               flexWrap: 'wrap',
               opacity: 0.5,
@@ -433,7 +433,7 @@ export default function PricingPage() {
       </section>
 
       {/* Feature Comparison */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading reveal text-center"
@@ -441,7 +441,7 @@ export default function PricingPage() {
               fontSize: 48,
               fontWeight: 900,
               lineHeight: 1.1,
-              marginBottom: 48,
+              marginBottom: 28,
             }}
           >
             Compare plan features
@@ -502,7 +502,7 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ Section */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading reveal text-center"
@@ -510,7 +510,7 @@ export default function PricingPage() {
               fontSize: 48,
               fontWeight: 900,
               lineHeight: 1.1,
-              marginBottom: 48,
+              marginBottom: 28,
             }}
           >
             Frequently asked questions
@@ -594,7 +594,7 @@ export default function PricingPage() {
                 fontSize: 18,
                 lineHeight: 1.6,
                 color: 'rgba(255,255,255,0.75)',
-                marginBottom: 40,
+                marginBottom: 24,
                 maxWidth: 480,
                 margin: '0 auto 40px',
               }}

@@ -163,7 +163,7 @@ export default function InfluencerMarketingPlatformPage() {
     <>
       {/* Hero */}
       <section className="wood-bg min-h-screen flex items-center" style={{ paddingTop: 70 }}>
-        <div className="max-w-[1440px] mx-auto w-full" style={{ padding: '80px 40px' }}>
+        <div className="max-w-[1440px] mx-auto w-full" style={{ padding: '60px 40px' }}>
           <div className="max-w-[900px] mx-auto text-center">
             <div className="hero-enter flex items-center justify-center gap-2 mb-6">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -186,7 +186,7 @@ export default function InfluencerMarketingPlatformPage() {
             </h1>
             <p
               className="text-charcoal hero-enter-d2 mx-auto"
-              style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', maxWidth: 650, marginBottom: 40 }}
+              style={{ fontSize: 24, fontWeight: 400, lineHeight: '36px', maxWidth: 650, marginBottom: 24 }}
             >
               Know which creators, ideas, and spend will pay off before you hit launch.
             </p>

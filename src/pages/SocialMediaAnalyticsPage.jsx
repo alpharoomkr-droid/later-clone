@@ -56,7 +56,7 @@ export default function SocialMediaAnalyticsPage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
           className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
           style={{ padding: '0 40px' }}
@@ -96,11 +96,11 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Value Props */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 56 }}
+            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 32 }}
           >
             Analytics built for growth
           </h2>
@@ -134,7 +134,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Analytics Tools - Numbered List */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
           className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
           style={{ padding: '0 40px' }}
@@ -150,7 +150,7 @@ export default function SocialMediaAnalyticsPage() {
           <div className="reveal reveal-d1">
             <h2
               className="ff-heading text-charcoal"
-              style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 40 }}
+              style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 24 }}
             >
               The insights you need. The features you want.
             </h2>
@@ -183,7 +183,7 @@ export default function SocialMediaAnalyticsPage() {
         <div className="max-w-[1440px] mx-auto flex flex-col items-center reveal" style={{ padding: '0 40px' }}>
           <h2
             className="text-center text-charcoal"
-            style={{ fontSize: 18, fontWeight: 700, lineHeight: '27px', marginBottom: 40 }}
+            style={{ fontSize: 18, fontWeight: 700, lineHeight: '27px', marginBottom: 24 }}
           >
             Trusted by industry leaders
           </h2>
@@ -198,7 +198,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Instagram Analytics */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <img
@@ -221,7 +221,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* TikTok Analytics */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal lg:order-2">
             <img
@@ -244,7 +244,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Pinterest Analytics */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal">
             <img
@@ -267,7 +267,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Facebook Analytics */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" style={{ padding: '0 40px' }}>
           <div className="reveal lg:order-2">
             <img
@@ -290,7 +290,7 @@ export default function SocialMediaAnalyticsPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '80px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div
           className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal"
           style={{ padding: '0 40px' }}

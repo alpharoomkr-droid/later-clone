@@ -50,7 +50,7 @@ export default function InstagramHashtagsPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto text-center hero-enter">
           <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>Instagram Hashtag Generator</p>
           <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 56, fontWeight: 900, lineHeight: 1.1, maxWidth: 800, margin: '0 auto 24px' }}>
@@ -59,7 +59,7 @@ export default function InstagramHashtagsPage() {
           <p className="hero-enter-d1" style={{ fontFamily: 'var(--font-body)', fontSize: 18, lineHeight: 1.6, maxWidth: 680, margin: '0 auto 32px', color: '#333' }}>
             Actually, it's a collection of tools from Later Social. They'll help you extend your reach, get more engagement on your posts, and save a ton of time while managing your profile.
           </p>
-          <a href="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 48 }}>Get 14 days for free</a>
+          <a href="/pricing" className="btn-primary hero-enter-d2" style={{ fontSize: 16, marginBottom: 28 }}>Get 14 days for free</a>
           <div className="hero-enter-d3" style={{ maxWidth: 900, margin: '0 auto' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/7lxYnUR3Zyu0tQ0mcTyPaP/cab8700bb91412e9b8b198c8abc7c199/hashtag-suggestions-hero.png?w=1136&h=947&q=80&fm=png" alt="Later Instagram hashtag tools" style={{ width: '100%', display: 'block' }} />
           </div>
@@ -67,11 +67,11 @@ export default function InstagramHashtagsPage() {
       </section>
 
       {/* Steps */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>LATER'S HASHTAG TOOLS</p>
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}>Maximize the impact of your hashtags</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>Maximize the impact of your hashtags</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img src="https://images.ctfassets.net/nfpsrlop6sws/6L45yQVsPqJi2fq0kAYY93/7359677b87b06d4b6e9a9aa87247edfd/later-hashtag-tools-2.png?w=1194&h=1020&q=70&fm=png" alt="Later hashtag tools" style={{ width: '100%', borderRadius: 8 }} />
             <div>
               {steps.map((s, i) => (
@@ -89,12 +89,12 @@ export default function InstagramHashtagsPage() {
       </section>
 
       {/* Feature showcases */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           <p className="text-charcoal/60 uppercase tracking-widest text-center reveal" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>The #1 Hashtag Research Tool for Instagram</p>
-          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 64 }}>Why you should use our Instagram hashtag tools</h2>
+          <h2 className="text-center reveal" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>Why you should use our Instagram hashtag tools</h2>
           {showcases.map((s, i) => (
-            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
+            <div key={i} className="reveal" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center', marginBottom: 80, direction: i % 2 === 1 ? 'rtl' : 'ltr' }}>
               <img src={s.img} alt={s.title} style={{ width: '100%', borderRadius: 8, direction: 'ltr' }} />
               <div style={{ direction: 'ltr' }}>
                 <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, color: '#FE3F00', letterSpacing: 2, marginBottom: 12 }}>{s.tag}</p>
@@ -108,10 +108,10 @@ export default function InstagramHashtagsPage() {
       </section>
 
       {/* Testimonial */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>CUSTOMERS</p>
-          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 56 }}>Why people love Later Social's Instagram hashtag tool</h2>
+          <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 32 }}>Why people love Later Social's Instagram hashtag tool</h2>
           <div style={{ maxWidth: 800, margin: '0 auto', background: '#fff', borderRadius: 12, padding: 48 }}>
             <div style={{ display: 'flex', gap: 32, alignItems: 'flex-start' }}>
               <img src="https://images.ctfassets.net/nfpsrlop6sws/UDqUwQ8sEzzFnpjU2dpKQ/f932c63d18d957e4996676ca487e56bb/Chloe_Pedersen.png?w=615&h=615&q=50&fm=png" alt="Chloe Pedersen" style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', flexShrink: 0 }} />
@@ -131,11 +131,11 @@ export default function InstagramHashtagsPage() {
       </section>
 
       {/* Blogs & Resources */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 32, fontWeight: 900, lineHeight: 1.3, marginBottom: 12 }}>Learn how to get better ROI from your social media content & campaigns with Later's helpful (free!) resources.</h2>
           <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: 24, fontWeight: 700, marginBottom: 32, marginTop: 48 }}>Blogs</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 56 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 32, marginBottom: 32 }}>
             {blogs.map((b, i) => (
               <a key={i} href={b.link} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <img src={b.img} alt={b.title} style={{ width: '100%', borderRadius: 8, marginBottom: 16, aspectRatio: '16/9', objectFit: 'cover' }} />
@@ -158,7 +158,7 @@ export default function InstagramHashtagsPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ padding: '80px 40px', textAlign: 'center' }}>
+      <section style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>See what the right hashtags can do for your Instagram growth</h2>
           <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>Create a Later account and become a hashtag power-user.</p>

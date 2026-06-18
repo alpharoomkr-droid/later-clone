@@ -55,8 +55,8 @@ export default function YoutubersPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div>
             <p className="hero-enter text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               YouTube Influencer Marketing
@@ -85,15 +85,15 @@ export default function YoutubersPage() {
       </section>
 
       {/* Benefits — Like, comment, subscribe */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Like, comment, subscribe
           </h2>
-          <p style={{ fontSize: 18, color: '#555', marginBottom: 56 }}>
+          <p style={{ fontSize: 18, color: '#555', marginBottom: 32 }}>
             YouTube influencer marketing helps brands grow in ways no other platform can.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 40 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 28 }}>
             {benefits.map((b, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`} style={{ textAlign: 'center' }}>
                 <img src={b.icon} alt="" style={{ width: 48, height: 48, margin: '0 auto 16px' }} />
@@ -106,7 +106,7 @@ export default function YoutubersPage() {
       </section>
 
       {/* How Later Influence Works */}
-      <section className="wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal">
           <p className="text-charcoal/60 uppercase tracking-widest text-center" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 12 }}>
             How Later Influence Works
@@ -114,10 +114,10 @@ export default function YoutubersPage() {
           <h2 className="text-center" style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 12 }}>
             Influencer marketing on YouTube is simpler than ever
           </h2>
-          <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 56, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
+          <p className="text-center" style={{ fontSize: 18, color: '#555', marginBottom: 32, maxWidth: 640, marginLeft: 'auto', marginRight: 'auto' }}>
             Later Influence streamlines every step of your YouTube influencer campaigns.
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
             <img
               src="https://images.ctfassets.net/nfpsrlop6sws/D96raV6hh3w8fRFJgVMLQ/63f319ec441c0320ce4e1f5173499787/how-later-influence-works.png?w=1136&h=1000&q=70&fm=png"
               alt="How Later Influence works for YouTube"
@@ -139,7 +139,7 @@ export default function YoutubersPage() {
       </section>
 
       {/* Feature Sections (alternating) */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           {featureSections.map((f, i) => (
             <div
@@ -148,7 +148,7 @@ export default function YoutubersPage() {
               style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr',
-                gap: 60,
+                gap: 36,
                 alignItems: 'center',
                 marginBottom: i < featureSections.length - 1 ? 80 : 0,
                 direction: i % 2 === 1 ? 'rtl' : 'ltr',
@@ -177,7 +177,7 @@ export default function YoutubersPage() {
       </section>
 
       {/* Case Study — bibigo */}
-      <section className="purple-wood-bg" style={{ padding: '80px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto reveal" style={{ textAlign: 'center' }}>
           <p className="uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 24, color: 'rgba(255,255,255,0.7)' }}>
             Case Study
@@ -187,7 +187,7 @@ export default function YoutubersPage() {
             alt="bibigo logo"
             style={{ height: 48, margin: '0 auto 40px', display: 'block', filter: 'brightness(0) invert(1)' }}
           />
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32, marginBottom: 40 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 32, marginBottom: 24 }}>
             {caseStudyStats.map((stat, i) => (
               <div key={i} className={`reveal reveal-d${i + 1}`}>
                 <p style={{ fontFamily: 'var(--font-heading)', fontSize: 48, fontWeight: 900, color: '#fff', marginBottom: 8 }}>{stat.value}</p>
@@ -202,7 +202,7 @@ export default function YoutubersPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="wood-bg" style={{ padding: '80px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 24 }}>
             Grow your brand on YouTube with Later's influencer marketing platform

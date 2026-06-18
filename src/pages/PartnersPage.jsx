@@ -292,12 +292,12 @@ export default function PartnersPage() {
               fontSize: 52,
               fontWeight: 900,
               lineHeight: '58px',
-              marginBottom: 48,
+              marginBottom: 28,
             }}
           >
             Integrations
           </h2>
-          <div className="flex items-center justify-center gap-3 reveal reveal-d1" style={{ marginBottom: 48 }}>
+          <div className="flex items-center justify-center gap-3 reveal reveal-d1" style={{ marginBottom: 28 }}>
             {integrationTabs.map((tab) => (
               <button
                 key={tab}
@@ -401,7 +401,7 @@ export default function PartnersPage() {
                 fontSize: 52,
                 fontWeight: 900,
                 lineHeight: '58px',
-                marginBottom: 56,
+                marginBottom: 32,
               }}
             >
               Frequently asked questions
@@ -469,7 +469,7 @@ export default function PartnersPage() {
                 fontSize: 44,
                 fontWeight: 900,
                 lineHeight: '50px',
-                marginBottom: 40,
+                marginBottom: 24,
               }}
             >
               Interested in becoming a Later partner?

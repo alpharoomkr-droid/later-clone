@@ -81,7 +81,7 @@ export default function CaptionWriterPage() {
     <div style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
           className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
           style={{ padding: '0 40px' }}
@@ -124,11 +124,11 @@ export default function CaptionWriterPage() {
       </section>
 
       {/* Value Props */}
-      <section style={{ backgroundColor: '#FEFCFB', padding: '80px 0' }}>
+      <section style={{ backgroundColor: '#FEFCFB', padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 56 }}
+            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 32 }}
           >
             Create better content, faster
           </h2>
@@ -154,7 +154,7 @@ export default function CaptionWriterPage() {
       </section>
 
       {/* Numbered Steps */}
-      <section className="wood-bg" style={{ padding: '80px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 0' }}>
         <div
           className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
           style={{ padding: '0 40px' }}
@@ -170,7 +170,7 @@ export default function CaptionWriterPage() {
           <div className="reveal reveal-d1">
             <h2
               className="ff-heading text-charcoal"
-              style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 40 }}
+              style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 24 }}
             >
               The IG caption generator you want, need, & love
             </h2>
@@ -220,11 +220,11 @@ export default function CaptionWriterPage() {
       </section>
 
       {/* More Ways to Use Later */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 64 }}
+            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 24 }}
           >
             More ways to use Later
           </h2>
@@ -272,11 +272,11 @@ export default function CaptionWriterPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="purple-wood-bg" style={{ padding: '80px 0' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 0' }}>
         <div className="max-w-[1440px] mx-auto" style={{ padding: '0 40px' }}>
           <h2
             className="ff-heading text-center reveal"
-            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 56, color: '#FEFCFB' }}
+            style={{ fontSize: 44, fontWeight: 900, lineHeight: '50px', marginBottom: 32, color: '#FEFCFB' }}
           >
             Loved by creators & brands
           </h2>

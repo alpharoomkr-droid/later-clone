@@ -79,7 +79,7 @@ export default function SocialMediaSchedulerPage() {
           className="absolute inset-0 w-full h-full object-cover"
           style={{ opacity: 0.45 }}
         />
-        <div className="relative z-10" style={{ maxWidth: 780, padding: '100px 40px' }}>
+        <div className="relative z-10" style={{ maxWidth: 780, padding: '60px 40px' }}>
           <div className="hero-enter flex items-center justify-center gap-2" style={{ marginBottom: 24 }}>
             <span style={{ fontSize: 14, fontWeight: 600, color: '#fff', opacity: 0.8 }}>G2 Leader</span>
             <span className="flex gap-0.5">
@@ -130,7 +130,7 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Use Later / Unplug */}
-      <section style={{ padding: '100px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto text-center reveal">
           <h2
             style={{
@@ -154,7 +154,7 @@ export default function SocialMediaSchedulerPage() {
       {FEATURES.map((f, i) => {
         const reversed = i % 2 === 1
         return (
-          <section key={f.tag} className={i % 2 === 0 ? '' : 'wood-bg'} style={{ padding: '80px 40px' }}>
+          <section key={f.tag} className={i % 2 === 0 ? '' : 'wood-bg'} style={{ padding: '60px 40px' }}>
             <div
               className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal"
             >
@@ -189,7 +189,7 @@ export default function SocialMediaSchedulerPage() {
       })}
 
       {/* Testimonial */}
-      <section style={{ background: '#000', padding: '100px 40px' }}>
+      <section style={{ background: '#000', padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal">
           <div>
             <img
@@ -222,7 +222,7 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Designed for the pros */}
-      <section style={{ padding: '100px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="text-center reveal"
@@ -231,7 +231,7 @@ export default function SocialMediaSchedulerPage() {
               fontSize: 48,
               fontWeight: 900,
               lineHeight: '54px',
-              marginBottom: 56,
+              marginBottom: 32,
             }}
           >
             Social media management designed for the pros
@@ -274,7 +274,7 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* 3 Steps */}
-      <section className="wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="text-center reveal"
@@ -283,7 +283,7 @@ export default function SocialMediaSchedulerPage() {
               fontSize: 48,
               fontWeight: 900,
               lineHeight: '54px',
-              marginBottom: 56,
+              marginBottom: 32,
             }}
           >
             Get started in 3 easy steps
@@ -312,7 +312,7 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Resources */}
-      <section style={{ padding: '100px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="text-center reveal"
@@ -326,7 +326,7 @@ export default function SocialMediaSchedulerPage() {
           >
             Resources and expertise to keep you ahead
           </h2>
-          <p className="text-center reveal" style={{ fontSize: 18, color: '#000', opacity: 0.6, marginBottom: 56 }}>
+          <p className="text-center reveal" style={{ fontSize: 18, color: '#000', opacity: 0.6, marginBottom: 32 }}>
             Everything you need to grow your social presence.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
@@ -353,7 +353,7 @@ export default function SocialMediaSchedulerPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ background: '#000', padding: '120px 40px', textAlign: 'center' }}>
+      <section style={{ background: '#000', padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2
             style={{

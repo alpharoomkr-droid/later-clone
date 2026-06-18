@@ -28,7 +28,7 @@ export default function SocialMediaListeningPage() {
     <div className="min-h-screen" style={{ paddingTop: 70 }}>
 
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="reveal">
             <p
@@ -65,11 +65,11 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Value Props */}
-      <section style={{ padding: '100px 40px', backgroundColor: '#FEFCFB' }}>
+      <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
         <div className="max-w-[1440px] mx-auto">
           <h2
             className="ff-heading text-charcoal text-center reveal"
-            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 64, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
+            style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 24, maxWidth: 700, marginLeft: 'auto', marginRight: 'auto' }}
           >
             All the info you need, ready in seconds (not hours)
           </h2>
@@ -92,7 +92,7 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Numbered Features */}
-      <section className="wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="reveal">
             <p
@@ -103,7 +103,7 @@ export default function SocialMediaListeningPage() {
             </p>
             <h2
               className="ff-heading text-charcoal"
-              style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 48 }}
+              style={{ fontSize: 48, fontWeight: 900, lineHeight: '54px', marginBottom: 28 }}
             >
               We help you listen & take action
             </h2>
@@ -143,7 +143,7 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Social Media Monitoring */}
-      <section style={{ padding: '100px 40px', backgroundColor: '#FEFCFB' }}>
+      <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="reveal">
             <h2
@@ -169,7 +169,7 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Sentiment Analysis */}
-      <section className="wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="reveal lg:order-2">
             <h2
@@ -195,7 +195,7 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Engage with your community */}
-      <section style={{ padding: '100px 40px', backgroundColor: '#FEFCFB' }}>
+      <section style={{ padding: '60px 40px', backgroundColor: '#FEFCFB' }}>
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="reveal">
             <h2
@@ -221,7 +221,7 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="purple-wood-bg" style={{ padding: '100px 40px' }}>
+      <section className="purple-wood-bg" style={{ padding: '60px 40px' }}>
         <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center gap-16 reveal">
           <div style={{ flex: 1 }}>
             <p
@@ -250,7 +250,7 @@ export default function SocialMediaListeningPage() {
       </section>
 
       {/* Final CTA */}
-      <section style={{ padding: '120px 40px', backgroundColor: '#000' }}>
+      <section style={{ padding: '60px 40px', backgroundColor: '#000' }}>
         <div className="max-w-[800px] mx-auto text-center reveal">
           <h2
             className="ff-heading"

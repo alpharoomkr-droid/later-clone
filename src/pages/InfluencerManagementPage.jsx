@@ -54,8 +54,8 @@ export default function InfluencerManagementPage() {
   return (
     <div style={{ paddingTop: 70 }}>
       {/* Hero */}
-      <section className="wood-bg" style={{ padding: '80px 40px 0' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px 0' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div className="hero-enter">
             <p className="text-charcoal/60 uppercase tracking-widest" style={{ fontSize: 13, fontWeight: 600, letterSpacing: 2, marginBottom: 16 }}>
               Connect with Influencers
@@ -81,13 +81,13 @@ export default function InfluencerManagementPage() {
       </section>
 
       {/* How It Works */}
-      <section style={{ padding: '100px 40px' }}>
-        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 60, alignItems: 'center' }}>
+      <section style={{ padding: '60px 40px' }}>
+        <div className="max-w-[1440px] mx-auto" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 36, alignItems: 'center' }}>
           <div className="reveal">
             <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
               Effortlessly manage influencer relationships
             </h2>
-            <p style={{ fontSize: 18, color: '#555', lineHeight: 1.6, marginBottom: 48 }}>
+            <p style={{ fontSize: 18, color: '#555', lineHeight: 1.6, marginBottom: 28 }}>
               Later&rsquo;s tools &amp; features let you manage influencer campaigns and communications all from one place.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
@@ -116,13 +116,13 @@ export default function InfluencerManagementPage() {
 
       {/* Feature Sections (alternating) */}
       {featureSections.map((f, i) => (
-        <section key={i} className={i % 2 === 0 ? 'wood-bg' : ''} style={{ padding: '100px 40px' }}>
+        <section key={i} className={i % 2 === 0 ? 'wood-bg' : ''} style={{ padding: '60px 40px' }}>
           <div
             className="max-w-[1440px] mx-auto reveal"
             style={{
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
-              gap: 60,
+              gap: 36,
               alignItems: 'center',
               direction: i % 2 === 1 ? 'rtl' : 'ltr',
             }}
@@ -146,7 +146,7 @@ export default function InfluencerManagementPage() {
       ))}
 
       {/* Testimonial */}
-      <section style={{ padding: '80px 40px' }}>
+      <section style={{ padding: '60px 40px' }}>
         <div className="max-w-[900px] mx-auto text-center reveal">
           <svg width="40" height="32" viewBox="0 0 40 32" fill="none" style={{ margin: '0 auto 24px' }}>
             <path d="M0 32V18.3C0 6.1 7.4 0 18 0v8.6C12.2 9.6 9.4 13 9 18h9v14H0zm22 0V18.3C22 6.1 29.4 0 40 0v8.6c-5.8 1-8.6 4.4-9 8.4h9v14H22z" fill="#FE3F00" opacity="0.15" />
@@ -169,7 +169,7 @@ export default function InfluencerManagementPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="wood-bg" style={{ padding: '100px 40px', textAlign: 'center' }}>
+      <section className="wood-bg" style={{ padding: '60px 40px', textAlign: 'center' }}>
         <div className="max-w-[700px] mx-auto reveal">
           <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 42, fontWeight: 900, lineHeight: 1.15, marginBottom: 16 }}>
             Automate your influencer management with Later Influence

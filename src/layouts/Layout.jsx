@@ -11,19 +11,35 @@ export default function Layout() {
   }, [pathname])
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible')
+            io.unobserve(entry.target)
           }
         })
       },
-      { threshold: 0.1 }
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     )
 
-    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
+    const observed = new WeakSet()
+    const track = (el) => { if (!observed.has(el)) { observed.add(el); io.observe(el) } }
+
+    document.querySelectorAll('.reveal').forEach(track)
+
+    const mo = new MutationObserver((mutations) => {
+      for (const m of mutations) {
+        for (const node of m.addedNodes) {
+          if (node.nodeType !== 1) continue
+          if (node.classList?.contains('reveal')) track(node)
+          node.querySelectorAll?.('.reveal').forEach(track)
+        }
+      }
+    })
+    mo.observe(document.body, { childList: true, subtree: true })
+
+    return () => { io.disconnect(); mo.disconnect() }
   }, [pathname])
 
   return (
